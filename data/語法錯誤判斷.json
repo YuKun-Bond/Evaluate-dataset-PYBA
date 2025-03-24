@@ -1,0 +1,2271 @@
+[
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping...')",
+        "output": {
+            "語法錯誤": "while 語句缺少冒號。",
+            "詳細描述": "在 while 條件語句後缺少冒號，導致 Python 引擎無法識別程式碼的結構。",
+            "修正建議": "在 True 條件後面添加一個冒號。",
+            "修正後": "while True:\n    print('Looping...')"
+        }
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Infinite loop')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，導致 Python 無法解析這段程式碼。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:\n    print('Infinite loop')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True print('Hello, World!')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，導致 Python 無法識別該語句的範圍。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:\n    print('Hello, World!')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Running')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，Python 需要冒號來識別循環的開始。\n修正建議: 在 while True 後面添加一個冒號。\n修正後: while True:\n    print('Running')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，這將導致 Python 無法正確執行後續的縮排程式碼。\n修正建議: 在 while True 後面添加一個冒號。\n修正後: while True:\n    print('Looping')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Running')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，導致 Python 無法辨識這段程式碼。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:\n    print('Running')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def subtract(a, b):\n    return a - b\n\nresult = subtract(10, 5",
+        "output": "語法錯誤: 函數調用缺少閉括號。\n詳細描述: 在調用 subtract 函數時，參數列表的右括號丟失，這會導致語法錯誤。\n修正建議: 在數字 5 後面添加一個閉括號。\n修正後: result = subtract(10, 5)"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping')",
+        "output": {
+            "準確性": "語法錯誤: while 語句缺少冒號。",
+            "詳細性": "詳細描述: 在 while 條件語句後缺少冒號，導致 Python 無法正確解析這段程式碼。",
+            "修正建議": "在 True 後面添加一個冒號。",
+            "修正後": "while True:\n    print('Looping')"
+        }
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句 'while True' 後應有一個冒號，Python 才能辨識這是一個複合陳述。\n修正建議: 在 'while True' 後面添加一個冒號。\n修正後: while True:"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Infinite loop')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句的結尾缺少一個冒號，這會導致 Python 無法識別該語句。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:\n    print('Infinite loop')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Hello World')",
+        "output": {
+            "準確性": "語法錯誤: while 語句缺少冒號。",
+            "詳細性": "在 while 循環語句後缺少冒號，這會導致 Python 無法正確解析程式碼。",
+            "修正建議": "在條件 True 後面添加一個冒號。",
+            "修正後": "while True:\n    print('Hello World')"
+        }
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，Python 無法識別這段程式碼。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:\n    print('Looping')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def multiply(a, b):\n    result = a * b\n    return result\n\nprint(multiply(4, 5",
+        "output": "語法錯誤: 函數調用缺少閉括號。\n詳細描述: 在調用 multiply 函數時，缺少右括號，導致括號不匹配。\n修正建議: 在數字 5 後面添加一個閉括號。\n修正後: print(multiply(4, 5))"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True print('Running...')",
+        "output": "語法錯誤: while 迴圈語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，導致 Python 無法識別迴圈的開始。\n修正建議: 在 True 後面添加一個冒號，使 Python 能夠正常識別迴圈。\n修正後: while True:\n    print('Running...')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Running...')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，這使得 Python 無法解析這段迴圈語句。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:\n    print('Running...')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Running')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，因此 Python 無法識別這是一個有效的 while 循環。\n修正建議: 在 while True 後面添加一個冒號，使其成為有效的 while 語句。\n修正後: while True:\n    print('Running')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('This is an infinite loop')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，導致語法錯誤無法執行循環。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:\n    print('This is an infinite loop')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def multiply(a, b):\n    result = a * b\n    return result\n\nprint(multiply(2, 3",
+        "output": {
+            "語法錯誤": "函數調用缺少閉括號。",
+            "詳細描述": "在調用 multiply 函數時，缺少右括號。",
+            "修正建議": "在數字 3 後面添加一個閉括號。",
+            "修正後": "print(multiply(2, 3))"
+        }
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True (print('Running')",
+        "output": "語法錯誤: while 語句語法錯誤。\n詳細描述: while 條件語句後應為冒號，而非括號。另外，括號不匹配應關閉在函數 print 之後。\n修正建議: 將條件語句後的括號改為冒號，並在 print 語句後添加閉括號。\n修正後: while True:\n    print('Running')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Hello World')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少了冒號，這會使得 Python 無法判斷這是一個複合語句。\n修正建議: 在 'True' 後面添加一個冒號。\n修正後: while True:\n    print('Hello World')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def divide(a, b):\n    return a / b\n\nprint(divide(10, 0)",
+        "output": "語法錯誤: 函數調用缺少閉括號。\n詳細描述: 在調用 print 函數時，函數調用缺少右括號。此外，該處理尚未處理除零錯誤。\n修正建議: 在數字 0 後面添加一個閉括號，並考慮添加錯誤處理以避免除以零。修正後的範例同時包括除零錯誤的處理措施。\n修正後: \n\"\"\"\ndef divide(a, b):\n    if b == 0:\n        raise ValueError('除數不能為零')\n    return a / b\n\ntry:\n    print(divide(10, 0))\nexcept ValueError as e:\n    print(e)\n\"\"\""
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def multiply(x, y):\n    return x * y\n\nresult = multiply(2, 3",
+        "output": {
+            "語法錯誤": "函數調用缺少閉括號。",
+            "詳細描述": "在調用 multiply 函數時，缺少右括號。",
+            "修正建議": "在數字 3 後面添加一個閉括號。",
+            "修正後": "result = multiply(2, 3)"
+        }
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('This will run forever')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，這會導致 Python 無法識別這是一個迴圈語句。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:\n    print('This will run forever')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Running...')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，使得 Python 無法辨識這是一個完整的循環結構。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:\n    print('Running...')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('This is an infinite loop')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 語句的條件判斷部分後缺少一個冒號，使 Python 無法識別這是一個循環結構。\n修正建議: 在 True 的後面添加一個冒號。\n修正後: while True:\n    print('This is an infinite loop')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，這使得 Python 無法辨識這是一個複合敘述。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Running')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，這會導致 Python 無法解析該語句，進而產生語法錯誤。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:\n           print('Running')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def multiply(a, b):\n    result = a * b\n    return result\n\nprint(multiply(2, 3",
+        "output": "語法錯誤: 函數調用缺少閉括號。\n詳細描述: 在調用 multiply 函數時，缺少右括號。\n修正建議: 在數字 3 後面添加一個閉括號。\n修正後: print(multiply(2, 3))"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping continuously')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後面應該有一個冒號，但這段程式碼中缺失了。\n修正建議: 在 while True 後面添加一個冒號。\n修正後: while True:\n    print('Looping continuously')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def calculate_area(radius):\n    area = 3.14 * (radius ** 2\n    return area",
+        "output": "語法錯誤: 函數調用缺少括號匹配。\n詳細描述: 在計算面積的表達式中，圓括號 ' (' 沒有對應的閉括號 ') '。\n修正建議: 在 'radius ** 2' 後面添加一個閉括號 ' ) '。\n修正後: def calculate_area(radius):\n    area = 3.14 * (radius ** 2)\n    return area"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True:\nprint('Looping endlessly')",
+        "output": "語法錯誤: while 迴圈內部沒有正確縮排。\n詳細描述: 在 while 條件成立時執行的程式碼塊必須縮排，但 print 語句與 while 對齊，沒有正確縮排。\n修正建議: 將 print 語句縮排，以表示它是 while 迴圈的一部分。\n修正後: \nwhile True:\n    print('Looping endlessly')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while x < 10:\nprint(x)\nx += 1",
+        "output": "語法錯誤: 縮排錯誤。\n詳細描述: 在 while 循環內的程式碼塊沒有正確縮進，python 依賴縮排來區分程式碼塊。\n修正建議: 在 print(x) 和 x += 1 前面添加適當的縮排，例如四個空格或一個 tab。\n修正後:\nwhile x < 10:\n    print(x)\n    x += 1"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Running...')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，這會導致 Python 無法正確解析這段程式碼。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:\n    print('Running...')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Running...')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，這會導致程式碼無法執行。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:\n    print('Running...')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，這會導致 Python 無法識別這段程式碼。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:\n    print('Looping')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Hello World')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，導致 Python 無法識別這是一個循環語句。\n修正建議: 在 while True 的後面添加一個冒號。\n修正後: while True:\n    print('Hello World')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while (True)\n    print('Running...)",
+        "output": "語法錯誤: 括號錯誤和字符串引號不匹配。\n詳細描述: 第一行的 while 條件後缺少冒號，第二行的字符串 'Running...' 缺少結束引號。\n修正建議: 在 while 條件的括號後添加冒號，並在 'Running...' 的末尾添加一個閉合引號。\n修正後: while (True):\n    print('Running...')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True print('Running...')",
+        "output": {
+            "準確性": "語法錯誤: While 條件後缺少冒號。",
+            "詳細性": "當使用 while 條件語句時，需要在條件結束後加上冒號來表示塊的開始。在這段程式碼中，True 和 print 之間缺少冒號。",
+            "修正建議": "在 True 後面添加冒號。",
+            "修正後": "while True:\n    print('Running...')"
+        }
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping...')",
+        "output": {
+            "準確性": "語法錯誤: while 語句缺少冒號。",
+            "詳細性": "在 while 條件語句後缺少冒號，這使得 Python 無法解析該語句。",
+            "修正建議": "在 True 後面添加一個冒號。",
+            "修正後": "while True:\n    print('Looping...')"
+        }
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Running')",
+        "output": {
+            "準確性": "語法錯誤: while 語句缺少冒號。",
+            "詳細性": "在 while 條件語句後缺少冒號，導致 Python 無法解析這段程式碼。",
+            "修正建議": "在 while True 條件後面添加一個冒號。",
+            "修正後": "while True:\n    print('Running')"
+        }
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True print('Hello, World!')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，導致 Python 無法正確識別循環結構。\n修正建議: 在 while True 後面添加一個冒號，從而讓 Python 正確解析這段程式碼。\n修正後: while True:\n    print('Hello, World!')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def calculate_area(radius):\n    pi = 3.14\n    area = pi * radius ** 2\n    return area\n\nresult = calculate_area(5",
+        "output": "語法錯誤: 函數調用缺少閉括號。\n詳細描述: 在調用 calculate_area 函數時，缺少右括號。\n修正建議: 在數字 5 後面添加一個閉括號。\n修正後: result = calculate_area(5)"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Infinite loop')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，導致 Python 無法識別這是一個需要執行的複合語句塊。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:\n    print('Infinite loop')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Infinite loop')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少必要的冒號，使得 Python 無法解析這段程式碼。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Infinite loop')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，導致 Python 無法解析這個語句。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:\n    print('Infinite loop')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('This is an infinite loop')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少標示代碼塊開頭的冒號，導致語法錯誤。\n修正建議: 在 while True 後面添加一個冒號。\n修正後: while True:\n    print('This is an infinite loop')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，導致 Python 無法正確解析循環結構。\n修正建議: 在 while True 後面添加一個冒號，使其成為 while True:。\n修正後: while True:\n    print('Looping')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('This is an infinite loop')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，這會導致編譯錯誤。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:\n    print('This is an infinite loop')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後沒有加入冒號，導致 Python 無法辨識這行語句。每個 while 條件語句後都必須有冒號來表明這是一個區塊的開始。\n修正建議: 在 'True' 後面添加一個冒號，使語句成為 'while True:'。\n修正後: while True:\n    print('Looping')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('This is an infinite loop')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少必須的冒號，導致 Python 無法辨識這是一個複合語句。\n修正建議: 在 while True 後面添加一個冒號。\n修正後: while True:\n    print('This is an infinite loop')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，導致無法正常進入循環體。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:\n    print('Looping')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping')",
+        "output": {
+            "準確性": "語法錯誤: while 語句缺少冒號。",
+            "詳細性": "在 while 條件語句後缺少冒號，使得 Python 無法結束條件判斷並進入循環體。",
+            "修正建議": "在 while True 後面添加一個冒號。",
+            "修正後": "while True:\n    print('Looping')"
+        }
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Infinite loop')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，這會導致 Python 無法識別該語句為一個綜合語句。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:\n    print('Infinite loop')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def divide(a, b):\n    return a / b\n\nresult = divide(4, 2",
+        "output": "語法錯誤: 函數調用缺少閉括號。\n詳細描述: 在調用 divide 函數時，參數列表缺少最後的右括號，這使得 Python 無法正確解析這個表達式。\n修正建議: 在數字 2 後面添加一個閉括號來關閉參數列表。\n修正後: result = divide(4, 2)"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('This will run forever')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少必要的冒號，導致 Python 編譯器無法解析這段程式碼。\n修正建議: 在 True 條件後添加一個冒號。\n修正後: while True:"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Infinite loop')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，這是進入循環體之前所必需的。\n修正建議: 在 True 後面添加一個冒號，讓程式認識進入循環體的邊界。\n修正後: while True:\n    print('Infinite loop')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Loop forever')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句真值判斷後缺少冒號。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:\n    print('Loop forever')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Running loop')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: while 條件語句後面應該包含冒號（:），但是目前缺失了這個部分。\n修正建議: 在 'True' 後面添加一個冒號。\n修正後: while True:\n    print('Running loop')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Running')",
+        "output": {
+            "準確性": "語法錯誤: while 語句缺少冒號。",
+            "詳細性": "在 while 循環語句後缺少冒號，這是必需的來指示迴圈的主體。",
+            "修正建議": "在 True 後面添加一個冒號。",
+            "修正後": "while True:\n    print('Running')"
+        }
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Running')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少必要的冒號，這會導致 Python 無法解析這段程式碼。\n修正建議: 在 'True' 後面添加一個冒號，使語法完整。\n修正後: while True:\n    print('Running')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Infinite loop')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，導致 Python 無法解析這段程式碼。\n修正建議: 在 while True 後面添加一個冒號。\n修正後: while True:"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping')",
+        "output": {
+            "語法錯誤": "while 語句缺少冒號。",
+            "詳細描述": "在 while 條件語句後缺少冒號，Python 無法識別這段程式碼為一個合法的循環結構。",
+            "修正建議": "在 True 後面添加一個冒號。",
+            "修正後": "while True:\n    print('Looping')"
+        }
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('This is an infinite loop')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，導致 Python 無法識別這是一個循環結構。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:\n    print('This is an infinite loop')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('This is an infinite loop')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，這使得 Python 無法識別這是一個循環語句。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:\n    print('This is an infinite loop')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Infinite loop')",
+        "output": {
+            "語法錯誤": "while 語句缺少冒號。",
+            "詳細描述": "在 while 條件語句後缺少必要的冒號，這導致 Python 無法識別該語句的結構。",
+            "修正建議": "在 True 後面添加一個冒號以正確結束條件語句。",
+            "修正後": "while True:\n    print('Infinite loop')"
+        }
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Infinite loop')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Infinite loop')",
+        "output": {
+            "錯誤類型": "語法錯誤: while 語句缺少冒號。",
+            "詳細描述": "在 while 條件語句後缺少冒號，這會導致 Python 無法解析語句並執行後續程式碼。",
+            "修正建議": "在 while True 後面添加一個冒號，使得語句完整。",
+            "修正後": "while True:\n    print('Infinite loop')"
+        }
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，導致 Python 無法解析語句結構。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Running')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，使得 Python 無法正確解析這段程式碼。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:\n    print('Running')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping')",
+        "output": {
+            "語法錯誤": "while 語句缺少冒號。",
+            "詳細描述": "在 while 條件語句後缺少冒號，導致 Python 無法解析這段程式碼。",
+            "修正建議": "在 while True 條件後面添加一個冒號。",
+            "修正後": "while True:\n    print('Looping')"
+        }
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Running')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，導致程式無法正確解析該語句。\n修正建議: 在 True 後面添加一個冒號，這樣程式就會理解接下來是一個複合語句。\n修正後: while True:\n    print('Running')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def calculate_area(radius:\n    return 3.14 * radius ** 2",
+        "output": "語法錯誤: 括號不匹配。\n詳細描述: 在定義 calculate_area 函數時，參數 radius 後的冒號應該是閉合括號。\n修正建議: 在 radius 後面改為閉合括號。\n修正後: def calculate_area(radius):\n    return 3.14 * radius ** 2"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping')",
+        "output": {
+            "錯誤類型": "語法錯誤: while 語句缺少冒號。",
+            "詳細描述": "在 while 條件語句後缺少冒號，Python 無法識別這是複合敘述開始的標誌。",
+            "修正建議": "在 while True 後面添加一個冒號。",
+            "修正後": "while True:\n    print('Looping')"
+        }
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Infinite loop!')",
+        "output": "語法錯誤: 沒有在 while 條件語句後添加冒號。\n詳細描述: 在 while 條件語句結束後應該有一個冒號，以表示後面是該條件為真的情況下要執行的代碼。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:\n    print('Infinite loop!')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，這樣 Python 無法識別並執行這段編碼塊。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:\n    print('Looping')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\nprint('Running')",
+        "output": {
+            "準確性": "語法錯誤: while 語句缺少冒號。",
+            "詳細性": "詳細描述: 在 while 條件語句後缺少冒號，這使得 Python 無法識別這是複合語句的開始。",
+            "修正建議": "在 True 後面添加一個冒號以正確表示循環的開始。",
+            "修正後": "while True:\n    print('Running')"
+        }
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True print('Looping')",
+        "output": {
+            "準確性": "語法錯誤: while 語句缺少冒號。",
+            "詳細性": "在 while 條件語句後缺少必需的冒號，這使得 Python 無法正確解析該語句。",
+            "修正建議": "在 True 後面添加一個冒號。",
+            "修正後": "while True:\n    print('Looping')"
+        }
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping...')",
+        "output": {
+            "準確性": "語法錯誤: while 語句缺少冒號。",
+            "詳細性": "條件迴圈規則要求在 while 條件表達式後加上冒號來表示進入循環體。",
+            "修正建議": "在 True 後面添加一個冒號。",
+            "修正後": "while True:\n    print('Looping...')"
+        }
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Running')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，使得 Python 無法識別這是一個循環結構。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:\n    print('Running')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，因此 Python 無法識別這是循環語句。\n修正建議: 在條件語句 True 後面添加一個冒號，使之成為正確的語法。\n修正後: while True:\n    print('Looping')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while x < 5\n    print(x)\n    x += 1",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，導致 Python 無法識別這段代碼為一個正確的迴圈結構。\n修正建議: 在 x < 5 後面添加一個冒號。\n修正後: while x < 5:\n    print(x)\n    x += 1"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Running')",
+        "output": {
+            "語法錯誤": "while 語句缺少冒號。",
+            "詳細描述": "在 while 條件語句後缺少冒號，這將導致解析錯誤。",
+            "修正建議": "在 True 後面添加一個冒號，使語法正確。",
+            "修正後": "while True:\n    print('Running')"
+        }
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Running Loop')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後沒有添加必要的冒號，導致語法錯誤。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:\n    print('Running Loop')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Running')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後應該有一個冒號，但目前缺少該冒號，導致 Python 無法解析這段程式碼。\n修正建議: 在 while True 後面添加一個冒號。\n修正後: while True:\n    print('Running')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少必要的冒號，使得 Python 無法識別這是複合敘述語句。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:\n    print('Looping')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Hello, World!')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，這會導致 Python 無法識別這是一個複合語句，從而產生語法錯誤。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:\n    print('Hello, World!')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('This is an infinite loop')",
+        "output": {
+            "error_type": "語法錯誤",
+            "description": "while 語句缺少冒號。",
+            "details": "在 while 條件語句後缺少冒號，這會使得 Python 無法正確解析這段程式碼。",
+            "suggestion": "在 True 後面添加一個冒號。",
+            "fixed_code": "while True:\n    print('This is an infinite loop')"
+        }
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Loop')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 當使用 while 循環語句時，需要在條件表達式後添加冒號來表示循環體的開始。\n修正建議: 在條件表達式 True 後面添加一個冒號。\n修正後: while True:\n    print('Loop')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "print('Hello, World!)",
+        "output": {
+            "準確性": "語法錯誤: 字符串引號不匹配。",
+            "詳細性": "詳細描述: 在調用 print 函數時，字符串 'Hello, World!' 缺少結束引號，導致 Python 無法解析。",
+            "修正建議": "修正建議: 在 'Hello, World!' 的結尾處添加一個閉合引號。",
+            "修正後": "print('Hello, World!')"
+        }
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少必要的冒號，使解釋器無法識別程式的結構。\n修正建議: 在 while True 後面添加一個冒號。\n修正後: while True:\n    print('Looping')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('This is a loop')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後應有一個冒號，但此處缺少。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Loop forever')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句 True 後缺少冒號，導致 Python 無法正確辨識這段程式碼。\n修正建議: 在條件語句 True 後面添加一個冒號。\n修正後: while True:\n    print('Loop forever')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def multiply(x, y):\n    return x * y\n\nresult = multiply(3, 4",
+        "output": {
+            "準確性": "語法錯誤: 函數調用缺少閉括號。",
+            "詳細性": "詳細描述: 在調用 multiply 函數時，缺少右括號，導致 Python 無法正確解析程式碼。",
+            "修正建議": "具體修正建議: 在數字 4 後面添加一個閉括號。",
+            "修正後": "result = multiply(3, 4)"
+        }
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少必需的冒號，使得程式碼無法正確執行。\n修正建議: 在 True 後面添加一個冒號，以結束 while 語句。\n修正後: while True:\n    print('Looping')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，這會導致 Python 無法正確解析後續的循環體。\n修正建議: 在 True 後面添加一個冒號，使得結構完整。\n修正後: while True:\n    print('Looping')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def multiply(a, b):\n    return a * b\n\nresult = multiply(5, ",
+        "output": {
+            "語法錯誤": "函數調用缺少閉括號。",
+            "詳細描述": "在調用 multiply 函數時，缺少閉括號。這會導致 Python 無法正確解釋函數的參數。",
+            "修正建議": "在函數調用結尾處添加一個閉括號。",
+            "修正後": "result = multiply(5, b)"
+        }
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Infinite loop')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，導致語法錯誤。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "for i in range(5)\nprint(i)",
+        "output": {
+            "準確性": "語法錯誤: for 語句缺少冒號。",
+            "詳細性": "在 for 循環語句後缺少冒號，這會導致 Python 無法識別循環的範圍和其內容。",
+            "修正建議": "在 for 循環語句的 range(5) 後面添加一個冒號。",
+            "修正後": "for i in range(5):\n    print(i)"
+        }
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping!')",
+        "output": {
+            "語法錯誤": "while 語句缺少冒號。",
+            "詳細描述": "在 while 條件語句後缺少冒號，導致 Python 無法識別後續縮排的程式塊。",
+            "修正建議": "在 True 後面添加一個冒號以正確標記程式塊的開始。",
+            "修正後": "while True:\n    print('Looping!')"
+        }
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping infinitely')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，使得解釋器無法正確解析這段程式碼。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:\n    print('Looping infinitely')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def calculate_area(radius)\n    pi = 3.14\n    area = pi * radius ** 2\n    return area",
+        "output": "語法錯誤: 函數定義缺少冒號。\n詳細描述: 在 define 函數 calculate_area 的定義時，缺少冒號。\n修正建議: 在 radius 的右側添加一個冒號。\n修正後: def calculate_area(radius):"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def multiply(a, b):\n    result = a * b\n    return result\n\nprint(multiply(3, 4",
+        "output": "語法錯誤: 函數調用缺少閉括號。\n詳細描述: 在調用 multiply 函數時，缺少右括號，導致 Python 無法正確解析這行程式碼。\n修正建議: 在數字 4 後面添加一個閉括號，確保函數參數完整並且閉合。\n修正後: print(multiply(3, 4))"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def multiply(a, b):\n    return a * b\n\nresult = multiply(3, 4",
+        "output": "語法錯誤: 函數調用缺少閉括號。\n詳細描述: 在調用 multiply 函數時，缺少右括號。\n修正建議: 在數字 4 後面添加一個閉括號。\n修正後: result = multiply(3, 4)"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Loop forever')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，導致 Python 無法解析這個循環結構。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:\n    print('Loop forever')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，Python 無法解析該程式碼。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:\n    print('Looping')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Hello World')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:\n    print('Hello World')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True print('Looping')",
+        "output": {
+            "語法錯誤": "缺少關鍵字 for 某些語句",
+            "詳細描述": "在 while 後應該有一個條件或一個關鍵字 followed 這個條件是判斷循環是否運行的一部分。",
+            "修正建議": "在條件敘述和 print 函式之間加上冒號。",
+            "修正後": "while True:\n    print('Looping')"
+        }
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def multiply(a, b):\n    result = a * b\n    return result\n\nprint(multiply(2, 3",
+        "output": "語法錯誤: 函數調用缺少閉括號。\n詳細描述: 在調用 multiply 函數時，缺少右括號。\n修正建議: 在數字 3 後面添加一個閉括號。\n修正後: print(multiply(2, 3))"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Running...')",
+        "output": {
+            "語法錯誤": "while 語句缺少冒號。",
+            "詳細描述": "在 while 條件語句後缺少必要的冒號，Python 無法識別複合語句的開頭。",
+            "修正建議": "在 True 後面添加一個冒號。",
+            "修正後": "while True:\n    print('Running...')"
+        }
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def multiply(a, b)\n    result = a * b\n    return result",
+        "output": "語法錯誤: 函數定義缺少冒號。\n詳細描述: 在定義 multiply 函數的參數列表後缺少冒號，導致 Python 無法理解這是函數定義的一部分。\n修正建議: 在參數 b 後面添加一個冒號。\n修正後: def multiply(a, b):"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping...')",
+        "output": {
+            "語法錯誤": "while 語句缺少冒號。",
+            "詳細描述": "在 while 條件語句後缺少冒號，這使得 Python 無法識別該語句並拋出語法錯誤。",
+            "修正建議": "在 True 後面添加一個冒號。",
+            "修正後": "while True:\n    print('Looping...')"
+        }
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Running Loop')",
+        "output": {
+            "錯誤類型": "語法錯誤: while 語句缺少冒號。",
+            "詳細描述": "在 while 條件語句後缺少冒號。這表示 Python 無法解析這段代碼為正確的語法。",
+            "修正建議": "在 True 後面添加一個冒號，以正確地結束條件語句並讓程式能夠正確執行。",
+            "修正後": "while True:\n    print('Running Loop')"
+        }
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping')",
+        "output": {
+            "語法錯誤": "while 語句缺少冒號。",
+            "詳細描述": "在 while 條件語句後缺少必要的冒號，導致 Python 無法識別這段程式碼。",
+            "修正建議": "在 while True 後面添加一個冒號。",
+            "修正後": "while True:\n    print('Looping')"
+        }
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少必要的冒號，使得 Python 無法識別這是一個複合語句的開始。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:\n    print('Looping')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping')",
+        "output": {
+            "語法錯誤": "while 語句缺少冒號。",
+            "詳細描述": "在 while 條件語句後缺少冒號，使 Python 無法識別這是一個迴圈語句。",
+            "修正建議": "在 True 後面添加一個冒號。",
+            "修正後": "while True:\n    print('Looping')"
+        }
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping forever')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句的結尾處需要有一個冒號來表示這是一個複合語句。\n修正建議: 在 'True' 的結尾處添加一個冒號。\n修正後: while True:\n    print('Looping forever')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，導致 Python 無法認識該語句結構。\n修正建議: 在 while True 後面添加一個冒號。\n修正後: while True:\n    print('Looping')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句 'True' 後缺少必要的冒號，這會導致 Python 無法解析該語句並引發語法錯誤。\n修正建議: 在 while 條件 'True' 的後面添加一個冒號。\n修正後: while True:\n    print('Looping')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def multiply(a, b):\n    return a * b\n\nresult = multiply(4,",
+        "output": "語法錯誤: 函數調用缺少參數或逗號。\n詳細描述: 在調用 multiply 函數時，缺少第二個參數或右括號。\n修正建議: 要么添加一個合適的數字作為第二個參數，要么在 4 後面閉合括號。\n修正後: result = multiply(4, 2) 或 result = multiply(4)"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping indefinitely')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，導致 Python 無法識別這是一個複合敘述。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，這使得 Python 無法識別接續的程式區塊。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:\n    print('Looping')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Infinite loop')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，導致無法正確解析循環結構。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:\n    print('Infinite loop')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句的末尾缺少冒號，使得 Python 無法解析這段程式碼。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:\n    print('Looping')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def calculate_area(radius):\n    area = 3.14 * radius ** 2\n    return area\n\nresult = calculate_area(5",
+        "output": {
+            "語法錯誤": "函數調用缺少閉括號。",
+            "詳細描述": "在調用 calculate_area 函數時，缺少右括號。",
+            "修正建議": "在數字 5 後面添加一個閉括號。",
+            "修正後": "result = calculate_area(5)"
+        }
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: while 條件語句後缺少冒號，導致 Python 無法判斷後續的程式塊。\n修正建議: 在 'True' 的後面添加一個冒號。\n修正後: while True:\n    print('Looping')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Infinite loop')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句 'while True' 後缺少冒號，使 Python 無法識別該語句為複合語句，導致語法錯誤。\n修正建議: 在 'True' 後面添加一個冒號，使得 while 語句正確結構化。\n修正後: while True:\n    print('Infinite loop')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，這使得 Python 無法識別這是開始區塊的語句。\n修正建議: 在 while True 後面添加一個冒號。\n修正後: while True:\n    print('Looping')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Infinite loop')",
+        "output": {
+            "錯誤類型": "語法錯誤: while 語句缺少冒號。",
+            "詳細描述": "在 while 條件語句後缺少必要的冒號，導致 Python 無法辨識這是一個複合語句。",
+            "修正建議": "在 True 後面添加一個冒號。",
+            "修正後程式碼": "while True:\n    print('Infinite loop')"
+        }
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\nprint('Running...')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，導致循環無法正確開始。\n修正建議: 在 while True 後面添加一個冒號，並且將 print 語句縮排到 while 語句之下以表示它是循環體的一部分。\n修正後:\nwhile True:\n    print('Running...')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def divide(a, b):\n    return a / b\n\nresult = divide(10, 0",
+        "output": "語法錯誤: 函數調用缺少閉括號並有潛在執行錯誤。\n詳細描述: 在調用 divide 函數時，缺少右括號，並且除法運算 b 為 0 會造成運行時錯誤。\n修正建議: 在數字 0 後面添加一個閉括號，並檢查除數是否為 0。\n修正後: result = divide(10, 0)\n注意：運行時需要檢查除數是否為 0 以防止除零錯誤。",
+        "友情提示": "分母為0會造成運行錯誤，可以在計算前檢查b是否為0後再進行除法操作"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping infinitely')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，這將導致 Python 無法識別該語句。\n修正建議: 在 True 後面添加一個冒號，以正確引導循環的開始。\n修正後: while True:\n    print('Looping infinitely')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping')",
+        "output": {
+            "error_type": "語法錯誤",
+            "error_details": "while 語句缺少冒號。",
+            "suggestion": "在 while 條件語句後添加一個冒號。",
+            "corrected_code": "while True:\n    print('Looping')"
+        }
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Running')",
+        "output": {
+            "錯誤類型": "語法錯誤",
+            "錯誤描述": "while 語句缺少冒號。",
+            "詳細描述": "在 while 條件語句後缺少冒號。Python 在遇到未預期的換行符時會報語法錯誤。",
+            "修正建議": "在 True 後面添加一個冒號。",
+            "修正後": "while True:\n    print('Running')"
+        }
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True print('Loop forever')",
+        "output": {
+            "語法錯誤": "while 語句缺少冒號。",
+            "詳細描述": "在 while 條件語句後缺少冒號，這會導致 Python 無法識別這是一個循環控制結構。",
+            "修正建議": "在 True 後面添加一個冒號。",
+            "修正後": "while True:\n    print('Loop forever')"
+        }
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping')",
+        "output": {
+            "error_type": "語法錯誤",
+            "details": "while 語句缺少冒號。",
+            "description": "在 while 條件語句後缺少必要的冒號，這使得 Python 無法理解接下來的程式碼塊應該如何執行。",
+            "correction": "在 True 後面添加一個冒號。",
+            "example_fix": "while True:\n    print('Looping')"
+        }
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Running')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，這會導致 Python 無法辨識迴圈的開始和結束。\n修正建議: 在 True 後面添加一個冒號來明確表示迴圈的開始。\n修正後: while True:\n    print('Running')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('This will run forever')",
+        "output": {
+            "錯誤說明": "語法錯誤: while 語句缺少冒號。",
+            "詳細描述": "在 while 條件語句後缺少冒號，這會讓 Python 無法理解這是一個迴圈。",
+            "修正建議": "在 while True 的後面添加一個冒號以正確表示迴圈。",
+            "修正後": "while True:\n    print('This will run forever')"
+        }
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('This is an infinite loop')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句 'True' 後缺少冒號，導致 Python 無法解析這段程式碼。\n修正建議: 在 'True' 後面添加一個冒號，這樣 Python 才能正確解釋這是一個 while 循環。\n修正後: while True:\n    print('This is an infinite loop')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Hello')",
+        "output": {
+            "語法錯誤": "while 語句缺少冒號。",
+            "詳細描述": "在 while 條件語句後漏掉了冒號，這會導致 Python 無法識別迴圈的開始。",
+            "修正建議": "在 while True 後面添加冒號。",
+            "修正後": "while True:\n    print('Hello')"
+        }
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def multiply(a, b):\n    result = a * b\n    return result\n\nprint(multiply(2, 3)",
+        "output": {
+            "準確性": "語法錯誤: 函數調用缺少閉括號。",
+            "詳細性": "在調用 multiply 函數時，缺少右括號。",
+            "修正建議": "在數字 3 後面添加一個閉括號。",
+            "修正後": "print(multiply(2, 3))"
+        }
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，這會使 Python 無法解析循環的開始。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print(\"Infinite loop\")",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在條件語句 while True 後面缺少一個冒號，導致 Python 無法識別這是一個複合語句。\n修正建議: 在 True 後面添加一個冒號，使語句結構完整。\n修正後: while True:\n    print(\"Infinite loop\")"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Hello World')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，導致 Python 無法解析該語句。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True print('Hello, world!')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 循環的條件判斷後缺少冒號，使得程式無法正常解析這一語法結構。\n修正建議: 在 True 後面添加冒號。\n修正後: while True:\n    print('Hello, world!')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Running')",
+        "output": {
+            "準確性": "語法錯誤: while 語句缺少冒號。",
+            "詳細性": "在 while 條件語句後缺少冒號，這會導致 Python 無法識別該段程式碼的開始點。",
+            "修正建議": "在 True 後面添加一個冒號以確保程式碼正確執行。",
+            "修正後": "while True:\n    print('Running')"
+        }
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True print('Hello, World!')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，這將導致 Python 編譯器無法正確解析循環體。\n修正建議: 在 True 後面添加一個冒號以指示循環體的開始。\n修正後: while True:\n    print('Hello, World!')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，導致 Python 無法識別這是一個迴圈語句。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Running')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，Python 無法理解爲何執行循環。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def calculate_area(radius):\n    pi = 3.14159\n    area = pi * radius ** 2\n    return area\n\nprint(calculate_area(5",
+        "output": "語法錯誤: 函數調用缺少閉括號。\n詳細描述: 在調用 calculate_area 函數時，缺少右括號以閉合函數參數。\n修正建議: 在數字 5 後面添加一個閉括號。\n修正後: print(calculate_area(5))"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Infinite loop')",
+        "output": {
+            "語法錯誤": "while 語句缺少冒號。",
+            "詳細描述": "在 while 條件語句後缺少冒號，導致程式無法正常解析該區塊。",
+            "修正建議": "在 True 後面添加一個冒號。",
+            "修正後": "while True:\n    print('Infinite loop')"
+        }
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('This will loop forever')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，導致 Python 無法正確解析這段程式碼。\n修正建議: 在 while True 後面添加一個冒號。\n修正後: while True:\n    print('This will loop forever')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Running')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，導致 Python 無法判斷哪部分是 while 循環的主體。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:\n    print('Running')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def calculate_area(radius):\n    area = 3.14 * radius * radius\n    print('The area is: ' + area)",
+        "output": "語法錯誤: 字符串和數字的拼接錯誤。\n詳細描述: 在 print 語句中，'The area is: ' 是字符串，而 area 是浮點數，不能直接拼接。\n修正建議: 將 area 轉換為字符串，或使用格式化字串方法。\n修正後: print('The area is: ' + str(area)) 或 print(f'The area is: {area}')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Running')",
+        "output": {
+            "語法錯誤": "while 語句缺少冒號。",
+            "詳細描述": "在 while 條件後應該有一個冒號來標示程式區塊的開始。在 Python 語法中，控制流語句 (如 while) 後面必須有冒號。",
+            "修正建議": "在 True 後面添加一個冒號。",
+            "修正後": "while True:\n    print('Running')"
+        }
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True print('Looping')",
+        "output": {
+            "準確性": "檢測到語法錯誤: while 語句缺少冒號。",
+            "詳細性": "在 while 條件語句後缺少冒號，這導致 Python 無法正確解析這段代碼。",
+            "修正建議": "在 True 後面添加一個冒號以正確結束條件語句。",
+            "修正後": "while True:\n    print('Looping')"
+        }
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True print('Hello, World!')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後應該有一個冒號來標示循環主體的開始。\n修正建議: 在 True 後面添加一個冒號，不然 Python 會不知道這是一個完整的複合敘述。\n修正後: while True:\n    print('Hello, World!')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Running...')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，導致 Python 無法理解該語句並執行循環。\n修正建議: 在 while True 後面添加一個冒號。\n修正後: while True:\n    print('Running...')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句 'True' 後面缺少一個冒號，這是 Python 語法的要求。\n修正建議: 在 'True' 後面添加一個冒號。\n修正後: while True:\n    print('Looping')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Infinite loop')",
+        "output": {
+            "語法錯誤": "while 語句缺少冒號。",
+            "詳細描述": "在 while 條件語句後缺少冒號，這會導致語法解析錯誤。",
+            "修正建議": "在 True 後面添加一個冒號。",
+            "修正後": "while True:\n    print('Infinite loop')"
+        }
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Infinite loop')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，這會導致 Python 無法識別循環的起始位置。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:\n    print('Infinite loop')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def multiply(a, b):\n    result = a * b\n    print('The result is: ' + result)\n\nmultiply(3, 4)",
+        "output": "語法錯誤: 使用了不正確的類型進行字符串連接。\n詳細描述: 在 print 函數內，試圖將數字變量 result 直接與字符串連接，這將導致 TypeError。\n修正建議: 將 result 轉換為字符串後再進行連接。\n修正後: print('The result is: ' + str(result))"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n  print('Infinite loop')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，導致語法錯誤。\n修正建議: 在 while True 後面添加一個冒號。\n修正後: while True:\n  print('Infinite loop')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "my_list = 1, 2, 3\nprint(my_list)",
+        "output": "語法錯誤: 列表定義缺少閉括號。\n詳細描述: 在定義列表 my_list 時，缺少了一個右方括號關閉列表。\n修正建議: 在數字 3 後面添加一個閉括號。\n修正後: my_list = 1, 2, 3]\nprint(my_list)"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，這會導致 Python 無法辨識這段程式碼。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('This will run forever')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，使得 Python 無法解析該語句。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:\n    print('This will run forever')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Loop forever')",
+        "output": {
+            "準確性": "語法錯誤: while 語句缺少冒號。",
+            "詳細性": "在 while 條件語句的結尾必須要有一個冒號。",
+            "修正建議": "在 True 後面添加一個冒號。",
+            "修正後": "while True:\n    print('Loop forever')"
+        }
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Hello World')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後沒有冒號，Python 無法理解這個循環結構。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:\n    print('Hello World')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while (True  print('Running...')",
+        "output": "語法錯誤: while 語句缺少閉括號和冒號。\n詳細描述: 在 while 條件語句中，缺少右括號，同時缺少語句結束的冒號。\n修正建議: 在 True 後添加一個閉括號並在条件語句後添加一個冒號。\n修正後: while (True):"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Running...')",
+        "output": {
+            "語法錯誤": "while 語句缺少冒號。",
+            "詳細描述": "在 while 條件語句後缺少冒號，導致語法錯誤。",
+            "修正建議": "在 True 後面添加一個冒號。",
+            "修正後": "while True:\n    print('Running...')"
+        }
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping...')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，Python 無法識別該語句為複合敘述。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Infinite loop')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，這導致程序無法正確識別循環體。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Infinite loop')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句 'while True' 後缺少必要的冒號，這樣 Python 無法辨識它為一個完整的語法結構。\n修正建議: 在 'while True' 後面添加一個冒號。\n修正後: while True:\n    print('Infinite loop')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True print('Infinite loop')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，這會導致 Python 語法無法識別此循環結構。\n修正建議: 在 True 後面添加一個冒號，標示這段 while 語句的主體。\n修正後: while True:\n    print('Infinite loop')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Running...')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，這使得該程式碼無法正常執行。\n修正建議: 在 True 後面添加一個冒號，使得語法正確。\n修正後: while True:\n    print('Running...')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Running...')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，使得 Python 無法識別這是一個迴圈結構。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:\n    print('Running...')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping')",
+        "output": {
+            "error": "語法錯誤: while 語句缺少冒號。",
+            "description": "在 while 條件語句後缺少冒號，Python 無法解析此語句並進行執行。",
+            "suggestion": "在 True 後面添加一個冒號。",
+            "corrected_code": "while True:\n    print('Looping')"
+        }
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Hello, world!')",
+        "output": {
+            "語法錯誤": "while 語句缺少冒號。",
+            "詳細描述": "在 while 條件語句後缺少必要的冒號，導致語法錯誤。",
+            "修正建議": "在 True 後面添加一個冒號，使其成為合法的 while 語句。",
+            "修正後": "while True:\n    print('Hello, world!')"
+        }
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Running')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，使得 Python 無法識別這是一個迴圈。\n修正建議: 在 True 後面添加一個冒號 (:)。\n修正後: while True:\n    print('Running')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def divide(a, b):\n    if b != 0:\n        return a / b\n    else:\n        return 'Division by zero'\n\nresult = divide(10, 0",
+        "output": "語法錯誤: 函數調用缺少閉括號。\n詳細描述: 在調用 divide 函數時，缺少右括號。同時在 else 語句的返回值應該是數字0，而不是字串。最後，函數的返回值型態應該保持一致。\n修正建議: 在數字 0 後面添加一個閉括號，並修正 else 語句中的返回值。\n修正後: result = divide(10, 0)\n         else:\n             return 0"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Running...')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後，應添加一個冒號以符合 Python 的語法規則。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:\n    print('Running...')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Running loop')",
+        "output": {
+            "準確性": "語法錯誤: while 語句缺少冒號。",
+            "詳細性": "在 while 條件語句後缺少冒號。Python 使用冒號來表示複合語句的開始，因此缺少冒號會導致語法錯誤，程序無法正確解析這一行。",
+            "修正建議": "在 True 後面添加一個冒號。",
+            "修正後": "while True:\n    print('Running loop')"
+        }
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後面需要添加冒號來表示循環體的開始。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:\n    print('Looping')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Hello World')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，這會導致 Python 無法識別該條件語句。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:\n    print('Hello World')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping...')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，這會導致 Python 無法識別循環的起始位置。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Loop forever')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，導致語法錯誤。\n修正建議: 在 True 後面添加一個冒號，使程式碼符合 Python 的語法規則。\n修正後: while True:\n    print('Loop forever')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Infinite loop')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，這會導致 Python 無法辨識這是一個複合語句。\n修正建議: 在 True 條件後面添加一個冒號來修正這個問題。\n修正後: while True:\n    print('Infinite loop')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def divide(a, b):\n    if b == 0\n        return 'Division by zero is not allowed'\n    return a / b\n\nprint(divide(10, 0))",
+        "output": "語法錯誤: if 語句缺少冒號。\n詳細描述: 在 if 條件語句後缺少冒號，導致 Python 無法正確解析該語句。\n修正建議: 在 if b == 0 後面加上冒號。\n修正後: if b == 0:"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True print('Looping')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，導致語法錯誤。\n修正建議: 在 True 後面添加一個冒號，以正確格式寫出 while 語句。\n修正後: while True:\n    print('Looping')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Infinite loop')",
+        "output": {
+            "準確性": "語法錯誤: while 語句缺少冒號。",
+            "詳細性": "在 while 條件語句後缺少冒號，這使得 Python 無法辨識這是一個複合語句。",
+            "修正建議": "在 while True 後面添加一個冒號。",
+            "修正後": "while True:\n    print('Infinite loop')"
+        }
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Running')",
+        "output": {
+            "準確性": "語法錯誤: while 語句缺少冒號。",
+            "詳細性": "在 while 條件語句 (while True) 後，缺少必要的冒號 ':'。這會導致 Python 無法正確解析該行語句。",
+            "修正建議": "在 'while True' 後面添加一個冒號 ': '。",
+            "修正後": "while True:\n    print('Running')"
+        }
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping')",
+        "output": {
+            "準確性": "語法錯誤: while 語句缺少冒號。",
+            "詳細性": "在 while 條件語句後缺少冒號，導致 Python 無法正確識別這是一個複合語句。",
+            "修正建議": "在 True 後面添加一個冒號，以使 Python 能夠正確解析這段語句。",
+            "修正後": "while True:\n    print('Looping')"
+        }
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，這導致 Python 無法識別該語句為有效的循環結構。\n修正建議: 在 True 後面添加一個冒號，使得 while 語句正確結束。\n修正後: while True:\n    print('Looping')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while true\n    print('Running...')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，這會導致 Python 無法解析該語句。\n修正建議: 在 true 後面添加一個冒號。\n修正後: while true:\n    print('Running...')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Loop forever')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，導致語法錯誤。\n修正建議: 在 True 後面添加一個冒號使語法正確。\n修正後: while True:\n    print('Loop forever')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('This is an infinite loop')\n    break",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後面缺少冒號，導致 Python 無法辨識這是迴圈起始。\n修正建議: 在 True 條件後面添加一個冒號並且確保每個縮進層級一致。\n修正後: while True:\n    print('This is an infinite loop')\n    break"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True print('Running...')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少必要的冒號，這會導致語法解析錯誤。\n修正建議: 在條件 True 後面添加一個冒號。\n修正後: while True:\n    print('Running...')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while x < 10\n    x += 1",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號。\n修正建議: 在 x < 10 後面添加一個冒號，並確保增加縮排來表示循環塊。\n修正後: while x < 10:\n    x += 1"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Running')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，這會導致 Python 無法正確解析循環結構。\n修正建議: 在 while True 後面添加一個冒號來結束條件語句。\n修正後: while True:\n    print('Running')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後缺少冒號，使得 Python 無法識別這個循環語句。\n修正建議: 在 True 後面添加一個冒號以正確構成 while 循環。\n修正後: while True:"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True\n    print('Looping')",
+        "output": "語法錯誤: while 語句缺少冒號。\n詳細描述: 在 while 條件語句後應該有一個冒號，以表示這是一個塊狀語句的開始。\n修正建議: 在 True 後面添加一個冒號。\n修正後: while True:"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎？",
+        "input": "name = 'John'\nprint('Hello, ' + name + '!')",
+        "output": "語法錯誤: 字符串引號不匹配。\n詳細描述: 字符串 'Hello, ' + name + '!' 缺少結尾引號。\n修正建議: 在字符串結尾處添加一個閉合引號。\n修正後: print('Hello, ' + name + '!')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' + name\n\ngreet('World)",
+        "output": "語法錯誤: 字符串引號不匹配。\n詳細描述: 在定義 greet 函數時，字符串 'Hello, ' + name 缺少結束引號。\n修正建議: 在 name 的結尾處添加一個閉合引號。\n修正後: print('Hello, ' + name + \"')"
+    },
+    {
+        "instruction": "這個程式碼有什麼語法錯誤？",
+        "input": "def greet(name)\n    print(\"Hello, \" + name)\n\ngreet(\"World\")",
+        "output": "**語法錯誤：函式定義缺少冒號**\n**詳細描述：**在 def greet(name) 之後缺少冒號。\n**修正建議：**在 def greet(name) 之後添加一個冒號。\n**修正後：**\ndef greet(name):\n    print(\"Hello, \" + name)\n\ngreet(\"World\")"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "if x > 10 :\n    print('x is greater than 10')",
+        "output": "語法錯誤: if 語句缺少冒號。\n詳細描述: 在 if 條件語句後缺少冒號。\n修正建議: 在 x > 10 後面添加一個冒號。\n修正後: if x > 10:"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎？",
+        "input": "def greet(name\n    print('Hello, ' + name)",
+        "output": "語法錯誤: 函數定義缺少冒號。\n詳細描述: 在函數定義 greet 後缺少冒號。\n修正建議: 在 greet(name 後面添加一個冒號。\n修正後: def greet(name):"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def add(a, b:\n    return a + b\n\nresult = add(1, 2)",
+        "output": "語法錯誤: 函數定義中的參數缺少逗號。\n詳細描述: 參數 b 的定義缺少逗號，將其與參數 a 分隔開來。\n修正建議: 在參數 b 之前添加一個逗號。\n修正後: def add(a, b,):"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name:\n    print('Hello, ' + name)\n\ngreet('World)",
+        "output": "語法錯誤: 函數定義缺少冒號。\n詳細描述: 在函數 greet 的定義中，缺少必要的冒號。\n修正建議: 在 greet(name: 後面添加一個冒號。\n修正後: def greet(name:):"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' + name)\n\ngreet('World",
+        "output": "語法錯誤: 字符串引號不匹配。\n詳細描述: 在調用 greet 函數時，字符串 'World' 缺少結束引號。\n修正建議: 在 'World' 的結尾處添加一個閉合引號。\n修正後: greet('World')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "print('Hello, ' + world)",
+        "output": "語法錯誤: 缺少變數名稱。\n詳細描述: 'world' 未定義為變數。\n修正建議: 在 'world' 前面定義一個變數名稱。\n修正後: print('Hello, ' + str(world))"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' + name)\n\ngreet('World",
+        "output": "語法錯誤: 缺少閉合引號\n詳細描述: 在調用 greet 函數時，缺少閉合引號來結束字符串 'World'。\n修正建議: 在 'World' 後面添加閉合引號。\n修正後: greet('World')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' + name)",
+        "output": "語法錯誤: 函數定義缺少冒號。\n詳細描述: 在 greet 函數定義的最後一行缺少冒號。\n修正建議: 在 'Hello, ' + name' 後面添加一個冒號。\n修正後: def greet(name):\n    print('Hello, ' + name')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "print('Hello, World!)",
+        "output": "語法錯誤: 字符串引號不匹配。\n詳細描述: 字符串 'Hello, World!' 缺少閉合引號。\n修正建議: 在 '!' 後面添加一個閉合引號。\n修正後: print('Hello, World!')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name\n    print('Hello, ' + name)",
+        "output": "語法錯誤: 函數定義缺少冒號。\n詳細描述: 在函數定義 greet(name 後面缺少冒號。\n修正建議: 在 name 後面添加一個冒號。\n修正後: def greet(name:):"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def sum(a, b):\n    print(a + b",
+        "output": "語法錯誤: 函數定義缺少閉括號\n詳細描述: 在打印語句後缺少右括號\n修正建議: 在 print(a + b) 後面添加一個閉括號\n修正後: def sum(a, b):\n    print(a + b)"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' + name)",
+        "output": "語法錯誤: 函數定義缺少冒號。\n詳細描述: 在定義 greet 函數時缺少冒號。\n修正建議: 在 greet(name) 後面添加一個冒號。\n修正後: def greet(name):"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' + name)\n\ngreet('World",
+        "output": "語法錯誤: 字符串引號不匹配。\n詳細描述: 在 greet 函數調用時，字符串 'World' 缺少閉合引號。\n修正建議: 在字符串 'World' 後面添加閉合引號。\n修正後: greet('World')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' + name\n\ngreet('World')",
+        "output": "語法錯誤: 字符串引號不匹配。\n詳細描述: 在 print 語句中，字符串 'Hello, ' + name' 缺少結束引號。\n修正建議: 在 name 的結尾處添加一個閉合引號。\n修正後: print('Hello, ' + name')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name:\n    print('Hello, ' + name)\n\ngreet('World')",
+        "output": "語法錯誤: 函數定義缺少冒號。\n詳細描述: 在 greet 函數定義的第一行缺少冒號。\n修正建議: 在 greet(name: 後面添加一個冒號。\n修正後: def greet(name):"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n print('Hello, ' + name)\n\ngreet('World)",
+        "output": "**語法錯誤**: 缺少冒號。\n**詳細描述**: greet 函數定義後缺少冒號，導致 Python 無法識別函數主體。\n**修正建議**: 在 print 函數之前添加一個冒號，以定義函數主體。\n**修改後的程式碼**: def greet(name):\n    print('Hello, ' + name)\n\ngreet('World')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題",
+        "input": "if 5 > 3:\n    print('5 is greater than 3')\n    print('5 is greater than 2')",
+        "output": "語法錯誤: if 語句中缺少冒號。\n詳細描述: 在 if 條件語句後缺少冒號。\n修正建議: 在 5 > 3 後面添加一個冒號。\n修正後: if 5 > 3:"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' + name)\n\ngreet('World",
+        "output": "語法錯誤: 字符串引號不匹配\n詳細描述: 在調用 greet 函數時，字符串『World』缺少結束引號\n修正建議: 在『World』的結尾處添加一個閉合引號\n修正後: greet('World')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def my_function(a, b):\n    return a + b\n\nmy_function(1, 2",
+        "output": "語法錯誤: 函數調用缺少閉括號。\n詳細描述: 在調用 my_function 函數時，缺少右括號。\n修正建議: 在數字 2 後面添加一個閉合括號。\n修正後: my_function(1, 2)"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "if a > 10:\n    print('a is greater than 10')\nelse:\n    print('a is not greater than 10')\n\na = '11'",
+        "output": "語法錯誤: 缺少冒號 (':')。\n詳細描述: 在 'if' 和 'else' 敘述後都缺少冒號，導致 Python 無法正確地執行條件式和敘述塊。\n修正建議: 在 'if' 和 'else' 敘述後添加冒號。\n修正後: \nif a > 10:\n    print('a is greater than 10')\nelse:\n    print('a is not greater than 10')\na = '11'"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name, : \n    print('Hello, ' + name) \n\ngreet('World')",
+        "output": "語法錯誤: 函數定義缺少冒號。\n詳細描述: 在函數 greet 的定義中，缺少冒號。\n修正建議: 在 greet(name, 後面添加一個冒號。\n修正後: def greet(name):"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name\n    print('Hello, ' + name)",
+        "output": "語法錯誤: 函數定義缺少冒號\n詳細描述: 在 def greet(name 後面缺少一個冒號，表示函數定義的開始。\n修正建議: 在 def greet(name 後面添加一個冒號\n修正後: def greet(name):"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet\n    print('Hello, World')",
+        "output": "語法錯誤: 函數定義缺少冒號。\n詳細描述: 在 def greet 後面缺少冒號。\n修正建議: 在 def greet 後面添加一個冒號。\n修正後: def greet:"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "for i in range(10\n    print(i)",
+        "output": "語法錯誤：for 循環缺少冒號。\n詳細描述：在 for 循環語句後缺少冒號。\n修正建議：在 range(10) 後面添加一個冒號。\n修正後：for i in range(10):"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ') + name\n\ngreet('World)",
+        "output": "語法錯誤: 調用函數時缺少參數。\n詳細描述: 在調用 greet 函數時，缺少必要的參數 name。\n修正建議: 在 greet('World') 中添加參數 name。\n修正後: greet('World', name)"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "print('Hello, ' name)",
+        "output": "語法錯誤: 缺少引號前的變數名稱。\n詳細描述: 在字符串 'Hello, ' 之後，缺少變數名稱引用的引號。\n修正建議: 在 name 之前添加引號。\n修正後: print('Hello, ' + name)"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def add(a, b):\n    return a+b\n\nresult = add(1, 2)",
+        "output": "語法錯誤: 在 return 語句中遺漏了冒號。\n詳細描述: 在 return 語句中，運算式 a+b 之後缺少冒號。\n修正建議: 在 a+b 之後添加一個冒號，如下所示:\n\n```\ndef add(a, b):\n    return a + b\n\nresult = add(1, 2)\n```"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' + name)\n\ngreet('World",
+        "output": "語法錯誤：字符串引號不匹配。\n詳細描述：在調用 greet 函數時，字符串 'World' 缺少結束引號。\n建議修正：在 'World' 的結尾處添加一個閉合引號。\n修正後：greet('World')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "name = input('請輸入你的名字：')\nprint('嗨， ' + name)",
+        "output": "語法錯誤：輸入函數缺少閉括號。\n詳細描述：在輸入函數號後缺少閉括號。\n修正建議：在 '請輸入你的名字：' 後面添加一個閉括號。\n修正後：name = input('請輸入你的名字：')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "a = 5\nb = 10\nprint(a + b\n",
+        "output": "語法錯誤: 字符串引號不匹配。\n詳細描述: 在 print 函數後缺少閉合引號。\n修正建議: 在 print(a + b 後面添加一個閉合引號。\n修正後: print(a + b)"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name\n    print('Hello, ' + name)",
+        "output": "語法錯誤: 函數定義缺少冒號。\n詳細描述: 在 def greet(name 後面缺少冒號。\n修正建議: 在 name 後面添加一個冒號。\n修正後: def greet(name):"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' + name)\n\ngreet('World",
+        "output": "語法錯誤: 字符串引號不匹配。\n詳細描述: 在 greet 函數調用時，字符串 'World' 缺少結束引號。\n修正建議: 在 'World' 的結尾處添加一個閉合引號。\n修正後: greet('World')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎？",
+        "input": "def greet(name: str) -> str:\n    print('Hello, ' + name)\n\ngreet('World)\n",
+        "output": "語法錯誤：缺少閉合引號。\n詳細描述：調用 greet 函式時，字串 'World' 缺少閉合引號。\n修正建議：在 'World' 的結尾處添加一個閉合引號。\n修正後：greet('World')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎？",
+        "input": "def greet(name):\n    print('Hello, ' + name\n\ngreet('World')",
+        "output": "語法錯誤：缺少閉合引號。\n詳細描述：在調用 greet 函數時，缺少閉合引號來結束字符串文字 'World'。\n修正建議：在 'World' 結尾處添加一個閉合引號。\n修正後：greet('World')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' + name\n\ngreet('World)",
+        "output": "語法錯誤: 字符串引號不匹配。\n詳細描述: 在定義 greet 函數時，缺少閉合單引號。\n修正建議: 在 'Hello, ' + name 的結尾處添加一個閉合單引號。\n修正後: def greet(name):\n    print('Hello, ' + name)"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name)\n    print('Hello, ' + name)",
+        "output": "語法錯誤: 函數定義缺少冒號。\n詳細描述: 在函數名 greet 和函數體之間缺少冒號。\n修正建議: 在 greet(name) 後面添加一個冒號。\n修正後: def greet(name):"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name: str) -> str:\n    print('Hello, ' + name)\n\ngreet('World",
+        "output": "語法錯誤: 字符串引號不匹配。\n詳細描述: 在調用 greet函數時，字符串 'World' 缺少結束引號。\n修正建議: 在 'World' 的結尾處添加一個閉合引號。\n修正後: greet('World')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎?",
+        "input": "def greet(name):\n    print('Hello, ' + name)",
+        "output": "語法錯誤: 函數缺少閉括號。\n詳細描述: greet 函數定義中缺少右括號。\n修正建議: 在 name 後面添加一個閉括號。\n修正後: def greet(name):\n    print('Hello, ' + name)"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n print('Hello, ' + name)",
+        "output": "語法錯誤: 函數定義缺少冒號。\n詳細描述: 在 def greet(name) 之後缺少一個冒號，指示函數體的開始。\n修正建議: 在 def greet(name) 之後添加一個冒號。\n修正後: def greet(name):"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n print('Hello, ' + name)\n\ngreet('World')",
+        "output": "語法錯誤: 函數定義缺少冒號。\n詳細描述: 在 greet 函數定義的 print 語句前面缺少冒號。\n修正建議: 在 print 語句前面添加一個冒號。\n修正後:\n\ndef greet(name):\n    print('Hello, ' + name)\n\ngreet('World')"
+    },
+    {
+        "instruction": "請找出語法錯誤。",
+        "input": "print('Hello, world",
+        "output": "語法錯誤: 字符串引號不匹配。\n詳細描述: 字符串 'Hello, world' 缺少閉合引號。\n修正建議: 在 'world' 的結尾處添加一個閉合引號。\n修正後: print('Hello, world')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "print(Hello world!\n",
+        "output": "語法錯誤: 字符串引號不匹配。\n詳細描述: 字符串 'Hello world!' 缺少結束引號。\n修正建議: 在 'world!' 的結尾處添加一個閉合引號。\n修正後: print('Hello world!')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎?",
+        "input": "def greet(name):\n    print('Hello, ' + name)\n\ngreet('World')",
+        "output": "語法錯誤: 字符串引號不匹配。\n詳細描述: 在調用 greet 函數時，字符串 'World' 缺少結束引號。\n修正建議: 在 'World' 的結尾處添加一個閉合引號。\n修正後: greet('World')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "if x > 0:\n    print('x is greater than 0')",
+        "output": "語法錯誤: 缺少冒號。\n詳細描述: if 語句缺少冒號。\n修正建議: 在 'x > 0' 後面添加一個冒號。\n修正後: if x > 0:"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎?",
+        "input": "def greet(name):\n    print('Hello, ' + name\ngreet('World')",
+        "output": "語法錯誤: 字符串引號不匹配。\n詳細描述: 在 greet 函數定義中，字符串 'Hello, ' + name 缺少閉合引號。\n修正建議: 在 name 之後添加一個閉合引號。\n修正後: print('Hello, ' + name)"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' + name)\n\ngreet(World)",
+        "output": "語法錯誤: 函數調用缺少括號。\n詳細描述: 在調用 greet 函數時，缺少括號。\n修正建議: 在 World 後面添加一對括號。\n修正後: greet(World)"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name:\n    print('Hello, ' + name)",
+        "output": "語法錯誤: 函數定義缺少冒號。\n詳細描述: 在函數定義語句 greet(name: 後面缺少一個冒號。\n修正建議: 在 name: 後面添加一個冒號。\n修正後: def greet(name:)"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "if 5 > 3:\n  print('5 is greater than 3')",
+        "output": "語法錯誤: if 敘述塊缺少縮進。\n詳細描述: if 敘述塊中的 print 敘述沒有縮進。\n修正建議: 將 print 敘述縮進一個 tab 或兩個空格。\n修正後: if 5 > 3:\n    print('5 is greater than 3')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' +name)\n\ngreet('World')",
+        "output": "語法錯誤: 缺少右括號\n詳細描述: 在 def greet(name) 的定義後缺少右括號\n修正建議: 在 name 後面加上右括號 )"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' name)\n\ngreet('World)",
+        "output": "語法錯誤: 字符串引號不匹配。\n詳細描述: 在函數調用 greet 時，字符串 'World' 缺少起始引號。\n修正建議: 在 'World' 的頭部添加一個開始引號。\n修正後: greet('World')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' + name)",
+        "output": "語法錯誤: 函數定義缺少冒號。\n詳細描述: 在 def greet(name) 後缺少冒號。\n修正建議: 在 greet(name) 後添加一個冒號。\n修正後: def greet(name):"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet_world():\n    print('Hello, world!')\ndef greet_world():\n    print('Hello, world!')",
+        "output": "語法錯誤: 函數重複定義。\n詳細描述: 函數 greet_world() 被定義了兩次。在 Python 中，函數只能定義一次。\n修正建議: 刪除其中一個 greet_world() 定義。\n修正後: def greet_world():\n    print('Hello, world!')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' + name +\n\ngreet('World)",
+        "output": "語法錯誤: 缺少閉合引號。\n詳細描述: 在 greet 函數定義中，缺少一個閉合的單引號。\n修正建議: 在 name 後面添加一個單引號。\n修正後: greet('World')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' + name)\n\ngreet('World",
+        "output": "語法錯誤: 字符串引號不匹配。\n詳細描述: 在調用 greet 函數時，字符串 'World' 缺少結束引號。\n修正建議: 在 'World' 的結尾處添加一個閉合引號。\n修正後: greet('World')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' + name\n\ngreet('World)",
+        "output": "語法錯誤: 缺少閉合引號。\n詳細描述: 在 print 語句中，字符串 'Hello, ' + name 缺少閉合引號。\n修正建議: 在 'name' 的結尾處添加一個閉合引號。\n修正後: print('Hello, ' + name + \"')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' + name)\n\ngreet('World",
+        "output": "語法錯誤: 字符串引號不匹配。\n詳細描述: greet 函數中，字符串 'World' 缺少閉合引號。\n修正建議: 在 'World' 後面添加閉合引號。\n修正後程式碼: def greet(name):\n    print('Hello, ' + name)\n\ngreet('World')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name)\n    print('Hello, ' + name)",
+        "output": "語法錯誤: 函數缺少冒號。\n詳細描述: 在 greet 函數定義後缺少冒號。\n修正建議: 在 greet(name) 後面添加一個冒號。\n修正後: def greet(name):"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "a = 1\nb = 2\nprint(a + b\n",
+        "output": "語法錯誤: 字符串引號不匹配。\n詳細描述: 在 print 語句後缺少閉合引號。\n修正建議: 在 print(a + b 後面添加一個閉合引號。\n修正後: print(a + b)"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name:\n    print('Hello, ' + name)",
+        "output": "語法錯誤: 函數定義缺少冒號。\n詳細描述: 在函數 greet 的定義中，缺少冒號。\n修正建議: 在 name 後面添加一個冒號。\n修正後: def greet(name):"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' + name)",
+        "output": "語法錯誤: 函數定義缺少冒號。\n詳細描述: 在函數定義的 def 語句後缺少冒號。\n修正建議: 在 def greet(name) 後面添加一個冒號。\n修正後: def greet(name):"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' + name)\n\ngreet('World",
+        "output": "語法錯誤: 字符串引號不匹配。\n詳細描述: 在調用 greet 函數時，字符串 'World' 缺少結束引號。\n修正建議: 在 'World' 的結尾處添加一個閉合引號。\n修正後: greet('World')"
+    },
+    {
+        "instruction": "這段 Python 程式碼有什麼錯誤？",
+        "input": "def greet(name) :\n    print('Hello, ' + name)",
+        "output": "語法錯誤: 函數定義缺少冒號。\n詳細描述: 在函數定義 greet(name) 後面缺少冒號。\n修正建議: 在 name 後面添加一個冒號。\n修正後: def greet(name):"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' + name)\n\ngreet('World)",
+        "output": "語法錯誤: 缺少閉合引號。\n詳細描述: 在調用 greet 函數時，字符串 'World' 缺少閉合引號。\n修正建議: 在 'World' 的結尾處添加一個閉合引號。\n修正後: greet('World')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name)::\n    print('Hello, ' + name)",
+        "output": "語法錯誤: 函數定義錯誤。\n詳細描述: 函數定義中多了一個冒號。\n修正建議: 移除多餘的冒號。\n修正後: def greet(name):\n    print('Hello, ' + name)"
+    },
+    {
+        "instruction": "找出這段程式碼的語法錯誤",
+        "input": "def greet_multiple(names):\n    for name in names:\n        print('Hello, ' + name)\n\ngreet('Alice', 'Bob')",
+        "output": "語法錯誤: 錯誤的函數調用。\n詳細描述: 在調用 greet_multiple 函數時，缺少方括號來傳入 names 列表。\n修正建議: 在 greet_multiple 函數名稱後添加方括號並傳入 names 列表。\n修正後: greet_multiple('Alice', 'Bob'])"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎？",
+        "input": "for i in 1, 2, 3]:\n    if i > 2\n        print(i)",
+        "output": "語法錯誤: if 語句缺少冒號。\n詳細描述: 在 if 條件語句後缺少冒號。\n修正建議: 在 i > 2 後面添加一個冒號。\n修正後: for i in 1, 2, 3]:\n    if i > 2:"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "print('Hello world')",
+        "output": "語法錯誤: 缺少必要的引號。\n詳細描述: 字符串 'Hello world' 未用引號括起來。\n修正建議: 在 'Hello world' 的前後加上單引號或雙引號。\n修正後: print('Hello world')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def add(a, b)\n    return a + b\n\nresult = add(1, 2\n",
+        "output": "語法錯誤: 缺少函數調用的右括號\n詳細描述: 在調用 add 函數時，缺少右括號。\n修正建議: 在數字 2 後添加一個右括號。\n修正後: result = add(1, 2)"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎?",
+        "input": "x = 5\ny = 10\nprint(x y)",
+        "output": "語法錯誤: 缺少運算符。\n詳細描述: 在 x 和 y 之間缺少運算符，導致無法執行數學運算。\n修正建議: 在 x 和 y 之間插入運算符，例如 +、-、* 或 /，具體取決於您要執行的運算。\n修正後: print(x + y)"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "import math\n\n# calculate the area of a circle\narea = math.pi * radius\n\n# print the area\nprint(area)",
+        "output": "語法錯誤: 缺少變數 radius 的定義。\n詳細描述: 在計算圓面積時，缺少了 radius 變數的定義。\n修正建議: 在計算面積之前，定義 radius 變數。\n修正後:\nimport math\n\n# Define the radius of the circle\nradius = 5\n\n# calculate the area of a circle\narea = math.pi * radius\n\n# print the area\nprint(area)"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    return 'Hello, ' + nam",
+        "output": "語法錯誤: 缺少字符串引號。\n詳細描述: 在調用 greet 函數時，字符串 'nam' 缺少結束引號。\n修正建議: 在 'nam' 的結尾處添加一個閉合引號。\n修正後: greet('nam')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "if x = 5:\n    print('x is 5')",
+        "output": "語法錯誤: 賦值語句中使用錯誤的運算符。\n詳細描述: 在賦值語句中，使用等號(=)進行比較，而不是賦值(==)。\n修正建議: 將等號(=)替換為雙等號(==)，以進行比較。\n修正後: if x == 5:"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name, age)\n    print('Hello, ' + name + ', you are ' + str(age))",
+        "output": "語法錯誤: 字符串連接不兼容。\n詳細描述: 在字符串 'Hello, ' + name + ', you are ' + str(age)' 中，無法將字符串與整數相加。\n修正建議: 將 age 轉換為字符串，或將字符串連接到整數後面，而非添加。\n修正後: print('Hello, ' + name + ', you are ' + str(age)) 或 print('Hello, ' + name + ', you are ' + age)"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "print('Hello, world')\nprint(Hello, world')",
+        "output": "語法錯誤: 缺少引號配對。\n詳細描述: 第二行中 'Hello, world' 缺少開頭的引號。\n修正建議: 在 'Hello, world' 前面添加一個開頭引號。\n修正後: print('Hello, world')\nprint('Hello, world')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' + name)\n\ngreet('World')",
+        "output": "語法錯誤: 字符串引號不匹配。\n詳細描述: 調用 greet 函數時，字符串 'World' 缺少閉合引號。\n修正建議: 在 'World' 的結尾處添加一個閉合引號。\n修正後: greet('World')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "print('Hello, ' + name)\ngreet('World)",
+        "output": "語法錯誤: 使用未定義變數。\n詳細描述: 在 greet('World') 函數調用中，'name' 變數在當前範圍內未定義。\n修正建議: 定義 'name' 變數並賦予適當的值，或修改函數調用以正確傳遞變數。"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "print('Hello, ' + 'World')",
+        "output": "語法錯誤: 字符串連接需要使用 '+' 號。\n詳細描述: 在連接 'Hello, ' 和 'World' 兩個字符串時，缺少 '+' 號。\n修正建議: 在 'Hello, ' 和 'World' 之間添加 '+' 號。\n修正後: print('Hello, ' + 'World')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "print('Hello World!)",
+        "output": "語法錯誤: 字符串引號不匹配。\n詳細描述: 字符串 'Hello World!' 缺少閉合引號。\n修正建議: 在 '!' 之後添加一個閉合引號。\n修正後: print('Hello World!')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題?",
+        "input": "if x > 5:\n    print('x is greater than 5')",
+        "output": "語法錯誤: 條件式後缺少冒號。\n詳細描述: 在條件式 x > 5 之後缺少冒號。\n修正建議: 在 x > 5 之後加上冒號。\n修正後: if x > 5:"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' + name)",
+        "output": "語法錯誤: 函數定義缺少結尾冒號。\n詳細描述: 在 print 敘述後缺少冒號，表示函數定義尚未完成。\n修正建議: 在 print 敘述後添加一個冒號。\n修正後: def greet(name):\n    print('Hello, ' + name):"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' + name)",
+        "output": "語法錯誤: 函數缺少閉括號。\n詳細描述: greet 函數定義缺少右括號。\n修正建議: 在 name 後面添加一個閉括號。\n修正後: def greet(name):\n    print('Hello, ' + name)"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name, age):\n    print(f'Hello, {name}, you are {age} years old.')\n\ngreet('John')",
+        "output": "語法錯誤: 函數調用參數數量不匹配。\n詳細描述: 在 greet 函數調用時，只傳遞了一個參數，而函數定義中需要兩個參數。\n修正建議: 在 greet 函數調用中傳遞第二個參數，表示年齡。\n修正後: greet('John', 30)"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' + name)\n\ngreet('World\n",
+        "output": "語法錯誤: 字符串引號不匹配。\n詳細描述: 在調用 greet 函數時，字符串 'World' 缺少閉合引號。\n修正建議: 在 'World' 的結尾處添加一個閉合引號。\n修正後: greet('World')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' + name)\n\ngreet(World)",
+        "output": "語法錯誤: 調用函數時缺少括號。\n詳細描述: 在調用 greet 函數時，缺少左括號和右括號。\n修正建議: 在 'World' 的前後添加括號。\n修正後: greet('World')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def add (a, b):\n    return a + b\n\nadd(1, 2",
+        "output": "語法錯誤: 函數定義缺少冒號。\n詳細描述: 在 def add(a, b) 之後缺少冒號。\n修正建議: 在 def add(a, b) 之後添加一個冒號。\n修正後: def add(a, b):"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def add_numbers(a, b):\n    return a + b\n\nresult = add_numbers(10, 20",
+        "output": "語法錯誤: 函數調用缺少閉括號。\n詳細描述: 在調用 add_numbers 函數時，缺少右括號。\n修正建議: 在數字 20 後面添加一個閉括號。\n修正後: result = add_numbers(10, 20)"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎？",
+        "input": "def greet(name):\n    print('Hello, ' + name)\n\ngreet('World",
+        "output": "語法錯誤：字符串引號不匹配。\n詳細描述：在調用 greet 函數時，字符串 'World' 缺少閉合引號。\n修正建議：在 'World' 的結尾處添加一個閉合引號。\n修正後：greet('World')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "if num > 10\n    print('Number is greater than 10')",
+        "output": "語法錯誤: if 語句缺少冒號。\n詳細描述: 在 if 條件語句後缺少冒號。\n修正建議: 在 num > 10 後面添加一個冒號。\n修正後: if num > 10:"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' name)\n\ngreet('World')",
+        "output": "語法錯誤: 缺少函數參數的逗號。\n詳細描述: 在函數 greet 的定義中，缺少 name 參數和右引號之間的逗號。\n修正建議: 在 name 參數後面添加一個逗號。\n修正後: def greet(name):\n    print('Hello, ' + name)"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' + name')\n\ngreet('World",
+        "output": "語法錯誤: 字符串引號不匹配。\n詳細描述: 在調用 greet 函數時，缺少閉合引號。\n修正建議: 在 'World' 後面添加一個閉合引號。\n修正後: greet('World')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def add(a, b)\n    return a + b\n\nadd(1, 2",
+        "output": "語法錯誤: 函數調用缺少閉括號。\n詳細描述: 在調用 add 函數時，缺少右括號。\n修正建議: 在數字 2 後面添加一個閉括號。\n修正後: add(1, 2)"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name\n    print('Hello, ' + name)",
+        "output": "語法錯誤: 函數定義缺少冒號。\n詳細描述: 在函數名 greet(name) 後面缺少冒號。\n修正建議: 在 name 後面添加一個冒號。\n修正後: def greet(name):"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def double_num(number):\n    number * 2\n\ndouble_num(5)",
+        "output": "語法錯誤: 函數定義缺少冒號。\n詳細描述: 在 double_num 函數定義的 def 行之後缺少冒號。\n修正建議: 在 def double_num(number) 行之後添加一個冒號。\n修正後: def double_num(number):"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' + name)\n\ngreet('World",
+        "output": "語法錯誤: 字符串引號不匹配。\n詳細描述: 在調用 greet 函數時，字符串 'World' 缺少結束引號。\n修正建議: 在 'World' 後面添加一個閉合引號。\n修正後的程式碼: greet('World')"
+    },
+    {
+        "error_type": "Syntax Error",
+        "error_description": "函數 print 格式錯誤。'print' 函數在 Python 中的名稱是 'printf'。",
+        "fix_suggestion": "將 'print' 替換為 'printf'。"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "print('Hello world",
+        "output": "語法錯誤: 字符串引號不匹配。\n詳細描述: 字符串 'Hello world' 缺少結束引號。\n修正建議: 在 'world' 的結尾處添加一個閉合引號。\n修正後: print('Hello world')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "print('Hello, world')\n}",
+        "output": "語法錯誤: 缺少閉括號。\n詳細描述: print 函數的調用缺少一個閉括號。\n修正建議: 在 'world' 後面添加一個閉括號。\n修正後: print('Hello, world')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' + name)\n\ngreet(World)",
+        "output": "語法錯誤: 函數調用缺少括號。\n詳細描述: 在調用 greet 函數時，缺少左括號。\n修正建議: 在 World 前面添加一個左括號。\n修正後: greet(World)"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' name)\n\ngreet('World)",
+        "output": "語法錯誤: 缺少閉合引號。\n詳細描述: 在定義 greet 函數時，缺少一個閉合引號來結束 'name' 字符串。\n修正建議: 在 'name' 的結尾處添加一個閉合引號。\n修正後: print('Hello, ' + name)"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, + name)",
+        "output": "語法錯誤: 字符串引號不匹配。\n詳細描述: 字符串 'Hello, ' 缺少一個閉合引號。\n修正建議: 在 'Hello, ' 的結尾處添加一個閉合引號。\n修正後: def greet(name):\n    print('Hello, ' + name)"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎？",
+        "input": "def greet(name):\n print('Hello, ' + name)",
+        "output": "語法錯誤：函數定義缺少冒號\n詳細描述：在函數定義行後缺少冒號。\n修正建議：在 print('Hello, ' + name) 前面添加一個冒號。\n修正後：def greet(name):\n    print('Hello, ' + name)"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' + name\n\ngreet('World')",
+        "output": "語法錯誤: 字符串引號不匹配。\n詳細描述: 在定義 greet 函數時，字符串 'Hello, ' + name 缺少閉合引號。\n修正建議: 在 name 後面添加一個閉合引號。\n修正後: def greet(name):\n    print('Hello, ' + name + '\n\ngreet('World')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' + name",
+        "output": "語法錯誤: 字符串引號不匹配。\n詳細描述: 在定義 greet 函數時，字符串 'Hello, ' + name 缺少結束引號。\n修正建議: 在 name 的結尾處添加一個閉合引號。\n修正後: def greet(name):\n    print('Hello, ' + name + ''')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' + name')\n\ngreet('World",
+        "output": "語法錯誤: 字符串引號不匹配。\n詳細描述: 在調用 greet 函數時，字符串 'World' 缺少結束引號。\n修正建議: 在 'World' 的結尾處添加一個閉合引號。\n修正後: greet('World')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def add_numbers(a, b): \n print(a + b)",
+        "output": "語法錯誤: 函數缺少結尾冒號。\n詳細描述: 在函數定義 add_numbers(a, b) 之後缺少冒號。\n修正建議: 在函數定義後添加一個冒號。\n修正後: def add_numbers(a, b):"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello' + name)\n\ngreet('World)",
+        "output": "語法錯誤: 字符串引號不匹配。\n詳細描述: 在調用 greet 函數時，字符串 'Hello' 缺少結束引號。\n修正建議: 在 'Hello' 的結尾處添加一個閉合引號。\n修正後: greet('Hello World')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    return 'Hello, ' + name\n\ngreet('World\n",
+        "output": "語法錯誤: 字符串引號不匹配。\n詳細描述: 調用 greet 函數時，字符串 'World' 缺少閉合引號。\n修正建議: 在 'World' 的結尾處添加一個閉合引號。\n修正後: greet('World')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎?",
+        "input": "if 5 > 3:\nprint('5 is greater than 3')",
+        "output": "語法錯誤: if 語句缺少冒號。\n詳細描述: 在 if 條件語句後缺少冒號，導致 Python 解譯器無法識別 if 敘述的範圍。\n修正建議: 在 if 5 > 3 後面添加一個冒號，例如：if 5 > 3:。"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' + name + '\n    print('How are you?')",
+        "output": "語法錯誤: 縮排錯誤\n詳細描述: 在第二個 print 敘述中縮排不正確，應與第一個 print 敘述在同一個縮排層級。\n修正建議: 將第二個 print 敘述的縮排與第一個 print 敘述對齊。\n修正後: def greet(name):\n    print('Hello, ' + name)\n    print('How are you?')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "print('Hello 'World')",
+        "output": "語法錯誤: 字符串引號不匹配。\n詳細描述: 字符串 'Hello World' 缺少閉合引號。\n修正建議: 在 'World' 的結尾處添加一個閉合引號。\n修正後: print('Hello World')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "if x > 10:\n    print('x is greater than 10')\nelse:\n   print('x is not greater than 10')",
+        "output": "語法錯誤: else 語句缺少冒號。\n詳細描述: 在 else 條件語句後缺少冒號。\n修正建議: 在 else 後面添加一個冒號。\n修正後: else:"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "print(hello)",
+        "output": "語法錯誤: 缺少 '引號' 或 '單引號' 來包住字符串。\n詳細描述: 在 print 函數中，字符串 'hello' 缺少引號或單引號。\n修正建議: 在 'hello' 周圍添加引號或單引號。\n修正後: print('hello') 或 print(\"hello\")"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' + name)",
+        "output": "語法錯誤: 函數定義缺少冒號。\n詳細描述: 在 def greet(name) 後面缺少冒號。\n修正建議: 在 greet(name) 後面添加一個冒號。\n修正後: def greet(name):"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "print('Hello, world!')\nprint('Hello, world')",
+        "output": "語法錯誤: 缺少單引號。\n詳細描述: 第二個 print 語句中的 'Hello, world' 缺少左引號。\n修正建議: 在 'Hello, world' 的開頭添加一個左引號。\n修正後: print('Hello, world')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    return 'Hello, ' + name",
+        "output": "語法錯誤: 函數定義缺少冒號。\n詳細描述: 在函數定義 def greet(name) 之後，缺少一個冒號。\n修正建議: 在 name 之後添加一個冒號。\n修正後: def greet(name):"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "print(Hello) ",
+        "output": "語法錯誤: 識別符號 'Hello' 未定義。\n詳細描述: 程式碼嘗試列印一個未定義的變數 'Hello'。\n修正建議: 在使用 'Hello' 之前，先定義並賦值給它。\n修正後: Hello = '世界'; print(Hello)"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎?",
+        "input": "def greet(name:\n    print('Hello, ' + name)",
+        "output": "語法錯誤: 函數定義缺少冒號。\n詳細描述: 在 greet(name: 後面缺少一個冒號，表示函數定義的開始。\n修正建議: 在 greet(name: 後面添加一個冒號。\n修正後: def greet(name:)"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' + name\n\ngreet('World')",
+        "output": "語法錯誤: 字符串引號不匹配。\n詳細描述: 在調用 greet 函數時，字符串 'World' 缺少結束引號。\n修正建議: 在 'World' 的結尾處添加一個閉合引號。\n修正後: greet('World')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "if 5 > 3:\n   print('5 is greater than 3')",
+        "output": "語法錯誤：在 if 條件語句後缺少冒號。\n詳細描述：在 if 條件語句後缺少冒號，這會導致 Python 執行錯誤。\n修正建議：在 if 條件語句後添加一個冒號，如下所示：\n\nif 5 > 3:\n    print('5 is greater than 3')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, name')\n\ngreet('World)",
+        "output": "語法錯誤: 函數調用缺少參數。\n詳細描述: 在調用 greet 函數時，缺少必需的參數 'name'。\n修正建議: 在 greet('World') 中提供 'name' 參數。\n修正後: greet('World', 'John')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "for i range(10):\n    print(i)",
+        "output": "語法錯誤: for 循環語法不正確。\n詳細描述: for 循環的正確語法是 for i in range(10)，而不是 for i range(10)。\n修正建議: 將 range(10) 改為 in range(10)。\n修正後: for i in range(10):"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "if x < 3\n  print('Less than 3')",
+        "output": "**語法錯誤：if 語句未使用縮排。**\n**詳細描述：**if 語句的條件塊（即 print('Less than 3')）未縮排。\n**修正建議：**將 print('Less than 3') 縮排兩個空格或一個 tab。\n**修正後：**\nif x < 3:\n    print('Less than 3')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name:\n    print('Hello, ' + name",
+        "output": "語法錯誤: 函數定義缺少冒號。\n詳細描述: 在函數定義的 name: 之後缺少冒號。\n修正建議: 在 name: 之後添加一個冒號。\n修正後: def greet(name:)"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(a, b:\n    return a + b",
+        "output": "語法錯誤: 函數定義中缺少冒號。\n詳細描述: 在函數定義的參數列表後缺少冒號。\n修正建議: 在 b 後面添加一個冒號。\n修正後: def greet(a, b:)"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print(\"Hello, \" + name",
+        "output": "語法錯誤: 字符串引號不匹配。\n詳細描述: 在 greet 函數定義中，字符串\"Hello, \" + name 缺少閉合引號。\n修正建議: 在 name 後面添加一個閉合引號。\n修正後: def greet(name):\n    print(\"Hello, \" + name + \")"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' + name')",
+        "output": "語法錯誤: 函數定義缺少冒號和縮排。\n詳細描述: def 函數定義後缺少冒號，並且函數主體沒有縮排。\n修正建議: 在 def greet(name) 後面添加一個冒號，並且在 print('Hello, ' + name') 前面添加一個縮排。\n修正後: \ndef greet(name):\n    print('Hello, ' + name)"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "if x == 5:\nprint('x is equal to 5')",
+        "output": "語法錯誤: if 語句後缺少冒號。\n詳細描述: 在 if 條件語句後缺少冒號。\n修正建議: 在 x == 5 後面添加一個冒號。\n修正後: if x == 5:"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "for x in range(10):\n    print(x)\nelse:\n    print('x is greater than 10')",
+        "output": "語法錯誤: else 語句錯誤地出現在 for 循環語句內部。\n詳細描述: else 語句必須出現在 for 循環語句之外。\n修正建議: 將 else 語句移到 for 循環語句的下方。\n修正後:\n\nfor x in range(10):\n    print(x)\n\nprint('x is greater than 10')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' + name + '!')\n\ngreet('World\n\n",
+        "output": "語法錯誤: 字符串引號不匹配。\n詳細描述: 字串 'World' 的開頭引號後缺少結尾引號。\n修正建議: 在 'World' 後面添加一個閉合引號。\n修正後: greet('World')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "print(Hello, 'World')",
+        "output": "語法錯誤: 缺少引號配對。\n詳細描述: 字符串 Hello, 'World' 缺少開頭的引號。\n修正建議: 在 Hello 前面添加一個開頭引號。\n修正後: print('Hello, 'World')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "print('Hello, ' + name)",
+        "output": "語法錯誤: 找不到 name 變數。\n詳細描述: 在字符串 'Hello, ' + name 中，name 變數未定義。\n修正建議: 定義 name 變數或將其替換為正確的變數或值。\n修正後: print('Hello, ' + 'World')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' + name)\n\ngreet(World)",
+        "output": "語法錯誤: 缺少函數調用時的引號。\n詳細描述: 在調用 greet 函數時，缺少了引號將 'World' 括起來。\n修正建議: 在 'World' 周圍添加引號。\n修正後: greet('World')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' + name\n\ngreet('World')",
+        "output": "語法錯誤: 缺少閉合引號\n詳細描述: 在調用 greet 函數時，字符串 'World' 缺少閉合引號。\n修正建議: 在 'World' 的結尾處添加一個閉合引號。\n修正後: greet('World')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "print('Hello, ' + name)",
+        "output": "語法錯誤: 未定義變數 'name'。\n詳細描述: 在調用 print 函數時，使用了未定義的變數 'name'。\n修正建議: 在使用 'name' 之前定義該變數。\n修正後: name = 'World'\nprint('Hello, ' + name)"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' + name",
+        "output": "語法錯誤: 字符串引號不匹配。\n詳細描述: greet 函數定義中的字符串 'Hello, ' + name 缺少結束引號。\n修正建議: 在 name 之後添加一個閉合引號。\n修正後: print('Hello, ' + name)"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True:\n    pass\n\nprint('Hello')",
+        "output": "語法錯誤: 縮排不一致。\n詳細描述: 在 while 循環後面的 print 語句沒有正確縮排。\n修正建議: 將 print 語句縮排與 while 循環對齊。\n修正後:\nwhile True:\n    pass\n\n    print('Hello')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "print(5 + )",
+        "output": "語法錯誤: 運算式缺少運算項。\n詳細描述: 5 後面缺少一個運算項，也就是另一個數字或變數。\n修正建議: 提供缺少的運算項。\n修正後: print(5 + 10)"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def print_message():\n    print('Hello!')",
+        "output": "語法錯誤: 函數定義缺少冒號。\n詳細描述: 在函數名 print_message 後面缺少冒號。\n修正建議: 在 print_message 後面添加一個冒號。\n修正後: def print_message():"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print(Hello, ' + name)",
+        "output": "語法錯誤: 函數內部缺少引號。\n詳細描述: 在 print 函數中，字符串 Hello 缺少引號。\n修正建議: 在 Hello 前面添加一個開合引號。\n修正後: def greet(name):\n    print('Hello, ' + name)"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name\n    print('Hello, ' + name)\n\ngreet('World)",
+        "output": "語法錯誤: 函數定義缺少冒號。\n詳細描述: 在 def greet(name 後面缺少冒號。\n修正建議: 在 greet(name 後面添加一個冒號。\n修正後: def greet(name):"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "print('Hello, ' + world)",
+        "output": "語法錯誤：缺少變數名稱\n詳細描述：'world' 的值沒有用變數名稱指定，而 'world'也不是定義過的變數名稱。\n修正建議：將 'world' 替換為定義過的變數名稱或字串。\n修正後：print('Hello, ' + 'your_name')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "i = 10\nwhile i > 0:\n    print(i)\n    i +=",
+        "output": "語法錯誤: while 循環缺少冒號。\n詳細描述: 在 while 循環條件語句後缺少冒號。\n修正建議: 在 i > 0 後面添加一個冒號。\n修正後: while i > 0:"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' + name)\n\ngreet('World\n",
+        "output": "語法錯誤: 字符串引號不匹配。\n詳細描述: 在調用 greet 函數後缺少一個閉合引號，導致字符串 'World' 無法正確終止。\n修正建議: 在 'World' 的結尾處添加一個閉合引號。\n修正後: greet('World')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題",
+        "input": "def greet(name, age):\n    print('Hello, ' + name ' + ') \n",
+        "output": "語法錯誤: 字符串引號不匹配。\n詳細描述: 在調用 greet 函數時，缺少結束引號。\n修正建議: 在 'name' 之後添加一個閉合引號。\n修正後: greet(name, age + ')"
+    },
+    {
+        "instruction": "請找出語法錯誤並建議如何修正",
+        "input": "def print_hello(name):\n    'Hello, ' + name",
+        "output": "語法錯誤: 缺少 print 函數。\n詳細描述: print_hello 函數定義中缺少 print 函數調用。\n修正建議: 在 'Hello, ' + name 前面添加 print 函數。\n修正後: def print_hello(name):\n    print('Hello, ' + name)"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' name)\n\ngreet('World)",
+        "output": "語法錯誤：缺少閉合引號\n詳細描述：在調用 greet 函數時，缺少封閉字符串 'World' 的引號。\n修正建議：在 'World' 後面添加一個閉合引號。\n修正後：greet('World')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name, age):\n    print('Hello, ' + name + ', your age is ' + age)",
+        "output": "語法錯誤: 無法將字符串和非字符串相加。\n詳細描述: 在串接字符串 'Hello, ' + name + ', your age is ' + age 時，變數 age 是非字串型別，無法與字串相加。\n修正建議: 將變數 age 轉換為字串，例如使用 str(age) 函數。\n修正後: print('Hello, ' + name + ', your age is ' + str(age))"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' + name + '!')",
+        "output": "語法錯誤: 字符串引號不匹配。\n詳細描述: 字符串 'Hello, ' + name + '!' 在結尾處缺少閉合引號。\n修正建議: 在字符串結尾處添加一個閉合引號。\n修正後: print('Hello, ' + name + '!')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎?",
+        "input": "print(Hello, World)",
+        "output": "語法錯誤: 缺少引號。\n詳細描述: print 函數中的問候語 'Hello, World' 沒有用引號括起來。\n修正建議: 在 'Hello, World' 的前後添加引號。\n修正後: print('Hello, World')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greeting(name):\n    print(f'Hello, {name}')\n\ngreeting()",
+        "output": "語法錯誤: 函數調用缺少參數。\n詳細描述: 在調用 greeting 函數時，缺少必須的 name 參數。\n修正建議: 在 greeting() 中添加 name 參數。\n修正後: greeting('World')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' + name)\n\ngreet('World)",
+        "output": "語法錯誤: 字符串引號不匹配。\n詳細說明: 在調用 greet 函數時，字符串 'World' 缺少結束引號。\n建議修正: 在 'World' 的結尾處添加一個閉合引號。\n更正後: greet('World')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name, age):\n    print('Hello, ' + name + ', you are ' + age + ' years old.')\n\ngreet('John', 30)",
+        "output": "語法錯誤: 數字字串未加上引號。\n詳細描述: 在將 age 轉換為字串時，缺少引號將其包覆。\n修正建議: 將 age 轉換為字串，並加上引號。\n修正後: print('Hello, ' + name + ', you are ' + str(age) + ' years old.')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "if 5 > 3\n    print('5 is greater than 3')",
+        "output": "語法錯誤: if 語句缺少冒號。\n詳細描述: 在 if 條件語句後缺少冒號。\n修正建議: 在 5 > 3 後面添加一個冒號。\n修正後: if 5 > 3:"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name:\n    print('Hello, ' + name)",
+        "output": "語法錯誤: 函數定義缺少冒號。\n詳細描述: 在函數定義 greet(name: 之後缺少一個冒號。\n修正建議: 在 name 後面添加一個冒號。\n修正後: def greet(name:)"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name:\n    print('Hello, ' + name)",
+        "output": "語法錯誤: 在函數定義中缺少冒號。\n詳細描述: 在函數名 greet 後面缺少一個冒號。\n修正建議: 在 greet 後面添加一個冒號。\n修正後: def greet(name):"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name:\n    print('Hello, ' + name)",
+        "output": "語法錯誤: 函數定義缺少冒號。\n詳細描述: 在函數定義 greet 的第一行，缺少冒號。\n修正建議: 在 greet(name: 後面添加一個冒號。\n修正後: def greet(name:)"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def add(x, y):\n    return x + y\n\nresult = add(1, 2",
+        "output": "語法錯誤：函數呼叫未正確關閉\n詳細說明：此程式碼試圖呼叫 add 函數，但缺少右括號，導致程式碼語法錯誤\n修正建議：在數字 2 後面加上右括號，使程式碼為：\ndef add(x, y):\n    return x + y\n\nresult = add(1, 2)"
+    },
+    {
+        "instruction": "請指出這段程式碼的語法錯誤",
+        "input": "def greet(name):\n    print('Hello, ' + name)\n\ngreet('World",
+        "output": "語法錯誤：引數列表缺少閉括號\n詳細描述：定義 greet 函數時，引數列表中缺少閉括號。\n修正建議：在 name 後面加上一個閉括號。\n修正後：def greet(name):\n    print('Hello, ' + name)"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name:\n    print('Hello, ' + name)\n\ngreet('World)",
+        "output": "語法錯誤: 函數定義缺少冒號。\n詳細描述: 在 def greet(name: 後面缺少冒號。\n修正建議: 在 name: 後面添加一個冒號。\n修正後: def greet(name:)"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name, age):\n    print('Hello, ' + name + ', 你今年 ' + age + ' 歲。')\n\ngreet('John', 30)",
+        "output": "語法錯誤：字符串連接不當。\n詳細描述：在調用 greet 函數時，age 參數應該是一個字符串，而不是一個數字。\n修正建議：將 age 參數轉換為字符串。\n修正後：greet('John', '30')"
+    },
+    {
+        "instruction": "以下程式碼有什麼問題？",
+        "input": "def greet(name):\n    print('Hello, ' + name\ngreet('Alice')",
+        "output": "語法錯誤：字符串引號不匹配。\n詳細描述：在 greet 函數定義中，字符串 'Hello, ' + name 缺少閉合引號。\n修正建議：在 name 後面添加一個閉合引號。\n修正後：def greet(name):\n    print('Hello, ' + name + '!')\ngreet('Alice')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print(‘Hello, ’ + name)",
+        "output": "語法錯誤: 字符串引號類型不匹配。\n詳細描述: 在 print 函式中，字串前綴使用單引號，但字串結尾使用雙引號。\n修正建議: 將字串前綴和結尾統一使用單引號或雙引號。\n修正後: def greet(name):\n    print('Hello, ' + name)"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎？",
+        "input": "def greet(name):\n    print('Hello, ') + name",
+        "output": "語法錯誤：語法不正確。\n詳細描述：在 print 語句中，名稱 'name' 缺少引號。\n修正建議：在 'name' 周圍添加引號以創建字符串文字。\n修正後：print('Hello, ' + name)"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' + name)\ngreet('World",
+        "output": "語法錯誤: 字符串引號不匹配。\n詳細描述: 在調用 greet 函數時，字符串 'World' 缺少結束引號。\n修正建議: 在 'World' 的結尾處添加一個閉合引號。\n修正後: greet('World')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "print(Hello",
+        "output": "語法錯誤: 字符串引號不匹配。\n詳細描述: 字符串 'Hello' 缺少結束引號。\n修正建議: 在 'Hello' 的結尾處添加一個閉合引號。\n修正後: print('Hello')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' + name)",
+        "output": "語法錯誤: 函數定義缺少冒號。\n詳細描述: 在 def greet(name) 後面缺少冒號。\n修正建議: 在 greet(name) 後面添加一個冒號。\n修正後: def greet(name):"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "x = 10\nif x > 5\n    print('x is greater than 5')",
+        "output": "語法錯誤：if 語句缺少冒號。\n詳細描述：在 if 條件語句後缺少冒號。\n修正建議：在 x > 5 後面添加一個冒號（:）。\n修正後的程式碼：\nif x > 5:\n    print('x is greater than 5')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "for i in range(10):\n    print(i)    print('Python')",
+        "output": "語法錯誤: 縮排錯誤。\n詳細描述: 在 for 循環中，第二行 print('Python') 的縮排應與第一行 print(i) 相同。\n修正建議: 將第二行 print('Python') 的縮排向左移動兩個空格。\n修正後: for i in range(10):\n    print(i)\n    print('Python')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "print(Hello World)",
+        "output": "語法錯誤: 缺少引號包覆字符串。\n詳細描述: 字符串 'Hello World' 缺少引號包覆。\n修正建議: 在字符串 'Hello World' 外面包上引號。\n修正後: print('Hello World')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "if x < 5:\n    print('x is less than 5')\n如果x大於5，印出'x is greater than 5'",
+        "output": "語法錯誤：缺少 elif 或 else 子句。\n詳細描述：如果 x 大於 5，程式碼中沒有處理的情況。需要使用 elif 或 else 子句來處理。\n修正建議：在 if 塊之後添加一個 elif 或 else 塊來處理 x 大於 5 的情況。\n例如：\nif x < 5:\n    print('x is less than 5')\nelif x > 5:\n    print('x is greater than 5')\n或\nif x < 5:\n    print('x is less than 5')\nelse:\n    print('x is greater than or equal to 5')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True:\n    print('Hello')\n",
+        "output": "語法錯誤: while 循環語句缺少冒號。\n詳細描述: 在 while True 後面缺少冒號。\n修正建議: 在 while True 後面添加一個冒號。\n修正後: while True:"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' + name)\n\ngreet('World",
+        "output": "語法錯誤: 字符串引號不匹配。\n詳細描述: 在 greet 函數調用時，缺少閉合引號。\n修正建議: 在 'World' 後面加上閉合引號。\n修正後: greet('World')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name:\n    print('Hello, ' + name)\n\ngreet('World')",
+        "output": "語法錯誤: 函數定義缺少冒號。\n詳細描述: 在 def greet(name: 後面缺少冒號，這會導致 Python 將其視為錯誤的語法。\n修正建議: 在 greet(name: 後面添加一個冒號。\n修正後: def greet(name:):"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "for i in range(10:\n    print(i)",
+        "output": "語法錯誤: 範圍 (range) 函數缺少右括號。\n詳細描述: 在 range(10 後面缺少一個右括號。\n修正建議: 在 10 後面添加一個右括號。\n修正後: for i in range(10):"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name): \n print('Hello, ' + name)",
+        "output": "語法錯誤: 函數定義缺少冒號。\n詳細描述: 在 def greet(name) 之後缺少一個冒號，表示函數定義的開始。\n修正建議: 在 def greet(name) 之後添加一個冒號。\n修正後: def greet(name):"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ', name')\n\ngreet('World')",
+        "output": "語法錯誤: 字符串引號不匹配。\n詳細描述: 在 print 語句中，字符串 'Hello, ' 缺少一個結束引號。\n修正建議: 在 'Hello, ' 的結尾處添加一個閉合引號。\n修正後: print('Hello, ' + name)"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n  print('Hello, ' name)",
+        "output": "**語法錯誤：缺少一個引號來封閉字串。**\n**詳細描述：**greet 函式的 print 陳述式中缺少封閉字串的引號。\n**建議的修正：**在 'name' 後面加上一個閉合引號。\n**修正後程式碼：**\ndef greet(name):\n  print('Hello, ' + name)}"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' + name\ngreet('World)",
+        "output": "語法錯誤: 字符串引號不匹配。\n詳細描述: 在調用 greet 函數時，字符串 'World' 缺少閉合引號。\n修正建議: 在 'World' 的結尾處添加一個閉合引號。\n修正後: greet('World')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name\n    print('Hello, ' + name)\n\ngreet('World)",
+        "output": "語法錯誤: 函數定義缺少冒號。\n詳細描述: 在函數 greet 的定義中，缺少冒號用於分隔函數名稱和函數主體。\n修正建議: 在 greet(name 後面添加一個冒號。\n修正後: def greet(name):"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "for i in range(1, 11)\n    print(i)\n\nelse:\n    print('Finished')",
+        "output": "語法錯誤: for 循環後面的 else 塊缺少冒號。\n詳細描述: 在 else 關鍵字後缺少冒號。\n修正建議: 在 else 關鍵字後添加一個冒號。\n修正後: for i in range(1, 11):\n    print(i)\nelse:\n    print('Finished')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "while True:\n    print('Hello, world!')\n    break",
+        "output": "語法錯誤: while 循環語句缺少冒號。\n詳細描述: 在 while True 條件語句後缺少冒號。\n修正建議: 在 while True 後面添加一個冒號。\n修正後: while True:\n    print('Hello, world!')\n    break"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' name)\n\ngreet('World)",
+        "output": "語法錯誤: 字符串引號不匹配。\n詳細描述: 在調用 greet 函數時，字符串 'World' 缺少開始引號。\n修正建議: 在 'World' 的開頭處添加一個打開引號。\n修正後: greet('World')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' + name)\n\ngreet(\"World)",
+        "output": "語法錯誤：字符串引號不匹配。\n詳細描述：在調用 greet() 函式時，缺少閉合引號。\n修正建議：在“World”之後添加一個閉合引號。\n修正後的程式碼：greet(\"World\")"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "sum = 1 + 2\nprint(sun)",
+        "output": "語法錯誤: 變數名稱拼寫錯誤。\n詳細描述: 在 print 函數中，變數名稱 'sun' 拼寫錯誤，正確的變數名稱應該是 'sum'。\n修正建議: 將 'sun' 替換為 'sum'。\n修正後: print(sum)"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "print(Hello World)",
+        "output": "語法錯誤: 缺少引號。\n詳細描述: print 語句中的字符串 'Hello World' 缺少引號。\n修正建議: 在 'Hello World' 周圍添加引號。\n修正後: print('Hello World')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "if x > 5:\n    print('x is greater than 5')",
+        "output": "語法錯誤: if 語句缺少冒號：\n詳細描述: 在 if 條件語句後缺少冒號。\n修正建議: 在 x > 5 之後添加一個冒號：\n修正後: if x > 5："
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "x = 1, 2, 3)\nprint(x)",
+        "output": "語法錯誤: 列表 x 缺少閉括號。\n詳細描述: 在定義列表 x 時，缺少右括號。\n修正建議: 在數字 3 後面添加一個閉括號。\n修正後: x = 1, 2, 3]"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name\n    print('Hello, ' + name)",
+        "output": "語法錯誤: 函數定義缺少冒號。\n詳細描述: 在函數定義 greet(name 後面缺少冒號。\n修正建議: 在 name 後面添加一個冒號。\n修正後: def greet(name):"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎？",
+        "input": "for i in range(10):\n    print(i)",
+        "output": "語法錯誤：for 語句缺少冒號。\n詳細說明：在 for 循環語句後缺少冒號。\n修正建議：在 range(10) 後添加冒號。\n修正後：for i in range(10):"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎？",
+        "input": "def greet(name\n    print('Hello, ' + name)",
+        "output": "語法錯誤：函數定義缺少冒號。\n詳細描述：在 def greet(name) 之後缺少冒號，這會導致 Python 將其視為無效的函數定義。\n修正建議：在 greet(name) 之後添加一個冒號，以正確定義函數。\n修正後：def greet(name):"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎？",
+        "input": "def greet(name):\n    print('Hello, ' name)\n\ngreet('World')",
+        "output": "語法錯誤: 呼叫函數 greet 時缺少括號。\n詳細描述: 在呼叫 greet 函數時，缺少了括號。\n修正建議: 在 greet('World') 之前加上括號。\n修正後: greet('World')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' name)\n\ngreet('World')",
+        "output": "語法錯誤: 缺少引號。\n詳細描述: 在 greet 函數定義中，缺少 name 變數的引號。\n修正建議: 在 name 周圍加上適當的引號。\n修正後: def greet(name):\n    print('Hello, ' + name)"
+    },
+    {
+        "instruction": " below Python code has 1 syntax error, can you list the issue?",
+        "input": "def add(a, b):\n    return a + b\n\nresult = add(1, ",
+        "output": "Syntax Error: Missing closing parenthesis in function call.\nDetailed Description: The function call add(1, is missing a closing parenthesis.\nFix Suggestion: Add a closing parenthesis after the number 2.\nFixed Code: result = add(1, 2)"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n  print('Hello, ' + name)\n\ngreet('World}",
+        "output": "語法錯誤: 字符串引號不匹配。\n詳細描述: 調用 greet 函數時，字符串 'World' 缺少結束雙引號。\n修正建議: 在 'World' 的結尾處添加一個閉合雙引號。\n修正後: greet('World')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' + name)\n\ngreet('World",
+        "output": "語法錯誤: 字符串引號不匹配。\n詳細描述: 在調用 greet 函數時，字符串 'World' 缺少結束引號。\n修正建議: 在 'World' 的結尾處添加一個閉合引號。\n修正後 کد: greet('World')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def greet(name):\n    print('Hello, ' + name)\n\ngreet('World",
+        "output": "語法錯誤：字串引號不匹配。\n詳細描述：在調用 greet 函數時，字串 'World' 缺少閉合引號。\n修正建議：在 'World' 的結尾處添加一個閉合引號。修正後的程式碼：\ndef greet(name):\n    print('Hello, ' + name)\n\ngreet('World')"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "print('hello'）",
+        "output": "語法錯誤: 字串結尾缺少引號。\n詳細描述: 字串 'hello' 缺少閉合引號。\n修正建議: 在 'hello' 的結尾處添加一個閉合引號。\n修正後: print('hello')"
+    }
+]

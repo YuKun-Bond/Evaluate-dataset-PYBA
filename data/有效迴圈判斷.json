@@ -1,0 +1,2002 @@
+[
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(10):\n  print(i)\nwhile True:\n  print('loop')\n  break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷範圍並打印出值。while迴圈則立即中斷，雖然打印了一次'loop'，但沒有持續的實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while False:\n  print('This will never print')\n\nfor i in range(5):\n  pass",
+        "output": "這段程式碼內有一個while迴圈被無效使用，一個for迴圈被無效使用。while迴圈的條件永遠不會為真，因此不會執行。for迴圈雖然遍歷範圍，但由於使用了'pass'語句，沒有執行任何實際操作。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(3):\n  for j in range(4):\n    print(i, j)",
+        "output": "這段程式碼內有兩個for迴圈被有效使用。內外層迴圈共同運作，並打印出i和j的值，對程式功能有實際影響。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while condition:\n  do_something()\n\nfor i in range(5):\n  continue",
+        "output": "這段程式碼內有一個while迴圈被有效使用，一個for迴圈被無效使用。while迴圈根據條件運行並執行某些操作，而for迴圈每次都直接進入下一次迭代，沒有執行實際操作。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while True:\n  break\n\nfor i in range(0):\n  print(i)",
+        "output": "這段程式碼內有一個while迴圈和一個for迴圈都被無效使用。while迴圈立即中斷，沒有實際效果。for迴圈因為範圍為0，因此不會執行任何操作。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  for j in []:\n    print(i, j)",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個for迴圈被無效使用。外層for迴圈正確地遍歷範圍，但內層for迴圈的列表為空，無法進行任何操作。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while x < 10:\n  break\n\nfor i in range(3):\n  print(i)",
+        "output": "這段程式碼內有一個while迴圈被無效使用，一個for迴圈被有效使用。while迴圈立即中斷，沒有實際效果。for迴圈正確地遍歷範圍並打印出值。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(0, 10, 2):\n  print(i)\nwhile False:\n  break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈以步長2正確地遍歷範圍並打印出值。while迴圈的條件永遠不會為真，因此不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while True:\n  break\n\nwhile False:\n  print('never')",
+        "output": "這段程式碼內有兩個while迴圈都被無效使用。第一個while迴圈立即中斷，沒有實際效果。第二個while迴圈的條件永遠不會為真，因此也不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(2):\n  for j in range(2):\n    break\nfor k in range(3):\n  print(k)",
+        "output": "這段程式碼內有一個for迴圈被無效使用，一個for迴圈被有效使用。第一個for迴圈內部的內層for迴圈立即中斷，因此沒有執行實際操作。第二個for迴圈正確地遍歷範圍並打印出值。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while x < 3:\n  x += 1\nfor i in range(3):\n  continue",
+        "output": "這段程式碼內有一個while迴圈被有效使用，一個for迴圈被無效使用。while迴圈根據條件運行並增大x的值。for迴圈每次都直接進入下一次迭代，沒有執行實際操作。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(3):\n  pass\nfor j in range(2):\n  print(j)",
+        "output": "這段程式碼內有一個for迴圈被無效使用，一個for迴圈被有效使用。第一個for迴圈遍歷範圍但沒有執行任何操作。第二個for迴圈正確地遍歷範圍並打印出值。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while x < 5:\n  if x == 3:\n    break\n  x += 1\nfor i in range(3):\n  pass",
+        "output": "這段程式碼內有一個while迴圈被有效使用，一個for迴圈被無效使用。while迴圈根據條件運行並會在x等於3時中斷。for迴圈遍歷範圍但沒有執行任何操作。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in 'abc':\n  print(i)\nwhile True:\n  break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷字串並打印出每個字符。while迴圈則立即中斷，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while y < 2:\n  y += 1\nwhile False:\n  print('never')",
+        "output": "這段程式碼內有一個while迴圈被有效使用，一個while迴圈被無效使用。第一個while迴圈根據條件運行並增大y的值。第二個while迴圈的條件永遠不會為真，因此不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(3):\n  break\nwhile a < 1:\n  a += 1",
+        "output": "這段程式碼內有一個for迴圈被無效使用，一個while迴圈被有效使用。for迴圈內部立即中斷，沒有實際效果。while迴圈根據條件運行並增大a的值。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while x >= 0:\n  break\nfor i in range(4, 7):\n  print(i)",
+        "output": "這段程式碼內有一個while迴圈被無效使用，一個for迴圈被有效使用。while迴圈立即中斷，沒有實際效果。for迴圈正確地遍歷範圍並打印出值。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  pass\nwhile True:\n  break",
+        "output": "這段程式碼內有一個for迴圈被無效使用，一個while迴圈被無效使用。for迴圈遍歷範圍但沒有執行任何操作。while迴圈則立即中斷，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while x < 5:\n  if x == 2:\n    break\n  x += 1\nfor i in range(3):\n  print(i)",
+        "output": "這段程式碼內有一個while迴圈被有效使用，一個for迴圈被有效使用。while迴圈根據條件運行並在x等於2時中斷。for迴圈正確地遍歷範圍並打印出值。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(3):\n  pass\nwhile y > 2:\n  print(y)\n  break",
+        "output": "這段程式碼內有一個for迴圈被無效使用，一個while迴圈被無效使用。for迴圈遍歷範圍但沒有執行任何操作。while迴圈因為立即中斷，只會打印一次y的值，如果y本來是大於2的。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while True:\n  break\nfor i in range(5, 0, -1):\n  print(i)",
+        "output": "這段程式碼內有一個while迴圈被無效使用，一個for迴圈被有效使用。while迴圈立即中斷，沒有實際效果。for迴圈以步長-1正確地倒序遍歷範圍並打印出值。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  print(i)\n\nwhile True:\n  if condition:\n    break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷了範圍並打印出i的值。while迴圈因為`condition`條件未定義或可能永遠不為真，導致該迴圈可能陷入無限迴圈，並且其主要操作是立即中斷，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  if i % 2 == 0:\n    print(i)\n\nwhile x < 10:\n  x += 1\n  break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈會打印所有偶數。while迴圈立即中斷，沒有執行任何實際操作。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  if i % 2 == 0:\n    print(i)\n\nwhile False:\n  print('This will never execute')",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈根據條件打印出偶數，達成實際的功能。而while迴圈因為條件永遠不會為真，永遠不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(10):\n  print(i)\n\nwhile x < 0:\n  print(x)\n  x += 2",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷了範圍並打印出值。而while迴圈的條件永遠不會為真，故不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for name in 'Alice', 'Bob', 'Charlie']:\n  print(name)\n\nwhile 0 < 1:\n  break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷了名單中的每個名字並打印出來。while迴圈則立即中斷，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  print(i * 2)\n\nwhile 0:\n  do_nothing()",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷範圍並打印出每個值乘以2的結果，而while迴圈的條件0永遠不為真，因此永遠不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  if i % 2 == 0:\n    print(i)\n\nwhile True:\n  if some_condition:\n    break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷範圍並打印出符合特定條件的值，而while迴圈因為缺少具體的條件 (some_condition)，導致無法評估是否會中斷，是無效的。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for num in range(1, 6):\n  if num % 2 == 0:\n    print(f'{num} is even')\n\nwhile True:\n  pass",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷了1到5的數字，並且對偶數進行了打印操作。while迴圈則導致無限循環，沒有實際效果和目的。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(7):\n  if i % 2 == 0:\n    print(i)\n\nwhile 1 == 2:\n  print('This will never print')\n\nwhile True:\n  if False:\n    break\n",
+        "output": "這段程式碼內有一個有效的for迴圈和兩個無效的while迴圈。for迴圈遍歷範圍並打印偶數值，符合有效迴圈的定義。第一個while迴圈的條件永遠不會為真，因此不會執行。第二個while迴圈則有一個條件永遠不會為真的中斷語句，因此也沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  if i % 2 == 0:\n    print(i)\n\nwhile 1 == 2:\n  print('This will never print')\n\nwhile True:\n  break",
+        "output": "這段程式碼有一個for迴圈被有效使用，兩個while迴圈被無效使用。for迴圈遍歷範圍並打印出偶數的值。第一個while迴圈的條件永遠不會成立，因此從不執行。第二個while迴圈立即中斷，因此沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  if i == 3:\n    break\n  print(i)\n\nwhile True:\n  pass",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷範圍內的元素，並在條件滿足時中斷，這種設計合理且有意義。while迴圈則進入無限循環，沒有實際的終止條件，因此未被有效使用。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  if i % 2 == 0:\n    print(i)\n\nwhile i == 10:\n  print('Will not execute')",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈根據條件對每個元素進行檢查並打印出值。while迴圈的條件永遠不會為真，因此不會執行任何操作。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for x in range(15):\n  if x % 2 == 0:\n    print(x)\n\nwhile True:\n  break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷了0到14的範圍，並打印出所有偶數。while迴圈則立即中斷，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(6):\n  if i % 2 == 0:\n    print(i)\n\nwhile y > 10:\n  y -= 1",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷範圍並打印出偶數，對程式有實際作用。而while迴圈條件未定義y的初始值，如果y初始值小於或等於10，則永遠不會執行，導致它無效。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(1, 11):\n  if i % 2 == 0:\n    print(i)\n\nwhile 0:\n  print('這句不會被打印')",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷了1到10的範圍，並打印出所有偶數，這具有實際目的。而while迴圈的條件為0，這條件永遠不會為真，因此不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(3):\n  if i % 2 == 0:\n    print(i)\n\nwhile not False:\n  break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷範圍並根據條件打印出偶數的值。while迴圈則立即中斷，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(7):\n  if i % 2 == 0:\n    print(i)\n\nwhile False:\n  x += 1",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷了範圍並打印出所有偶數值。而while迴圈的條件永遠不會為真，因此不會執行任何操作。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in 1, 2, 3]:\n  if i % 2 == 0:\n    print(f'{i} 是偶數')\n\nwhile x < 0:\n  x += 1",
+        "output": "這段程式碼內有一個for迴圈被有效使用, 一個while迴圈被無效使用。for迴圈掃描列表中的元素並打印出偶數。while迴圈的條件 x < 0 如果不事先賦值是無效的，因為在大多數語境中，x 的起始值應該是非負數, 迴圈不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(6):\n  if i % 2 == 0:\n    print(i)\n\nwhile 0:\n  print('Never executes')",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈根據條件篩選並打印偶數，非常合理且有意義。而while迴圈的條件為0，永遠不會為真，因此永遠不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  if i % 2 == 0:\n    print(i)\n\nwhile len(]) > 0:\n  print('This will never run')",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷範圍 0 到 4 並打印偶數。while迴圈的條件永遠不會成立，因為空列表的長度為0，因此不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  if i % 2 == 0:\n    print(i)\n\nwhile True:\n  if False:\n    break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷了範圍並打印出偶數。while迴圈的條件永遠不會為真，因此不會執行任何操作。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  if i % 2 == 0:\n    print(i)\n\nwhile True:\n  print('Hello')\n  break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷範圍並根據條件打印偶數。while迴圈則立即中斷，只打印一次'Hello'，沒有持續運行的必要性。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  if i % 2 == 0:\n    print(i)\n\nwhile 0 < 1:\n  break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷了範圍並打印出所有偶數值。while迴圈則立即中斷，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  if i % 2 == 0:\n    print(i)\n\nwhile True:\n  pass",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷範圍並依據條件打印出偶數值。while迴圈則形成了一個無限迴圈，沒有結束條件。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "total = 0\nfor i in range(1, 6):\n  total += i\n\nwhile total > 10:\n  pass",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地計算了1到5的總和。while迴圈的條件一旦成立就會進入無限迴圈，沒有任何實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for k in range(7):\n  if k % 2 == 0:\n    print(k)\n\nwhile True:\n  if False:\n    break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷了範圍並打印出偶數。while迴圈的條件永遠不會為真，因此即使進入循環也無法中斷，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(0):\n  print('This will never execute')\n\nwhile x < 3:\n  x += 1\n  print('Iteration', x)",
+        "output": "這段程式碼內有一個for迴圈被無效使用，一個while迴圈被有效使用。for迴圈因為範圍為0，永遠不會執行。while迴圈根據條件運行並且每次迭代增加x的值，打印出迭代的次數。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  if i % 2 == 0:\n    print(i)\n\nwhile True:\n  continue",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷了範圍並打印出符合條件的值。while迴圈則陷入了無限循環，並沒有任何實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(7):\n  if i % 2 == 0:\n    print(i)\n\nwhile 1 > 2:\n  print('This will never run')",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷範圍並打印出偶數。while迴圈的條件永遠不可能為真，因此不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  if i % 2 == 0:\n    print(i)\n\nwhile True:\n  if some_condition:\n    break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈根據條件判斷打印出偶數。while迴圈因為some_condition未定義，假設其無法導致合理停止行為被視為無效迴圈。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(3):\n  print(i)\n\nwhile True:\n  print('Running')\n  break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷了範圍並打印出i的值。while迴圈雖然打印了一次文字，但立即中斷，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  if i % 2 == 0:\n    print(i)\n\nwhile condition:\n  break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈會檢查每個i是否是偶數，並打印出來。while迴圈則會立即中斷，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  print('Value:', i)\n\nx = 10\nwhile x > 0:\n  x -= 1\n  continue\n\nwhile False:\n  print('This will never print')",
+        "output": "這段程式碼內有一個for迴圈被有效使用，兩個while迴圈被無效使用。for迴圈正確地遍歷範圍並打印出值。第一個while迴圈雖然有減少x的操作，但每次都直接進入下一次迭代，因此實質上沒有執行任何操作。第二個while迴圈的條件永遠不會為真，因此不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  for j in range(5):\n    if i == j:\n      print(i, j)\n\nwhile False:\n  pass",
+        "output": "這段程式碼內有兩個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷範圍，並在i等於j時打印出值。while迴圈的條件永遠不會為真，因此不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(3):\n  if i % 2 == 0:\n    print(i)\n\nwhile True:\n  pass",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈根據條件選擇性地打印偶數，而while迴圈因為沒有結束條件，會無限運行，浪費資源。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(10):\n  if i % 2 == 0:\n    print(i)\n\nwhile True:\n  pass",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷了範圍並打印出所有偶數。while迴圈則是一個無限迴圈，沒有中止條件，因此是無效的迴圈。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  if i % 2 == 0:\n    print(i)\n\nwhile True:\n  pass",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷範圍並打印出偶數。while迴圈則沒有中斷條件，造成無限迴圈，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  if i % 2 == 0:\n    print(i)\n\nwhile True:\n  if condition:\n    break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地根據條件過濾並打印出偶數值。while迴圈雖然有條件來中斷，但因為未定義 condition 的具體值，所以無法確定其有效性，視情況判斷為無效。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(0):\n  print(i)\n\nwhile True:\n  if x == 5:\n    break\n  x += 1",
+        "output": "這段程式碼內有一個for迴圈被無效使用，一個while迴圈被有效使用。for迴圈的範圍是0，因此永遠不會執行。while迴圈根據條件檢查並增加x值，直到條件為真才中斷，具有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  if i % 2 == 0:\n    print(i)\n\nwhile True:\n  if condition:\n    break\n  continue",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷範圍並打印出偶數值。while迴圈中的條件判斷使得迴圈浪費資源，因為除了等待條件為真時跳出迴圈外，並沒有進行實際的操作。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  print(i * 2)\n\nwhile True:\n  pass\n\nfor i in range(5):\n  break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，兩個迴圈被無效使用。第一個for迴圈遍歷範圍並打印出每個值的兩倍。while迴圈會導致無限迴圈，沒有實際效果。第二個for迴圈在第一次迭代中直接中斷，也沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(1, 10, 2):\n  print(i)\n\nwhile 1 < 0:\n  print('This will also never print')",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈有效地處理範圍內的數字並打印它們。while迴圈的條件永遠不成立，因此不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  if i % 2 == 0:\n    print(i)\n\nwhile 1 < 0:\n  print('This will never print')",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷範圍並在某些條件下打印出值。while迴圈的條件永遠不會為真，因此不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(2):\n  print('Outer', i)\n  for j in range(3):\n    print(' Inner', j)\n\nwhile True:\n  if False:\n    break",
+        "output": "這段程式碼內有兩個for迴圈被有效使用，一個while迴圈被無效使用。兩個for迴圈共同運作，並打印出'Outer'和'Inner'的信息。while迴圈的條件永遠為假，因此不能達成break，導致無效。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(4):\n  if i % 2 == 0:\n    continue\n  print(i)\n\nwhile True:\n  print('In the loop')\n  break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷範圍並根據條件打印奇數。while迴圈則僅執行一次後立即中斷，沒有長時間運行的必要。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "names = 'Alice', 'Bob', 'Charlie']\nfor name in names:\n  print(name)\n\nwhile True:\n  break\n\nwhile False:\n  x = 1",
+        "output": "這段程式碼內有一個for迴圈被有效使用，兩個while迴圈被無效使用。for迴圈正確地遍歷了列表並打印出每個名字。第一個while迴圈則立即中斷，沒有實際效果。第二個while迴圈的條件永遠不會為真，因此不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in 1, 2, 3]:\n  print(i**2)\n\nwhile i > 10:\n  print('This will never print')",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷了列表並打印出每個元素的平方，而while迴圈的條件永遠不會為真，因此不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in 1, 2, 3, 4]:\n  print(i)\n\nwhile True:\n  pass",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷了一個列表並打印出每個元素的值。while迴圈條件永遠為真，沒有終止條件，會導致無限迴圈，因此被視為無效使用。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "x = 10\nwhile x > 0:\n  x -= 1\n\nfor i in range(3):\n  break",
+        "output": "這段程式碼內有一個while迴圈被有效使用，一個for迴圈被無效使用。while迴圈根據條件循環並執行遞減操作，for迴圈則在第一個迭代就被中斷，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for item in 'apple', 'banana', 'cherry']:\n  print(item)\n\nwhile 1 == 2:\n  do_nothing()",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷了列表中的每一個元素並打印出來，而while迴圈的條件永遠不會成立，因此永遠不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  print(i)\n\nwhile x < 0:\n  x += 1\n\nwhile True:\n  break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，兩個while迴圈被無效使用。for迴圈正確地遍歷了範圍並打印出值。第一個while迴圈的條件永遠不會為真，因此不會執行。第二個while迴圈則立即中斷，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(7):\n  if i % 2 == 0:\n    print(i)\n\nwhile 0 > 1:\n  print('這是不可能的狀況')",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷了範圍並打印出偶數值。while迴圈的條件永遠不為真，因此不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  if i % 2 == 0:\n    print(i)\n\nwhile True:\n  break\n\nwhile 0 == 1:\n  print('This will never print')",
+        "output": "這段程式碼內有一個for迴圈被有效使用，兩個while迴圈被無效使用。for迴圈遍歷範圍並打印出符合條件的值。第一個while迴圈則立即中斷，沒有實際效果。第二個while迴圈的條件永遠不會為真，因此不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for number in 1, 2, 3, 4]:\n  print(number*2)\n\nwhile True:\n  print('This will print once')\n  break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷列表並打印出每個元素的兩倍值，具有實際效果。while迴圈在第一次迭代就立即中斷，沒有實際用途。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for char in 'hello':\n  print(char)\n\nwhile True:\n  if False:\n    break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷了字串並打印出每個字母。while迴圈的條件永遠不會為真，因此無法中斷，導致無限迴圈。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  print('Processing', i)\n\nwhile 0 == 1:\n  print('This will never run')",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷了範圍，並在每次迭代中打出 'Processing' 與當前的索引值。while迴圈的條件永遠不會為真，因此不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  if i == 2:\n    break\n  print(i)\n\nwhile False:\n  print('This will never happen')",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈根據條件進行了有效的操作，當i等於2時中斷，並打印出其餘值。while迴圈的條件永遠不會為真，因此不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for char in 'hello':\n  print(char)\n\nwhile True:\n  pass",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷了字符串並打印出每個字符。而while迴圈則因為沒有中止條件而陷入無限迴圈，沒有實際效率。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  if i % 2 == 0:\n    print(i)\n\nwhile True:\n  break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷了範圍並打印出符合條件的值。while迴圈則立即中斷，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(8):\n  if i % 2 == 0:\n    print(i)\n\nwhile x < 10:\n  pass",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷範圍並打印出偶數的值，實際執行了有意義的操作。while迴圈則沒有執行任何操作，只是空迴圈，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in ]:\n  print('This will never print')\n\nx = 0\nwhile x < 3:\n  print(x)\n  x += 1",
+        "output": "這段程式碼內有一個for迴圈被無效使用，一個while迴圈被有效使用。for迴圈遍歷的是一個空列表，因此不會執行。while迴圈則會根據條件執行，並打印x的值。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(7):\n  if i % 2 == 0:\n    print(i)\n\nwhile True:\n  continue",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷範圍並打印出偶數值。while迴圈則以無限循環的形式運行，浪費了計算資源且沒有末來的中止點，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in 1, 2, 3]:\n  print(i)\n\nx = 10\nwhile x < 5:\n  print(x)",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷列表並打印出每個元素。while迴圈的條件永遠不會為真，因此不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in 1, 2, 3]:\n  print(i * 2)\n\nwhile 0 < 0:\n  print('This cannot be printed')",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈對每個元素進行了乘二的操作並打印出來，而while迴圈的條件永遠不會為真，因此不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for item in 1, 2, 3]:\n  print(item)\n\nfor i in ]:\n  print('This will never print')",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個for迴圈被無效使用。第一個for迴圈遍歷列表並打印出每個元素。第二個for迴圈因為列表為空，所以不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  for j in ]:\n    print(i, j)\n\nx = 0\nwhile x < 3:\n    print('Value of x:', x)\n    x += 1",
+        "output": "這段程式碼內有一個for迴圈被無效使用，一個while迴圈被有效使用。for迴圈的內層迴圈因為迭代空列表而永遠不會執行。while迴圈根據條件正確運行並打印出x的值。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(3):\n  print(i)\n\nwhile True:\n  pass",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷了範圍並打印出值。然而，while迴圈會進入無限循環，沒有終止條件，會導致程式無限運行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  if i % 2 == 0:\n    print(i)\n\nwhile 1 == 0:\n  print('This will never execute')",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷範圍並打印出偶數，while迴圈的條件永遠不會成立，因此不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while True:\n  print('Running')\n  if some_condition:\n    break\n\nfor i in range(0):\n  print(i)",
+        "output": "這段程式碼內有一個while迴圈被有效使用，一個for迴圈被無效使用。while迴圈根據某個條件運行並在滿足條件時中斷，因此是有效的。for迴圈遍歷範圍為0，導致它永遠不會執行，因此是無效的。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  if i % 2 == 0:\n    print(i)\n\nfor j in range(10):\n  break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個for迴圈被無效使用。第一個for迴圈正確地遍歷範圍並打印出符合條件的值。第二個for迴圈則立即中斷，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(10):\n  if i % 2 == 0:\n    print(i)\n\nwhile True:\n  break\n\nwhile ]:\n  print(\"This will never print\")",
+        "output": "這段程式碼內有一個for迴圈被有效使用，兩個while迴圈被無效使用。for迴圈根據條件打印出偶數，對程式有實際作用。而第一個while迴圈立即中斷，第二個while迴圈的條件為空列表，永遠不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(7):\n  if i % 2 == 0:\n    print(i)\n\nwhile True:\n  if False:\n    break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷範圍並打印出所有偶數。while迴圈的條件永遠不會為真，因此不會中斷，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(3):\n  print(i ** 2)\n\nwhile 1 > 2:\n  print('This is invalid')",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷範圍並打印出每個數字的平方。while迴圈的條件永遠不會為真，因此不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(3):\n  if i % 2 == 0:\n    print(i)\n\nwhile False:\n  print('Unreachable code')",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈根據條件篩選並打印偶數，實現了有意義的操作，而while迴圈的條件永遠不為真，因此永遠不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  if i % 2 == 0:\n    print(i)\n\nwhile 0:\n  print('This will never run')",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷範圍並打印出偶數值。while迴圈的條件永遠不會成立，因此不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  if i % 2 == 0:\n    print(i)\n\nwhile 0 > 1:\n  print('This is impossible')",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷範圍並打印出偶數，而while迴圈的條件永遠不會為真，因此不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(2):\n  for j in range(3):\n    if j == 1:\n      break\n    print(i, j)\n\nwhile x < 0:\n  print('This will not print')\n  x += 1",
+        "output": "這段程式碼內有兩個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈根據條件進行嵌套迭代，並在特定條件下中斷內層迴圈，實際執行了打印操作。而while迴圈因為條件不滿足，永遠不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "x = 0\nwhile x < 3:\n  print(x)\n  x += 1\n\nfor i in range(5):\n  break",
+        "output": "這段程式碼內有一個while迴圈被有效使用，一個for迴圈被無效使用。while迴圈根據條件運行並打印x的值，而for迴圈則在第一次迭代中立即中斷，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  if i % 2 == 0:\n    print(i)\n\nwhile True:\n  if False:\n    break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷了範圍並根據條件打印出特定的值。while迴圈中的條件永遠不會為真，因此不會中斷，導致無效使用。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  if i % 2 == 0:\n    print(i)\n\nwhile True:\n  continue",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈根據條件判斷並打印出符合條件的值。while迴圈則進入無限迴圈，沒有執行任何實際操作，應該避免。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for num in 1, 2, 3, 4, 5]:\n  if num % 2 == 0:\n    continue\n  print(num)\n\nwhile 0 > 1:\n  print('This will never run')",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷列表，並且在符合條件時跳過特定元素，然後打印其餘元素。while迴圈的條件永遠不會為真，因此不會執行任何操作。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(3):\n  if i == 1:\n    break\n  print(i)\n\nwhile True:\n  pass",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈根據條件中斷並打印出值。while迴圈則進入無限迴圈，浪費資源且沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(6):\n  if i % 2 == 0:\n    print(i)\n\nwhile True:\n  pass",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷範圍並打印偶數，while迴圈則進入無限迴圈，沒有實際效果和退出條件。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  if i % 2 == 0:\n    print(i)\n\nwhile True:\n  pass",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷範圍並打印出每個偶數值。while迴圈則是一個無限迴圈，沒有終止條件，會導致程式無限執行，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  print(i**2)\n\nwhile 0 > 1:\n  print('This will never execute')",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷範圍並打印每個數字的平方。while迴圈的條件永遠不會為真，因此不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  if i % 2 == 0:\n    print(i)\n\nwhile 1 < 0:\n  print('This will never run')",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷範圍並打印出偶數值。while迴圈的條件永遠不會為真，因此不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(1, 11):\n  if i % 2 == 0:\n    print(i)\n\nwhile True:\n  if condition:\n    break\n",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷範圍並打印出偶數。while迴圈雖然含有條件判斷，但因為它依賴外部的 `condition` 並立即中斷，因此對程式沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while value < 10:\n  value += 1\n  print(value)\n\nfor i in range(5):\n  break",
+        "output": "這段程式碼內有一個while迴圈被有效使用，一個for迴圈被無效使用。while迴圈根據條件增加value並打印其值，因此有實際效果。而for迴圈在第一次迭代時立即終止，沒有執行任何實際操作。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(7):\n  if i % 2 == 0:\n    print(i)\n\nwhile False:\n  continue",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷範圍並打印出了偶數。while迴圈的條件永遠不會為真，因此不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(10):\n  if i % 2 == 0:\n    continue\n  print(i)\n\nwhile True:\n  if some_condition:\n    break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷範圍並打印出奇數。while迴圈則因為某個條件立即中斷，除非'some_condition'立即為真，否則會形成無限迴圈，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  for j in range(i):\n    print(i, j)\n\nwhile True:\n  break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。外層的for迴圈和內層的for迴圈共同運作，打印出i和j的值。while迴圈則立即中斷，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for _ in range(5):\n  print('Hello')\n\nwhile x > 10:\n  print('Not possible')",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷了範圍並打印出'Hello'，對程式有實際影響。while迴圈的條件不可能為真，因為x沒有初始化或賦值，因此不會被執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in 1, 2, 3]:\n  if i == 2:\n    continue\n  print(i)\n\nwhile True:\n  pass",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷列表，並在遇到某個條件時進行下一次迴圈操作，剩餘情況下打印出元素值。而while迴圈因為沒有任何中斷條件，會導致無限迴圈，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for x in range(3):\n  if x % 2 == 0:\n    print(x)\n\nwhile True:\n  if condition:\n    break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈對範圍內的值進行條件檢查並打印符合條件的值。而while迴圈雖然有條件，但其條件是依賴一個不明確的變數，並可能立即中斷，這使得它沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  if i % 2 == 0:\n    print(i)\n\nwhile 0 < 1:\n  break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈根據條件打印出範圍內的偶數值，而while迴圈立即中斷因此沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(7):\n  if i % 2 == 0:\n    print(i)\n\nwhile True:\n  pass",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷了範圍並打印出偶數值。而while迴圈則進入一個無限迴圈，沒有實際效果，會浪費資源。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  if i % 2 == 0:\n    print(i)\n\nwhile True:\n  break\n\nwhile False:\n  print('This will never print')",
+        "output": "這段程式碼內有一個for迴圈被有效使用，兩個while迴圈被無效使用。for迴圈正確地遍歷範圍並打印出偶數值。第一個while迴圈則立即中斷，沒有實際效果。第二個while迴圈的條件永遠不會為真，因此不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while x < 20:\n  x += 2\n  if x == 10:\n    break\n\nfor item in ]:\n  print(item)",
+        "output": "這段程式碼內有一個while迴圈被有效使用，一個for迴圈被無效使用。while迴圈根據條件進行運算並在特定條件下中斷，而for迴圈由於迭代空的列表，因此不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(10):\n  if i % 2 == 0:\n    print(i)\n\nwhile True:\n  if False:\n    break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷範圍並打印偶數值，對程式有實際效果。while迴圈則由於條件永遠不為真，不會中斷，因此無實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  print('Hello')\n\nwhile True:\n  continue",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷了範圍並打印出'Hello'。while迴圈則造成無限迴圈，因為它每次迭代都使用continue語句，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(6):\n  if i % 2 == 0:\n    print(i)\n\nwhile 0 > 1:\n  print('這不會打印')",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷了範圍並且輸出符合條件的值。while迴圈的條件永遠不為真，因此不會執行任何操作。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for word in 'apple', 'banana', 'cherry']:\n  print(word)\n\nwhile False:\n  pass",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷了一個列表並打印出每個元素。而while迴圈的條件永遠不成立，因此不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in 1, 2, 3]:\n  print(i)\n\nwhile i == 4:\n  i += 1",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷列表中的每個元素並打印出來。而while迴圈由於初始條件不為真，永遠不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(10):\n  if i % 2 == 0:\n    print(i)\n\nwhile 0:\n  print('This will not run')",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈根據條件篩選並打印出偶數值，while迴圈則因為條件永遠不為真，不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  print(i)\n\nwhile True:\n  if False:\n    break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷了範圍並打印出值。while迴圈因為條件永遠不會成立，造成無效迴圈，會引起無限循環。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  if i % 2 == 0:\n    print(i)\n\nwhile 0 == 0:\n  print('This will print once')\n  break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷範圍並在條件符合時打印值，具有實際效果。while迴圈每次都直接中斷，只打印一次，無實際影響。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  if i % 2 == 0:\n    print(i)\n\nwhile False:\n  pass",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈篩選出偶數並打印它們，而while迴圈的條件永遠不會為真，因此不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(6):\n  for j in range(6):\n    if i == j:\n      break\n\nwhile True:\n  if condition_met:\n    break",
+        "output": "這段程式碼內有兩個for迴圈被無效使用，一個while迴圈被有效使用。for迴圈在內部條件滿足時立即中斷，沒有實際效果。while迴圈則會根據條件來終止運行，對程式的功能和行為產生實際影響。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "x = 10\nwhile x > 0:\n  x -= 1\n\nfor i in ]:\n  print(i)",
+        "output": "這段程式碼內有一個while迴圈被有效使用，一個for迴圈被無效使用。while迴圈根據條件不斷遞減x的值，具備實際意義。for迴圈試圖遍歷一個空列表，因此永遠不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  if i % 2 == 0:\n    print(i)\n\nwhile not condition:\n  break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷了範圍並打印出偶數值。while迴圈則立即中斷，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while True:\n  x = 1\n  print('This will print once')\n  break\n\nfor _ in 0] * 3:\n  print('Hello')\n\nfor i in range(5):\n  if i > 10:\n    break\n  else:\n    continue",
+        "output": "這段程式碼內有一個while迴圈被無效使用，兩個for迴圈被有效使用。while迴圈立即執行一次後中斷，沒有實際效果。第一個for迴圈正確地遍歷了範圍並打印出'Hello'值。第二個for迴圈雖然條件永遠不會成立，但其結構設計合理，因此也是有效的。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(6):\n  if i % 2 == 0:\n    print(i)\n\nwhile False:\n  x = 1\n\nwhile True:\n  break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，兩個while迴圈被無效使用。for迴圈正確地遍歷範圍並打印出所有偶數。第一個while迴圈因條件永遠不會為真而不會執行。第二個while迴圈則立即中斷，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for item in ]:\n  print(item)\n\nx = 0\nwhile x < 3:\n  print(x)\n  x += 1",
+        "output": "這段程式碼內有一個for迴圈被無效使用，一個while迴圈被有效使用。for迴圈遍歷的是一個空列表，因此不會執行任何操作。而while迴圈根據條件運行並打印出x的值，每次循環後遞增x，直至條件不再滿足，這是有效的使用。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while True:\n  if condition_met:\n    break\nfor i in range(3):\n  if i % 2 == 0:\n    continue\n  print(i)",
+        "output": "這段程式碼內有一個while迴圈被有效使用，一個for迴圈被無效使用。while迴圈根據條件滿足時中斷，實際上可以用於不確定次數的檢查。而for迴圈內用了一個條件來略過部分迭代，但沒有對其餘部分進行有效的處理，只是打印出奇數索引，這些可以用更有效的方式來完成。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  if i % 2 == 0:\n    print(i)\n\nwhile True:\n  if False:\n    break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷範圍並打印出符合條件的值。while迴圈則由於條件永遠不會為真，導致無限迴圈且沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while counter < 5:\n  counter += 1\n\nfor i in range(0):\n  print(i)",
+        "output": "這段程式碼內有一個while迴圈被有效使用，一個for迴圈被無效使用。while迴圈根據條件計數並增加counter的值。for迴圈則遍歷一個空範圍，因此不會執行任何操作。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  if i % 2 == 0:\n    print(i)\n\nwhile 0:\n  print('This will not run')",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈根據條件打印出偶數。while迴圈的條件永遠為假，因此不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in 1, 2, 3]:\n  print(i)\n\nx = 0\nwhile x > 10:\n  x += 1",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷了列表並打印出值。while迴圈因為條件一開始就不滿足，永遠不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  if i % 2 == 0:\n    print(i)\n\nwhile 1 == 2:\n  print('This will never print')",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷範圍並打印出偶數。while迴圈的條件永遠不會為真，因此不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while True:\n  import time\n  time.sleep(1)\n  break\n\ncounter = 3\nwhile counter > 0:\n  print('倒數:', counter)\n  counter -= 1",
+        "output": "這段程式碼內有兩個while迴圈。第一個while迴圈無效，因為它雖然引入了時間延遲，但立刻中斷了，沒有實際作用。第二個while迴圈是有效的，因為它進行了一個有意義的倒數計時並打印出對應的結果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  if i % 2 == 0:\n    print(i)\n\nwhile 0 < -1:\n  print('這段迴圈永遠不會跑')",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷範圍並僅在條件符合時打印i的值。while迴圈的條件永遠不會為真，因此不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(3):\n  if i == 2:\n    break\n  print(i)\n\nfor j in range(0):\n  print(j)",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個for迴圈被無效使用。第一個for迴圈在條件滿足時會中斷，並在條件達成前輸出i值。第二個for迴圈的範圍為空，因此不會執行任何操作。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while True:\n  print('Running')\n  if should_stop:\n    break\n\nfor i in range(3):\n  break",
+        "output": "這段程式碼內有一個while迴圈被有效使用，一個for迴圈被無效使用。while迴圈在特定條件下運行並在應該停止時中斷，具有實際作用。for迴圈則在第一個迭代時就中斷，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  if i % 2 == 0:\n    print(i)\n\nwhile 0:\n  print('This will never run')",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈對範圍內的每個數字進行檢查，並打印出符合條件的值。while迴圈的條件永遠為假，因此不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  if i % 2 == 0:\n    print(i)\n\nwhile True:\n  pass",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷範圍並打印出偶數值。while迴圈則造成無限迴圈，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while x < 10:\n  x += 1\n  if x == 5:\n    break\n\nfor i in range(0):\n  print(i)\n\nfor j in range(3):\n  print(j)",
+        "output": "這段程式碼內有一個while迴圈被有效使用，一個for迴圈被無效使用，另一個for迴圈被有效使用。while迴圈根據條件增量x並在x等於5時中斷，對程式行為有實際影響。第一個for迴圈因為範圍為0而不會執行任何操作，屬於無效迴圈。第二個for迴圈遍歷範圍並打印出j值，屬於有效迴圈。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(8):\n  print(i)\n\nwhile True:\n  pass",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷了範圍並打印出值，而while迴圈由於沒有中止條件會造成無限迴圈，應避免使用。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(6):\n  print(i)\n\nwhile 0 < 1:\n  break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷了範圍並打印出值，是有效的。while迴圈則立即中斷，沒有實際效果，是無效的。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  for j in range(5):\n    print(i * j)\n\nwhile 0:\n  print('This will never execute')",
+        "output": "這段程式碼內有兩個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈進行了有效的嵌套迴圈運算，並打印出i和j的乘積。while迴圈由於條件為0，永遠不會被執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(6):\n  if i % 2 == 0:\n    print(i)\n\nwhile True:\n  print('Hello World')\n  break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈篩選並打印出偶數值。while迴圈則在打印一次訊息後立即中斷，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for num in 1, 2, 3, 4, 5]:\n  if num % 2 == 0:\n    print(f'{num} is even')\n\nwhile 2 + 2 == 5:\n  pass",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷列表中的每個數字並對每個偶數進行處理和打印。while迴圈的條件永遠不為真，因此不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "x = 0\nwhile x < 3:\n  print(x)\n  x += 1\n\nfor i in range(5):\n  break",
+        "output": "這段程式碼內有一個while迴圈被有效使用，一個for迴圈被無效使用。while迴圈根據條件運行並打印出0到2的值，而for迴圈則每次都立即中斷，沒有進行任何實際操作。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "x = 10\nwhile x > 0:\n  print(x)\n  x -= 1\n\nfor i in range(5):\n  break",
+        "output": "這段程式碼內有一個while迴圈被有效使用，一個for迴圈被無效使用。while迴圈從10開始遞減並打印值，符合定義。for迴圈則立即中斷，沒有完成任何實際操作。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  print(i**2)\n\nfor j in range(3):\n  break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個for迴圈被無效使用。第一個for迴圈計算並打印每個數字的平方。第二個for迴圈在第一次迭代時即中斷，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while x < 3:\n  print(x)\n  x += 1\n\nfor k in range(0):\n  print(k)",
+        "output": "這段程式碼內有一個while迴圈被有效使用，一個for迴圈被無效使用。while迴圈根據條件運行並打印出x的值。for迴圈遍歷一個空的範圍，因此不會執行任何操作。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(10):\n  if i % 2 == 0:\n    print(i)\n  else:\n    continue\n\nwhile True:\n  break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈根據條件檢查並打印偶數的值進行操作。while迴圈則立即中斷，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(8):\n  print('Number:', i)\n\nwhile 1 < 0:\n  print('This will never run')",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷範圍並打印出值。而while迴圈的條件永遠不會為真，因此不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(4):\n  print(f'這是第 {i} 次迴圈')\n\nwhile True:\n  if some_condition:\n    break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷了範圍並打印出訊息。while迴圈中的中斷條件未明確存在，因此在當前情況下可能造成無限迴圈。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(3):\n  sum = 0\n  sum += i\n  print(sum)\n\nwhile True:\n  pass",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地累加值並打印出來。while迴圈則是無限迴圈，沒有退出條件，會導致程序永遠運行，浪費資源。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(7):\n  if i % 2 == 0:\n    print(i)\n\nwhile 1 > 2:\n  print('This will never execute')",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷範圍並打印出偶數。while迴圈的條件永遠不會為真，因此不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for item in items:\n  process(item)\n\nwhile True:\n  pass",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷每個元素並進行處理，而while迴圈則陷入無窮迴圈，沒有任何中斷條件或實際操作。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(7):\n  if i % 2 == 0:\n    print(i)\n\nwhile not False:\n  break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷了範圍並打印出符合條件的值。while迴圈則立即中斷，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(7):\n  if i % 2 == 0:\n    print(i)\n\nwhile 0 > 1:\n  pass",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷範圍內的每個整數，並打印出偶數。while迴圈的條件永遠不會為真，因此該迴圈永遠不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while x < 3:\n  x += 1\n  print(x)\n\nfor i in range(3):\n  break",
+        "output": "這段程式碼內有一個while迴圈被有效使用，一個for迴圈被無效使用。while迴圈根據條件運行並打印值，而for迴圈每次都直接中斷，沒有執行實際操作。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while x < 10:\n  x += 1\n  if x == 5:\n    break\n\nfor i in range(0):\n  print(i)",
+        "output": "這段程式碼內有一個while迴圈被有效使用，一個for迴圈被無效使用。while迴圈通過改變變量並根據條件中斷來執行操作。for迴圈因範圍為0而永遠不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(3):\n  if i == 1:\n    break\n  print(i)\n\nwhile 0:\n  print('This will not print')",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈在條件滿足時中斷之前打印了值，而while迴圈的條件永遠為假，因此不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for x in range(5):\n  if x % 2 == 0:\n    print(x)\n\nwhile 0:\n  print('This will never execute')",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈根據條件判斷並輸出滿足條件的值。while迴圈的條件永遠不為真，因此從不執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(7):\n  if i % 2 == 0:\n    print(i)\n\nwhile True:\n  if condition:\n    break\n  continue",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷了範圍並打印出偶數。while迴圈雖然有條件中斷，但因為沒有改變條件的內容，會導致無限迴圈，浪費資源。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(3):\n  if i % 2 == 0:\n    print(i)\n\nwhile 1 == 0:\n  print('This will never execute')",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷範圍，並根據條件打印出值。while迴圈的條件永遠不會為真，因此不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for k in range(3):\n  if k == 1:\n    break\n\nx = 10\nwhile x > 0:\n  x -= 1\n  print(x)",
+        "output": "這段程式碼內有一個for迴圈被無效使用，一個while迴圈被有效使用。for迴圈在第一次迴圈後直接中斷，沒有實際運作意義。而while迴圈根據條件遞減，並打印出x的值，對程式有實際影響。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  if i % 2 == 0:\n    print(i)\n\nwhile y != 0:\n  break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈對範圍內的偶數進行處理並打印它們。while迴圈條件y != 0未給出初始化或變更，因此while迴圈可能不會執行任何操作就直接中斷，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in 1, 2, 3]:\n  print(i)\n\nwhile x < 0:\n  do_something()",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷列表並打印每個元素的值，具有實際效果。而while迴圈由於條件永遠不為真，因此永遠不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  print(i)\n\nwhile i < 5:\n  break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷範圍並打印出值，而while迴圈立即中斷，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for item in 1, 2, 3, 4]:\n  print(item)\n\nwhile len(]) > 0:\n  print('This will not print')",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷列表，並打印每個元素的值，而while迴圈由於條件永遠不為真，因此不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for char in 'Hello World':\n  print(char)\n\nwhile 5 < 3:\n  print('This will never run')",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷了字符串的每一個字符並打印出來，而while迴圈的條件永遠不會為真，因此不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while x < 10:\n  x += 1\n\nfor i in range(0):\n  print(i)\n\nfor j in range(3):\n  print(j)",
+        "output": "這段程式碼內有兩個有效迴圈，一個無效迴圈。第一個 while 迴圈根據條件運行並遞增 x 值。第二個 for 迴圈遍歷了一個空範圍，沒有任何實際運行。不過第三個 for 迴圈遍歷範圍並打印出 j 值。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "n = 10\nfor i in range(n):\n  print(i**2)\n\nx = 0\nwhile x:\n  x += 1",
+        "output": "這段程式碼內有一個 for 迴圈被有效使用，一個 while 迴圈被無效使用。for 迴圈遍歷範圍並打印出每個值的平方，對程式的功能有實際效果。而 while 迴圈的條件一開始就是 False，因此永遠不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  print(i)\n\nwhile True:\n  print('永無止境的迴圈')",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷了範圍並打印出值。而while迴圈會陷入無限迴圈，無法終止，這樣會浪費資源和時間。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(10):\n  print(i)\n  if i == 5:\n    break\n\nfor k in range(10):\n  while k > 10:\n    print('Invalid')",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個for-while複合迴圈被無效使用。第一個for迴圈正確地遍歷了範圍並打印出值，且在遍歷到特定值時中斷。第二個for-while迴圈裡的while條件永遠不會成立，因此不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(3):\n  print(i)\n\nwhile True:\n  if condition:\n    break\n",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷了範圍並打印出值。而while迴圈因為條件不明確，可能會無限運行直到某個未定義的條件滿足後中斷，浪費資源。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(3):\n  print('有效迴圈', i)\n\nwhile 1 == 2:\n  print('這永遠不會打印')",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷了範圍並打印出相應的值。while迴圈的條件永遠不會為真，因此不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  if i % 2 == 0:\n    print(i)\n\nwhile ]:\n  print('This will not run')",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈根據條件篩選並打印出偶數值。而while迴圈條件總是為False，因此不會運行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  if i % 2 == 0:\n    continue\n  print(i)\n\nwhile True:\n  pass",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷範圍並且根據條件選擇性地打印數字，是合理的處理數據的方法。while迴圈則是無限迴圈，沒有條件來終止，造成資源浪費和時間浪費。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  if i % 2 == 0:\n    print(i)\n\nwhile 1 == 0:\n  print('This will not run')",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈只打印範圍內的偶數，有實際效果。while迴圈的條件永遠為假，因此不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for item in 'apple', 'banana', 'cherry']:\n  print(item)\n\nwhile 0 < 0:\n  print('This will never print')",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷了列表並打印出每個元素。while迴圈的條件永遠不會為真，因此不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  print(i)\n\nwhile True:\n  print('無限迴圈')\n  break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷範圍並打印出值。而while迴圈雖然有所操作，但因為包含立即中斷的break語句，因此沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while count < 3:\n  print('Count:', count)\n  count += 1\n\nfor i in range(0):\n  print(i)",
+        "output": "這段程式碼內有一個while迴圈被有效使用，一個for迴圈被無效使用。while迴圈會根據count的值進行打印並且遞增，這對程式有實際效果。而for迴圈的範圍是0，因此不會執行任何操作。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  print(i*i)\n\nwhile 1 == 0:\n  print('This will never print')",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈計算每個範圍內數字的平方並打印出來，所以它是有效的。while迴圈的條件永遠不會為真，因此不會執行，是無效的。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for num in 1, 2, 3]:\n  if num % 2 == 0:\n    print('Even:', num)\n\nwhile 3 < 2:\n  print('This will never print')",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈對列表項目進行檢查並打印偶數值。while迴圈的條件永遠不會為真，因此不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  if i % 2 == 0:\n    print(i)\n\nwhile False:\n  x = 1\n\nfor j in range(2):\n  break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，兩個其他迴圈被無效使用。有效的for迴圈根據條件打印出偶數的值。而無效的while迴圈永遠不會執行，因為條件永遠不為真。無效的for迴圈雖然遍歷了範圍，但每次立即中斷，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(8):\n  if i % 2 == 0:\n    print(i)\n\nwhile True:\n  print(\"This will run once\")\n  break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷範圍並打印出偶數值，對功能有實際影響。while迴圈則在第一次執行後立即中斷，雖然執行了一次打印，但實際上並無多大意義。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  print(i)\n\nwhile True:\n  pass",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷了範圍並打印出值。而while迴圈則陷入無限循環，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while x < 10:\n  if x % 2 == 0:\n    print(x)\n  x += 1\n\nfor k in 1, 2, 3, 4]:\n  break",
+        "output": "這段程式碼內有一個while迴圈被有效使用，一個for迴圈被無效使用。while迴圈根據條件運行並打印出偶數值，並且正確更新x的值。for迴圈則在第一次迭代時立即中斷，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(10):\n  if i % 2 == 0:\n    print(i)\n\nwhile x < 0:\n  x -= 1",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷了範圍並打印出偶數值。while迴圈的條件初始為假，因此不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  if i % 2 == 0:\n    print(i)\n\nwhile True:\n  if False:\n    break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷範圍並打印偶數值，而while迴圈內的條件永遠不會成真，因此無法中斷，實際上是無限迴圈。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  print('Processing', i)\n\nwhile 0 < 1:\n  break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷了範圍並打印出處理中的值。while迴圈則因為條件永遠為真，但立即中斷，因此沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  print(i)\n\nwhile x < 0:\n  print('This will never print')",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷範圍並打印出值。while迴圈的條件永遠不會為真，因此不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  if i % 2 == 0:\n    print(i)\n\nwhile True:\n  break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷範圍並根據條件打印出偶數值，而while迴圈立即中斷，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  if i % 2 == 0:\n    print(i)\n\nwhile x < 0:\n  x -= 1",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈根據條件打印出偶數，確實執行了有意義的操作。而while迴圈因為x的初始值未給出、初始條件x < 0本來就爲假，所以這段while迴圈永遠不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "x = 0\nwhile x != 5:\n  print(x)\n  x += 1\n\nwhile x == 5:\n  break",
+        "output": "這段程式碼內有一個有效的 while 迴圈和一個無效的 while 迴圈。有效的 while 迴圈根據條件執行，打印出 x 的值並遞增 x，而無效的 while 迴圈的條件永遠為真，導致迴圈無限執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while True:\n  break\n\nfor i in range(5):\n  print(i)\n\nwhile False:\n  print('This will never print')",
+        "output": "這段程式碼內有一個while迴圈被無效使用，一個for迴圈被有效使用，一個while迴圈被無效使用。第一個while迴圈立即中斷，沒有實際效果。for迴圈正確地遍歷了範圍並打印出值。第二個while迴圈的條件永遠不會為真，因此不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "x = 0\nwhile x < 5:\n    print(x*2)\n    x += 2\n\nwhile x == 0:",
+        "output": "這段程式碼內有一個有效迴圈和一個無效迴圈。while x < 5迴圈根據條件運作，打印x*2並更新x，有效地遍歷並處理數據。而while x == 0迴圈的條件永遠不會為真，因此它是一個無效迴圈，不會執行任何操作。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while x == 10:\n  print('x is 10')\n\nx = 11",
+        "output": "這段程式碼內有一個無效的while迴圈。while迴圈的條件永遠不會為真，因為在進入迴圈後，x立即被賦值為11。因此，迴圈不會執行任何操作。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n    if i % 2 == 0:\n        print(i)\n\nwhile True:\n    continue",
+        "output": "這段程式碼內有一個有效的 for 迴圈和一個無效的 while 迴圈。 for 迴圈遍歷範圍並僅打印偶數。 while 迴圈會永遠執行，因為條件始終為真，但它不會執行任何操作，浪費資源。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個迴圈",
+        "input": "x = 0\nwhile x <= 5:\n  print(x)\n  x += 1\n\nfor i in range(3):\n  break",
+        "output": "這段程式碼內有一個while迴圈被有效使用，一個for迴圈被無效使用。while迴圈正確地迭代並打印出值。for迴圈在第一次迭代後立即中斷，沒有任何效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while True:\n    x += 1\n    if x > 10:\n        break\n\nfor i in ]:\n    pass",
+        "output": "這段程式碼內有一個有效的while迴圈和一個無效的for迴圈。while迴圈遞增x直到它大於10並跳出迴圈，執行了一個有用的操作。for迴圈遍歷一個空列表，沒有執行任何操作，因此是無效的。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for item in iterable:\n  process_item()\n\nwhile condition == True:\n  do_nothing()",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷序列中的每一個元素並處理它們。while迴圈的條件永遠為真，因此它會無限運行，不斷執行do_nothing()操作，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while condition:\n  do_something()\n\nfor i in range(5):\n  if i == 2:\n    continue\n  print(i)",
+        "output": "這段程式碼內有一個while迴圈與for迴圈，其中if-continue組合為一個有效迴圈。while迴圈根據條件執行某些操作，而for迴圈遍歷範圍。在for迴圈中，當i等於2時，會跳過操作，從而有效避免不必要的運算。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈和無效迴圈",
+        "input": "while 1:\n  print('Infinite loop')\n\nfor i in ]:\n  print('Empty list')",
+        "output": "這段程式碼內有一個無效的while迴圈和一個無效的for迴圈。while迴圈的條件永遠為真，導致無限迴圈，而for迴圈遍歷一個空列表，沒有執行任何操作。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效的迴圈",
+        "input": "for country in 'USA', 'UK', 'China']: \n  print(country) \n\n while country in 'Germany', 'France']: \n  break",
+        "output": "這段程式碼內有一個有效for迴圈和一個無效while迴圈。for迴圈遍歷列表並打印每個國家。while迴圈根據列表中的國家檢查條件，但由於列表中沒有這些國家，所以它會立即中斷。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while True:\n  for i in range(10):\n    if i == 5:\n      break",
+        "output": "這段迴圈有效，因為while迴圈會持續執行，直到遇到break。內層for迴圈在每次迭代中打印一個值，並且當i等於5時，會使用break中止迴圈。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈和無效迴圈",
+        "input": "for i in range(10):\n  print(i)\n\nwhile True:\n  break\n\nwhile False:\n  print('This will never print')",
+        "output": "這段程式碼內包含一個有效迴圈和兩個無效迴圈。for迴圈正確地遍歷範圍並打印出值，而兩個while迴圈則被無效使用。while True迴圈立即中斷，while False迴圈的條件永遠不會為真，因此不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個迴圈，哪些是有效哪些是無效",
+        "input": "while x < 5:\n  x += 1\n\nwhile True:\n  break",
+        "output": "這段程式碼包含一個有效迴圈和一個無效迴圈。while x < 5 是一個有效迴圈，它根據條件執行操作，每次迭代都會增加 x 的值。while True 則是一個無效迴圈，因為它將永遠執行，因為條件總是為真。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "x = 5\nwhile x > 0:\n  print(x)\n  x -= 1\n\nfor i in range(5):\n  if i == 2:\n    continue\n  print(i)",
+        "output": "這段程式碼內有一個while迴圈被有效使用，一個for迴圈被有效使用。while迴圈逐次遞減x並打印其值，直到x變為0。for迴圈遍歷範圍，並在i為2時跳過一個元素，然後打印其他元素的值。"
+    },
+    {
+        "instruction": "段落內各個迴圈的說明",
+        "input": "while not keyboard.is_pressed('q'):\n    # 處理遊戲邏輯\n\nwhile True:\n    break",
+        "output": "第一個迴圈是一個有效的while迴圈，它根據鍵盤輸入運行遊戲邏輯。第二個迴圈是一個無效的while迴圈，它永遠不會執行，因為它立即中斷。"
+    },
+    {
+        "instruction": "分析以下程式碼中的迴圈類型",
+        "input": "for i in range(5):\n  if i % 2 == 0:\n    print(i)\n\nwhile x < 10:\n  x += 1",
+        "output": "這段程式碼內有一個有效迴圈，一個無效迴圈。for迴圈有效地迭代範圍並根據條件打印偶數。while迴圈的條件永遠為真，導致無限迴圈，因此是無效的。"
+    },
+    {
+        "instruction": "以下程式碼中，哪些迴圈是有效的？哪些是無效的？",
+        "input": "while True:\n    break\n\nfor i in range(10):\n    print(i)",
+        "output": "無效迴圈: while True:\n    break\n原因: 這個while迴圈立即中斷，沒有執行任何有意義的操作。\n\n有效迴圈: for i in range(10):\n    print(i)\n原因: 這個for迴圈對每個元素執行print操作，對程式的輸出產生實際影響。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while True:\n    print('This will print forever')\n\nfor i in range(10):\n    if i == 5:\n        continue",
+        "output": "這段程式碼內有一個無效的while迴圈，一個有效的for迴圈。while迴圈將永遠執行，導致無限迴圈。for迴圈遍歷範圍，但在i等於5時使用continue跳過該值，導致跳過值5。"
+    },
+    {
+        "instruction": "請找出有效迴圈與無效迴圈",
+        "input": "for i in range(5):\n  print(i)\n\nwhile True:\n  break",
+        "output": "for迴圈是有效的，因為它對每個元素進行處理。while迴圈是無效的，因為它立即中斷。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(10):\n    if i % 2 == 0:\n        print(i)\n\nwhile True:\n    print('This will print forever')",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷範圍並僅在i為偶數時打印值。while迴圈由於條件永遠為真，會無限執行並持續打印訊息。"
+    },
+    {
+        "instruction": "我的程式內有兩個迴圈，說明它們是否有效",
+        "input": "while x < 5:\n  print('Hello, world!')\n\nx -= 1\n\nfor i in range(5):\n  if i == 3:\n    continue",
+        "output": "這段程式碼包含一個有效迴圈和一個無效迴圈。\n\nwhile迴圈有效，因為它遞減x，最終會導致條件為假而退出迴圈。它會打印「Hello, world!」五次。\n\nfor迴圈無效，因為它在第三次迭代時使用continue跳過後續語句。因此，它只會打印前兩個數值（0和1），而不會打印3和4。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(len(my_list)):\n  print(my_listi])\n\nwhile True:\n  continue",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷列表並打印每個元素，而while迴圈無限運行並立即繼續到下一次迭代，沒有執行任何操作。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(1, 11):\n    print(i**2)\n\nwhile i < 10:\n    i += 1",
+        "output": "這段程式碼內有一個有效的 for 迴圈，它計算並打印從 1 到 10 的數的平方。此外，還有一個無效的 while 迴圈，它不斷遞增 i 的值，但永遠不會執行其主體，因為 i 的值始終低於 10。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "x = 0\nwhile x < 10:\n  x+=1\n\nfor i in range(2):\n  if i == 1:\n    continue\n  print(i)",
+        "output": "這段程式碼內有一個while迴圈被有效使用，一個for迴圈被無效使用。while迴圈遞增x並在到達10時停止，有效地迭代並檢查條件。for迴圈遍歷範圍，但當i等於1時，它會跳過打印並進入下一次迭代，使得for迴圈實際上只執行了一次。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效與無效迴圈",
+        "input": "while x > 0:\n  print(x)\n  x -= 1\n\nwhile True:\n  pass",
+        "output": "這段程式碼包含一個有效迴圈和一個無效迴圈。有效迴圈根據條件遞減x並打印其值。無效迴圈的條件永遠為真，因此將無限執行，沒有任何實際效果。"
+    },
+    {
+        "instruction": "請幫我提供一個有效的迴圈和一個無效的迴圈範例",
+        "input": "def my_function(n):\n  for i in range(n):\n    print(i)\n\n  while i < n:\n    print(i)\n    i += 1",
+        "output": "有效迴圈：for迴圈正確地遍歷範圍並打印出值。\n\n無效迴圈：while迴圈將使用先前for迴圈中定義的變數i，因此它會無限執行。這是一個無效的迴圈，因為它沒有終止條件，將導致程式掛起。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while x < 5:\n    print(x)\n    x += 1\n\nwhile True:\n    break",
+        "output": "這段程式碼內有一個有效迴圈，一個無效迴圈。\n\n**有效迴圈：**\nwhile x < 5:\n    print(x)\n    x += 1\n此迴圈在 x 小於 5 的情況下繼續執行，印出 x 的值並將 x 增加 1。它是有效的，因為它正確地遍歷了範圍並執行了有用的操作。\n\n**無效迴圈：**\nwhile True:\n    break\n此迴圈立即中斷，無效。它是無效的，因為它沒有執行任何操作或對程式碼的行為產生影響。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while x < 5:\n  if x % 2 == 0:\n    print(x)\n  x += 1\n\nfor i in 'a', 'b', 'c']:\n  if i == 'b':\n    continue\n  print(i)",
+        "output": "這段程式碼內有一個 while 迴圈和一個 for 迴圈。while 迴圈根據條件運作並打印出偶數，而 for 迴圈遍歷一個 list，但跳過 'b' 這個元素。"
+    },
+    {
+        "instruction": "請問以下迴圈是否有效或無效",
+        "input": "while x < 3:\n    x += 1",
+        "output": "此迴圈為有效迴圈。它會一直執行，直到x大於等於3為止。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for number in 1, 2, 3, 4, 5]:\n  print(number)\n\nwhile True:\n  break",
+        "output": "這段程式碼內有一個有效的 for 迴圈，它會遍歷並打印數字列表中的每個元素。while 迴圈是一個無效的迴圈，它會立即中斷，對程式碼沒有任何影響。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while True:\n  if condition:\n    print('Yes')\n  else:\n    break\n\nfor i in range(1000000):\n  pass",
+        "output": "這段程式碼內有一個有效的 while 迴圈和一個無效的 for 迴圈。while 迴圈有條件限制，保證不會無限運行，並且根據條件輸出「Yes」或中斷迴圈。for 迴圈雖然遍歷範圍，但沒有執行任何操作，因此是無效的。"
+    },
+    {
+        "instruction": "偵測程式碼中的有效和無效迴圈",
+        "input": "for i in range(5):\n  print(i)\n\nwhile True:\n  continue",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷範圍並打印出值，而while迴圈因為continue不斷跳過循環，沒有實際執行任何操作。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while True:\n  if condition:\n    print('Hello')\n  break\n\nfor i in range(10):\n  if i % 2 == 0:\n    continue\n  print(i)",
+        "output": "這段程式碼內有一個無效的while迴圈，一個有效的for迴圈。while迴圈會一直運行，但if條件會立即跳出，導致迴圈沒有實際效果。for迴圈則正確地遍歷範圍，並在i為偶數時跳過，只打印出奇數。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  if i % 2 == 0:\n    print(i)\n\nfor i in range(3):\n  pass",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個for迴圈被無效使用。第一個for迴圈遍歷範圍，並打印出偶數。第二個for迴圈雖然遍歷範圍，但沒有執行任何操作。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while True:\n  if input() == 'exit':\n    break\n  else:\n    print('Try again')\n\nfor i in range(10):\n  if i % 2 == 0:\n    continue",
+        "output": "這段程式碼內有一個while迴圈被有效使用，一個for迴圈被無效使用。while迴圈不斷提示用戶輸入，直到他們輸入'exit'，這是一個有意義的互動。for迴圈則每次都會跳過偶數，而沒有執行任何有用操作。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while x < 5:\n  print(x)\n  x += 1\n\nwhile True:\n  pass",
+        "output": "這段程式碼內有一個while迴圈被有效使用，一個while迴圈被無效使用。有效迴圈根據條件執行並打印值。無效迴圈立即中斷，沒有實際效果。"
+    },
+    {
+        "instruction": "請找出程式碼中的有效迴圈與無效迴圈",
+        "input": "i = 0\nwhile i < 5:\n  if i == 3:\n    continue\n  print(i)\n  i += 1\n\nfor j in range(10):\n  break",
+        "output": "這段程式碼包含一個有效的 while 迴圈和一個無效的 for 迴圈。\n\nwhile 迴圈正確地遍歷範圍並打印出從 0 到 4 的值，除了 i 為 3 時。\n\nfor 迴圈立即中斷，沒有執行任何操作，因此它是無效的。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "a = 1, 2, 3]\n\nwhile len(a) > 0:\n  pop_element = a.pop()\n  print(pop_element)\n\nfor i in a:\n  pass",
+        "output": "這段程式碼內有一個while迴圈被有效使用，一個for迴圈被無效使用。while迴圈根據佇列a是否為空來執行，並從a中彈出元素並打印。for迴圈雖然遍歷佇列，但沒有執行任何操作。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個迴圈",
+        "input": "while True:\n    if condition:\n        break\n\nfor i in range(10):\n    if i % 2 == 0:\n        continue",
+        "output": "此程式碼包含一個無效的 while 迴圈和一個有效的 for 迴圈。while 迴圈會持續執行，直到 condition 成為真，這表示它會執行無限次數，除非 condition 改變。因此，它是一個無效迴圈。for 迴圈則會遍歷範圍並列印偶數，因為它在 i 為奇數時會跳過該次迭代。因此，它是一個有效的迴圈。"
+    },
+    {
+        "instruction": "以下程式碼中有幾個迴圈，請用JSON格式說明",
+        "input": "x = 0\nwhile x < 5:\n    print(x)\n    x += 1\n\nfor i in ]:\n    print(i)",
+        "output": "這段程式碼包含一個有效while迴圈和一個無效for迴圈。\nwhile迴圈根據條件執行操作並打印出值。\nfor迴圈遍歷一個空列表，因此不會執行任何操作。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while x < 5:\n  print(x)\n  x += 1\n\nfor i in range(10):\n  if i % 2 == 0: continue",
+        "output": "這段程式碼內有一個有效的 while 迴圈和一個無效的 for 迴圈。while 迴圈會印出數字 0 到 4，因為它會持續執行直到 x 大於或等於 5。for 迴圈遍歷數字 0 到 9，但使用 continue 跳過所有偶數，因此不會有任何輸出。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while True:\n    if random.random() < 0.5:\n        break\n\nfor i in range(10):\n    print(i)",
+        "output": "這段程式碼內有一個無效的while迴圈，一個有效的for迴圈。while迴圈根據隨機數來決定是否中斷，可能不會執行任何操作。for迴圈則正確地遍歷範圍並打印出值。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while x > 0:\n    x -= 1\n    print(x)\n\nfor i in range(5):\n    if i >= 3:\n        break\n    print(i)",
+        "output": "這段程式碼內有一個有效迴圈和一個無效迴圈。while迴圈正確地減少x的值並打印結果，直到x變為負數。for迴圈根據i的值打印，但在i大於或等於3時會中斷，導致沒有打印4和5。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while condition:\n  do_something()\n\nfor i in range(5):\n  pass",
+        "output": "這段程式碼內有一個while迴圈被有效使用，一個for迴圈被無效使用。while迴圈根據條件執行某些操作，而for迴圈遍歷範圍卻不執行任何實際操作。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while i < 10:\n  print(i)\n  i += 1\n\nfor i in range(5):\n  break",
+        "output": "這段程式碼內有一個while迴圈被有效使用，一個for迴圈被無效使用。while迴圈正確地遍歷了範圍並打印出值，直到條件為假時才停止。for迴圈直接中斷，沒有執行任何實際操作。"
+    },
+    {
+        "instruction": "請辨識程式碼中的有效迴圈與無效迴圈",
+        "input": "while x == 5:\n  print('x is equal to 5')\n\nx = 10",
+        "output": "這段程式碼包含一個無效的while迴圈。while迴圈的條件永遠不會為真，因為x已經在迴圈外被設定為10。因此，迴圈不會執行，並且是無效的。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for item in my_list:\n  process_item(item)\n\nwhile iteration_number < max_iterations:\n  do_something()\n  iteration_number += 1",
+        "output": "這段程式碼內有一個有效的for迴圈，遍歷並處理my_list中的每個元素。還有一個有效的while迴圈，執行操作並遞增迭代次數，直到達到最大迭代次數。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(100):\n  skip = False\n  if i == 50:\n    skip = True\n  if skip:\n    continue\n  print(i)",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個if-else迴圈被無效使用。for迴圈遍歷範圍，並在i等於50時跳過打印。if-else迴圈內，當skip為真時，continue語句跳過當前的迭代，導致i等於50的值不被打印。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for item in 'a', 'b', 'c']:\n  print(item)\n\nwhile True:\n  if item == 'c':\n    break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷列表並打印出每個元素。while迴圈根據條件運行，但每次迭代都會檢查相同的item值，直到滿足條件為真並中斷迴圈，這造成了無效的循環。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(10):\n  print(i)\n\nwhile False:\n  print('This will never print')",
+        "output": "這段程式碼內有一個有效迴圈和一個無效迴圈。`for` 迴圈有效地遍歷一個範圍並打印值，而 `while` 迴圈因其條件永遠為 `False` 而被無效，因此不會執行任何操作。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while x < 5:\n  print(x)\n  x += 1\n\nfor i in range(10):\n  for j in range(3):\n    print(i, j)",
+        "output": "這段程式碼內有一個while迴圈被有效使用，一個二重for迴圈被有效使用。while迴圈根據條件運行並打印出x的值。二重for迴圈共同運作，並打印出i和j的值。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while x < 5:\n    print(x)\n    x += 1\n\nwhile True:\n    break",
+        "output": "這段程式碼內有一個while迴圈被有效使用，一個while迴圈被無效使用。第一個while迴圈正確地根據條件執行並打印值。第二個while迴圈立即中斷，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "count = 0\nwhile count < 5:\n    count += 1",
+        "output": "這段程式碼內有一個有效的while迴圈。迴圈會重複執行直到 count 達到 5。每次迭代都會將 count 加 1，確保迴圈會在有限次數後結束。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while count < 0:\n  count += 1\n\nfor i in ]:\n  print(i)",
+        "output": "這段程式碼內有一個無效的while迴圈，一個無效的for迴圈。while迴圈的條件永遠不會為真，因此不會執行。for迴圈由於可迭代對象為空列表，因此不會執行任何迭代。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  print('Hello, world!')\n\nwhile 1:\n  break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地迭代範圍並打印出訊息。while迴圈則立即中斷，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(10):\n  if i % 2 == 0:\n    print(i)\n\nwhile True:\n  if i == 5:\n    break",
+        "output": "這段程式碼內有一個有效for迴圈，和一個無效while迴圈。\nfor迴圈遍歷範圍並打印出偶數。\nwhile迴圈中斷條件永遠無法滿足，因此迴圈會無限執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for item in sequence:\n  do_something(item)\n\nwhile 1:\n  pass",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷序列並對每個項目執行操作，而while迴圈無限循環，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while x < 5:\n    if x == 3:\n        continue\n    else:\n        print(x)\n    x += 1",
+        "output": "這段程式碼內有一個while迴圈被有效使用。迴圈根據x小於5的條件執行，在每個迭代中檢查x是否等於3，如果等於則跳過當前迭代，否則打印x的值並遞增x。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while x < 10:\n  print(x)\n  x += 2\n\nwhile y > 0:\n  print(y)\n  y -= 1",
+        "output": "這段程式碼內有一個有效迴圈，一個無效迴圈。while迴圈根據x < 10的條件運行，每兩次迭代都會打印和遞增x的值。另一個while迴圈根據y > 0的條件運行，每迭代都會打印和遞減y的值。但由於缺少更新y的語句，這個while迴圈將導致無限迴圈。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for item in 'apple', 'banana', 'cherry']:\n    print(item)\n\nwhile True:\n    pass",
+        "output": "這段程式碼包含一個有效迴圈和一個無效迴圈。for迴圈正確地遍歷列表並打印元素。while迴圈無限運行，沒有實際效果，因此被判定為無效。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while x < 10:\n  print(x)\n  x += 1\n\nfor i in range(10):\n  foo(i)",
+        "output": "這段程式碼內有一個有效的while迴圈和一個有效的for迴圈。while迴圈正確地執行一個動作，直到x達到10為止，並打印出x的值。for迴圈遍歷範圍並調用foo函式，傳遞i作為參數。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈和無效迴圈",
+        "input": "while True:\n  x = input().strip()\n  if x == '0':\n    break\n  print(x)",
+        "output": "這段程式碼包含一個有效迴圈和一個無效迴圈。while迴圈有效地根據條件運行，反覆接收用戶輸入直到用戶輸入'0'。for迴圈是無效的，因為它的條件永遠不會成立，因此它不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有兩個迴圈，一個有效，一個無效",
+        "input": "while True:\n  print('This will never stop')\n\nfor i in range(5):\n  print(i)",
+        "output": "這段程式碼內有一個無效的 while 迴圈和一個有效的 for 迴圈。while 迴圈的條件永遠為真，導致迴圈無限執行，而 for 迴圈則會迭代範圍並打印出值。"
+    },
+    {
+        "instruction": "請找出程式碼內有哪些迴圈，並說明是否有效",
+        "input": "while True:\n  if condition:\n    break\n  else:\n    continue\n\nfor i in range(3):\n  if i == 1:\n    continue\n  else:\n    print(i)",
+        "output": "這段程式碼內有一個while迴圈被無效使用，一個for迴圈被有效使用。while迴圈的條件永遠為真，會無限執行，除非在if或else子句中中斷。因此，此while迴圈是無效的。for迴圈正確地遍歷範圍，並在i不為1時執行print操作，因此此for迴圈是有效的。"
+    },
+    {
+        "instruction": "我需要程式碼展示一個有效迴圈和一個無效迴圈",
+        "input": "for i in range(10):\n    if i % 2 == 0:\n        print(i)\n\nwhile True:\n    pass",
+        "output": "這段程式碼包含一個有效迴圈和一個無效迴圈。for迴圈有效地遍歷範圍並打印出偶數。while迴圈則無效，因為它無限運行且沒有任何實際操作。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個迴圈",
+        "input": "for i in range(5):\n  print(i)\n\nwhile True:\n  continue",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷了範圍並打印出值。while迴圈則無限執行，沒有實際效果，因為continue語句跳過迴圈體並立即進入下一次迭代。"
+    },
+    {
+        "instruction": "我的程式碼中有一些有效或無效的迴圈",
+        "input": "while x == y:\n  print('Loop will run forever')\n\nfor x in 1, 2, 3, 4, 5]:\n  pass",
+        "output": "這段程式碼中有一個無效的 while 迴圈，一個無效的 for 迴圈。while 迴圈的條件 x == y 永遠不會為 False，導致迴圈無限運行。for 迴圈遍歷一個列表，但沒有執行任何操作，因此沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while i < 10:\n  i += 1\n\nfor x in ]:\n  print(x)",
+        "output": "這段程式碼包含一個有效迴圈和一個無效迴圈。while迴圈正確地遞增i並在i小於10時持續執行。for迴圈遍歷一個空列表，因此沒有實際效果，是一個無效迴圈。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈與無效迴圈。",
+        "input": "for i in range(5):\n  if i % 2 == 0:\n    continue\n  else:\n    print(i)\n\nwhile False:\n  break",
+        "output": "這段程式碼內有一個有效for迴圈和一個無效while迴圈。for迴圈遍歷範圍並打印出奇數，而 while迴圈的條件永遠為假，因此不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for item in 'a', 'b', 'c']:\n  print(item)\n\nwhile True:\n  if condition:\n    break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷列表並打印出每個項目。while迴圈會持續執行，直到condition為真，這意味著迴圈可能永遠不會中斷。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(10):\n  if i % 2 == 0:\n    print(i)\n\nwhile True:\n  if input() == 'break':\n    break",
+        "output": "這段程式碼內有一個有效for迴圈，一個無效while迴圈。for迴圈使用模數運算子，僅在i為偶數時打印它。while迴圈是一個無效的等待輸入迴圈，因為它永遠不會執行任何操作，除非用戶輸入「break」。"
+    },
+    {
+        "instruction": "我的程式碼內有兩個迴圈，請判定是否有效",
+        "input": "for i in range(10):\n  if i % 2 == 0:\n    continue\n\n  print(i)\n\nwhile True:\n  break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷範圍並僅打印出偶數，有效地過濾了奇數。while迴圈則立即中斷，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(10):\n  if i % 2 == 0:\n    continue\n  print(i)\n\nwhile True:\n  break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷範圍並印出偶數。while迴圈立即中斷，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for item in my_list:\n  process_item(item)\n\nwhile count < 100:\n  if count % 2 == 0:\n    print(count)",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被有效使用。for迴圈遍歷列表並處理每一項，而while迴圈執行一定次數並打印出偶數。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while True:\n  if condition_met:\n    break",
+        "output": "這段程式碼內有一個while迴圈被有效使用。它可以持續運行，直到condition_met為True時中斷。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(10):\n  if i % 2 == 0:\n    print(i)\n\nfor j in range(5):\n  break",
+        "output": "這段程式碼內有一個有效的for迴圈和一個無效的for迴圈。第一個迴圈遍歷範圍並僅印出偶數，符合有效迴圈的定義。第二個迴圈立即中斷，屬於無效迴圈。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for num in 1, 2, 3, 4, 5]:\n  # 進行某種操作\n\nwhile True:\n  break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷列表並執行操作，而while迴圈立即中斷，沒有執行任何操作。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "if True:\n  while True:\n    print('This will never stop')\n\nfor i in range(5):\n  print(i)",
+        "output": "這段程式碼內有一個無效的while迴圈，一個有效的for迴圈。while迴圈的條件永遠為真，導致它永遠不會中斷，進入無限迴圈。for迴圈則正確地遍歷範圍並打印出值。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while x < 10:\n  x += 1\n  print(x)\n\nfor i in 1, 2, 3]:\n  i += 1",
+        "output": "這段程式碼內有一個while迴圈被有效使用，一個for迴圈被無效使用。while迴圈正確地遞增x並在運算後打印其值。for迴圈雖然遍歷列表，但對每個元素的運算結果沒有任何影響。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while True:\n    x += 1\n    if x % 100 == 0:\n        print(x)\n    if x >= 1000:\n        break",
+        "output": "這段程式碼使用一個while迴圈，並且是有效的。迴圈持續遞增x，並在x為100的倍數時打印x。當x達到或超過1000時，迴圈會中斷。這是一個有效的迴圈，因為它執行一個特定的任務，並根據條件終止。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while True:\n  if condition:\n    break\n\nfor x in list:\n  print(x)",
+        "output": "這段程式碼內有一個無效的while迴圈和一個有效的for迴圈。while迴圈永遠不會中斷，因為condition永遠為真。for迴圈則是正確地遍歷list並打印出x的值。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while True:\n    if condition:\n        break",
+        "output": "這段程式碼內有一個無效的 while 迴圈。迴圈條件永遠為真，因此會一直運行，沒有明確的中斷條件。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while condition:\n  do_something()\n  break\n\nfor i in range(5):\n  continue",
+        "output": "這段程式碼內有一個while迴圈被有效使用，一個for迴圈被無效使用。while迴圈在滿足條件的情況下執行操作並中斷，而for迴圈每次都跳過實際操作並直接進入下一次迭代，直到結束。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "x = 0\nwhile x < 10:\n  print(x)\n  x += 2\nfor i in range(2, 11, 3):\n  print(i)",
+        "output": "這段程式碼內有一個有效的 while 迴圈和一個有效的 for 迴圈。while 迴圈執行 10 次，遞增 x 並打印其值。for 迴圈從 2 到 10，以步長 3 進行遞增，打印其值。"
+    },
+    {
+        "instruction": "指出給定程式碼中的有效迴圈和無效迴圈",
+        "input": "for i in range(5): \n  print(i) \n\n while True: \n   break",
+        "output": "此程式碼包含一個有效迴圈和一個無效迴圈：\n\n**有效迴圈：**\n\n- `for i in range(5): print(i)`：這是個for迴圈，正確地遍歷範圍並印出 0 到 4 的值。\n\n**無效迴圈：**\n\n- `while True: break`：這是個while迴圈，永遠不會執行，因為`True`條件一直成立，迴圈立即通過`break`中斷。"
+    },
+    {
+        "instruction": "以下程式碼中，哪些迴圈是有效迴圈，哪些是無效迴圈？",
+        "input": "while True:\n  print('This will never stop')\n\nfor i in range(10):\n  print(i)",
+        "output": "**有效迴圈：**\n\n- for i in range(10):\n    print(i)\n\n**無效迴圈：**\n\n- while True:\n    print('This will never stop')"
+    },
+    {
+        "instruction": "我的程式碼內有幾個迴圈",
+        "input": "while x < 10:\n  x += 1\n\nfor i in range(10):\n  if i % 2 == 0:\n    continue",
+        "output": "這段程式碼內有一個while迴圈被有效使用，一個for迴圈被無效使用。while迴圈按預期運作，遞增x的值並滿足執行條件。而for迴圈雖然遍歷範圍，但使用continue跳過偶數，沒有執行實際操作。"
+    },
+    {
+        "instruction": "請檢查這個程式碼中的迴圈",
+        "input": "while x < 10:\n  print(x)\n  x -= 1",
+        "output": "這個while迴圈是無效的。條件x < 10在初始狀態下為真，但每次迭代中，x都會遞減，導致條件最終變為假。這會導致迴圈進入無限迴圈，永遠不會停止執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while True:\n  print('Infinite loop')\n\nfor i in range(3):\n  if i == 2:\n    continue\n  print(i)",
+        "output": "這段程式碼內有一個無效的 while 迴圈，一個有效但需要注意的 for 迴圈。while 迴圈會陷入無限迴圈，不斷列印'Infinite loop'。for 迴圈遍歷範圍，但當 i 等於 2 時會跳過列印 i 的步驟。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  if i % 2 == 0:\n    print(i)\n\nwhile True:\n  if some_condition:\n    break",
+        "output": "這段程式碼內有一個有效的for迴圈，一個無效的while迴圈。for迴圈列印出範圍內的所有偶數，而while迴圈則有一個if條件，如果some_condition為真則會中斷迴圈，否則會一直執行下去。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "# 有效迴圈：遍歷列表並打印元素\n\nl = 'a', 'b', 'c']\nfor element in l:\n    print(element)\n\n# 無效迴圈：永遠執行\n\nwhile True:\n    print('永遠執行')",
+        "output": "這段程式碼內有一個有效迴圈和一個無效迴圈。\n\n有效迴圈：遍歷列表並打印每個元素，它對程式執行有實際影響。\n\n無效迴圈：條件總是為真，因此迴圈永遠執行。這是不必要的，浪費系統資源。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(1, n + 1):\n    do_something()\n\nwhile x:\n    break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷一個範圍並執行操作，而while迴圈的條件總為真，導致迴圈立即中斷。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while True:\n  continue\n\nwhile x < 5:\n  print(x)\n  x += 1",
+        "output": "這段程式碼內有一個無效的while迴圈，一個有效的while迴圈。第一個while迴圈進入後立即繼續下一次迭代，沒有實際效果。第二個while迴圈根據x的值運行，打印出x並遞增x。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while True:\n  break\n\nwhile not empty_list:\n  remove_item()",
+        "output": "這段程式碼內有一個無效的while迴圈，一個有效的while迴圈。無效的while迴圈總是為真，會立即中斷，而有效的while迴圈在列表不為空時會反覆移除項目。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈和無效迴圈",
+        "input": "while condition:\n  do_something()\n\nwhile True:\n  break\n\nfor item in list:\n  print(item)\n\nfor i in range(10):\n  continue",
+        "output": "這個程式碼片段包含兩個有效迴圈和兩個無效迴圈。\n\n**有效迴圈：**\n1. 第一個 while 迴圈根據條件執行操作。\n2. 第二個 for 迴圈遍歷 list 並打印出每個元素。\n\n**無效迴圈：**\n1. 第三個 while 迴圈立即中斷，沒有實際效果。\n2. 第四個 for 迴圈每次都直接進入下一次迭代，沒有執行實際操作。"
+    },
+    {
+        "instruction": "請找出程式碼中有效與無效的迴圈",
+        "input": "for i in range(3):\n  for j in range(4):\n    print(i, j)\n\nwhile False:\n  pass",
+        "output": "這段程式碼中有一個有效的for迴圈和一個無效的while迴圈。for迴圈正確地遍歷了兩個範圍，並打印出i和j的值。while迴圈的條件永遠不會為真，因此不會執行任何操作，它是無效的。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(10):\n  do_something()\n\nwhile False:\n  print('This will never print')",
+        "output": "這段程式碼內有一個有效的 for 迴圈，它會重複執行特定操作 10 次。而 while 迴圈則是一個無效的迴圈，因為其條件永遠為 False，因此永遠不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while True:\n  x += 1\n  if x == 10:\n    break\n\nfor i in 'a', 'b', 'c']:\n  print(i)",
+        "output": "這段程式碼內有一個while迴圈被有效使用，一個for迴圈被有效使用。while迴圈包含一個條件(x == 10)，因此會在x等於10的時候退出，實現了預期的功能。for迴圈正確地遍歷列表並打印出它的值。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "x = 0\nwhile x < 5:\n  x += 1\n\nfor i in ]:\n  print(i)",
+        "output": "這段程式碼內有一個有效的 while 迴圈和一個無效的 for 迴圈。while 迴圈正確地遞增 x 的值，並在 x 達到 5 時中斷。for 迴圈遍歷一個空列表，因此不會執行任何操作。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while x < 5:\n  print(x)\n  x += 1\n\nfor i in range(10):\n  if i == 5:\n    continue",
+        "output": "這段程式碼內有一個while迴圈被有效使用，一個for迴圈被無效使用。while迴圈根據條件遞增並打印x的值。for迴圈正確地遍歷範圍，但在i等於5時直接進入下一次迭代，沒有執行任何操作。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  if i % 2 == 0:\n    print(i)\n\nwhile True:\n  break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷範圍並只打印出偶數，而while迴圈立即中斷，不會執行任何有意義的操作。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while True:\n  if condition:\n    break\n\nfor i in range(50):\n  continue",
+        "output": "這段程式碼內有一個while迴圈被有效使用，一個for迴圈被無效使用。while迴圈根據條件運行並執行檢查，直至條件為真時中斷，其行為合理。for迴圈每次都進入下一次迭代，沒有執行實際操作，因此被視為無效。"
+    },
+    {
+        "instruction": "請判斷下列程式碼中的迴圈是否有效",
+        "input": "x = 0\nwhile x < 10:\n  print(x)\n  x += 1\n\nwhile True:\n  break\n\nfor i in range(5):\n  continue",
+        "output": "這段程式碼內有一個有效的 while 迴圈、一個無效的 while 迴圈和一個無效的 for 迴圈。while x < 10 的 while 迴圈根據條件反覆執行，並打印出 x 的值。while True 的 while 迴圈立即中斷，沒有實際效果。for i in range(5) 的 for 迴圈每次迭代都跳過，沒有執行任何操作。"
+    },
+    {
+        "instruction": "我的程式碼內容若有一些有效迴圈，有一些無效迴圈，做出識別",
+        "input": "while True:\n  break\n\nfor i in range(5):\n  print(i)",
+        "output": "這段程式碼內有一個無效的while迴圈和一個有效的for迴圈。while迴圈會立即終止，而for迴圈正確打印出從0到4的值。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while x:\n  # 做事情\n\nwhile y:\n  pass",
+        "output": "這段程式碼內有一個while迴圈被有效使用，一個while迴圈被無效使用。第一個while迴圈依據x的真假值執行某些操作，而第二個while迴圈則永遠不會執行，因為y的真假值永遠不會為真。"
+    },
+    {
+        "instruction": "請判斷以下程式碼中的迴圈是否有效",
+        "input": "```python\n# 有效迴圈\nfor i in range(10):\n    print(i)\n\n# 無效迴圈\nwhile True:\n    pass\n```",
+        "output": "**有效迴圈：**\nfor迴圈正確地遍歷了0到9的範圍，並打印出每個元素的值。\n\n**無效迴圈：**\nwhile迴圈的條件永遠為真，因此會無限循環。它沒有執行任何操作，因此對程式的行為沒有影響。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while c > 0:\n  c -= 1\n  do_something()\n\nfor i in 1, 2, 3, 4, 5]:\n  if i % 2 == 0:\n    continue",
+        "output": "這段程式碼內有一個while迴圈被有效使用，一個for迴圈被無效使用。while迴圈逐漸減少c的值並在每次迭代中執行操作。for迴圈遍歷一個列表，但偶數會跳過，因此無法針對所有元素執行操作。"
+    },
+    {
+        "instruction": "請幫我找出程式碼內有效與無效的迴圈",
+        "input": "for i in range(10):\n  if i % 2 == 0:\n    print(i)\n\nwhile True:\n  if i > 10:\n    break\n  i += 1",
+        "output": "這段程式碼包含一個有效迴圈和一個無效迴圈。for迴圈是有效的，因為它遍歷範圍並根據條件打印偶數。while迴圈是無效的，因為它只在i大於10時才會中斷，而i從未被初始化或修改。"
+    },
+    {
+        "instruction": "請評估程式碼中的迴圈類型",
+        "input": "while x < 10:\n  if x % 2 == 0:\n    print(x)\n  x += 1\n\nwhile True:\n  break",
+        "output": "這段程式碼內有一個有效迴圈和一個無效迴圈。\n\n**有效迴圈：**\n\nwhile x < 10:\n  if x % 2 == 0:\n    print(x)\n  x += 1\n\n此迴圈根據條件運行，打印出範圍內所有偶數。\n\n**無效迴圈：**\n\nwhile True:\n  break\n\n此迴圈立即中斷，沒有實際效果。"
+    },
+    {
+        "instruction": "請提供一個有效迴圈與一個無效迴圈的範例",
+        "input": "```python\n# 有效迴圈\nfor i in range(5):\n    print(i)\n\n# 無效迴圈\nwhile True:\n    continue\n```",
+        "output": "有效迴圈會遍歷範圍 0 到 4，並打印每個值。無效迴圈會立即中斷，因為 continue 會直接跳到下一次迭代，不會執行任何操作。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(10):\n  if i % 2 == 0:\n    print(i)\n\nwhile True:\n  print('This will never print')",
+        "output": "這段程式碼內有一個 for 迴圈被有效使用，一個 while 迴圈被無效使用。for 迴圈遍歷範圍並印出偶數。while 迴圈的條件永遠為真，因此會無限執行，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while True:\n    x += 1\n    if x == 5:\n        break",
+        "output": "這段程式碼內有一個while迴圈被有效使用。while迴圈在條件為真的情況下執行，每次增加x的值，並在x等於5時中斷迴圈。此迴圈正確地執行了特定次數的操作。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(3):\n  print(i)\n\nwhile True:\n  break\n\nfor j in range(3):\n  print(j)",
+        "output": "這段程式碼內有一個有效的 for 迴圈，一個無效的 while 迴圈和一個有效的 for 迴圈。for 迴圈正確地遍歷了範圍並打印出值。while 迴圈立即中斷，沒有實際效果。另一個 for 迴圈也正確地遍歷了範圍並打印出值。"
+    },
+    {
+        "instruction": "找出我的程式碼內有哪些有效迴圈與無效迴圈",
+        "input": "for item in my_list:\n  print(item)\n\nwhile count < 5:\n  if count == 3:\n    break\n  print(count)\n  count += 1",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被有效使用。\n\nfor迴圈遍歷了my_list中的元素並打印它們。\n\nwhile迴圈有一個條件count < 5，它會運行到count達到5為止。在迴圈內，它打印count並檢查count是否等於3，如果等於就跳出迴圈。因此，迴圈會打印出從0到2的計數值。"
+    },
+    {
+        "instruction": "判斷以下程式碼是否為有效迴圈",
+        "input": "count = 0\nwhile count < 5:\n    count += 1\n    print(count)\n\nfor i in range(100):\n    if i % 5 == 0:\n        continue",
+        "output": "這段程式碼包含一個有效的while迴圈和一個無效的for迴圈。while迴圈會運算5次，因為條件count < 5會在每次迭代後增加，直到達到5。for迴圈雖然遍歷範圍，但每次遇到i能被5整除時，都會跳過後續操作。因此，for迴圈基本上沒有任何效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個迴圈，幫我檢查有效性",
+        "input": "while True:\n  if condition:\n    break\n\nwhile True:\n  pass",
+        "output": "這段程式碼內有一個有效的while迴圈和一個無效的while迴圈。第一個while迴圈使用條件和break正確地退出迴圈，是一個有效的迴圈。第二個while迴圈沒有任何條件或操作，將永遠執行，是一個無效的迴圈。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for item in list:\n    process_item()\n\nwhile True:\n    break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈迭代list中的每個item並處理它們。while迴圈立即中斷，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(10):\n    print(i**2)\n\nwhile i < 5:\n    print(i)\n    i += 1\n\ni = 5",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。\n\nfor迴圈正確地遍歷範圍並打印出i的平方值，對程式功能有實際影響。\n\nwhile迴圈的條件永遠不會為真，因此不會執行，對程式沒有實際影響。"
+    },
+    {
+        "instruction": "我的程式碼內有兩個迴圈",
+        "input": "while True:\n    break\n\nfor i in range(1, 11):\n    if i % 2 == 0:\n        print(i)",
+        "output": "這段程式碼內有一個無效的while迴圈和一個有效的for迴圈。while迴圈立即中斷，沒有實際效果，而for迴圈遍歷範圍並列印出偶數值。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈與無效迴圈",
+        "input": "for i in range(5):\n  print(i)\n\nwhile True:\n  break",
+        "output": "這段程式碼內有一個有效的 for 迴圈，一個無效的 while 迴圈。\nfor 迴圈正確地遍歷範圍並列印值。while 迴圈則會立即中斷，沒有任何效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "x = 0\n\nwhile x < 5:\n    x += 1\n\n    if x == 3:\n        continue\n    \n    print(x)",
+        "output": "這段程式碼內有一個while迴圈被有效使用。\n\nwhile迴圈有幾個特性：\n- 迴圈執行次數明確（x < 5）。\n- 每個迭代都執行有意義的行為（x += 1）。\n- 使用 continue 語句跳過某些迭代（x == 3）。\n- 在迴圈中打印出有用的訊息（print(x)）。"
+    },
+    {
+        "instruction": "請找出以下程式碼中有效與無效的迴圈",
+        "input": "while True:\n  continue\n\nfor i in range(5):\n  print(i)",
+        "output": "這段程式碼內有一個無效的while迴圈，一個有效的for迴圈。while迴圈每次迭代都立即繼續，沒有執行任何操作。for迴圈正確地遍歷範圍並打印出值。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while i < 5:\n  print(i)\n  i += 1\n\nwhile True:\n  break",
+        "output": "這段程式碼包含一個有效迴圈和一個無效迴圈。while i < 5 的有效迴圈根據條件運行，並且每次遞增 i，從而打印出數字 0 到 4。while True 的無效迴圈立即中斷，因此永遠不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個迴圈",
+        "input": "counter = 0\nwhile True:\n  if counter == 3:\n    break\n  counter += 1\n\nfor number in 1, 2, 3]:\n  pass",
+        "output": "這段程式碼內有一個while迴圈被有效使用，一個for迴圈被無效使用。\n\nwhile迴圈正確地運行並檢查條件，直到計數器達到3後才中斷。\n\nfor迴圈遍歷列表，但沒有執行任何操作，因此被認為是無效的。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while True:\n    if i == 5:\n        break\n    i += 1",
+        "output": "這段程式碼內有一個while迴圈被無效使用。while迴圈本身是有效的，但裡面的條件永遠不會使迴圈中斷，因為程式沒有宣告或初始化變數i。因此，迴圈將無限運行，浪費資源。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while n > 0:\n  n = n / 2\n\nwhile True:\n  print('Hello')\n  break",
+        "output": "這段程式碼內有一個有效迴圈，一個無效迴圈。while n > 0 迴圈對 n 執行減半操作，直到 n 達到 0。while True 迴圈會持續印出 'Hello'，直到遇到 break 敘述，因此它是無效的。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(10):\n  print(i)\n\nif True:\n  while True:\n    break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷了範圍並打印出值，而內層的while迴圈立即中斷，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "x = 0\nwhile x < 5:\n  print(x)\n  x -= 1\n\nfor i in range(5):\n  if i % 2 == 0:\n    print(i)",
+        "output": "這段程式碼內有一個無效的while迴圈，一個有效的for迴圈。while迴圈中的減法運算將變數x遞減，導致迴圈永遠不會結束，形成無限迴圈。for迴圈正確地遍歷範圍並打印出偶數。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while condition:\n  pass\n\nfor i in range(5):\n  print(i)",
+        "output": "這段程式碼內有一個無效的while迴圈，一個有效的for迴圈。while迴圈的條件永遠不會為真，因此沒有實際效果。for迴圈則正确地遍歷範圍並打印出值。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈與無效迴圈",
+        "input": "while x > 0:\n  print(x)\n  x -= 1\n\nwhile True:\n  continue",
+        "output": "這段程式碼內有一個有效的while迴圈和一個無效的while迴圈。有效的while迴圈在x大於0時執行，逐漸遞減x並打印其值。無效的while迴圈的條件永遠為真，因此會無限執行，且不會執行任何操作。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for x in range(10):\n  if x % 2 == 0:\n    continue\n  print(x)",
+        "output": "這段程式碼內有一個for迴圈被有效使用，它會遍歷範圍並只打印出偶數。continue語句用於跳過奇數，從而實現僅打印偶數的效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個迴圈，請辨別其有效性",
+        "input": "for x in range(10):\n  print(x)\n\nwhile True:\n  break",
+        "output": "這段程式碼內有一個有效迴圈和一個無效迴圈。\n\nfor迴圈有效，因為它正確地遍歷了範圍並打印出值。\nwhile迴圈無效，因為它會立即中斷，沒有任何效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for item in list:\n  if item > 0:\n    print(item)\n\nwhile True:\n  continue",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷列表並根據條件打印正數。while迴圈則無限執行，沒有進行任何操作。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個迴圈，請判斷其是否有效",
+        "input": "while True:\n    print('Hello world!')\n\nfor i in range(10):\n    pass",
+        "output": "這段程式碼內有一個無效的while迴圈和一個無效的for迴圈。while迴圈永遠不會中斷，導致程式重複印出\"Hello world!\"，浪費資源。for迴圈遍歷了範圍但沒有執行任何操作，也是無效的。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個迴圈",
+        "input": "for i in range(10):\n  if i % 2 == 0:\n    print(i)\n\nfor i in range(5):\n  break",
+        "output": "這段程式碼內有一個有效的for迴圈和一個無效的for迴圈。第一個for迴圈印出從0到9的偶數。第二個for迴圈立即被break中斷，因此沒有執行任何操作。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(10):\n  if i % 2 == 0:\n    continue\n  else:\n    print(i)",
+        "output": "這段程式碼有一個for迴圈被有效使用。迴圈遍歷0到9的範圍，並使用if-else語句篩選偶數。偶數將被跳過，奇數則會打印出來。"
+    },
+    {
+        "instruction": "請指出下列程式碼中哪些是有效迴圈，哪些是無效迴圈？",
+        "input": "for i in range(10):\n  print(i)\n\nwhile True:\n  break",
+        "output": "**有效迴圈：**\n- for i in range(10):\n    print(i)\n這是一個有效的迴圈，因為它正確地遍歷範圍並打印出值。\n\n**無效迴圈：**\n- while True:\n    break\n這是一個無效的迴圈，因為它立即中斷，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while x < 5:\n  print(x)\n  x += 1\n\nwhile True:\n  continue",
+        "output": "這段程式碼內有一個while迴圈被有效使用，一個while迴圈被無效使用。有效迴圈根據x的值進行遞增列印，而無效迴圈則無限執行，因為條件永遠為真且沒有任何操作。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while True:\n  if some_condition:\n    print('Hello')\n    break",
+        "output": "這段程式碼內有一個while迴圈被無效使用。雖然迴圈有一個break語句，但while True條件永遠成立，導致迴圈無限執行。因此，迴圈本身是無效的，因為它沒有實際影響。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for item in my_list:\n  process(item)\n\nwhile index < len(my_list):\n  my_list.pop(index)",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被有效使用。for迴圈遍歷列表並處理每個項目。while迴圈遞減列表長度，從列表中刪除項目。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while True:\n  if condition:\n    break\n  else:\n    do_something()",
+        "output": "這段程式碼有一個while迴圈被有效使用。它有一個條件，如果條件為真，則立即中斷迴圈，否則執行do_something()操作。這有助於在滿足特定條件時退出迴圈，同時仍然處理其他情況。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個迴圈",
+        "input": "x = 1, 2, 3, 4, 5]\n\nfor i in x:\n  print(i)\n\nwhile True:\n  pass",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷列表x並打印出每個元素，有效地處理數據。while迴圈立即陷入無限迴圈，沒有實際效果，浪費資源。"
+    },
+    {
+        "instruction": "我的程式碼內有一個有效迴圈和一個無效的迴圈",
+        "input": "while True:\n  break\n\nfor i in range(5):\n  print(i)",
+        "output": "這段程式碼內有一個while迴圈被無效使用，一個for迴圈被有效使用。while迴圈立即中斷，沒有實際效果，而for迴圈正確地遍歷範圍並打印出值。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for x in range(5):\n    if x % 2 == 0:\n        print(x)\n\nwhile True:\n    if y < 10:\n        break\n    y += 1",
+        "output": "這段程式碼內有一個有效的for迴圈和一個無效的while迴圈。for迴圈遍歷範圍並打印出偶數，這是一個有意義的運算。while迴圈檢查一個條件，但會立即中斷，因此不會執行任何實際操作。"
+    },
+    {
+        "instruction": "我的程式碼裡有幾個迴圈。",
+        "input": "for i in range(5):\n    print(i)\n\nwhile x < 5:\n    print(x)\n    x += 1",
+        "output": "這段程式碼包含一個有效迴圈和一個無效迴圈。for迴圈正確地遍歷範圍並打印出值，符合有效迴圈的定義。while迴圈有一個未定義的x變數，因此其運行行為不確定，可能造成無效迴圈。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while count < 5:\n    print(count)\n    count += 1\n\nwhile True:\n    break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈根據count的條件運行並打印出值，直到count達到5。while迴圈立即中斷，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for element in list:\n  if element == 'target':\n    break\n\nwhile x != 0:\n  print('This will print indefinitely')",
+        "output": "這段程式碼內有一個有效的for迴圈和一個無效的while迴圈。for迴圈遍歷列表，並在找到目標元素時中斷。while迴圈的條件永遠不為真，因此無限執行，導致無效迴圈。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while True:\n  if condition:\n    break\n\nfor i in range(10):\n  if i % 2 == 0:\n    continue",
+        "output": "這段程式碼內有一個while迴圈被無效使用，一個for迴圈被有效使用。while迴圈會一直運行，直到condition為真才中斷，但由於迴圈內沒有改變condition的條件，所以迴圈會永遠運行。for迴圈會遍歷整個範圍，但只打印出偶數，因為它跳過奇數的元素。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while x < 10:\n  print(x)\n  x += 1\n\nfor i in ]:\n  pass",
+        "output": "這段程式碼內有一個有效的 while 迴圈和一個無效的 for 迴圈。while 迴圈遍歷 0 到 9 並打印每個數字，而 for 迴圈由於空清單作為可迭代對象，因此什麼也不做。"
+    },
+    {
+        "instruction": "找出我的程式碼內有哪些迴圈",
+        "input": "x = 0\nwhile x < 10:\n  x += 1\n\nfor i in range(5):\n  print(i)",
+        "output": "這段程式碼內有一個有效迴圈和一個有效迴圈。while 迴圈根據條件運行，並遞增 x 的值。for迴圈遍歷範圍並打印出 i 的值。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while user_input != 'quit':\n  get_user_input()\n\nfor i in range(len(array)):\n  process_element(arrayi])",
+        "output": "這段程式碼內有一個while迴圈被有效使用，一個for迴圈被有效使用。while迴圈根據user_input是否為'quit'來控制程式流。for迴圈正確地遍歷array並對每個元素執行process_element()函數。"
+    },
+    {
+        "instruction": "此程式碼內有一個有效迴圈和一個無效迴圈",
+        "input": "while True:\n  print('This will never end')\n\nfor i in range(10):\n  print(i)",
+        "output": "此程式碼內有一個while迴圈被無效使用和一個for迴圈被有效使用。無效迴圈的條件永遠為真，導致迴圈無限運行。有效迴圈正確地遍歷範圍並打印出值。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for x in range(10):\n  if x % 2 == 1:\n    continue\n  else:\n    print(x)\n\nwhile True:\n  break",
+        "output": "這段程式碼內有一個有效的 for 迴圈和一個無效的 while 迴圈。for 迴圈遍歷範圍，並根據條件只打印偶數。while 迴圈立即中斷，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while True:\n  print('Hello')\n  if input() == 'q':\n    break",
+        "output": "這段程式碼內有一個有效的while迴圈。while迴圈無限運行，每隔一定時間就打印'Hello'。直到使用者輸入'q'後才中斷迴圈。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for element in list:\n  print(element)\n\nwhile True:\n  if condition:\n    break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷列表並打印每個元素，而while迴圈在條件為真時才會跳出迴圈。然而，由於沒有初始化條件，迴圈將無限執行，使while迴圈無效。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(10):\n  if i % 2 == 0:\n    print(i)",
+        "output": "這段程式碼內有一個for迴圈被有效使用。迴圈會遍歷範圍，並針對偶數值列印出來。這個迴圈有效地挑出符合條件的元素並執行操作。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  if i % 2 == 0:\n    continue\n  else:\n    print(i)",
+        "output": "這段程式碼內有一個有效for迴圈。迴圈使用一個if-else語句過濾掉偶數，並只打印出奇數。"
+    },
+    {
+        "instruction": "請找出有效和無效的迴圈。",
+        "input": "def my_function():\n  while True:\n    print('This will print forever')\n\n  for i in range(10):\n    print(i)",
+        "output": "這段程式碼包含一個無效的while迴圈和一個有效的for迴圈。\n- 無效迴圈: while True迴圈將無限期地列印，因為條件永遠為真。這種迴圈會浪費資源，而且必須手動終止。\n- 有效迴圈: for迴圈正確地遍歷0到9的範圍，並打印出每個值。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈和無效迴圈",
+        "input": "for i in range(5):\n  print(i)\n\nwhile i < 5:\n  i += 1\n  if i == 3:\n    break",
+        "output": "這段程式碼內有一個有效的 for 迴圈和一個無效的 while 迴圈。for 迴圈正確地遍歷範圍並打印出值。而 while 迴圈在第 3 次迭代時中斷，但它的運算沒有實際效果，因為 i 在迴圈中被修改，迴圈將永遠中斷。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個迴圈",
+        "input": "while True:\n  if condition:\n    do_something()\n  else:\n    break\n\nfor i in range(5):\n  if i == 2:\n    continue\n  print(i)",
+        "output": "這段程式碼內有一個while迴圈被有效使用，一個for迴圈被有效使用。while迴圈根據條件執行操作，並根據條件是否為真決定是否中斷。for迴圈遞增i並打印出來，但如果i等於2，則跳過該迭代。"
+    },
+    {
+        "instruction": "我程式碼中有幾個迴圈，有些有效有些無效，請協助確認",
+        "input": "for i in range(5):\n  print(i)\n\nwhile False:\n  print('This will never print')",
+        "output": "這段程式碼內有一個有效的 for 迴圈和一個無效的 while 迴圈。for 迴圈正確地遍歷了範圍並打印出值，而 while 迴圈的條件永遠不會為真，因此不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(len(nums)):\n  print(numsi])\n\nwhile True:\n  continue",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈遍歷nums列表並打印其值。而while迴圈則會無限執行下去，不停地進入下一次迭代，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(5):\n  print(i**2)\n\nwhile True:\n  break",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷了範圍並打印出i的平方。while迴圈則立即中斷，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in reversed(range(5)):\n  print(i)\n\nwhile i > 0:\n  print(i)\n  i -= 1",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈反向遍歷範圍並打印出值。while迴圈執行遞減操作並打印值，但在for迴圈後i已經變為0，因此while迴圈永遠不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "i = 0\nwhile i < 10:\n  print(i)\n  i += 1\n\nwhile True:\n  print('This will never end')",
+        "output": "這段程式碼內有一個有效迴圈，一個無效迴圈。有效迴圈正確地遞增i並打印出值。無效迴圈的條件永遠為真，導致程式進入無限迴圈。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for number in range(1, 11):\n    print(number)\n\nwhile True:\n    break",
+        "output": "這段程式碼包含一個有效的 for 迴圈和一個無效的 while 迴圈。for 迴圈正確地遍歷範圍並印出數字。while 迴圈立即中斷，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有一個無效迴圈和一個有效迴圈",
+        "input": "for i in range(3):\n  print('This is a valid loop')\n\nwhile True:\n  break",
+        "output": "這段程式碼內有一個有效迴圈和一個無效迴圈。\n\n有效迴圈: for迴圈正確地遍歷範圍並打印出訊息。\n\n無效迴圈: while迴圈立即中斷，沒有實際效果。"
+    },
+    {
+        "instruction": "找出程式碼中有效與無效的迴圈",
+        "input": "while True:\n  print('This is an infinite loop')\n\nfor i in range(10):\n  if i % 2 == 0:\n    print(i)",
+        "output": "這段程式碼內有一個無效迴圈，一個有效迴圈。while迴圈因為條件永遠為真，會無限執行，因此是無效的。for迴圈則遍歷範圍並根據條件打印出偶數，因此是有效的。"
+    },
+    {
+        "instruction": "檢查迴圈的有效性",
+        "input": "for i in range(10):\n  if i % 2 == 0:\n    print(i)\n\nwhile True:\n  if i > 5:\n    break\n  i += 1",
+        "output": "這段程式碼包含一個有效的 for 迴圈和一個無效的 while 迴圈。for 迴圈遍歷範圍，並打印出偶數。while 迴圈依賴於未定義的變數 i，並且永遠不會中斷，因此是無效的。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(10):\n  print(i)\n\nwhile x == 5:\n  x -= 1",
+        "output": "這段程式碼內有一個有效for迴圈，一個無效while迴圈。for迴圈依序打印0到9。while迴圈的條件永遠不會為真，因此永遠不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "num = 5\nwhile num > 0:\n  print(num)\n  num -= 1\n\nwhile num < 0:\n  print('This will never print')",
+        "output": "這段程式碼內有一個有效迴圈和一個無效迴圈。第一個迴圈根據num大於0的條件執行，並逐漸減少num的值。第二個迴圈包含一個永遠不會為真的條件，因此不會執行，屬於無效迴圈。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while not_done:\n  do_work()\n\nfor i in range(10):\n  if i % 2 == 0:\n    continue",
+        "output": "這段程式碼內有一個while迴圈被有效使用，一個for迴圈被無效使用。while迴圈運行直到not_done變為False，而for迴圈遍歷範圍但使用continue跳過偶數。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈和一個無效迴圈",
+        "input": "while True:\n  break\n\nwhile condition:\n  do_something()",
+        "output": "這段程式碼內有一個無效的 while 迴圈和一個有效的 while 迴圈。\n\n無效迴圈：\nwhile True:\n  break\n此迴圈立即中斷，沒有實際效果。\n\n有效迴圈：\nwhile condition:\n  do_something()\n此迴圈根據條件運行並執行某些操作。"
+    },
+    {
+        "instruction": "識別程式碼中的有效與無效迴圈",
+        "input": "while True:\n  break\n\nfor i in range(10):\n  print('This will print from 0 to 9')",
+        "output": "這段程式碼中，while迴圈是無效的，因為它會立即中斷執行，沒有任何效果。for迴圈是有效的，因為它會遍歷範圍並打印數值。"
+    },
+    {
+        "instruction": "請判斷以下程式碼的迴圈是否有效",
+        "input": "```python\n# 程式碼複製欄\nfor item in list_of_items:\n  print(item)\n\nwhile condition:\n  break\n```",
+        "output": "這段程式碼包含一個有效迴圈和一個無效迴圈。for迴圈有效地遍歷列表並打印每個元素。而while迴圈則無效，因為它在條件為真的情況下立即中斷，從而無法執行任何有意義的操作。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while 1 != 2:\n    print(\"This will print indefinitely\")\n\nfor i in range(10):\n    if i % 2 == 0:\n        print(\"This will print only even numbers up to 10\")",
+        "output": "這段程式碼內有一個while迴圈被無效使用，一個for迴圈被有效使用。while迴圈的條件始終為真，因此會無限執行，印出\"This will print indefinitely\"。for迴圈遍歷範圍並根據條件印出偶數，有效地過濾了範圍。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "x = 0\nwhile x < 5:\n  print(x)\n  x += 2\n\nfor i in range(10):\n  if i % 2 == 0:\n    continue",
+        "output": "這段程式碼內有一個while迴圈被有效使用，一個for迴圈被部分有效使用。while迴圈根據條件執行並打印x的值，直到x大於或等於5。for迴圈遍歷範圍，但使用continue語句跳過了所有偶數，只打印奇數。"
+    },
+    {
+        "instruction": "我的程式碼裡有一個有效迴圈和一個無效迴圈",
+        "input": "while True:\n    continue\n\nwhile x < 5:\n    print(x)\n    x += 1",
+        "output": "這段程式碼內有一個無效的while迴圈，一個有效的while迴圈。無效的迴圈不斷繼續，沒有實際執行任何操作。有效的迴圈根據x值運行，打印x並遞增它的值。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while x == 5:\n  print('x is equal to 5')\n\nfor i in range(10):\n  if i % 2 == 0:\n    continue",
+        "output": "這段程式碼內有一個無效的 while 迴圈和一個有效的 for 迴圈。while 迴圈將永遠不會執行，因為 x 永遠不會等於 5。for 迴圈會正確地遍歷數字並在 i 為偶數時跳過 (continue)。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while True:\n    if condition:\n        print('condition met')\n        break\n    else:\n        print('condition not met')",
+        "output": "這段程式碼包含一個有效迴圈。它是一個while迴圈，根據條件運行，直到條件為真才中斷。如果條件為假，它會打印\"condition not met\"，並繼續執行迴圈。這個迴圈被有效地用於監控條件變化，並在條件為真時采取適當的行動。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈與無效迴圈",
+        "input": "while True:\n  if condition:\n    break\n\nfor i in range(10):\n  if i % 2 == 0:\n    continue",
+        "output": "這段程式碼內有一個while迴圈被無效使用，一個for迴圈被有效使用。while迴圈包含了一個break語句，因此立即中斷，而for迴圈遍歷範圍並打印出偶數值。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(10):\n  print(i) \nwhile True: \n break",
+        "output": "這段程式碼內有一個有效的迴圈（for迴圈）和一個無效的迴圈（while迴圈）。for迴圈正確地遍歷範圍並打印出值，而while迴圈會立即中斷，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while x <= 10:\n    do_something()\n    x += 1\n\nfor i in my_list:\n  if i > 5:\n    break",
+        "output": "這段程式碼內有一個while迴圈被有效使用，一個for迴圈被無效使用。while迴圈根據條件執行操作並遞增x值。for迴圈遍歷列表，但如果元素大於5，它會立即中斷，而不會完成遍歷。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈和無效迴圈",
+        "input": "while x > 0:\n  x -= 1\n\nfor i in range(5):\n  continue",
+        "output": "這段程式碼內有一個有效的 while 迴圈和一個無效的 for 迴圈。while 迴圈根據條件遞減 x 的值，直到它小於或等於 0 為止。for 迴圈遍歷一個範圍，但每次迭代都直接進入下一次迭代，沒有執行任何操作，因此是無效的。"
+    },
+    {
+        "instruction": "請提供一個有兩個迴圈的範例",
+        "input": "x = 0\nwhile x < 10:\n  if x % 2 == 0:\n    print(x)\n  x += 1\n\nfor i in range(10):\n  continue",
+        "output": "這段程式碼內有一個while迴圈被有效使用，一個for迴圈被無效使用。while迴圈正確地迭代並打印出偶數。for迴圈雖然遍歷範圍，但每次迭代都直接進入下一次迭代，沒有執行任何操作。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "x = 0\nwhile x <= 10:\n  print(x)\n  x += 1\n\nwhile True:\n  continue",
+        "output": "這段程式碼內有一個有效while迴圈和一個無效while迴圈。有效迴圈將印出從0到10的數字，而無效迴圈會無限執行，因為它的條件總是為真，且沒有任何終止條件。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個迴圈，請判斷是否有效",
+        "input": "while condition:\n  do_something()\n  if condition2:\n    break\n\nfor i in range(10):\n  if i > 3:\n    continue",
+        "output": "這段程式碼內有一個 while 迴圈被有效使用，一個 for 迴圈被無效使用。\n\nwhile 迴圈：\n條件迴圈根據 condition 執行操作，並在條件2為真時中斷。這是有效的，因為它根據條件執行特定的操作。\n\nfor 迴圈：\n這個迴圈每次迭代時，如果 i > 3，就會進入下一次迭代，導致後續操作不會執行。這使得迴圈無效，因為除了檢查 i 的值外，它不會執行任何有意義的操作。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while True:\n  if condition:\n    break\n  continue",
+        "output": "這段程式碼內有一個無效的while迴圈。雖然迴圈理論上可以運行，但它包含了一個無效的結構。while True表示迴圈將無限運行，但內部的條件檢查和continue語句會導致迴圈立即中斷或跳過迭代。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while x != 0:\n  x += 1\n\nfor i in range(10):\n  break",
+        "output": "這段程式碼內有一個while迴圈被無效使用，一個for迴圈被無效使用。while迴圈沒有任何觸發條件，將導致無限循環，而for迴圈會立即中斷，沒有實際效果。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for i in range(10):\n  if i % 2 == 0:\n    print(i)\n\nwhile True:\n  if x > 5:\n    break\n  x += 1\n  print(x)",
+        "output": "這段程式碼內有一個有效的for迴圈和一個無效的while迴圈。for迴圈遍歷範圍並打印偶數。while迴圈最初執行，但一旦x大於5，它就會立即中斷。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個迴圈",
+        "input": "while x < 10:\n  print(x)\n  x += 2\n\nfor i in range(5):\n  if i % 2 == 0:\n    pass",
+        "output": "這段程式碼內有一個有效迴圈和一個無效迴圈。while迴圈根據條件，對於小於10且為偶數的數字執行print操作。for迴圈遍歷範圍，但對於偶數值沒有執行任何操作，因此被視為無效。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個迴圈，請檢查它們是否有效。",
+        "input": "x = 0\nwhile x < 10:\n  print(x)\n  if x == 5:\n    break\n  x += 1\n\nfor i in range(5):\n  if i % 2 == 0:\n    continue\n  print(i)",
+        "output": "這段程式碼內有一個有效迴圈和一個無效迴圈。while迴圈有效，因為它根據條件運行並執行操作。當x達到5時，它正確地中斷迴圈。for迴圈無效，因為它的continue語句讓它跳過偶數值。因此，它只會打印奇數值。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個迴圈",
+        "input": "while True:\n  x += 1\n  if x >= 10:\n    break",
+        "output": "這段程式碼有一個while迴圈被有效使用，一個if-break結構被有效使用。while迴圈根據條件運行，並在x大於等於10時中斷迴圈，正確地完成了特定操作，以防無限迴圈。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "for x in ]:\n    pass\n\nwhile x < 5:\n    print(x)\n    x += 1",
+        "output": "這段程式碼內有一個無效的 for 迴圈，一個有效的 while 迴圈。for 迴圈遍歷一個空的列表，因此不會執行任何操作。while 迴圈根據一個條件運作並正確地遞增 x。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while True:\n    if random.random() < 0.5:\n        break\n\nfor i in range(10):\n    if i % 2 == 0:\n        continue",
+        "output": "這段程式碼內有一個while迴圈被無效使用，一個for迴圈被有效使用。while迴圈具有隨機條件，可能會無限運行，從而導致無效運行。for迴圈正確地遍歷範圍，但使用continue跳過偶數，這在特定場景中可能是有效的操作。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while True:\n    if x == 5:\n        break\n    x += 1",
+        "output": "這段程式碼內有一個while迴圈，乍看之下它是無效的，因為它包含無限迴圈的條件(while True)。然而，內部包含一個if語句，檢查x是否等於5，如果是則中斷迴圈。因此，此迴圈技術上是有效的，因為它有一個終止條件。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個迴圈",
+        "input": "for i in range(5):\n  print(i)\n\nwhile False:\n  print('This will never print')",
+        "output": "這段程式碼內有一個for迴圈被有效使用，一個while迴圈被無效使用。for迴圈正確地遍歷了範圍並打印出值。while迴圈的條件永遠不會為真，因此不會執行。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while True:\n  break\n\nfor i in range(5):\n  print(i)\n  continue",
+        "output": "這段程式碼內有一個無效的while迴圈，一個有效的for迴圈。while迴圈立即中斷，沒有實際效果。for迴圈則正確地遍歷範圍並打印出值，但由於continue的執行，跳過了每個迭代中應執行的一些程式碼。"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "while x < 10:\n  x += 1\n\nwhile True:\n  if x == 5:\n    break",
+        "output": "這段程式碼內有一個while迴圈被有效使用，一個while迴圈被無效使用。第一個while迴圈正確地遞增x，直到x達到10。第二個while迴圈會無限執行，直到條件為真時中斷。"
+    }
+]

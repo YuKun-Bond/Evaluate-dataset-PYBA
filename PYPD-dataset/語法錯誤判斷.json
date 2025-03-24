@@ -1,0 +1,2002 @@
+[
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "if x > 10\n  print('x is greater than 10')",
+        "output": "這段程式碼有一個語法錯誤：`if x > 10` 在條件語句之後缺少冒號。\n\n**錯誤描述**：在 Python 中，條件語句結尾必須加上冒號以指示後面的區塊是否執行。在這個範例中，`if x > 10` 後面缺少冒號，會導致語法錯誤。\n\n**修正建議**：在條件語句後面加上冒號，以正確地分隔語句和其後的代碼區塊。\n\n**修正範例**：\n```python\nif x > 10:\n  print('x is greater than 10')\n```這樣的修正將正確執行條件語句並輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(a, b):\n  product = a * b\n  return product\n\nresult = multiply_numbers(4, )",
+        "output": "這段程式碼有一個語法錯誤：`multiply_numbers(4, )` 在呼叫 `multiply_numbers` 函數時缺少第二個參數。\n\n**錯誤描述**：在 Python 中，呼叫函數時，所有的位置參數都必須提供。在這個範例中，`multiply_numbers(4, )` 缺少第二個參數，因此會導致語法錯誤。\n\n**修正建議**：在呼叫 `multiply_numbers` 函數時，應提供完整的參數列表，包括第二個參數。\n\n**修正範例**：\n```python\nresult = multiply_numbers(4, 2)\n```這樣的修正將正確地傳遞參數給函數，並正確計算乘積。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(10)\n  if i % 2 == 0\n    print(i)",
+        "output": "這段程式碼有兩個語法錯誤：`for i in range(10)` 和 `if i % 2 == 0` 每行末尾缺少冒號。\n\n**錯誤描述**：在 Python 中，`for` 和 `if` 語句的結尾必須有冒號。缺少冒號會導致語法錯誤，讓程式無法正常解析這些語句。\n\n**修正建議**：在 `for i in range(10)` 和 `if i % 2 == 0` 末尾加上冒號。\n\n**修正範例**：\n```python\nfor i in range(10):\n  if i % 2 == 0:\n    print(i)\n```這樣的修正將使程式正確地執行迴圈和條件判斷，並輸出偶數。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(10)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(10)` 的結尾缺少冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈需要在條件後面加上冒號來標示迴圈的開始。在這個範例中，`for i in range(10)` 缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for i in range(10)` 的結尾加上冒號，使得程式碼正確標示迴圈的範圍。\n\n**修正範例**：\n```python\nfor i in range(10):\n  print(i)\n```\n這樣的修正將正確地進行迴圈遍歷，並且打印出數字0到9。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(10)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(10)` 在迴圈結束後缺少冒號。\n\n**錯誤描述**：在 Python 中，循環語句 `for` 的結尾必須有冒號以顯示循環區塊的開始。缺少冒號會導致語法錯誤。\n\n**修正建議**：需要在 `for` 迴圈結尾加上冒號，然後使用四格縮排來標識 `print(i)` 是循環體的一部分。\n\n**修正範例**：\n```python\nfor i in range(10):\n    print(i)\n```這樣的修正將正確地執行迴圈，並逐行列印數值。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(10)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：在 `for` 迴圈的定義中缺少冒號 `:`。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的結尾需要一個冒號 `:` 來表示區塊的開始。如果沒有這個冒號，將導致語法錯誤。\n\n**修正建議**：在 `for i in range(10)` 的末尾加上冒號 `:`。\n\n**修正範例**：\n```python\nfor i in range(10):\n  print(i)\n```\n這樣的修正將使程式正確迴圈並輸出數字。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def calculate_area(radius):\n  area = 3.14 * radius * radius\n  return area\n\narea_of_circle = calculate_area5]",
+        "output": "這段程式碼有一個語法錯誤：`calculate_area5]` 在呼叫 `calculate_area` 函數時使用了方括號，應改用圓括號。\n\n**錯誤描述**：在 Python 中，呼叫函數時必須使用圓括號。而方括號通常用於定義列表、字典中的索引或是取值操作。在這個範例中，`calculate_area5]` 使用了錯誤的括號類型，因此會導致語法錯誤。\n\n**修正建議**：在呼叫 `calculate_area` 函數時，應使用圓括號而非方括號。\n\n**修正範例**：\n```python\narea_of_circle = calculate_area(5)\n```這樣的修正將正確地呼叫函數並計算圓的面積。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 之後缺少冒號 `:`。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的語法要求迴圈標頭部分（這裡指 `for i in range(5)`) 之後需使用冒號 `:` 來表示迴圈的主體部分將開始執行。如果缺少冒號，會導致語法錯誤。\n\n**修正建議**：在迴圈標頭 `for i in range(5)` 的結尾處加上冒號 `:`。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```\n這樣的修正將正確地標示迴圈的結束，並使得程式碼順利執行。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(a, b):\n  product = a * b\n  return product\n\nprint(multiply_numbers(6,))",
+        "output": "這段程式碼有一個語法錯誤：`print(multiply_numbers(6,))` 在呼叫 `multiply_numbers` 函數時，傳遞的參數數量不正確。\n\n**錯誤描述**：在 Python 中，呼叫函數時，必須傳遞給定數量的參數。在這個範例中，`multiply_numbers(6,)` 只傳遞了一個參數，而 `multiply_numbers` 函數需要兩個參數，這會導致語法錯誤。\n\n**修正建議**：在呼叫 `multiply_numbers` 函數時，應該傳遞兩個數值作為參數。\n\n**修正範例**：\n```python\nprint(multiply_numbers(6, 2))\n```這樣的修正將正確地傳遞兩個參數給函數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 缺少冒號，使得 for 迴圈的語法不完整。\n\n**錯誤描述**：在 Python 中，for 迴圈的結尾必須有一個冒號來標示迴圈主體的開始。在這個範例中，`for i in range(5)` 缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 的結尾處加上一個冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```\n這樣的修正將使 for 迴圈的語法正確，並正確地輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def calculate_area(radius)\n  pi = 3.14\n  area = pi * radius ** 2\n  return area\n\nprint(calculate_area 5)",
+        "output": "這段程式碼有兩個語法錯誤：一是在 `def calculate_area(radius)` 行缺少冒號，另一是在 `print(calculate_area 5)` 呼叫函數時缺少括號中的逗號。\n\n**錯誤描述**：在 Python 中，定義函數時需要在參數括號後面添加冒號。在這個範例中，`def calculate_area(radius)` 缺少了這個冒號。另外，呼叫函數時，參數應該用括號包起來並用逗號分隔。在這個範例中，`print(calculate_area 5)` 缺少了逗號和適當的括號。\n\n**修正建議**：在定義函數時，應在參數括號後添加冒號；在呼叫函數時，應在參數之間加上逗號並使用括號。\n\n**修正範例**：\n```python\ndef calculate_area(radius):\n  pi = 3.14\n  area = pi * radius ** 2\n  return area\n\nprint(calculate_area(5))\n```\n這樣的修正將使函數定義正確，並正確地傳遞參數給函數，正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def calculate_area(radius):\n  area = 3.14 * radius ** 2\n  return area\n\nresult = calculate_area5]\nprint(result)",
+        "output": "這段程式碼有一個語法錯誤：`calculate_area5]` 在呼叫 `calculate_area` 函數時使用了方括號，而不是小括號。\n\n**錯誤描述**：在 Python 中，函數呼叫時必須使用小括號而非方括號。在這個範例中，`calculate_area5]` 使用了方括號，這是語法錯誤。\n\n**修正建議**：在呼叫 `calculate_area` 函數時，應使用小括號包住參數。\n\n**修正範例**：\n```python\nresult = calculate_area(5)\nprint(result)\n```\n這樣的修正將正確地呼叫函數並輸出計算結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "fruits = 'apple', 'banana', 'cherry']\nfor fruit in fruits\n  print(fruit)",
+        "output": "這段程式碼有一個語法錯誤：`for fruit in fruits` 之後缺少冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的語法結構必須在 `for` 敘述之後加上冒號 (:)。具體來說，語句 `for fruit in fruits` 必須以冒號結束，否則會導致解析錯誤。\n\n**修正建議**：在 `for fruit in fruits` 之後加上冒號，使得迴圈的語法正確。\n\n**修正範例**：\n```python\nfruits = 'apple', 'banana', 'cherry']\nfor fruit in fruits:\n  print(fruit)\n```\n這樣的修正將正確地執行 `for` 迴圈，並依次打印清單中的每個水果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "if x == 10\n  print('x is 10')",
+        "output": "這段程式碼有一個語法錯誤：`if x == 10` 在條件語句結尾時缺少冒號。\n\n**錯誤描述**：在 Python 中，條件語句（如 if、while 等）結尾必須以冒號 `:` 結束。在這個範例中，`if x == 10` 缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `if x == 10` 的結尾處加上冒號 `:`。\n\n**修正範例**：\n```python\nif x == 10:\n  print('x is 10')\n```這樣的修正將確保條件語句正確結束，並正確執行內部的程式碼。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(a, b).\n  return a * b\n\nresult = multiply_numbers(3, 4)\nprint(result)",
+        "output": "這段程式碼有一個語法錯誤：`def multiply_numbers(a, b).` 在定義 `multiply_numbers` 函數時使用了不正確的符號。\n\n**錯誤描述**：在 Python 中，函數定義應該以冒號 `:` 結尾，而不是句號 `.`。在這個範例中，`multiply_numbers` 函數的定義部分使用了錯誤的符號，因此會導致語法錯誤。\n\n**修正建議**：在定義 `multiply_numbers` 函數時，應將句號替換為冒號。\n\n**修正範例**：\n```python\ndef multiply_numbers(a, b):\n  return a * b\n\nresult = multiply_numbers(3, 4)\nprint(result)\n```\n這樣的修正將正確地定義函數，並使程式碼順利執行。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greet(name):\n  greeting = 'Hello, ' + name + !\n  return greeting\n\nprint(greet('Alice'))",
+        "output": "這段程式碼有一個語法錯誤：`greeting = 'Hello, ' + name + !` 在字串拼接時不正確地使用了 `!` 號。\n\n**錯誤描述**：在 Python 中，字串拼接不能直接使用 `!` 號，這會導致語法錯誤。應該將 `!` 號包含在字串內進行拼接。\n\n**修正建議**：正確的方法是將 `!` 號包含在字串的引號內，以確保它成為字串的一部分。\n\n**修正範例**：\n```python\ndef greet(name):\n  greeting = 'Hello, ' + name + '!'\n  return greeting\n\nprint(greet('Alice'))\n```這樣的修正將正確地拼接字串並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greet(name):\n  print('Hello, ' + name)\n\ngreet('Alice', 'Bob')",
+        "output": "這段程式碼有一個語法錯誤：`greet('Alice', 'Bob')` 在呼叫 `greet` 函數時多傳遞了一個參數。\n\n**錯誤描述**：在 Python 中，如果函數定義只有一個參數，則在呼叫該函數時應該只傳遞一個對應的參數。在這個範例中，函數 `greet` 只有一個參數 `name`，但在呼叫時傳遞了兩個參數 `Alice` 和 `Bob`，這會造成語法錯誤。\n\n**修正建議**：根據函數 `greet` 的定義，應只傳遞一個參數。可以選擇傳遞 `Alice` 或 `Bob`，或修改函數定義以接受多個參數。\n\n**修正範例**：\n\n**方式一：修改呼叫部分來符合原定義**\n```python\ngreet('Alice')\n```\n\n**方式二：修改函數定義以接受多個參數**\n```python\ndef greet(*names):\n  for name in names:\n    print('Hello, ' + name)\n\ngreet('Alice', 'Bob')\n```\n這樣的修正將使得程式碼正確運行並輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 在 for 循環結尾缺少冒號。\n\n**錯誤描述**：在 Python 中，for 循環必須在条件後面加上冒號。在這個範例中，`for i in range(5)` 缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 的結尾添加冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```\n這樣的修正將正確進行循環，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5) \n    print(i)",
+        "output": "這段程式碼有一個語法錯誤：在 `for` 循環的最後缺少冒號。\n\n**錯誤描述**：在 Python 中，`for` 循環語句的末尾應該有一個冒號。缺少冒號會導致語法錯誤，因為這是語法結構的一部分，用來表示接下來是一個嵌套塊。\n\n**修正建議**：在 `for` 循環的末尾添加一個冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n    print(i)\n```\n這樣的修正將正確地形成 `for` 循環語句，並且能正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "if x = 5:\n    print('x is 5')",
+        "output": "這段程式碼有一個語法錯誤：`if x = 5:` 在條件判斷中使用了賦值運算符 `=` 而不是等於運算符 `==`。\n\n**錯誤描述**：在 Python 中，條件判斷的比較運算使用的是雙等號 `==`，而單等號 `=` 是用來做賦值操作的。這段代碼中的 `if x = 5:` 會導致語法錯誤，因為賦值運算不能用於條件判斷。\n\n**修正建議**：在條件判斷中應該使用雙等號 `==` 來進行比較，而不是單等號 `=`。\n\n**修正範例**：\n```python\nif x == 5:\n    print('x is 5')\n```\n這樣的修正將正確地比較 `x` 是否等於 `5`，並按條件執行相應的代碼。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "if x = 5:\n  print('x is 5')",
+        "output": "這段程式碼有一個語法錯誤：`if x = 5:` 在條件語句中使用了賦值運算符 `=` 代替相等運算符 `==`。\n\n**錯誤描述**：在 Python 中，條件語句應該使用相等運算符 `==` 來比較兩個值是否相等，而不是使用賦值運算符 `=`。此錯誤會導致語法錯誤，因為賦值運算符不能用於條件檢查。\n\n**修正建議**：在條件語句中，應將 `=` 改為 `==`。\n\n**修正範例**：\n```python\nif x == 5:\n  print('x is 5')\n```這樣的修正將正確地進行條件檢查，並在 `x` 等於 `5` 時輸出正確的信息。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(1, 5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(1, 5)` 缺少冒號。\n\n**錯誤描述**：在 Python 中，迴圈語句（如 `for` 和 `while`）以及條件語句（如 `if`）的結尾必須加上冒號，以表示後續是塊狀語句。在這個範例中，`for` 迴圈結尾缺少冒號，導致語法錯誤。\n\n**修正建議**：在 `for i in range(1, 5)` 的結尾加上冒號，使語法完整。\n\n**修正範例**：\n```python\nfor i in range(1, 5):\n  print(i)\n```\n這樣的修正將正確地表示迴圈結構，並成功執行 `print(i)` 來輸出變數 `i` 的值。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 後面缺少冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈後面必須加上冒號（:），用來表示迴圈的開始。在這個範例中，`for i in range(5)` 缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for` 迴圈後面加上冒號，這樣才符合語法規範。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```\n這樣的修正將正確執行迴圈，並輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply(x, y)\n  result = x * y\n  return result\n\nprint(multiply(4, 5))",
+        "output": "這段程式碼有語法錯誤：`def multiply(x, y)` 在定義函數時缺少冒號。\n\n**錯誤描述**：在 Python 中，函數的定義必須在參數列表後面加上冒號。`def multiply(x, y)` 缺少了冒號，因此會導致語法錯誤。\n\n**修正建議**：在定義 `multiply` 函數時，應在參數列表後面加上冒號。\n\n**修正範例**：\n```python\ndef multiply(x, y):\n  result = x * y\n  return result\n\nprint(multiply(4, 5))\n```這樣的修正將正確地定義函數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(a, b):\n  product = a * b\n  return product\n\nprint(multiply_numbers(4, 6)",
+        "output": "這段程式碼有一個語法錯誤：`print(multiply_numbers(4, 6)` 缺少閉合的小括號。\n\n**錯誤描述**：在 Python 中，所有開括號必須有相應的閉合括號。在這個範例中，`multiply_numbers(4, 6)` 的呼叫缺少右括號，因此會導致語法錯誤。\n\n**修正建議**：在呼叫 `multiply_numbers` 函數時，應在結束位置補上右括號 `)`。\n\n**修正範例**：\n```python\nprint(multiply_numbers(4, 6))\n```這樣的修正將確保括號匹配，避免語法錯誤。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(a, b):\n  result = a * b\n  return result\n\nprint(multiply_numbers(4; 5))",
+        "output": "這段程式碼有一個語法錯誤：`print(multiply_numbers(4; 5))` 在呼叫 `multiply_numbers` 函數時使用了錯誤的分隔符號點號（分號）。\n\n**錯誤描述**：在 Python 中，函數的參數之間必須用逗號分隔。在這個範例中，`multiply_numbers(4; 5)` 錯誤地使用了分號，因此會導致語法錯誤。\n\n**修正建議**：在呼叫 `multiply_numbers` 函數時，應在 `4` 和 `5` 之間改用逗號來分隔參數。\n\n**修正範例**：\n```python\nprint(multiply_numbers(4, 5))\n```\n這樣的修正將正確地傳遞參數給函數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greet(name):\n  message = Hello, + name + !\n  return message\n\nprint(greet(John))",
+        "output": "這段程式碼有一些語法錯誤和邏輯錯誤：首先，`message = Hello, + name + !` 缺少引號，還有在使用字串連接時應該使用加號。此外，`print(greet(John))` 應該使用字串而非變數參數。\n\n**錯誤描述**：在 Python 中，字串必須用引號（單引號或雙引號）包圍；字串連接應使用加號進行連接。另外，函數 `greet` 的參數應該用引號包住。\n\n**修正建議**：在 `message` 賦值時要用引號把字串部分包起來，並用加號連接變數。在呼叫 `greet` 函數時，應用引號包圍傳遞的字串參數。\n\n**修正範例**：\n```python\ndef greet(name):\n  message = \"Hello, \" + name + \"!\"\n  return message\n\nprint(greet(\"John\"))\n```\n這樣的修正將正確地生成問候語句，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(a, b):\n  product = a * b\n  print(product)\n\nmultiply_numbers(4 ,6 ,7)",
+        "output": "這段程式碼有一個語法錯誤：`multiply_numbers(4 ,6 ,7)` 在呼叫 `multiply_numbers` 函數時傳遞了過多的參數。\n\n**錯誤描述**：在 Python 中，函數呼叫時傳遞的參數數量必須與函數定義中的參數數量一致。在這個範例中，`multiply_numbers` 函數定義了兩個參數 `a` 和 `b`，但在呼叫時卻傳遞了三個參數 `4, 6, 7`，這會導致語法錯誤。\n\n**修正建議**：在呼叫 `multiply_numbers` 函數時，應僅傳遞兩個參數。\n\n**修正範例**：\n```python\nmultiply_numbers(4, 6)\n```這樣的修正將正確地傳遞參數給函數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greet(name):\n    return 'Hello, ' + name)\n\nprint(greet('Alice'))",
+        "output": "這段程式碼有一個語法錯誤：`return 'Hello, ' + name)` 中多了一個多餘的右括號 `)`。\n\n**錯誤描述**：在 Python 中，括號必須成對出現。在這個範例中，`return 'Hello, ' + name)` 多了一個右括號，因此會導致語法錯誤。\n\n**修正建議**：去掉多餘的右括號，使括號匹配正確。\n\n**修正範例**：\n```python\ndef greet(name):\n    return 'Hello, ' + name\n\nprint(greet('Alice'))\n```\n這樣的修正將確保函數的 return 語句正確執行，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(a, b):\n  result = a * b\n  return result\n\nprint(multiply_numbers(3, 4)",
+        "output": "這段程式碼有一個語法錯誤：在 `print(multiply_numbers(3, 4)` 的括號沒有閉合，缺少結束括號。\n\n**錯誤描述**：在 Python 中，每一個開括號 `(` 都需要一個對應的閉括號 `)`。在這個範例中，`print(multiply_numbers(3, 4)` 沒有結束括號，因此會導致語法錯誤。\n\n**修正建議**：在呼叫 `multiply_numbers` 函數並使用 `print` 打印結果時，應在結尾加上缺少的右括號。\n\n**修正範例**：\n```python\nprint(multiply_numbers(3, 4))\n```\n這樣的修正將確保括號正確配對，使程式碼能夠正常執行。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greet(name):\n  return \"Hello, \" + name\n\nprint(gree('Alice'))",
+        "output": "這段程式碼有一個語法錯誤：`print(gree('Alice'))` 在呼叫 `gree` 函數時拼寫錯誤，正確的函數名稱應該是 `greet`。\n\n**錯誤描述**：在 Python 中，函數名稱必須拼寫正確才能成功呼叫。在這個範例中，`gree` 並不是一個已定義的函數名稱，所以會導致語法錯誤。\n\n**修正建議**：將函數呼叫中的 `gree` 改為正確的函數名稱 `greet`。\n\n**修正範例**：\n```python\nprint(greet('Alice'))\n```這樣的修正將正確地呼叫 `greet` 函數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5):\nprint(i)",
+        "output": "這段程式碼有一個語法錯誤：print(i) 缺少必要的縮排。\n\n**錯誤描述**：在 Python 中，迴圈內部的程式碼必須縮排，以表明哪些程式碼是在迴圈的範圍之內。在這個範例中，print(i) 沒有縮排，因此會導致語法錯誤。\n\n**修正建議**：在 for 迴圈內的程式碼行應適當縮排，以表示它們是迴圈的一部分。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```\n這樣的修正將確保 print(i) 是 for 迴圈的一部分，並正確地輸出數字。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 缺少冒號 `:`。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的結尾需要用冒號 `:` 標示，表示後面有一個區塊需要縮排。在這個範例中，`for i in range(5)` 缺少結尾的冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 的結尾加上一個冒號 `:`。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```這樣的修正將讓 `for` 迴圈正確執行，並逐行輸出數字。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def divide_numbers(a, b):\n  result = a / b\n  return result\n\ndivide_numbers(10, 0)\nprint('Division successful')",
+        "output": "這段程式碼有一個可能會導致運行時錯誤的問題：`divide_numbers(10, 0)` 在進行除法運算時，除數不可以為零。\n\n**錯誤描述**：在 Python 中，除數為零會導致 `ZeroDivisionError` 錯誤，雖然這不是語法的問題，但這是邏輯上的問題，會讓程式無法正常執行。\n\n**修正建議**：在進行除法運算前，應該檢查除數是否為零，並對此情況進行適當的處理。\n\n**修正範例**：\n```python\ndef divide_numbers(a, b):\n  if b == 0:\n    return 'Error: Division by zero is not allowed.'\n  result = a / b\n  return result\n\nresult = divide_numbers(10, 0)\nprint(result)\nprint('Division successful')\n```\n這樣的修正將檢查除數是否為零並適當處理，避免因為零除錯誤而導致程式崩潰。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(x, y):\n    result = x * y\n    return result\n\nprint(multiply_numbers(4, 5))\nprint(multiply_numbers(2,))",
+        "output": "這段程式碼有兩個語法錯誤。\n\n**錯誤描述1**：`print(multiply_numbers(4, 5))` 語法正確，但 `print(multiply_numbers(2,))` 中的逗號後面缺少第二個參數，導致函數呼叫不完整。\n\n**錯誤描述2**：在定義函數 `multiply_numbers` 之後，需要確保在呼叫函數時提供所有必要的參數，這裡缺少第二個參數可能會導致錯誤執行，因為函數 `multiply_numbers` 需要兩個參數。\n\n**修正建議**：在呼叫 `multiply_numbers` 函數時，應提供完整的兩個參數，並避免多餘的逗號。\n\n**修正範例**：\n```python\nprint(multiply_numbers(4, 5))\nprint(multiply_numbers(2, 3))\n```\n這樣的修正將正確地傳遞參數給函數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply(a, b):\n  result = a * b\n  print(結果)\n\nmultiply(4, 5)",
+        "output": "這段程式碼有一個語法錯誤：`print(結果)` 中的 `結果` 未被定義，而應該使用變數 `result`。\n\n**錯誤描述**：在 Python 中，變數名是區分大小寫的。此例子中，變數 `result` 定義在前，但在 `print` 語句中卻使用了未定義的 `結果`，這將導致 NameError 錯誤。\n\n**修正建議**：將 `print(結果)` 修正為 `print(result)`，以使用正確的變數名稱。\n\n**修正範例**：\n```python\ndef multiply(a, b):\n  result = a * b\n  print(result)\n\nmultiply(4, 5)\n```這樣的修正將正確地打印出變數 `result` 的值。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def calculate_area(radius)\n  area = 3.14 * radius ** 2\n  return area\n\nprint(calculate_area(5))",
+        "output": "這段程式碼有一個語法錯誤：在定義 `calculate_area` 函數時缺少冒號。\n\n**錯誤描述**：在 Python 中，函數定義需要在函數參數括號後加上冒號。由於 `calculate_area(radius)` 缺少了冒號，這將會導致語法錯誤。\n\n**修正建議**：在 `calculate_area` 函數定義的參數括號後加上一個冒號。\n\n**修正範例**：\n```python\ndef calculate_area(radius):\n  area = 3.14 * radius ** 2\n  return area\n\nprint(calculate_area(5))\n```這樣的修正將使函數定義符合 Python 語法，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greet(name):\n  return 'Hello, ' + name\n\nprint(greet('Alice))",
+        "output": "這段程式碼有一個語法錯誤：`print(greet('Alice))` 中的字符串沒有正確地閉合。\n\n**錯誤描述**：在 Python 中，字符串需要用相同的引號包圍。在這個範例中，字符串 `'Alice` 用單引號開始，但結束時沒有單引號，這會導致語法錯誤。\n\n**修正建議**：在字符串末尾應加上閉合的單引號，使字符串能夠正確閉合。\n\n**修正範例**：\n```python\nprint(greet('Alice'))\n```這樣的修正將正確地閉合字符串，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(a, b):\n  result = a * b\n  return result\n\nprint(multiply_numbers(3, 4, 5))",
+        "output": "這段程式碼有一個語法錯誤：`print(multiply_numbers(3, 4, 5))` 在呼叫 `multiply_numbers` 函數時傳遞了過多的參數。\n\n**錯誤描述**：在 Python 中，函數的參數數量必須與定義函數時的一致。在這個範例中，`multiply_numbers` 函數只接受兩個參數，但呼叫時卻傳遞了三個參數，因此會導致語法錯誤。\n\n**修正建議**：在呼叫 `multiply_numbers` 函數時，應只傳遞兩個參數。\n\n**修正範例**：\n```python\nprint(multiply_numbers(3, 4))\n```這樣的修正將正確地傳遞參數給函數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)):\n    print(i)\nif i = 4:\n    print('Found 4')",
+        "output": "這段程式碼有兩個語法錯誤：`for` 迴圈中的右括號多餘，以及 `if` 條件中的賦值運算符應該為比較運算符。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的語法不應該有多餘的右括號。第二個錯誤是，在 `if` 條件中應該使用 `==` 來進行比較而不是 `=`，因為 `=` 用於賦值。\n\n**修正建議**：移除 `for` 迴圈中的多餘右括號，並將 `if` 條件中的 `=` 改為 `==`。\n\n**修正範例**：\n```python\nfor i in range(5):\n    print(i)\nif i == 4:\n    print('Found 4')\n```\n這樣的修正將正確地執行迴圈並進行比較檢查。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greet(name)\n    print('Hello, ' + name)\n\ngreet('John')",
+        "output": "這段程式碼有兩個語法錯誤：\n1. `def greet(name)` 在定義函數時缺少冒號。\n2. `print('Hello, ' + name)` 在 print 之前沒有適當的縮排。\n\n**錯誤描述**：在 Python 中，函數定義需要在括號結尾加上一個冒號以標示塊的開始。此外，塊中的語句需要一致的縮排來表示它們屬於同一個塊。\n\n**修正建議**：在函數定義的結尾加上冒號，並確保 `print` 語句有正確的縮排對齊。\n\n**修正範例**：\n```python\ndef greet(name):\n    print('Hello, ' + name)\n\ngreet('John')\n```\n這樣的修正將正確定義函數，並在呼叫時正確執行。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(a, b):\n    result = a * b\n    return result\n\nprint(multiply_numbers(4, '2'))",
+        "output": "這段程式碼有一個語法錯誤：在呼叫 `multiply_numbers` 函數時，參數的類型不匹配，導致運算無法進行。\n\n**錯誤描述**：在 Python 中，乘法運算符 `*` 需要兩個數值類型的參數，但是在這個範例中，'2' 是一個字串，而非數值類型。這樣會導致在運算時產生錯誤。\n\n**修正建議**：將'2'更改為整數類型2，這樣才能進行有效的乘法運算。\n\n**修正範例**：\n```python\nprint(multiply_numbers(4, 2))\n```這樣的修正將正確地傳遞兩個數值類型的參數給函數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "if x = 10:\n    print('x is 10')",
+        "output": "這段程式碼有一個語法錯誤：`if x = 10:` 中使用了賦值運算符 `=` 而不是比較運算符 `==`。\n\n**錯誤描述**：在 Python 中，`=` 是用來做賦值運算的，而 `==` 才是用來檢查兩個值是否相等。使用錯誤的運算符會導致語法錯誤。\n\n**修正建議**：在寫條件語句時，應使用 `==` 來檢查變數的值。\n\n**修正範例**：\n```python\nif x == 10:\n    print('x is 10')\n```\n這樣的修正將正確地檢查 `x` 是否等於 `10`，並在條件成立時輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def calculate_area(radius):\n  area = 3.14159 * radius ** 2\n  return area\n\nresult = calculate_area(5)\nprint('The area is' result)",
+        "output": "這段程式碼有一個語法錯誤：`print('The area is' result)` 在呼叫 `print` 函數時缺少字串和變數之間的逗號。\n\n**錯誤描述**：在 Python 中，當我們要在 `print` 函數內一起輸出多個項目時，這些項目之間必須用逗號分隔。在這個範例中，`'The area is'` 和 `result` 之間缺少了逗號，因此會導致語法錯誤。\n\n**修正建議**：在 `print` 函數中，應在字串 `'The area is'` 和變數 `result` 之間加上逗號。\n\n**修正範例**：\n```python\nprint('The area is', result)\n```這樣的修正將正確地將字串和計算結果一起輸出，並正確顯示最終結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 在 `for` 迴圈陳述式後缺少冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的陳述式結束時必須加上冒號。如果缺少冒號，會導致語法錯誤並且程式無法執行。\n\n**修正建議**：在 `for i in range(5)` 的末尾加上一個冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```\n這樣的修正將正確地執行 `for` 迴圈，並輸出從 0 到 4 的數字。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有兩個語法錯誤：\n1. `for i in range(5)` 結尾缺少冒號。\n2. `print(i)` 缺少縮排。\n\n**錯誤描述**：在 Python 中，循環語句後面應該有冒號，表示接下來是一個區塊。而在循環內的語句需要適當縮排，以明確表示它們屬於循環體的一部分。\n\n**修正建議**：在 `for i in range(5)` 後面加上冒號，並且將 `print(i)` 縮排一層。\n\n**修正範例**：\n```python\nfor i in range(5):\n    print(i)\n```\n這樣的修正將使得程式碼能夠正確地執行並輸出預期的結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 缺少冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的語法需要在條件語句的末尾加上冒號，以指示接下來的是迴圈的主體。在這個範例中，`for i in range(5)` 缺少冒號，將導致語法錯誤。\n\n**修正建議**：在 `for` 迴圈條件語句的末尾加上冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```\n這樣的修正將正確地執行迴圈並輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def divide_numbers(a, b):\n    result = a / b\n    return result\n\ndivide_numbers(10 2)",
+        "output": "這段程式碼有一個語法錯誤：`divide_numbers(10 2)` 在呼叫 `divide_numbers` 函數時缺少參數之間的逗號。\n\n**錯誤描述**：在 Python 中，函數的參數之間必須用逗號分隔。在這個範例中，`divide_numbers(10 2)` 缺少逗號，因此會導致語法錯誤。\n\n**修正建議**：在呼叫 `divide_numbers` 函數時，應在 `10` 和 `2` 之間加上逗號。\n\n**修正範例**：\n```python\ndivide_numbers(10, 2)\n```這樣的修正將正確地傳遞參數給函數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "if x = 10:\n  print('x is ten')",
+        "output": "這段程式碼有一個語法錯誤：`if x = 10:` 中，`=` 應該使用 `==` 來進行等於比較。\n\n**錯誤描述**：在 Python 中，`=` 是賦值運算符，用於將某個值賦給變量；而 `==` 是比較運算符，用於檢查兩個值是否相等。在 `if` 條件語句中，應該使用 `==` 來進行比較。\n\n**修正建議**：將 `if x = 10:` 修改為 `if x == 10:`。\n\n**修正範例**：\n```python\nif x == 10:\n  print('x is ten')\n```\n這樣的修正將正確地對 `x` 進行比較檢查，並在條件為真時打印出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greet(name)\n  print('Hello, ' + name)\n\ngreet('Alice')",
+        "output": "這段程式碼有一個語法錯誤：`def greet(name)` 最後缺少冒號。\n\n**錯誤描述**：在 Python 中，函數宣告必須以冒號結尾，以分隔函數名稱和其內容。在這個範例中，`greet(name)` 最後沒有冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `def greet(name)` 之後加上冒號。\n\n**修正範例**：\n```python\ndef greet(name):\n  print('Hello, ' + name)\n\ngreet('Alice')\n```\n這樣的修正將正確地宣告函數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(x, y):\n  product == x * y\n  return product\n\nresult = multiply_numbers(3, 4)\nprint(result)",
+        "output": "這段程式碼有一個語法錯誤：在 `multiply_numbers` 函數內，`product == x * y` 應該是賦值操作而非比較操作。\n\n**錯誤描述**：在 Python 中，用雙等號 `==` 是比較操作符號，用來比較兩個值是否相等。而賦值操作應使用單等號 `=`。在這個範例中，程式碼誤用比較操作符號進行賦值，導致語法錯誤。\n\n**修正建議**：在 `multiply_numbers` 函數內，將 `product == x * y` 修改為 `product = x * y` 來正確進行賦值操作。\n\n**修正範例**：\n```python\ndef multiply_numbers(x, y):\n  product = x * y\n  return product\n\nresult = multiply_numbers(3, 4)\nprint(result)\n```\n這樣的修正將正確地將乘積結果賦值給 `product` 變數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "if x in range(10):\n  print('x is in the range')\nelse\n  print('x is not in the range')",
+        "output": "這段程式碼有兩個語法錯誤：`else` 行上缺少冒號，且 `range` 函數中缺少正確的結括號。\n\n**錯誤描述**：在 Python 中，條件語句的 `else` 行應該以冒號結束，此外，`range` 函數應該使用圓括號括住參數。\n\n**修正建議**：在 `else` 行末尾添加冒號，並在 `range` 函數中正確使用圓括號。\n\n**修正範例**：\n```python\nif x in range(10):\n  print('x is in the range')\nelse:\n  print('x is not in the range')\n```這樣的修正將正確地執行條件語句並進行參數判斷。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def calculate_area(radius):\n  area = 3.14 * radius ** 2\n  return area\n\nresult = calculate_area(5)\nif result > 25\n  print('Large area')",
+        "output": "這段程式碼有一個語法錯誤：`if result > 25` 應該在條件語句的結尾加上冒號。\n\n**錯誤描述**：在 Python 中，如果條件語句缺少冒號，會導致語法錯誤。在這個範例中，`if result > 25` 缺少冒號。因此會產生語法錯誤。\n\n**修正建議**：應在 `if result > 25` 的結尾加上冒號。\n\n**修正範例**：\n```python\nif result > 25:\n  print('Large area')\n```這樣的修正將正確地完成條件語句，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 在 `for` 迴圈的結尾缺少冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的條件表達式後面必須加上冒號來結束。在這個範例中，`for i in range(5)` 缺少了必要的冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for` 迴圈的條件表達式後面加上一個冒號 `:`。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```這樣的修正將正確地結束迴圈的條件表達式，並正確執行輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有兩個語法錯誤：`for i in range(5)` 後缺少冒號，且 `print(i)` 應該要有縮排。\n\n**錯誤描述**：在 Python 中，循環語句後應該以冒號結尾，表示後面會有一組代碼塊。此外，代碼塊內部的每個语句都應當有一致的縮排。\n\n**修正建議**：在 `for i in range(5)` 後面加上冒號，並將 `print(i)` 統一縮排。\n\n**修正範例**：\n```python\nfor i in range(5):\n    print(i)\n```\n這樣的修正將能正確執行循環，輸出數字 0 到 4。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def calculate_area(radius):\n  PI = 3.14\n  area = PI * radius ** 2\n  return area\n\nresult = calculate_area(5\nprint('The area is:', result)",
+        "output": "這段程式碼有一個語法錯誤：在第六行 `result = calculate_area(5` 缺少閉合括號，並且在最後一行 `print('The area is:', result)` 應該換行到第七行。\n\n**錯誤描述**：在 Python 中，所有的括號必須成對出現。在 `calculate_area(5` 中缺少了一個右括號 `)`, 使語法不完整。此外，`print('The area is:', result)` 應該是單獨的一行。\n\n**修正建議**：在 `5` 之後添加右括號 `)`，同時將 `print('The area is:', result)` 放在新的一行。\n\n**修正範例**：\n```python\nresult = calculate_area(5)\nprint('The area is:', result)\n```這樣的修正將正確地形成語法，並正確執行函數計算並輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "if x = 10:\n  print('x is 10')",
+        "output": "這段程式碼有一個語法錯誤：`if x = 10:` 使用了單一等號 `=` 進行賦值，而非比較運算符 `==`。\n\n**錯誤描述**：在 Python 中，`=` 是用於變數賦值的運算符，而 `==` 是用來進行相等比較的運算符。在 `if` 條件判斷中應該使用 `==` 來檢查兩個值是否相等。\n\n**修正建議**：將 `=` 改為 `==`，以便正確地比較 `x` 是否等於 `10`。\n\n**修正範例**：\n```python\nif x == 10:\n  print('x is 10')\n```這樣的修正將正確地進行條件判斷，並輸出所需訊息。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def calculate_area(radius):\n  pi = 3.14\n  area = pi * radius ** 2\n  return area\n\nprint(calculate_area5])",
+        "output": "這段程式碼有一個語法錯誤：`print(calculate_area5])` 在呼叫 `calculate_area` 函數時使用了錯誤的方括號語法。\n\n**錯誤描述**：在 Python 中，函數呼叫時應使用括號 `()` 而非方括號 `]`。在這個範例中，`calculate_area5]` 應改為 `calculate_area(5)`，否则會導致語法錯誤。\n\n**修正建議**：請將函數呼叫中的方括號 `]` 替換為括號 `()`。\n\n**修正範例**：\n```python\nprint(calculate_area(5))\n```\n這樣的修正將正確地呼叫函數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "if x = 10:\n    print('x is 10')",
+        "output": "這段程式碼有一個語法錯誤：`if x = 10:` 在條件判斷中使用了賦值運算符 `=`。\n\n**錯誤描述**：在 Python 中，條件判斷中應使用比較運算符 `==` 來檢查相等性，而不是賦值運算符 `=`。使用賦值運算符會導致語法錯誤。\n\n**修正建議**：將條件判斷中的賦值運算符 `=` 改為比較運算符 `==`。\n\n**修正範例**：\n```python\nif x == 10:\n    print('x is 10')\n```\n這樣的修正將正確地檢查變數 `x` 是否等於 `10`，並在條件滿足時輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(10)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(10)` 缺少冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的結尾必須以冒號結束。缺少這個冒號會導致語法錯誤，Python 會無法解析這段程式碼。\n\n**修正建議**：在 `for` 迴圈的結尾加上冒號，這樣 Python 就能正確解析和執行這段程式碼。\n\n**修正範例**：\n```python\nfor i in range(10):\n  print(i)\n```\n這樣的修正將正確地執行迴圈，並輸出從 0 到 9 的數字。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n    print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 缺少了結尾的冒號 `:`。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的語法要求迴圈標頭必須以冒號結尾。在這個範例中，`for i in range(5)` 缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 的結尾加上冒號 `:`。\n\n**修正範例**：\n```python\nfor i in range(5):\n    print(i)\n```\n這樣的修正將正確地建立一個迴圈，並正確打印出從0到4的數字。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 行末缺少冒號，使得循環結構無法正確識別。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的語法要求在迴圈條件結束後必須加上冒號，以明確告知其內部塊的開始位置。在這個範例中，少了冒號就是語法錯誤的原因。\n\n**修正建議**：在 `for` 迴圈語句的末尾加上冒號，來正確地定義迴圈結構。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```\n這樣的修正將使程式碼正確執行，依次列出0到4的數字。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def calculate_area(radius):\n  pi = 3.14159\n  area = pi * radius**2\n  return area\n\nprint(calculate_area(5)",
+        "output": "這段程式碼有一個語法錯誤：`print(calculate_area(5)` 在呼叫 `calculate_area` 函數時缺少閉合的括號。\n\n**錯誤描述**：在 Python 中，函數的呼叫語法必須包含成對的括號。在這個範例中，`print(calculate_area(5)` 缺少閉合括號，因此會導致語法錯誤。\n\n**修正建議**：在 `calculate_area` 函數呼叫的最後應加上閉合括號，使其語法正確。\n\n**修正範例**：\n```python\nprint(calculate_area(5))\n```這樣的修正將正確地呼叫函數並顯示結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(x, y):\n  product = x * y\n  print product\n\nmultiply_numbers(6, 7)",
+        "output": "這段程式碼有一個語法錯誤：`print product` 沒有使用括號。\n\n**錯誤描述**：在 Python 3 中，`print` 是一個函數，必須使用括號括住要輸出的內容。在這個範例中，`print product` 缺少括號，這會導致語法錯誤。\n\n**修正建議**：應將 `product` 置於 `print` 函數的括號內，來符合 Python 3 的語法要求。\n\n**修正範例**：\n```python\ndef multiply_numbers(x, y):\n  product = x * y\n  print(product)\n\nmultiply_numbers(6, 7)\n```這樣的修正將正確地執行 `print` 函數並輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n    print(i)\n",
+        "output": "這段程式碼有兩個語法錯誤：在 `for` 迴圈的結尾缺少冒號，`print` 語句沒有正確縮排。\n\n**錯誤描述**：\n1. 在 Python 中，`for` 迴圈應該以冒號結尾。缺少這個冒號會導致語法錯誤。\n2. `print(i)` 語句應該比 `for` 迴圈本身多縮排一層，否則會出現縮排錯誤。\n\n**修正建議**：\n1. 在 `for i in range(5)` 後添加冒號。\n2. 確保 `print(i)` 語句嵌套在 `for` 迴圈內，需比 `for` 多縮排一層。\n\n**修正範例**：\n```python\nfor i in range(5):\n    print(i)\n```\n這樣的修正將使程式碼能夠正確執行，並在迴圈內正確地輸出數值。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n    print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 缺少冒號，這會導致語法錯誤。\n\n**錯誤描述**：在 Python 中，for 迴圈的語法要求在 for 語句後面加上冒號。在這個範例中，`for i in range(5)` 後面缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 的末尾加上冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n    print(i)\n```\n這樣的修正將使迴圈正常運作，並正確地輸出從 0 到 4 的數字。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5):\nprint(i)\n if i == 3:\nbreak",
+        "output": "這段程式碼有兩個語法錯誤：縮排錯誤和不一致的縮排。\n\n**錯誤描述**：在 Python 中，縮排用於表示程式結構。`for` 迴圈的主體部分和 `if` 判斷語句的主體部分應該有正確的縮排，但在這段程式碼中，這些部分沒有正確縮排，導致語法錯誤。\n\n1. `print(i)` 應該縮排到 `for` 迴圈之下。\n2. `break` 應該縮排到 `if` 判斷語句之下。\n\n**修正建議**：確保所有的程式碼塊都有正確的縮排。\n\n**修正範例**：\n```python\nfor i in range(5):\n    print(i)\n    if i == 3:\n        break\n```\n這樣的修正將確保迴圈和條件判斷的語法結構正確，程式可以正常運行。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greet(name):\n    message = 'Hello, ' + name + '!'\n    print(message)\n\ngreet('Alice'\ngreet('Bob')",
+        "output": "這段程式碼有兩個語法錯誤：第一，`greet('Alice'` 中缺少關閉括號。第二，`greet('Bob')` 缺少行尾的換行符號。另外，在呼叫 `greet('Bob')` 函數時，應從新的行開始，避免和前一行混在一起。\n\n**錯誤描述**：在Python中，每個函數呼叫的語法應該是完備的，其中每個開括號 `(` 都應該有對應的閉括號 `)`。此外，每個語句應該結束在一行而非穿插在其他行內。\n\n**修正建議**：在呼叫 `greet('Alice')` 時應補上閉括號。並且，在呼叫 `greet('Bob')` 時應該從新的一行開始。這樣可以清晰地分隔每個語句。\n\n**修正範例**：\n```python\ngreet('Alice')\ngreet('Bob')\n```\n這樣的修正將確保每個函數呼叫語法完整，並能正確執行程式碼。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(a, b):\n  result = a * b\n  return result\n\nprint(multiply_number(4, 5))",
+        "output": "這段程式碼有一個語法錯誤：`print(multiply_number(4, 5))` 中呼叫的函數名稱錯誤，應為 `multiply_numbers`。\n\n**錯誤描述**：在 Python 中，函數名稱必須與定義時的名稱一致。在這個範例中，定義函數時使用了 `multiply_numbers`，但在呼叫時使用的是 `multiply_number`，導致名稱不匹配而發生錯誤。\n\n**修正建議**：在呼叫函數時，應使用與定義時相同的函數名稱。將 `multiply_number` 更改為 `multiply_numbers` 即可。\n\n**修正範例**：\n```python\nprint(multiply_numbers(4, 5))\n```這樣的修正將正確地呼叫函數並輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(a, b):\n    product = a * b\n    return product\n\nprint(multiply_numbers(4, 3))\nif product > 10:\n    print('The product is greater than 10')",
+        "output": "這段程式碼有一個語法錯誤：`if product > 10:` 該行中的變數 `product` 未定義。\n\n**錯誤描述**：在 Python 中，變數的作用域限制在它們定義的範圍內。在這個範例中，`product` 是在 `multiply_numbers` 函數內部定義的局部變數，因此在函數外部無法直接訪問。\n\n**修正建議**：可以將函數的返回值賦給一個變數，然後使用該變數進行比較和後續操作。\n\n**修正範例**：\n```python\nresult = multiply_numbers(4, 3)\nprint(result)\nif result > 10:\n    print('The product is greater than 10')\n```這樣的修正將變數 `result` 返回自函數，並在函數外部正確地使用它進行條件判斷。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 這行的結尾缺少冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈語句的結尾必須使用冒號。因此，`for i in range(5)` 將會導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 行的最後加上冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```\n這樣的修正將能正確地執行迴圈並輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply(a, b):\n  result = a * b\n  return result\n\nprint(multiply(4, 2])",
+        "output": "這段程式碼有一個語法錯誤：`print(multiply(4, 2])` 中的括號不匹配。\n\n**錯誤描述**：在 Python 中，括號必須匹配成對使用。在這個範例中，`multiply(4, 2])` 使用了左圓括號 `(` 和右方括號 `]`，這會引發語法錯誤。\n\n**修正建議**：將右方括號 `]` 修改為右圓括號 `)`，以匹配左圓括號 `(`。\n\n**修正範例**：\n```python\nprint(multiply(4, 2))\n```這樣的修正將確保括號配對正確，並正確地呼叫函數。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def divide_numbers(x, y):\n  result = x / y\n  return result\n\nresult = divide_numbers(10, 2)\nprint('結果是：' result)",
+        "output": "這段程式碼有一個語法錯誤：在 `print('結果是：' result)` 中，字串和變數之間缺少逗號。\n\n**錯誤描述**：在 Python 中，`print` 函數可以接收多個參數，每個參數之間需要用逗號分隔。在這個範例中，`print('結果是：' result)` 的字串和變數之間沒有逗號，會導致語法錯誤。\n\n**修正建議**：在字串和變數之間加上逗號，這樣可以正確輸出結果。\n\n**修正範例**：\n```python\nprint('結果是：', result)\n```這樣的修正將正確地輸出字串和變數結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "if (x > 10) \n  print('x is greater than 10')\nelse\n  print('x is not greater than 10')",
+        "output": "這段程式碼有幾個語法錯誤：`if (x > 10)` 和 `else` 缺少冒號，且 `else` 應在單行內。\n\n**錯誤描述**：在 Python 中，條件語句 (`if` 和 `else`) 在其結尾必須加上冒號。此外，`else` 語句應該在同一行內完成，否則會導致語法錯誤。\n\n**修正建議**：在 `if (x > 10)` 和 `else` 後面添加冒號，並確保 `else` 後不獨占一行。\n\n**修正範例**：\n```python\nif x > 10:\n  print('x is greater than 10')\nelse:\n  print('x is not greater than 10')\n```\n這樣的修正將符合 Python 的語法規範，正確執行條件判斷。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply(a, b):\n  product = a * b\n  return product\n\nresult = multiply(4 2))\nprint(result)",
+        "output": "這段程式碼有一個語法錯誤：`multiply(4 2))` 在呼叫 `multiply` 函數時缺少參數之間的逗號，且有多餘的右括號。\n\n**錯誤描述**：在 Python 中，函數的參數之間必須用逗號分隔。另外，多餘的右括號會導致語法錯誤。在這個範例中，`multiply(4 2))` 缺少逗號並且有多餘的右括號，因此會導致語法錯誤。\n\n**修正建議**：在呼叫 `multiply` 函數時，應在 `4` 和 `2` 之間加上逗號，並移除多餘的右括號。\n\n**修正範例**：\n```python\nresult = multiply(4, 2)\nprint(result)\n```這樣的修正將正確地傳遞參數給函數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greet(name)\n  print('Hello, ' + name)\n\ngreet('Alice')",
+        "output": "這段程式碼有一些語法錯誤：`def greet(name)` 在定義函數時缺少冒號，且在 function 主體部分也缺少縮排。\n\n**錯誤描述**：在 Python 中，函數定義需要以冒號結束，且函數主體必須縮排。同時，在定義函數名稱和參數時一定要注意格式正確。\n\n**修正建議**：在定義 `greet` 函數的 `def` 行尾部應加上冒號，並且確保函數主體的語句縮排正確。\n\n**修正範例**：\n```python\ndef greet(name):\n    print('Hello, ' + name)\n\ngreet('Alice')\n```\n這樣的修正將正確地定義函數並輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(10):\n  if i % 2 == 0\n    print(i)",
+        "output": "這段程式碼有一個語法錯誤：在 `if` 條件語句之後缺少冒號。\n\n**錯誤描述**：在 Python 中，條件語句如 `if` 後面需要使用冒號來標示程式區塊的開始。在這個範例中，`if i % 2 == 0` 缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：應在 `if i % 2 == 0` 的末尾加上冒號。\n\n**修正範例**：\n```python\nfor i in range(10):\n  if i % 2 == 0:\n    print(i)\n```\n這樣的修正將正確地標示程式區塊，並正確地執行每次迴圈中 `if` 條件為真的部分。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 後面缺少冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的語法需要在 `for` 聲明後加上冒號來表明後面會跟隨代碼塊。在這個範例中 `for i in range(5)` 後面缺少冒號，會導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 的結尾加上一個冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```\n這樣的修正將正確地執行迴圈，並輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 缺少冒號(`:`)。\n\n**錯誤描述**：在 Python 中，for 迴圈的語法結構需要在 `for` 語句的末尾加上一個冒號。當缺少這個冒號時，Python 會無法正確解析該語句，進而導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 的末尾加上一個冒號，以正確構建 for 迴圈的語法。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```\n這樣的修正將正確地構建迴圈，並逐行印出 from 0 到 4 的數字。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(a, b):\n  product = a * b\n  return product\n\nresult = multiple_numbers(5, 3)\nprint(result)",
+        "output": "這段程式碼有一個語法錯誤：在 `result = multiple_numbers(5, 3)` 行中，函數名稱拼寫錯誤，應為 `multiply_numbers`。\n\n**錯誤描述**：在呼叫函數時，函數名稱必須與定義時的一致。在這個範例中，函數 `multiple_numbers` 並未在程式碼中定義，因此會導致NameError錯誤。\n\n**修正建議**：將錯誤的函數名稱 `multiple_numbers` 修正為正確的函數名稱 `multiply_numbers`。\n\n**修正範例**：\n```python\ndef multiply_numbers(a, b):\n  product = a * b\n  return product\n\nresult = multiply_numbers(5, 3)\nprint(result)\n```\n這樣的修正將正確地呼叫定義的函數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def calculate_area(radius):\n  area = 3.14 * radius ** 2\n  return area\n\nprint('The area is: ' + calculate_area(5.5))",
+        "output": "這段程式碼有一個語法錯誤：`print('The area is: ' + calculate_area(5.5))` 中，`calculate_area` 函數返回的是一個浮點數，而 Python 不允許將字串和浮點數直接相加。\n\n**錯誤描述**：在 Python 中，不同類型的數據不能直接相加。如果要將字串和數字一起使用，需要將數字轉換為字串類型。\n\n**修正建議**：在 `print` 語句中，將 `calculate_area(5.5)` 返回的浮點數轉換成字串，然後再與其他字串相加。\n\n**修正範例**：\n```python\nprint('The area is: ' + str(calculate_area(5.5)))\n```這樣的修正將正確地將數字轉換為字串，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def subtract_numbers(a, b)\n  result = a - b\n  return result\n\nprint(subtract_numbers(10, 5))",
+        "output": "這段程式碼有一個語法錯誤：在定義 `subtract_numbers` 函數時，缺少了冒號 `:`。\n\n**錯誤描述**：在 Python 中，函數定義的標頭（如 `def subtract_numbers(a, b)`) 必須以冒號 `:` 結束，否則會導致語法錯誤。\n\n**修正建議**：在 `subtract_numbers` 函數定義的結尾添加缺少的冒號 `:`。\n\n**修正範例**：\n```python\ndef subtract_numbers(a, b):\n  result = a - b\n  return result\n\nprint(subtract_numbers(10, 5))\n```這樣的修正將正確地定義函數，並正確執行函數呼叫。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 缺少結束的冒號。\n\n**錯誤描述**：在 Python 中，for 迴圈語句的結尾必須用冒號來標記代碼區塊的開始。在這個範例中，`for i in range(5)` 缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 的結尾加上冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```\n這樣的修正將正確地標記 for 迴圈的代碼區塊，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "if x = 10:\n    print('x is 10')",
+        "output": "這段程式碼有一個語法錯誤：`if x = 10:` 中使用了賦值運算符 `=` 而非比較運算符 `==`。\n\n**錯誤描述**：在 Python 中，`=` 用於賦值，而 `==` 用於比較。在 if 語句中，我們需要檢查變數的值，應該使用 `==` 來進行比較。因此，`if x = 10:` 是語法錯誤的，應改成 `if x == 10:`。\n\n**修正建議**：將 `=` 改為 `==` 以正確進行值的比較。\n\n**修正範例**：\n```python\nif x == 10:\n    print('x is 10')\n```這樣的修正將正確地檢查變數 `x` 是否等於 10，並正確執行相應的程式碼。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greet(name)\n    print('Hello, ' + name)\ngreet('John')",
+        "output": "這段程式碼有兩個語法錯誤：在 `greet` 函數的定義上缺少冒號，並且沒有適當地縮排 `print` 語句。\n\n**錯誤描述**：在 Python 中，當定義函數時，應在函數名稱和參數的閉括號之後添加冒號。此外，函數體內的語句必須縮排。\n\n**修正建議**：在 `def greet(name)` 之後加上冒號，並且縮排 `print` 語句，使其與函數體對齊。\n\n**修正範例**：\n```python\ndef greet(name):\n    print('Hello, ' + name)\n\ngreet('John')\n```這樣的修正將確保函數正確定義並正常執行。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def divide_numbers(a, b):\n  result = a / b\n  return result\n\nprint(divide_numbers(10, 0)",
+        "output": "這段程式碼有兩個語法錯誤：第一，`print(divide_numbers(10, 0)` 括號不匹配；第二，`divide_numbers` 函數的參數 `b` 不能為零，會引發運行時錯誤。\n\n**錯誤描述**：在 Python 中，每個開括號 `(` 都必須有對應的閉括號 `)`。範例中，`print(divide_numbers(10, 0)` 少了一個閉括號。另一個問題是，將數字除以零在數學上是無效的，在運行時會導致 `ZeroDivisionError`。\n\n**修正建議**：應該加上缺少的閉括號，同時需要檢查除數是否為零，並在必要時給出錯誤提示。\n\n**修正範例**：\n```python\ndef divide_numbers(a, b):\n  if b == 0:\n    return 'Error: Division by zero is undefined.'\n  result = a / b\n  return result\n\nprint(divide_numbers(10, 0))\n```\n這樣的修正不僅解決了語法錯誤，還避免了運行時錯誤。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\nprint(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 在for循環結尾缺少冒號。\n\n**錯誤描述**：在 Python 中，for循環的結尾必須使用冒號來表明循環體的開始。在這個範例中，`for i in range(5)` 缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在for循環的結尾應加上一個冒號以正確開始循環體。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```\n這樣的修正將正確地設置for循環，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 缺少冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的標頭必須以冒號 `:` 結尾。在這個範例中，`for i in range(5)` 缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 的末尾應加上冒號 `:`。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```這樣的修正將正確地建立迴圈，並正確打印出範圍內的數字。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greet(name):\n  message = 'Hello, ' + name + '!'\n  print(message)\n\ngreet('Alice')\ngreet('Bob' 'Charlie')",
+        "output": "這段程式碼有語法錯誤：在呼叫 `greet` 函數時，`greet('Bob' 'Charlie')` 中缺少參數之間的逗號。\n\n**錯誤描述**：在 Python 中，函數的參數之間必須用逗號分隔。在這個範例中，由於缺少逗號，Python 將 `Bob` 和 `Charlie` 視為一個不存在的單一字串，會導致語法錯誤。\n\n**修正建議**：在呼叫 `greet` 函數時，應在 `'Bob'` 和 `'Charlie'` 之間加上逗號。\n\n**修正範例**：\n```python\ngreet('Alice')\ngreet('Bob', 'Charlie')\n```\n這樣的修正將正確地傳遞兩個獨立的參數給 `greet` 函數，避免語法錯誤。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n    print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 行末缺少冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的聲明必須以冒號結尾。這是語法的一部分，沒有冒號會導致程式不能正常執行。\n\n**修正建議**：在 `for i in range(5)` 行的末尾加上冒號以符合 Python 語法。\n\n**修正範例**：\n```python\nfor i in range(5):\n    print(i)\n```這樣的修正將使迴圈正確執行，每次迭代時會輸出變數 `i` 的值。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply(a, b):\n  result = a * b\n  return result\n\nprint(multiply(6, 8))\nprint(multiply 4, 2))",
+        "output": "這段程式碼有一個語法錯誤：`print(multiply 4, 2))` 在呼叫 `multiply` 函數時缺少左括號 `(`。\n\n**錯誤描述**：在 Python 中，函數的呼叫需要括號來包覆參數。在這個範例中，`multiply 4, 2)` 缺少左括號，導致語法錯誤。\n\n**修正建議**：在呼叫 `multiply` 函數時，應在 `multiply` 和 `4` 之間加上左括號。\n\n**修正範例**：\n```python\nprint(multiply(4, 2))\n```\n這樣的修正將正確地呼叫函數並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def calculate_area(radius):\n  area = 3.14 * radius * radius\n  return area\n\nprint('The area is: ' + calculate_area(5))",
+        "output": "這段程式碼有一個語法錯誤：`print('The area is: ' + calculate_area(5))` 中存在數字與字串的拼接錯誤。\n\n**錯誤描述**：在 Python 中，數字類型與字串類型不能直接拼接。在這個範例中，`calculate_area(5)` 返回一個浮點數，而不能與字串直接相加。如果進行這樣的相加操作，將會引發 `TypeError` 錯誤。\n\n**修正建議**：在拼接字串與數字時，應將數字轉換為字串類型。\n\n**修正範例**：\n```python\nprint('The area is: ' + str(calculate_area(5)))\n```\n這樣的修正將正確地將浮點數轉換為字串，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def calculate_area(radius):\n  pi = 3.14\n  area = pi * radius ** 2\n  return area\n\nprint('The area is: ' + calculate_area(5))",
+        "output": "這段程式碼有一個語法錯誤：`print('The area is: ' + calculate_area(5))` 嘗試將字串與數字相加，這是在 Python 中不允許的操作。\n\n**錯誤描述**：在 Python 中，不能直接將字串與數字相加，這會導致 `TypeError`。在這個範例中，`calculate_area(5)` 返回一個數字，無法直接與字串 `'The area is: '` 相加。\n\n**修正建議**：應該將數字轉換成字串後再進行相加操作，可以使用 `str()` 函數來達成這個目的。\n\n**修正範例**：\n```python\nprint('The area is: ' + str(calculate_area(5)))\n```\n這樣的修正將正確地將數字轉換為字串，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greet(name)\n  return f'Hello, {name}'\n\nprint(greet('Alice'))",
+        "output": "這段程式碼有一個語法錯誤：在定義 `greet` 函數時，缺少冒號 `:`。\n\n**錯誤描述**：在 Python 中，定義函數時必須在函數名稱和參數後加上冒號 `:`，以表明函數體的開始。在這個範例中， `def greet(name)` 缺少結尾的冒號，會導致語法錯誤。\n\n**修正建議**：應在 `greet` 函數定義的結尾處加上冒號，以正確地定義函數。\n\n**修正範例**：\n```python\ndef greet(name):\n  return f'Hello, {name}'\n\nprint(greet('Alice'))\n```\n這樣的修正將使函數定義正確，並能順利運行程式。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def get_square(num):\n  return num * num\n\nresult = get_square(4\nprint(result)",
+        "output": "這段程式碼有兩個語法錯誤：第一個是 `get_square(4` 中缺少關閉的小括號，第二個是 `print(result)` 前缺少縮排，應與前一行對齊。\n\n**錯誤描述**：\n1. 在 Python 中，函數呼叫的括號必須配對完整，要有開括號也要有關括號。在這個範例中，`get_square(4` 缺少關閉的小括號。\n2. `print(result)` 一行的縮排應與 `result = get_square(4` 對齊，而不是像目前程式碼中的位置，這會導致語法錯誤。\n\n**修正建議**：\n1. 在 `get_square(4` 後加上關閉的小括號。\n2. 將 `print(result)` 與前一行對齊，不要縮排。\n\n**修正範例**：\n```python\ndef get_square(num):\n  return num * num\n\nresult = get_square(4)\nprint(result)\n```\n這樣的修正將使程式碼能夠正確執行，並且正常地輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：在 `for` 迴圈結尾缺少冒號 `:`。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的宣告後必須加上冒號 `:` 才能正確進行縮排和執行。在這個範例中，`for i in range(5)` 結尾缺少冒號，導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 的結尾加上冒號 `:`。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```這樣的修正將正確地迭代數字範圍並輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def divide_numbers(a, b):\n  result = a / b\n  return result\n\nprint(divide_numbers(10, 0))",
+        "output": "這段程式碼沒有語法錯誤，但有邏輯錯誤：當函數 `divide_numbers` 參數 `b` 為 `0` 時，會產生除以零的錯誤，導致執行時出現錯誤。\n\n**錯誤描述**：在 Python 中，除以零（ZeroDivisionError）是執行時錯誤，無法自動處理，會導致程式崩潰。在這個範例中，`divide_numbers(10, 0)` 會引發此錯誤。\n\n**修正建議**：應該在函數中加入錯誤處理機制，以避免使用者輸入零作為除數時產生錯誤。\n\n**修正範例**：\n```python\ndef divide_numbers(a, b):\n  if b == 0:\n    return '除數不能為零'\n  result = a / b\n  return result\n\nprint(divide_numbers(10, 0))\n```\n這樣的修正將正確地處理除以零的情況，並避免程式崩潰。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "if x > 10\n    print('x is greater than 10')",
+        "output": "這段程式碼有一個語法錯誤：在`if`語句的條件後面少了一個冒號。\n\n**錯誤描述**：在 Python 中，`if` 條件語句後面必須加上冒號。缺少冒號會導致語法錯誤，因為 Python 解析器無法識別這個條件語句的結束位置。\n\n**修正建議**：在 `if` 語句的條件後面加上冒號。\n\n**修正範例**：\n```python\nif x > 10:\n    print('x is greater than 10')\n```\n這樣的修正將使條件語句正確地結束並執行相應的區塊。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply(a, b):\n  result = a * b\n  return result\n\nres = multiply(3 4)\nprint(res)",
+        "output": "這段程式碼有一個語法錯誤：`multiply(3 4)` 在呼叫 `multiply` 函數時缺少參數之間的逗號。\n\n**錯誤描述**：在 Python 中，函數的參數之間必須用逗號分隔。在這個範例中，`multiply(3 4)` 缺少逗號，因此會導致語法錯誤。\n\n**修正建議**：在呼叫 `multiply` 函數時，應在 `3` 和 `4` 之間加上逗號。\n\n**修正範例**：\n```python\nres = multiply(3, 4)\nprint(res)\n```這樣的修正將正確地傳遞參數給函數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 在這行結束後缺少冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的語法要求在條件語句後要有一個冒號。在這個範例中，`for i in range(5)` 缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 的結尾加上一個冒號，以符合 Python 的語法要求。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```\n這樣的修正將正確地運行迴圈並輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(a, b):\n  result = a * b\n  return result\n\nprint(multiply_numbers(4,8)",
+        "output": "這段程式碼有一個語法錯誤：缺少右括號 `)` 在呼叫 `multiply_numbers` 函數時。\n\n**錯誤描述**：在 Python 中，函數呼叫的括號必須成對出現。此範例中 `print(multiply_numbers(4,8)` 缺少右括號，因此會導致語法錯誤。\n\n**修正建議**：在函數呼叫結束時，應加入缺少的右括號。\n\n**修正範例**：\n```python\nprint(multiply_numbers(4, 8))\n```\n這樣的修正將正確地呼叫函數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greet(name):\n  message = 'Hello, ' + name + '?'\n  return message\n\nprint(greet('Alice')",
+        "output": "這段程式碼有一個語法錯誤：在 `print(greet('Alice')` 的括號不匹配，缺少結尾的括號。\n\n**錯誤描述**：在 Python 中，函數呼叫和表達式的括號必須匹配。在這個範例中，`print(greet('Alice')` 缺少一個結束括號，因此會導致語法錯誤。\n\n**修正建議**：在 `print(greet('Alice')` 的最後加上漏掉的右括號。\n\n**修正範例**：\n```python\nprint(greet('Alice'))\n```這樣的修正將正確地呼叫函數，並輸出預期的問候訊息。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 缺少冒號。\n\n**錯誤描述**：在 Python 中，for 迴圈的語法結構要求在條件表達式的末尾必須有一個冒號。這樣 Python 解譯器才能夠正確理解後續的區塊為迴圈內部的執行塊。在這個範例中，`for i in range(5)` 缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 的末尾加上冒號，以標示迴圈區塊的起始。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```\n這樣的修正將讓這段程式碼正確地進行 0 到 4 的迴圈並輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n    print(i)\n  print('Hello World')",
+        "output": "這段程式碼有兩個語法錯誤：在 `for` 循環中缺少冒號，且縮排不一致。\n\n**錯誤描述1**：在 Python 中，`for` 循環語句的結尾需要有冒號。\n**錯誤描述2**：所有循環體內部的程式碼都應該有一致的縮排。本範例中，`print(i)` 和 `print('Hello World')` 的縮排不一，這會使得 Python 無法正確解析程式碼的結構。\n\n**修正建議1**：在`for` 循環語句的結尾加上冒號。\n**修正建議2**：確保 `for` 循環內所有程式碼具有一致的縮排。\n\n**修正範例**：\n```python\nfor i in range(5):\n    print(i)\nprint('Hello World')\n```\n這樣的修正將使 `for` 循環正確執行並輸出結果，修正了語法錯誤。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i range(5):\n    print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i range(5):` 在迴圈語法中缺少關鍵字 `in`。\n\n**錯誤描述**：在 Python 中，for 迴圈的正確語法應該包含關鍵字 `in`，來表示迭代變數和迭代器之間的關係。在這個範例中，`for i range(5)` 缺少 `in`，因此會導致語法錯誤。\n\n**修正建議**：在 `i` 和 `range(5)` 之間加入關鍵字 `in`。\n\n**修正範例**：\n```python\nfor i in range(5):\n    print(i)\n```這樣的修正將正確地迭代範圍 `0` 到 `4` 並輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "if x > 10\n  print('x is greater than 10')",
+        "output": "這段程式碼有一個語法錯誤：在 `if x > 10` 條件後缺少冒號 `:`。\n\n**錯誤描述**：在 Python 中，條件語句（如 `if`）結尾必須有冒號，以表示該條件下的代碼塊開始。在這個範例中，`if x > 10` 缺少冒號，會導致語法錯誤。\n\n**修正建議**：在 `if x > 10` 條件後加上冒號 `:`。\n\n**修正範例**：\n```python\nif x > 10:\n  print('x is greater than 10')\n```這樣的修正將正確地開啟條件語句的代碼塊，並正確執行相應的代碼。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(a, b):\n  result = a * b\n  return result\n\nprint(multiply_numbers(4, ))",
+        "output": "這段程式碼有一個語法錯誤：`print(multiply_numbers(4, ))` 呼叫 `multiply_numbers` 函數時缺少第二個參數。\n\n**錯誤描述**：在 Python 中，當呼叫函數並傳遞參數時，所有必要的參數都必須提供。在這個範例中，`multiply_numbers(4, )` 缺少第二個參數，因此會導致語法錯誤。\n\n**修正建議**：在呼叫 `multiply_numbers` 函數時，應提供完整的參數。確保所有必需的引數都被正確傳遞。\n\n**修正範例**：\n```python\nprint(multiply_numbers(4, 2))\n```\n這樣的修正將正確地傳遞參數給函數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5):\n  print(i\n}",
+        "output": "這段程式碼有一個語法錯誤：`print(i\n}` 中缺少了一個閉合的括號。\n\n**錯誤描述**：在 Python 中，函數調用中的所有括號都必須正確配對。在這個例子中，`print(i` 後少了一個閉合括號，所以會導致語法錯誤。\n\n**修正建議**：在 `print(i` 之後加上一個閉合的括號，使語法正確。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```\n這樣的修正將正確地完成迴圈，並且每次迭代正確地輸出 `i` 的值。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "names = 'Alice', 'Bob', 'Charlie']\nfor name in names\n    print(name)",
+        "output": "這段程式碼有一個語法錯誤：`for name in names` 這一行的末尾缺少冒號。\n\n**錯誤描述**：在 Python 中，for 迴圈的語法格式要求在條件語句的末尾使用冒號。在這個範例中，`for name in names` 並沒有在結尾加上冒號，導致語法錯誤。\n\n**修正建議**：在 `for name in names` 句子的末尾加上冒號，使其符合 Python 的語法規範。\n\n**修正範例**：\n```python\nnames = 'Alice', 'Bob', 'Charlie']\nfor name in names:\n    print(name)\n```\n這樣的修正將使程式碼正確執行，輸出所有名稱。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(10)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(10)` 的結尾缺少冒號。\n\n**錯誤描述**：在 Python 中，for 迴圈的定義後面必須使用冒號。缺少冒號會導致語法錯誤，無法進入迴圈體。\n\n**修正建議**：在 `for` 迴圈的定義後面加上冒號。\n\n**修正範例**：\n```python\nfor i in range(10):\n  print(i)\n```\n這樣的修正將正確地建立一個迴圈，並在每次迭代時輸出對應的數值。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "if number > 10\n  print('Number is greater than 10')",
+        "output": "這段程式碼有一個語法錯誤：在 `if` 語句後缺少冒號。\n\n**錯誤描述**：在 Python 中，條件語句如 `if`、`elif` 和 `else` 都必須在條件表達式後面加上冒號，以表示接下來的是需要執行的程式區塊。這個範例中 `if number > 10` 後面缺少冒號，因此會產生語法錯誤。\n\n**修正建議**：在 `if number > 10` 的條件句後添加冒號。\n\n**修正範例**：\n```python\nif number > 10:\n  print('Number is greater than 10')\n```\n這樣的修正將使程式能正確地運行，進行條件判斷並輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def divide_numbers(a, b):\n  result = a / b\n  return result\n\nprint(divide_numbers(10, 0))",
+        "output": "這段程式碼有一個邏輯錯誤：`print(divide_numbers(10, 0))` 在呼叫 `divide_numbers` 函數時，將第二個參數設為0，這會導致在執行時產生ZeroDivisionError。\n\n**錯誤描述**：在 Python 中，除以零會引發ZeroDivisionError例外，程序會中止執行。在這段程式碼中，`divide_numbers(10, 0)` 嘗試除以零，是不允許的操作。\n\n**修正建議**：應在函數內部添加檢查邏輯，判斷除數是否為零，否則回傳一個預設值或消息。\n\n**修正範例**：\n```python\ndef divide_numbers(a, b):\n  if b == 0:\n    return \"除數不能為零\"\n  else:\n    result = a / b\n    return result\n\nprint(divide_numbers(10, 0))\n```\n這樣的修正將在嘗試除以零時返回一個合適的消息，避免程式中止執行。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply(a, b):\n  return a * b\n\nresult = multiply(4, 5)\nif result > 20\n  print('Result is greater than 20')",
+        "output": "這段程式碼有兩個語法錯誤：1. `if result > 20` 缺少冒號，2. `print` 缺少縮排。\n\n**錯誤描述**：在 Python 中，`if` 條件判斷後必須加上冒號。另外，`if` 條件判斷之後的程式碼塊需要適當的縮排。在這個範例中，`print` 語句沒有適當縮排，因此會導致語法錯誤。\n\n**修正建議**：在 `if result > 20` 中加入冒號，並正確縮排 `print` 語句。\n\n**修正範例**：\n```python\nresult = multiply(4, 5)\nif result > 20:\n  print('Result is greater than 20')\n```這樣的修正將使條件判斷和程式塊正確，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greet(name):\n  message = 'Hello ' + name\n  return message\n\nprint(greet('Alice')",
+        "output": "這段程式碼有一個語法錯誤：`print(greet('Alice')` 缺少右括號。\n\n**錯誤描述**：在 Python 中，每一個左括號都必須有對應的右括號閉合。在這個範例中，`print(greet('Alice')` 缺少一個右括號，會導致語法錯誤。\n\n**修正建議**：應在 `greet('Alice')` 的末尾加上右括號以閉合函數呼叫。\n\n**修正範例**：\n```python\nprint(greet('Alice'))\n```這樣的修正將使括號配對正確，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(x, y):\n  product = x * y\n  return product\n\nresult = multiply_numbers(4, 3\nprint(result)",
+        "output": "這段程式碼有一個語法錯誤：`multiply_numbers(4, 3\nprint(result)` 在呼叫 `multiply_numbers` 函數時缺少閉合的括號，且在 `print(result)` 語句之前應有換行。\n\n**錯誤描述**：在 Python 中，所有的函數呼叫參數都必須有完整的括號來界定。在該範例中，`multiply_numbers(4, 3` 缺少閉合的右括號 `)`，因此會導致語法錯誤。此外，`print(result)` 並沒有正確與上一行分開，會導致程式碼不可讀，甚至報錯。\n\n**修正建議**：應該補上右括號來閉合函數呼叫，並確保 `print(result)` 有適當的縮排及換行。\n\n**修正範例**：\n```python\ndef multiply_numbers(x, y):\n  product = x * y\n  return product\n\nresult = multiply_numbers(4, 3)\nprint(result)\n```這樣的修正將正確地呼叫函數且輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 應該在結尾加上冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的語法需要在條件語句的結尾加上一個冒號，用來表示接下來是這個迴圈的區塊。在這個範例中，`for i in range(5)` 缺少結尾的冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 的末尾加上冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```這樣的修正將正確地執行迴圈，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 這行缺少冒號。\n\n**錯誤描述**：在 Python 中，for 迴圈的語句結尾必須包含冒號，以表示接下來是要執行的區塊。在這個範例中，`for i in range(5)` 結尾缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 這行的結尾加上冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n print(i)\n```\n這樣的修正將正確地設置 for 迴圈，並正確地執行迴圈內的程式碼。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 缺少冒號。\n\n**錯誤描述**：在 Python 中，for 循環語句必須以冒號結尾。在這個範例中，`for i in range(5)` 缺少結尾的冒號，因此會導致語法錯誤。\n\n**修正建議**：在 for 循環語句末尾加上冒號，使語句完整。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```這樣的修正將正確地執行 for 循環，並正確地打印出數字。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greet_user(name)\n  print('Hello, ' + name + '!')\n\ngreet_user('Alice')",
+        "output": "這段程式碼有一個語法錯誤： `def greet_user(name)` 函數定義缺少冒號。\n\n**錯誤描述**：在 Python 中，函數定義必須以冒號結束。在這個範例中，`def greet_user(name)` 行的末尾應該有一個冒號來標識函數體的開始。\n\n**修正建議**：在函數定義行的末尾加上冒號。\n\n**修正範例**：\n```python\ndef greet_user(name):\n  print('Hello, ' + name + '!')\n\ngreet_user('Alice')\n```這樣的修正將正確地定義函數，並正確執行函數以輸出問候語。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply(a, b):\n  result = a * b\n  print(result\n\nmultiply(4, 5)",
+        "output": "這段程式碼有一個語法錯誤：在 `print(result` 行，缺少右括號。\n\n**錯誤描述**：在 Python 中，括號必須成對匹配。在這個範例中，`print(result` 缺少右括號，因此會導致語法錯誤。\n\n**修正建議**：在 `print(result` 行的末尾加上一個右括號。\n\n**修正範例**：\n```python\ndef multiply(a, b):\n  result = a * b\n  print(result)\n\nmultiply(4, 5)\n```\n這樣的修正將會正確地關閉括號，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 這行末尾缺少冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的語法要求在條件語句後面加上冒號。在這個範例中，缺少冒號會導致語法錯誤。\n\n**修正建議**：在 `for` 迴圈的條件語句後面加上冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```這樣的修正將使迴圈正確執行，並輸出從 0 到 4 的數字。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greet(name):\n  message = 'Hello, ' + name\n  print(message\n\ngreet('Alice')",
+        "output": "這段程式碼有一個語法錯誤：`print(message` 缺少右括號。\n\n**錯誤描述**：在 Python 中，函數呼叫的參數需有完整的括號。這個範例中的 `print(message` 缺少右括號，因此會導致語法錯誤。\n\n**修正建議**：補充右括號來關閉 `print` 函數的參數。\n\n**修正範例**：\n```python\nprint(message)\n```\n這樣的修正將正確地執行 `print` 函數，並且顯示傳遞的訊息。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 缺少冒號 (`:`) 結尾。\n\n**錯誤描述**：在 Python 中，`for` 迴圈語句必須以冒號結尾以指示迴圈體的起始。在這個範例中，`for i in range(5)` 缺少冒號，導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 的末尾加上冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```\n這樣的修正將正確地建立迴圈並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5):\n    if i%2==0\n        print(i)",
+        "output": "這段程式碼有一個語法錯誤：在 `if` 條件語句後面少了冒號 `:`。\n\n**錯誤描述**：在 Python 中，每個 `if` 條件語句的結尾必須有冒號 `:`，以告訴編譯器接下來是一個條件語句塊。在這個範例中，`if i%2==0` 後面缺少冒號，會導致語法錯誤。\n\n**修正建議**：應在 `if` 條件語句的結尾添加冒號，這樣寫法會更符合 Python 的語法規則。\n\n**修正範例**：\n```python\nfor i in range(5):\n    if i%2==0:\n        print(i)\n```\n這樣的修正將確保 `if` 條件語句正確地運行，並正確打印符合條件的數字。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 缺少冒號，這是在 Python 中必要的語法結構。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的宣告結尾必須有冒號（:），用來指明接下來縮排的區塊是這個迴圈的一部分。在這個範例中，`for i in range(5)` 缺少了這個冒號，因而導致語法錯誤。\n\n**修正建議**：在 `for` 迴圈的結尾添加冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```\n這樣的修正將使程式正確地跑完 `for` 迴圈並且輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(x, y):\nresult = x * y\nreturn result\n\nprint(multiply_numbers(3, 4))",
+        "output": "這段程式碼有一個語法錯誤：`result = x * y` 這行缺少適當的縮排。\n\n**錯誤描述**：在 Python 中，程式碼區塊（例如函數的內部程式碼）必須正確縮排。缺乏縮排會導致語法錯誤，使得程式無法正確執行。在這個範例中，`result = x * y` 和 `return result` 應該被適當地縮排以顯示它們屬於 `multiply_numbers` 函數的程式區塊。\n\n**修正建議**：在 `result = x * y` 和 `return result` 行的行首加上適當的縮排（通常是四個空格或一個 Tab）。\n\n**修正範例**：\n```python\ndef multiply_numbers(x, y):\n    result = x * y\n    return result\n\nprint(multiply_numbers(3, 4))\n```這樣的修正將使函數內部的程式碼具有正確的縮排，並正確地輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(x, y):\n  product = x * y\n  return product\n\nresult = multiply_numbers(7, )\nprint(result)",
+        "output": "這段程式碼有一個語法錯誤：`multiply_numbers(7, )` 在呼叫 `multiply_numbers` 函數時，缺少第二個參數。\n\n**錯誤描述**：在 Python 中，呼叫函數時必須提供所有必要的參數。在這個範例中，`multiply_numbers` 函數需要兩個參數，但實際上只提供了一個參數，會導致語法錯誤。\n\n**修正建議**：在呼叫 `multiply_numbers` 函數時，應提供兩個參數。\n\n**修正範例**：\n```python\nresult = multiply_numbers(7, 5)\nprint(result)\n```這樣的修正將正確地傳遞參數給函數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def subtract_numbers(a, b):\n  result = a - b\n  return result\n\nprint(subtract_numbers(10 5))",
+        "output": "這段程式碼有一個語法錯誤：`print(subtract_numbers(10 5))` 在呼叫 `subtract_numbers` 函數時缺少參數之間的逗號。\n\n**錯誤描述**：在 Python 中，函數的參數之間必須用逗號分隔。在這個範例中，`subtract_numbers(10 5)` 缺少逗號，因此會導致語法錯誤。\n\n**修正建議**：在呼叫 `subtract_numbers` 函數時，應在 `10` 和 `5` 之間加上逗號。\n\n**修正範例**：\n```python\nprint(subtract_numbers(10, 5))\n```這樣的修正將正確地傳遞參數給函數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greet(name)\n  message = 'Hello, ' + name\n  return message\n\nprint(greet('Alice'))",
+        "output": "這段程式碼有一個語法錯誤：`def greet(name)` 缺少必要的冒號 `:`。\n\n**錯誤描述**：在 Python 中，函數定義的結尾必須帶有一個冒號，以標示後續為函數體。在這個範例中，`def greet(name)` 缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在函數定義的結尾加上冒號，使其成為有效的語法。\n\n**修正範例**：\n```python\ndef greet(name):\n  message = 'Hello, ' + name\n  return message\n\nprint(greet('Alice'))\n```這樣的修正將正確地定義函數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n    print(i)",
+        "output": "這段程式碼有一個語法錯誤：在 `for` 迴圈的定義部分缺少冒號（`:`）。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的宣告必須以冒號（`:`）結束，以表示即將進行的縮排程式碼塊。在這個範例中，`for i in range(5)` 缺少了結尾的冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for` 迴圈的定義末尾加上冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n    print(i)\n```\n這樣的修正將正確執行 `for` 迴圈並打印數字 0 到 4。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5):\nprint(i)\n if i > 2:\n   break",
+        "output": "這段程式碼有一個語法錯誤：`print(i)` 和 `if i > 2:` 的縮排不正確。\n\n**錯誤描述**：在 Python 中，縮排是必要的結構元素，用來表示程式塊。`for` 迴圈內的程式碼必須正確縮排，而這裡的 `print(i)` 應該要縮排進去。\n\n**修正建議**：給 `print(i)` 和 `if i > 2:` 提供正確的縮排，使其屬於 `for` 迴圈的區塊。\n\n**修正範例**：\n```python\nfor i in range(5):\n    print(i)\n    if i > 2:\n        break\n```\n這樣的修正將確保 `for` 迴圈的程式碼塊語法正確，並正確執行迴圈和條件判斷。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 的結尾缺少冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的語法要求在條件段結尾處使用冒號(`:`)。在這個範例中，`for i in range(5)` 應以冒號結尾，如缺少會導致語法錯誤。\n\n**修正建議**：應在 `for i in range(5)` 的結尾加上冒號(`:`)，以符合 Python 的語法規則。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```\n這樣的修正將確保 `for` 迴圈的語法正確，並能順利執行程式，輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(f'Number {i}')",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 應該在結尾處添加冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的結尾必須使用冒號來表示開始一個新的區塊。在這個範例中，`for i in range(5)` 缺少結尾的冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for` 迴圈的結尾處加上冒號來正確地標示區塊的開始。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(f'Number {i}')\n```\n這樣的修正將正確地執行迴圈，並按預期輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def calculate_area(radius):\n  pi = 3.14159\n  area = pi * radius ** 2\n  return area\n\nresult = calculate_area(5\nprint(result)",
+        "output": "這段程式碼有一個語法錯誤：`result = calculate_area(5\nprint(result)` 在呼叫 `calculate_area` 函數時有缺漏括號，導致括號不匹配。\n\n**錯誤描述**：在 Python 中，函數呼叫時的括號必須成對出現。在這個範例中，`calculate_area(5` 缺少右括號，導致括號不匹配的語法錯誤。\n\n**修正建議**：應在 `5` 之後加上右括號來匹配左括號，確保函數呼叫語法正確。\n\n**修正範例**：\n```python\nresult = calculate_area(5)\nprint(result)\n```這樣的修正將確保函數正常執行並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 的結尾缺少冒號。\n\n**錯誤描述**：在 Python 中，for 迴圈的語法必須在開頭的條件語句後加上冒號。在這個範例中，`for i in range(5)` 結尾缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 語句的末尾加上冒號，使其成為有效的 for 迴圈語法。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```\n這樣的修正將正確地建立 for 迴圈，並輸出 0 到 4 的數字。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n    print(i)",
+        "output": "這段程式碼有一個語法錯誤： `for i in range(5)` 在結尾缺少冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈語句的結尾必須要有冒號（`:`），來表示接下來的程式碼塊是迴圈體的一部分。在這個範例中，`for i in range(5)` 沒有冒號，會導致語法錯誤。\n\n**修正建議**：應在 `for i in range(5)` 的結尾加上冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n    print(i)\n```\n這樣的修正將正確地定義迴圈，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def divide_numbers(a, b):\n  result = a / b\n  return result\n\nprint(divide_numbers(10 0))",
+        "output": "這段程式碼有兩個語法錯誤：首先是 `print(divide_numbers(10 0))` 在呼叫 `divide_numbers` 函數時缺少參數之間的逗號。此外，還存在數學錯誤，即除數為零。\n\n**錯誤描述**：在 Python 中，函數的參數之間必須用逗號分隔。在這個範例中，`divide_numbers(10 0)` 缺少逗號，因此會導致語法錯誤。另外，除數為零會引發 `ZeroDivisionError`，因為在數學上不允許除以零。\n\n**修正建議**：在呼叫 `divide_numbers` 函數時，應在 `10` 和 `0` 之間加上逗號。此外，應檢查除數是否為零，並在出現這種情況時返回錯誤信息或其他處理方式。\n\n**修正範例**：\n```python\ndef divide_numbers(a, b):\n  if b == 0:\n    return 'Error: Division by zero is not allowed'\n  result = a / b\n  return result\n\nprint(divide_numbers(10, 0))\n```這樣的修正不僅修正了語法錯誤，還避免了因除零引發的運算錯誤。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply(a, b):\n  result = a * b\n  return result\n\nprint(multiply(3 4))",
+        "output": "這段程式碼有一個語法錯誤：`print(multiply(3 4))` 在呼叫 `multiply` 函數時缺少參數之間的逗號。\n\n**錯誤描述**：在 Python 中，函數的參數之間必須用逗號分隔。在這個範例中，`multiply(3 4)` 缺少逗號，因此會導致語法錯誤。\n\n**修正建議**：在呼叫 `multiply` 函數時，應在 `3` 和 `4` 之間加上逗號。\n\n**修正範例**：\n```python\nprint(multiply(3, 4))\n```這樣的修正將正確地傳遞參數給函數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)\n",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 缺少冒號。\n\n**錯誤描述**：在 Python 中，for 迴圈的宣告必須以冒號結尾。在這個範例中，`for i in range(5)` 缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 的末尾加上冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```這樣的修正將正確地使用 for 迴圈，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(a, b):\n  result = a * b\n  return result\n\nprint(multiply_numbers(4, 2, 3))",
+        "output": "這段程式碼有一個語法錯誤：`print(multiply_numbers(4, 2, 3))` 在呼叫 `multiply_numbers` 函數時，多傳遞了一個參數。\n\n**錯誤描述**：在 Python 中，函數定義中的參數數量必須與函數呼叫時提供的參數數量相匹配。在這個範例中，`multiply_numbers` 函數只接受兩個參數，但在呼叫時卻傳遞了三個參數，這會導致語法錯誤。\n\n**修正建議**：在呼叫 `multiply_numbers` 函數時，只需傳遞兩個參數，或者如果需要處理多個參數，則需修改函數定義以接受更多參數。\n\n**修正範例**（修正函數呼叫）：\n```python\nprint(multiply_numbers(4, 2))\n```\n\n**修正範例**（修正函數定義）：\n```python\ndef multiply_numbers(*args):\n  result = 1\n  for num in args:\n    result *= num\n  return result\n\nprint(multiply_numbers(4, 2, 3))\n```\n第二種修正方法允許函數接受不定數量的參數。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 在 for 循環結束後缺少冒號（:）。\n\n**錯誤描述**：在 Python 中，for 循環的語法必須在循環聲明之後加上冒號，以表示這是一個代碼區塊的開始。在這個範例中，`for i in range(5)` 缺少了結尾的冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 的末尾添加冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```\n這樣的修正將正確地表示 for 循環的開始，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：在 `for` 迴圈的聲明結尾缺少冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的語法應該在聲明行的最後包含一個冒號，以表明這是一個代碼塊的開頭。在這個範例中，`for i in range(5)` 後面缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for` 迴圈的聲明行結尾添加一個冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```\n這樣的修正將正確地執行 `for` 迴圈並輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 缺少冒號。\n\n**錯誤描述**：在 Python 中，for 迴圈的宣告需要在條件判斷之後加上冒號。在這個範例中，`for i in range(5)` 少了冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 的末尾加上冒號，使其符合 Python 語法。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```這樣的修正將正確地執行迴圈，並輸出預期的結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n    print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 後面少了一個冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的語句後面必須加上冒號，以標明這是一個代碼塊的開頭。在這個範例中，缺少冒號會導致語法錯誤。\n\n**修正建議**：應在 `for i in range(5)` 後面加上一個冒號以正確開始一個代碼塊。\n\n**修正範例**：\n```python\nfor i in range(5):\n    print(i)\n```\n這樣的修正將正確地開啟 `for` 迴圈並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 缺少了結束的冒號。 \n\n**錯誤描述**：在 Python 中，for 迴圈的語法必須在條件表達式的結尾加上冒號，以標示這是一個區塊的開始。在這個範例中，`for i in range(5)` 缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 的結尾加上冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```\n這樣的修正將正確地建立一個 for 迴圈，並逐一輸出 0 到 4 的數字。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n    print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 這行缺少冒號 `:`。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的語法需要在 `for` 語句的結尾加上冒號 `:`。在這個範例中，`for i in range(5)` 缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for` 語句的結尾加上冒號 `:`。\n\n**修正範例**：\n```python\nfor i in range(5):\n    print(i)\n```這樣的修正將使得迴圈語法正確，並正確地輸出 `0` 到 `4`。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greet(name)\n  print('Hello, ' + name)\n\ngreet('Alice')",
+        "output": "這段程式碼有一個語法錯誤：`def greet(name)` 行中缺少冒號。\n\n**錯誤描述**：在 Python 中，定義函數時必須在參數列表之後加上冒號，以表明這是一個區塊的開始。在這個範例中，`def greet(name)` 缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在定義 `greet` 函數時，應在參數列表之後加上冒號。\n\n**修正範例**：\n```python\ndef greet(name):\n  print('Hello, ' + name)\n\ngreet('Alice')\n```這樣的修正將正確地定義函數，並正確執行函數內的程式碼。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(x, y):\n  product = x * y\n  return product\n\nresult = multiply_numbers(4 5)\nprint(result)",
+        "output": "這段程式碼有一個語法錯誤：`multiply_numbers(4 5)` 在呼叫 `multiply_numbers` 函數時缺少參數之間的逗號。\n\n**錯誤描述**：在 Python 中，函數的參數之間必須用逗號分隔。在這個範例中，`multiply_numbers(4 5)` 缺少逗號，因此會導致語法錯誤。\n\n**修正建議**：在呼叫 `multiply_numbers` 函數時，應在 `4` 和 `5` 之間加上逗號。\n\n**修正範例**：\n```python\nresult = multiply_numbers(4, 5)\nprint(result)\n```這樣的修正將正確地傳遞參數給函數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "if 5 > 3\n  print('5 is greater than 3')",
+        "output": "這段程式碼有一個語法錯誤：`if 5 > 3\\n  print('5 is greater than 3')` 中 `if` 條件語句的結構不完整，缺少冒號。\n\n**錯誤描述**：在 Python 中，條件語句 `if` 必須以冒號（:）結尾。在這個範例中，在 `if 5 > 3` 後面缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `if 5 > 3` 的末尾添加冒號。\n\n**修正範例**：\n```python\nif 5 > 3:\n  print('5 is greater than 3')\n```\n這樣的修正將使語法正確，並正確地執行條件判斷。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(10)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(10)` 缺少冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈語句的結尾必須有一個冒號。缺少冒號會導致語法錯誤。\n\n**修正建議**：在 `for` 迴圈語句的結尾處加上冒號。\n\n**修正範例**：\n```python\nfor i in range(10):\n  print(i)\n```\n這樣的修正將正確地結束 `for` 迴圈的語句，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(a, b)\n  product = a * b\n  return product\n\nprint(multiply_numbers(4, 5))",
+        "output": "這段程式碼有一個語法錯誤：`def multiply_numbers(a, b)` 行末缺少冒號。\n\n**錯誤描述**：在 Python 中，函數定義的宣告必須以冒號結尾。在這個範例中，行 `def multiply_numbers(a, b)` 缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `def multiply_numbers(a, b)` 行的末尾加上冒號。\n\n**修正範例**：\n```python\ndef multiply_numbers(a, b):\n  product = a * b\n  return product\n\nprint(multiply_numbers(4, 5))\n```\n這樣的修正將正確地定義函數，並正確執行乘法運算。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n    print(i)",
+        "output": "這段程式碼有一個語法錯誤：在 `for` 迴圈的結束標誌之後缺少冒號。需要在 `for i in range(5)` 的結尾加上冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的結尾必須用冒號結束來代表迴圈主體的開始。在這個範例中，`for i in range(5)` 缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 的後面加上冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n    print(i)\n```\n這樣的修正將使迴圈正確地執行並輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def get_area(radius):\n  pi = 3.14\n  area = pi * radius * redius\n  return area\n\ncircle_area = get_area(5)\nprint(circle_area)",
+        "output": "這段程式碼有一個語法錯誤：`area = pi * radius * redius` 在計算面積時變數名稱拼錯了。\n\n**錯誤描述**：在 Python 中，變數名稱需一致。在這個範例中，`redius` 應為 `radius`。由於變數名拼錯，程式會拋出 `NameError` 語法錯誤。\n\n**修正建議**：將 `redius` 更改為正確的變數名稱 `radius`。\n\n**修正範例**：\n```python\ndef get_area(radius):\n  pi = 3.14\n  area = pi * radius * radius\n  return area\n\ncircle_area = get_area(5)\nprint(circle_area)\n```這樣的修正將正確地計算並輸出圓的面積。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(x, y):\n  product = x * y\n  return product\n\nresult = multiply_numbers(4, 5)\nprint('The result is: ' + result)",
+        "output": "這段程式碼有一個語法錯誤：`print('The result is: ' + result)` 將整數與字串進行了相加操作。\n\n**錯誤描述**：在 Python 中，不能直接將整數與字串相加，這樣會導致 `TypeError` 錯誤。需要將整數轉換為字串後再進行相加。\n\n**修正建議**：在 `print` 語句中，應將 `result` 轉換為字串，使用 `str()` 函數來做到這一點。\n\n**修正範例**：\n```python\nprint('The result is: ' + str(result))\n```\n這樣的修正將正確地將整數轉換為字串，並正確地輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def calculate_area(radius):\n  pi = 3.14\n  area = pi * radius ** 2\n  return area\n\nprint(calculate_area(5)",
+        "output": "這段程式碼有一個語法錯誤：`print(calculate_area(5)` 在呼叫函數 `calculate_area` 時，缺少結尾的右括號。\n\n**錯誤描述**：在 Python 中，函數呼叫的括號必須配對。在這個範例中，`print(calculate_area(5)` 缺少右括號，導致語法錯誤。\n\n**修正建議**：在呼叫 `calculate_area` 函數時，應在 `5` 的後面加上右括號。\n\n**修正範例**：\n```python\nprint(calculate_area(5))\n```這樣的修正將正確地呼叫函數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\nprint(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 後面缺少冒號。\n\n**錯誤描述**：在 Python 中，for 迴圈的語法要求在條件語句的末尾有一個冒號。缺少冒號會導致語法錯誤，因為 Python 無法辨識這是一個迴圈的開始。\n\n**修正建議**：在 `for i in range(5)` 的末尾加上冒號，並適當縮排印出語句。\n\n**修正範例**：\n```python\nfor i in range(5):\n    print(i)\n```\n這樣的修正將正確地構建 for 迴圈，並正確地印出每個數字。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def calculate_area(radius):\n  area = 3.14 * radius ** 2\n  return area\n\nprint(calculate_area5])",
+        "output": "這段程式碼有一個語法錯誤：`print(calculate_area5])` 在呼叫 `calculate_area` 函數時使用了錯誤的括號類型。\n\n**錯誤描述**：在 Python 中，函數呼叫應該使用小括號 `()` 而不是方括號 `]`。在這個範例中，`calculate_area5]` 使用了方括號，因此會導致語法錯誤。\n\n**修正建議**：在呼叫 `calculate_area` 函數時，應使用小括號 `()` 來包住參數。\n\n**修正範例**：\n```python\nprint(calculate_area(5))\n```這樣的修正將正確地調用函數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5\n    print(i)",
+        "output": "這段程式碼有一個語法錯誤：在 `for` 迴圈的範圍內未正確關閉括號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈使用 `range` 函數時，括號必須正確配對。在這個範例中，`range(5` 少了一個右括號，導致語法錯誤。\n\n**修正建議**：在 `range` 函數的參數 `5` 之後加上右括號，正確閉合括號。\n\n**修正範例**：\n```python\nfor i in range(5):\n    print(i)\n```這樣的修正將使 `for` 迴圈正確運行並輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(10)\n  print(i)\nif i == 5\nprint('Reached 5')",
+        "output": "這段程式碼有幾個語法錯誤：第一個錯誤在於 `for` 和 `if` 語句缺少冒號，第二個錯誤在於縮排不正確。\n\n**錯誤描述**：在 Python 中，`for` 和 `if` 語句的結尾需加上冒號，來標示後續區塊的開始。此外，在 `for` 和 `if` 块內的程式碼應該適當縮排，但是在這段程式碼中缺少縮排。\n\n**修正建議**：在 `for` 語句和 `if` 語句的末尾添加冒號，並且將內部的程式碼縮排正確。\n\n**修正範例**：\n```python\nfor i in range(10):\n  print(i)\n  if i == 5:\n    print('Reached 5')\n```\n這樣的修正將正確地處理迴圈和條件判斷，使得程式可以正確執行。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)\nif i == 4\nprint('完成')",
+        "output": "這段程式碼有幾個語法錯誤：`for i in range(5)` 和 `if i == 4` 缺少冒號，同時 `print('完成')` 需適當縮排。\n\n**錯誤描述**：在 Python 中，循環和條件語句的結束處必須有冒號。此外，條件語句內的程式碼需要正確縮排。這些錯誤會導致程式無法執行。\n\n**修正建議**：應在 `for i in range(5)` 和 `if i == 4` 的末尾添加冒號，並在 `print('完成')` 前面加入適當的縮排。這樣可以正確地表示循環和條件語句的結構。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n  if i == 4:\n    print('完成')\n```這樣的修正可以確保程式碼正確地執行並輸出預期的結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：在 `for` 迴圈的宣告中，`range(5)` 之後缺少冒號 `:`。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的宣告必須以冒號 `:` 結尾，以表明這是一個區塊語法。在這個範例中，`for i in range(5)` 缺少冒號，會導致語法錯誤。\n\n**修正建議**：在 `for` 迴圈的宣告中，應在 `range(5)` 之後加上冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```\n這樣的修正將正確地執行 `for` 迴圈，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(a, b):\n  result = a * b\n  return result\n\nprint(multiply_numbers(3, 4)",
+        "output": "這段程式碼有一個語法錯誤：`print(multiply_numbers(3, 4)` 在呼叫 `multiply_numbers` 函數時，缺少關閉括號。\n\n**錯誤描述**：在 Python 中，所有的函數呼叫必須正確地包含在括號內。在這個範例中，`multiply_numbers(3, 4)` 的括號沒有閉合，因此會導致語法錯誤。\n\n**修正建議**：在呼叫 `multiply_numbers` 函數時，應在結尾處加上關閉括號。\n\n**修正範例**：\n```python\nprint(multiply_numbers(3, 4))\n```這樣的修正將正確地封閉函數呼叫，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply(a, b)\n  result = a * b\n  return result\n\nprint(multiply(4, 5))",
+        "output": "這段程式碼有一個語法錯誤：`def multiply(a, b)` 在函數定義的結尾缺少冒號。\n\n**錯誤描述**：在 Python 中，函數定義結尾必須以冒號結束。這個冒號標誌著函數體的開始。在這個範例中，`def multiply(a, b)` 缺少冒號，導致語法錯誤。\n\n**修正建議**：在函數定義的最後應該加上冒號。\n\n**修正範例**：\n```python\ndef multiply(a, b):\n  result = a * b\n  return result\n\nprint(multiply(4, 5))\n```這樣的修正將正確地定義函數並且允許正常呼叫和執行。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def calculate_area(radius):\n  area = 3.14 * radius ** 2\n  return area\n\nprint(calculate_area(5))\nif radius > 0:\n  print(\"Radius is positive.\")",
+        "output": "這段程式碼有一個語法錯誤：`if radius > 0:` 使用了未定義的變數 `radius`。\n\n**錯誤描述**：在這段程式碼中，`radius` 變數只在 `calculate_area` 函數中定義和使用，但在主程序中並未定義 `radius` 變數，直接使用將導致未定義變數錯誤。\n\n**修正建議**：應在條件檢查語句之前定義 `radius` 變數，並賦予其適當的值。\n\n**修正範例**：\n```python\ndef calculate_area(radius):\n  area = 3.14 * radius ** 2\n  return area\n\nradius = 5\nprint(calculate_area(radius))\nif radius > 0:\n  print(\"Radius is positive.\")\n```這樣的修正將確保 `radius` 變數在條件檢查語句之前得到定義，從而避免未定義變數錯誤。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply(a, b):\n  result = a * b\n  return result\n\nprint(multiply(4, 5)",
+        "output": "這段程式碼有一個語法錯誤：`print(multiply(4, 5)` 在呼叫 `print` 函數時少了一個閉合括號。\n\n**錯誤描述**：在 Python 中，所有的函數調用都必須有相應的開啟和閉合括號。在這個範例中，`print(multiply(4, 5)` 缺少結束的閉合括號，導致語法錯誤。\n\n**修正建議**：在呼叫 `print` 函數時，應在最後加上一個閉合括號。\n\n**修正範例**：\n```python\nprint(multiply(4, 5))\n```這樣的修正將正確地閉合 `print` 函數的調用，並正確顯示結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 缺少冒號，並且縮排不正確。\n\n**錯誤描述**：在 Python 中，`for` 迴圈必須以冒號結尾，並且在 `for` 迴圈內的語句需要正確縮排。在這個範例中刪除了冒號，並且 print 語句缺少正確縮排，會導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 結尾加上冒號，並將 `print(i)` 正確縮排。\n\n**修正範例**：\n```python\nfor i in range(5):\n    print(i)\n```這樣的修正將正確地形成迴圈結構，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greet_user(name):\n  print('Hello, ' + name + '!')\n\ngreet_user('Alice'):\ngreet_user('Bob')",
+        "output": "這段程式碼有一個語法錯誤：`greet_user('Alice'):` 在呼叫 `greet_user` 函數後不應有冒號。\n\n**錯誤描述**：在 Python 中，函數呼叫不需要在結尾加上冒號。冒號通常用於定義函數、條件語句、迴圈等，但不是用於函數呼叫。在這個範例中，`greet_user('Alice'):` 多了一個不必要的冒號，因此會導致語法錯誤。\n\n**修正建議**：在呼叫 `greet_user` 函數時，應去掉多餘的冒號。\n\n**修正範例**：\n```python\ndef greet_user(name):\n  print('Hello, ' + name + '!')\n\ngreet_user('Alice')\ngreet_user('Bob')\n```這樣的修正將使程式碼正確執行，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有兩個語法錯誤：`for i in range(5)` 後缺少冒號，且 `print(i)` 應該縮排。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的結尾必須有冒號來表示迴圈體的開始。此外，`print` 語句必須在迴圈體內，所以需要適當的縮排。\n\n**修正建議**：在 `for i in range(5)` 的結尾加上冒號，並且將 `print(i)` 縮排一個層級。\n\n**修正範例**：\n```python\nfor i in range(5):\n    print(i)\n```這樣的修正將使迴圈和輸出語句都正確執行，依次打印0到4。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greet(name):\n  return 'Hello, ' + name\n\ngreet('Alice'\n",
+        "output": "這段程式碼有一個語法錯誤：在呼叫 `greet` 函數時，括號不匹配。\n\n**錯誤描述**：在 Python 中，所有的括號都必須成對出現。在這個範例中，呼叫 `greet('Alice'` 時，缺少閉合的右括號，因此會導致語法錯誤。\n\n**修正建議**：應在呼叫 `greet` 函數時，加上缺少的閉合括號。\n\n**修正範例**：\n```python\ngreet('Alice')\n```\n這樣的修正將確保括號成對，正確地呼叫函數。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def divide_numbers(a, b):\n  return a / b\n\nprint(divide_numbers(10, 0))",
+        "output": "這段程式碼有一個邏輯錯誤：`print(divide_numbers(10, 0))` 在執行除法時，第二個參數為 0 會導致 `ZeroDivisionError` 錯誤。\n\n**錯誤描述**：在 Python 中，除以零會引發 `ZeroDivisionError`，這是一個運行時的錯誤而不是語法錯誤。為了讓程式碼更加健壯，需要在執行除法操作之前檢查除數是否為零。\n\n**修正建議**：在 `divide_numbers` 函數中添加檢查條件，確保第二個參數不為零。如果為零，回傳適當的錯誤訊息或處理方式。\n\n**修正範例**：\n```python\ndef divide_numbers(a, b):\n  if b == 0:\n    return 'Error: Division by zero is not allowed'\n  return a / b\n\nprint(divide_numbers(10, 0))\n```\n這樣的修正將防止除以零的情況，並回傳適當的錯誤訊息。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def calculate_area(radius):\n  area = 3.14 * radius ** 2\n  return area\n\narea_of_circle = calculate_area(7\nprint(area_of_circle)",
+        "output": "這段程式碼有一個語法錯誤：`area_of_circle = calculate_area(7` 在呼叫 `calculate_area` 函數時缺少閉括號，並且`print`語句沒有對齊。\n\n**錯誤描述**：在 Python 中，函數的參數必須在括號內正確閉合，此處缺少閉括號會導致語法錯誤。另外，在同一縮排層級下的程式碼行列需要對齊一致，`print`語句應與上行對齊。\n\n**修正建議**：在呼叫 `calculate_area` 函數時，在 `7` 之後加上閉括號並將 `print` 語句對齊。\n\n**修正範例**：\n```python\narea_of_circle = calculate_area(7)\nprint(area_of_circle)\n```\n這樣的修正將正確地計算圓面積，並輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply(a, b):\n    result = a * b\n    return result\n\nprint(multiply(5 10))",
+        "output": "這段程式碼有一個語法錯誤：`print(multiply(5 10))` 在呼叫 `multiply` 函數時缺少參數之間的逗號。\n\n**錯誤描述**：在 Python 中，函數的參數之間必須用逗號分隔。在這個範例中，`multiply(5 10)` 缺少逗號，因此會導致語法錯誤。\n\n**修正建議**：在呼叫 `multiply` 函數時，應在 `5` 和 `10` 之間加上逗號。\n\n**修正範例**：\n```python\nprint(multiply(5, 10))\n```這樣的修正將正確地傳遞參數給函數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def calculate_area(radius):\n  area = 3.14 * radius ** 2\n  return area\n\nresult = calculate_area(5.5\nprint(result)",
+        "output": "這段程式碼有一個語法錯誤：在呼叫 `calculate_area` 函數時，缺少了關閉小括號 `)`，並且 `print(result)` 這行沒有正確的縮排。\n\n**錯誤描述**：在 Python 中，函數呼叫的參數必須封閉於一對小括號內。在這個範例中，`calculate_area(5.5` 缺少結尾的小括號，這會導致語法錯誤。此外，`print(result)` 的縮排不正確，會造成程式碼判斷錯誤。\n\n**修正建議**：在呼叫 `calculate_area` 函數時，應在 `5.5` 之後加上關閉的小括號，並確保 `print(result)` 有正確的縮排。\n\n**修正範例**：\n```python\ndef calculate_area(radius):\n  area = 3.14 * radius ** 2\n  return area\n\nresult = calculate_area(5.5)\nprint(result)\n```\n這樣的修正將正確地計算面積並輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greet(name)\n  message = 'Hello, ' + name\n  print(message)\n\ngreet('Alice')",
+        "output": "這段程式碼有一個語法錯誤：`def greet(name)` 中缺少冒號。\n\n**錯誤描述**：在 Python 函數定義中，函數名和參數列表之後必須有冒號來表示函數體的開始。在這個範例中，`def greet(name)` 缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在函數定義的括號後加上冒號。\n\n**修正範例**：\n```python\ndef greet(name):\n  message = 'Hello, ' + name\n  print(message)\n\ngreet('Alice')\n```這樣的修正將正確地定義函數 `greet`，並正確輸出問候語。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)\nprint('迴圈結束')",
+        "output": "這段程式碼有兩個語法錯誤：在 `for i in range(5)` 行的結尾缺少冒號，以及 `print(i)` 行沒有適當縮排。\n\n**錯誤描述**：在 Python 中，迴圈語句的結尾應該以冒號結束，並且其內部執行的程式碼必須正確縮排。在這個範例中，`for i in range(5)` 後面缺少冒號，且 `print(i)` 沒有縮排。\n\n**修正建議**：在 `for` 語句的結尾加上冒號，並且對 `print(i)` 語句進行縮排。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\nprint('迴圈結束')\n```\n這樣的修正將正確地執行迴圈，並在迴圈結束後輸出訊息。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n    print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 後缺少冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的語法必須在範圍定義後加上冒號，這表示迴圈或者條件的結束。在這個範例中缺少了這個冒號導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 的結尾加上冒號，以符合正確的迴圈定義語法。\n\n**修正範例**：\n```python\nfor i in range(5):\n    print(i)\n```\n這樣的修正將讓Python能正確地執行程式碼中的迴圈操作，並輸出正確的結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 在結尾缺少冒號。\n\n**錯誤描述**：在 Python 中，for 迴圈的語法結構需要在 for 聲明的結尾加上冒號。範例中缺少這個冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 的結尾加上冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```\n這樣的修正將正確地構成 for 迴圈，並輸出範圍內的數值。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n    print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 缺少結束的冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的語法必須以冒號結束。在這個範例中，`for i in range(5)` 缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：應在 `for` 迴圈的語句結尾加上冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n    print(i)\n```\n這樣的修正將確保迴圈正常運行，並正確打印出數字 0 到 4。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 缺少冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的語法需要在條件部分結尾處添加冒號。本範例中，`for i in range(5)` 缺少了必要的冒號，這將導致語法錯誤。\n\n**修正建議**：在 `for` 迴圈的條件部分結尾處加上冒號，這樣Python解析器才能正確解析循環結構。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```這樣的修正將使迴圈結構完整並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply(a, b):\n    result = a * b\n    return result\n\nproduct = multiply(6,)\nprint(product)",
+        "output": "這段程式碼有一個語法錯誤：在呼叫 `multiply` 函數時，多餘地加入了一個逗號，導致少了一個參數。\n\n**錯誤描述**：在 Python 中，函數的所有必需參數都必須提供。在這個範例中，`multiply(6,)` 中多餘的逗號意味著只提供了一個參數，而 `multiply` 函數需要兩個參數才能運行。\n\n**修正建議**：在呼叫 `multiply` 函數時，應提供兩個參數並去除多餘的逗號。\n\n**修正範例**：\n```python\nproduct = multiply(6, 2)\nprint(product)\n```\n這樣的修正將正確地呼叫函數，並計算 `6` 和 `2` 的乘積。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n    print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 後面缺少冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈結尾必須有冒號以標誌迴圈的開始。如果缺少冒號，會導致語法錯誤。\n\n**修正建議**：在 `for` 迴圈的結尾處加上冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n    print(i)\n```\n這樣的修正將正確地開始迴圈並輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(a b):\n  result = a * b\n  return result\n\nprint(multiply_numbers(4, 5))",
+        "output": "這段程式碼有一個語法錯誤：`def multiply_numbers(a b):` 中的參數 `a` 和 `b` 之間缺少逗號。\n\n**錯誤描述**：在 Python 中，函數定義的參數之間必須用逗號分隔。在這個範例中，`multiply_numbers(a b)` 缺少逗號，因此會導致語法錯誤。\n\n**修正建議**：在函數 `multiply_numbers` 的參數 `a` 和 `b` 之間加上逗號。\n\n**修正範例**：\n```python\ndef multiply_numbers(a, b):\n  result = a * b\n  return result\n\nprint(multiply_numbers(4, 5))\n```這樣的修正將正確地定義參數並讓函數正常運作。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5):\nprint(i)",
+        "output": "這段程式碼有一個語法錯誤：`print(i)` 應該縮排在 `for` 迴圈內。\n\n**錯誤描述**：在 Python 中，迴圈和條件語句中的程式碼塊需要適當的縮排。這裡 `print(i)` 沒有縮排，會導致語法錯誤，因为 Python 通过缩排來表示程式碼块所属的範圍。在此範例中，`print(i)` 需要縮排以表示它是 `for` 迴圈內的程式碼。\n\n**修正建議**：將 `print(i)` 縮排到正確的位置，使其成為 `for` 迴圈的一部分。\n\n**修正範例**：\n```python\nfor i in range(5):\n    print(i)\n```\n這樣的修正將使 `print(i)` 正確地位於 `for` 迴圈內，並依次輸出 `0` 到 `4`。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 在 `for` 迴圈的結尾缺少冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的結尾應該使用冒號來表示迴圈主體的開始。在這個範例中，`for i in range(5)` 缺少結尾的冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for` 迴圈的結尾應加上冒號，並確保迴圈主體的縮排正確。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```\n這樣的修正將使迴圈正確運行，並逐行輸出0到4的結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def calculate_area(radius):\n  area = 3.14 * radius ^ 2\n  return area\n\nprint(calculate_area(5))",
+        "output": "這段程式碼有一個語法錯誤：在計算 `area` 的公式中使用了錯誤的運算符號 `^`。\n\n**錯誤描述**：在 Python 中，`^` 是位元運算符，而不是用於指數運算的符號。這會導致計算面積的結果不正確。\n\n**修正建議**：應該使用雙星號 `**` 來表示指數運算。\n\n**修正範例**：\n```python\ndef calculate_area(radius):\n  area = 3.14 * radius ** 2\n  return area\n\nprint(calculate_area(5))\n```\n這樣的修正將正確地計算圓的面積，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(x, y):\n  result = x * y\n  return result\n\nprint('The result is: ' + multiply_numbers(4, 5))",
+        "output": "這段程式碼有一個語法錯誤：`print('The result is: ' + multiply_numbers(4, 5))`，在這裡試圖將字串與數字相加，這在 Python 中是非法的。\n\n**錯誤描述**：在 Python 中，無法直接將字串與整數或浮點數相加。如果希望將數字與字串相連接，需要先將數字轉換為字串。\n\n**修正建議**：應使用 `str` 函數將 `multiply_numbers` 函數的結果轉換為字串，這樣才能與前面的字串進行連接。\n\n**修正範例**：\n```python\nprint('The result is: ' + str(multiply_numbers(4, 5)))\n```這樣的修正將正確地將字串與數字連接起來，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 行的結尾缺少冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的定義必須以冒號結尾。缺少冒號會導致語法錯誤，並且無法正確執行迴圈中的程式。\n\n**修正建議**：在 `for i in range(5)` 行的結尾添加冒號，使其成為合法的迴圈語法。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```\n這樣的修正將讓迴圈正常運行，並逐行打印出範圍內的數字。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 在結尾缺少必要的冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的語法必須在 `range(5)` 後面加上一個冒號 `:`，以表示迴圈主體的開始。缺少這個冒號會導致語法錯誤，無法正常執行迴圈體。\n\n**修正建議**：在 `for i in range(5)` 的結尾處加上冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```\n這樣的修正將使 `for` 迴圈能夠正確地執行，並輸出 0 到 4 的數字。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "if x > 10\n  print('x is greater than 10')\nelse\n  print('x is less than or equal to 10')",
+        "output": "這段程式碼有兩個語法錯誤：`if x > 10` 和 `else` 之後缺少冒號。\n\n**錯誤描述**：在 Python 中，條件語句 (如 `if` 和 `else`) 之後必須加上冒號。缺少冒號會導致語法錯誤，使程式無法執行。\n\n**修正建議**：在 `if x > 10` 和 `else` 之後添加冒號。\n\n**修正範例**：\n```python\nif x > 10:\n  print('x is greater than 10')\nelse:\n  print('x is less than or equal to 10')\n```\n這樣的修正將正確地定義條件語句，使程式能夠正常運行並輸出預期結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)\n",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 缺少結束的冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈語句結尾應該有冒號來表示下一行是縮排的程式塊。在這個範例中，`for i in range(5)` 沒有包含冒號，會導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 末尾加上冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```這樣的修正將正確地運行迴圈，並輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：在 `for i in range(5)` 的行末缺少冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈聲明必須在行末加上冒號，以表示這是一個塊語句的開始。缺少冒號會導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 的行末加上冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```\n這樣的修正將正確地啟動 `for` 迴圈，並逐行印出 `0` 到 `4`。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def calculate_area(radius):\n  area = 3.14 * radius ** 2\n  return area\n\nprint(calculate_area(5)",
+        "output": "這段程式碼有一個語法錯誤：`print(calculate_area(5)` 在呼叫 `print` 函數時缺少右括號。\n\n**錯誤描述**：在 Python 中，所有開啟的括號必須有對應的關閉括號。在這個範例中，`calculate_area(5)` 的呼叫缺少右括號，因此會導致語法錯誤。\n\n**修正建議**：在呼叫 `print` 函數時，應在 `calculate_area(5` 的最後加上缺少的右括號。\n\n**修正範例**：\n```python\nprint(calculate_area(5))\n```這樣的修正將確保括號對稱，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(a, b):\n  result = a * b\n  return result\n\nprint(multiply_numbers(3, 4)",
+        "output": "這段程式碼有一個語法錯誤：`print(multiply_numbers(3, 4)` 缺少閉合的括號。\n\n**錯誤描述**：在 Python 中，每個開括號必須有一個相應的閉合括號。這裡在呼叫 `multiply_numbers` 函數時，缺少結尾的閉合括號，導致語法錯誤。\n\n**修正建議**：在呼叫 `multiply_numbers` 函數的敘述末尾，應加上缺少的閉合括號。\n\n**修正範例**：\n```python\nprint(multiply_numbers(3, 4))\n```這樣的修正將正確地封閉括號，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def calculate_area(radius)\n  area = 3.14 * radius ** 2\n  return area\n\nprint(calculate_area(5))",
+        "output": "這段程式碼有一個語法錯誤：`def calculate_area(radius)` 在定義函數時缺少冒號。\n\n**錯誤描述**：在 Python 中，函數定義語句結尾必須有冒號。在這個範例中，`def calculate_area(radius)` 缺少結尾的冒號，因此會導致語法錯誤。\n\n**修正建議**：在定義函數時應在形參 `radius` 之後加上冒號。\n\n**修正範例**：\n```python\ndef calculate_area(radius):\n  area = 3.14 * radius ** 2\n  return area\n\nprint(calculate_area(5))\n```這樣的修正將正確地定義函數，並能正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greet(name):\n  msg = 'Hello, ' + name + '!'\n  return msg\n\nprint(greet('Alice')",
+        "output": "這段程式碼有一個語法錯誤：`print(greet('Alice')` 在呼叫 `greet` 函數時，右括號少了一個。\n\n**錯誤描述**：在 Python 中，每個左括號都必須有相應的右括號來閉合。在這個範例中，呼叫 `greet('Alice')` 時，缺少結束的右括號，這將導致語法錯誤。\n\n**修正建議**：在呼叫 `greet` 函數時，應在 `Alice'` 的後面加上一個右括號，以正確閉合函數的調用。\n\n**修正範例**：\n```python\nprint(greet('Alice'))\n```這樣的修正將正確地呼叫函數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 這行程式碼缺少冒號。\n\n**錯誤描述**：在 Python 中，for 迴圈的結尾必須有冒號 `:`。在這個範例中，`for i in range(5)` 缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 的結尾處加上冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```這樣的修正將使代码正常執行，並依次打印出 0 到 4。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 這行缺少冒號。\n\n**錯誤描述**：在 Python 中，使用循環語句（如 `for` 或 `while`）時，在條件表達式後面必須加上冒號 `:`，來表示循環體的開始。在這個範例中，`for i in range(5)` 缺少了結尾的冒號。\n\n**修正建議**：在 `for i in range(5)` 語句的結尾加上冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```\n這樣的修正將正確地表示循環體的開始，使得程式碼能正確執行並輸出 0 到 4 的數字。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greet(name):\nprint('Hello, ' + name)\ngreet('Alice')",
+        "output": "這段程式碼有一個語法錯誤：在定義 `greet` 函數時，第二行 `print('Hello, ' + name)` 的縮排不正確。\n\n**錯誤描述**：在 Python 中，函數內的所有程式碼必須相對於函數定義進行縮排。在這段程式碼中，`print` 語句應該縮排到 `greet` 函數的內部。目前的寫法會導致語法錯誤，因為 Python 不知道 `print` 是屬於哪一個程式塊。\n\n**修正建議**：將 `print` 語句進行適當的縮排，使其屬於 `greet` 函數內。\n\n**修正範例**：\n```python\ndef greet(name):\n    print('Hello, ' + name)\n\ngreet('Alice')\n```\n這樣的修正將使 `print` 正確地屬於 `greet` 函數，並正確執行。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(a, b):\n  result = a * b\n  return result\n\nprint(multiply_numbers(4,))",
+        "output": "這段程式碼有一個語法錯誤：`print(multiply_numbers(4,))` 在呼叫 `multiply_numbers` 函數時缺少第二個參數。\n\n**錯誤描述**：在 Python 中，當呼叫一個函數時，如果該函數定義了多個參數，所有的參數都必須傳入。在這個範例中，`multiply_numbers(4,)` 少了第二個參數，因此會導致語法錯誤。\n\n**修正建議**：在呼叫 `multiply_numbers` 函數時，應傳入正確的所有參數。在這個範例中，應補充第二個參數。\n\n**修正範例**：\n```python\nprint(multiply_numbers(4, 2))\n```這樣的修正將正確地傳遞參數給函數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greet(name):\n  message = \"Hello, \" + name + \"!\"\n  print(message\n\ngreet(\"Alice\")",
+        "output": "這段程式碼有兩個語法錯誤：第一個錯誤是在 `print(message` 缺少關閉小括號。第二個錯誤是在 `message` 字串拼接的雙引號不一致。\n\n**錯誤描述**：在 Python 中，所有開啟的小括號必須有對應的關閉小括號。另外，字串拼接時的引號必須一致。\n\n**修正建議**：需要在 `print(message` 的結尾加入關閉小括號，並確保 `message` 字串拼接的雙引號是對齊的。\n\n**修正範例**：\n```python\ndef greet(name):\n  message = \"Hello, \" + name + \"!\"\n  print(message)\n\ngreet(\"Alice\")\n```這樣的修正將確保程式碼沒有語法錯誤，能正確地輸出問候語。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 這行缺少了冒號 `:`。\n\n**錯誤描述**：在 Python 中，`for` 迴圈結束的地方必須加上冒號 `:`，以表示接下來是迴圈的程式區塊。在這個範例中，`for i in range(5)` 最後應該加上冒號。\n\n**修正建議**：在 `for i in range(5)` 這行的最後加上冒號 `:`。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```這樣的修正將正確地執行 `for` 迴圈，並且每次迴圈中正確輸出變數 `i` 的值。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply(a, b):\n  return a * b\n\nresult = multiply(4, )\nprint(result)",
+        "output": "這段程式碼有一個語法錯誤：`multiply(4, )` 在呼叫 `multiply` 函數時缺少第二個參數。\n\n**錯誤描述**：在 Python 中，函數呼叫時必須傳入所有必要的參數。在這個範例中，`multiply(4, )` 缺少第二個參數，因此會導致語法錯誤。\n\n**修正建議**：在呼叫 `multiply` 函數時，應確保提供所有必要的參數。\n\n**修正範例**：\n```python\nresult = multiply(4, 5)\nprint(result)\n```這樣的修正將正確地傳遞參數給函數，使其能正常運作並輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def divide_numbers(x, y):\n  return x / y\n\nresult = divide_numbers(10, 0)\nprint(result)",
+        "output": "這段程式碼有一個邏輯錯誤：`result = divide_numbers(10, 0)` 中嘗試除以零會導致運行時錯誤。\n\n**錯誤描述**：在 Python 中，除以零的操作會引發 `ZeroDivisionError`，這是因為數學上任何數被零除是未定義的，會導致程式崩潰。\n\n**修正建議**：在執行除法操作前，應該加入檢查以避免除以零的情況。可以改用條件語句來確認除數是否為零，如果是，提示用戶或者返回一個特定的值來表示錯誤。\n\n**修正範例**：\n```python\ndef divide_numbers(x, y):\n  if y == 0:\n    return 'Error: Division by zero is not allowed'\n  return x / y\n\nresult = divide_numbers(10, 0)\nprint(result)\n```這樣的修正將有效避免除以零的錯誤，並提供一個友善的錯誤訊息。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n    print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 結束後缺少冒號。\n\n**錯誤描述**：在 Python 中，for 迴圈的語法需要在條件部分的結尾使用冒號。不加上冒號會導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 的末尾加上冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n    print(i)\n```\n這樣的修正將正確地建構 for 迴圈，並正確地輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "if x > 10:\nprint('x大於10')\n else:\n  print('x小於等於10')",
+        "output": "這段程式碼有兩個語法錯誤： `if x > 10:` 與 `else:` 下的語句沒有適當地縮排，以及 `else:` 的前面多了一個空格。\n\n**錯誤描述**：在 Python 中，條件語句（如 `if` 和 `else`）內部的程式碼塊必須適當縮排。另外，`else:` 前不應有多餘的空格。\n\n**修正建議**：為確保語法正確，應對 `if` 和 `else` 區塊內的語句進行適當縮排，並且移除 `else:` 前面的多餘空格。\n\n**修正範例**：\n```python\nif x > 10:\n    print('x大於10')\nelse:\n    print('x小於等於10')\n```\n這樣的修正將正確地執行條件語句，且不會產生語法錯誤。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(x, y):\n  result = x * y\n  return result\n\nprint(multiply_numbers(3, 4, 5))",
+        "output": "這段程式碼有一個語法錯誤：`print(multiply_numbers(3, 4, 5))` 在呼叫 `multiply_numbers` 函數時提供了過多的參數。\n\n**錯誤描述**：在 Python 中，函數的形參數量和實參數量必須一致。在這個範例中，`multiply_numbers` 函數只接受兩個參數，但在呼叫時傳遞了三個參數，這會導致語法錯誤。\n\n**修正建議**：應確保在呼叫 `multiply_numbers` 函數時傳遞與定義中的形參數量相同的實參。\n\n**修正範例**：\n```python\nprint(multiply_numbers(3, 4))\n```\n這樣的修正將確保參數數量正確，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(10)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(10)` 行末尾缺少冒號。\n\n**錯誤描述**：在 Python 中，for 迴圈的宣告必須以冒號結尾，以表示接下來的縮排塊為迴圈的主體。在這個範例中，`for i in range(10)` 行末缺少冒號，這會導致語法錯誤。\n\n**修正建議**：在 `for i in range(10)` 行的末尾加上冒號。\n\n**修正範例**：\n```python\nfor i in range(10):\n  print(i)\n```\n這樣的修正將確保迴圈能正確運行並列印出 0 到 9 的數字。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greet_user(name):\n  print('Hello ' + name)\n\nif __name__ == '__main__':\n  greet_user('Alice'\n  greet_user('Bob')",
+        "output": "這段程式碼有一個語法錯誤：在呼叫 `greet_user` 函數時，`greet_user('Alice'` 缺少關閉小括號 `)`。\n\n**錯誤描述**：在 Python 中，函數呼叫的所有參數必須用括號包圍。在這個範例中，`greet_user('Alice'` 缺少關閉小括號，會導致語法錯誤。\n\n**修正建議**：在呼叫 `greet_user` 函數時，應在參數後面加上關閉小括號。\n\n**修正範例**：\n```python\nif __name__ == '__main__':\n  greet_user('Alice')\n  greet_user('Bob')\n```這樣的修正將正確地傳遞參數給函數並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply(a, b):\n  result = a * b\n  return result\n\nprint(multiply(4, 2)",
+        "output": "這段程式碼有一個語法錯誤：在呼叫 `print(multiply(4, 2))` 時，少了一個閉合括號。\n\n**錯誤描述**：在 Python 中，所有的括號必須成對匹配。在這個範例中的 `print(multiply(4, 2)` 少了一個閉合括號，導致語法錯誤。\n\n**修正建議**：在呼叫 `print` 函數時，應在語句末尾加上一個閉合括號。\n\n**修正範例**：\n```python\nprint(multiply(4, 2))\n```這樣的修正將正確地呼叫 `multiply` 函數並顯示結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply(a, b)\n  result = a * b\n  return result\n\nprint(multiply(3, 4))",
+        "output": "這段程式碼有一個語法錯誤：`def multiply(a, b)` 在定義函數時缺少冒號。\n\n**錯誤描述**：在 Python 中，函數定義的結尾處必須包含冒號。在這個範例中，`def multiply(a, b)` 缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在定義 `multiply` 函數時，應在參數括號結束處加上冒號。\n\n**修正範例**：\n```python\ndef multiply(a, b):\n  result = a * b\n  return result\n\nprint(multiply(3, 4))\n```這樣的修正將正確地定義函數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)\n\nif True\nprint('Hello, World!')",
+        "output": "這段程式碼有兩個語法錯誤：\n1. `for i in range(5)` 缺少冒號。\n2. `if True` 缺少冒號。\n\n**錯誤描述**：在 Python 中，`for` 和 `if` 語句結束時都必須有冒號來表示這些語句的塊開始。在這個範例中，`for` 和 `if` 語句都缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for` 和 `if` 語句的結尾加上冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n\nif True:\n  print('Hello, World!')\n```\n這樣的修正將正確地結構代碼塊，並正確執行程式。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def divide_numbers(a, b):\n  result = a / b\n  return result\n\nprint(divide_numbers(10, 0))",
+        "output": "這段程式碼有一個潛在的錯誤：`print(divide_numbers(10, 0))` 對於除數為 0 的情況沒有進行處理。\n\n**錯誤描述**：在 Python 中，除以零會引發 `ZeroDivisionError` 異常。在這個範例中，`divide_numbers(10, 0)` 嘗試將 10 除以 0，這將導致程式運行時發生錯誤並終止。\n\n**修正建議**：應在函數 `divide_numbers` 中檢查除數是否為零，並在必要時返回適當的錯誤信息或進行異常處理。\n\n**修正範例**：\n```python\ndef divide_numbers(a, b):\n  if b == 0:\n    return 'Error: Division by zero is undefined.'\n  else:\n    result = a / b\n    return result\n\nprint(divide_numbers(10, 0))\n```\n這樣的修正將避免除以零的錯誤並提供有用的錯誤信息。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "list1 = 1, 2, 3\nlist2 = 4, 5, 6]\ncombined = list1 + list2\nprint(combined)",
+        "output": "這段程式碼有語法錯誤：在 `list1` 定義中缺少閉合的方括號。\n\n**錯誤描述**：在 Python 中，列表必須使用方括號成對出現。在這個範例中，`list1` 的定義缺少閉合的方括號，這將導致語法錯誤。\n\n**修正建議**：在 `list1` 的定義中，應該在最後加入一個閉合的方括號。\n\n**修正範例**：\n```python\nlist1 = 1, 2, 3]\nlist2 = 4, 5, 6]\ncombined = list1 + list2\nprint(combined)\n```\n這樣的修正將使列表定義完整，程式碼將正常運行並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply(a, b)\n    result = a * b\n    return result\n\nprint(multiply(4, 5))",
+        "output": "這段程式碼有一個語法錯誤：`def multiply(a, b)` 在定義 `multiply` 函數時缺少冒號。\n\n**錯誤描述**：在 Python 中，定義函數時，函數名稱和參數列表後面需要有一個冒號來表示這是函數的定義部分。在這個範例中，`multiply(a, b)` 缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在定義 `multiply` 函數時，應在 `def multiply(a, b)` 的後面加上冒號。\n\n**修正範例**：\n```python\ndef multiply(a, b):\n    result = a * b\n    return result\n\nprint(multiply(4, 5))\n```這樣的修正將正確地定義函數，使其能夠正確執行。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(a, b):\n  product = a * b\n  return product\n\nresult = multiply_numbers(3, 4\nprint(result)",
+        "output": "這段程式碼有兩個語法錯誤：第一個是函數呼叫 `multiply_numbers(3, 4` 時缺少關閉括號，第二個是 `print(result)` 缺少縮排。\n\n**錯誤描述**：在 Python 中，函數呼叫時需要完整的括號配對來封閉參數。另外，`print` 語句必須和前面的語句對齊，不然會導致縮排錯誤。\n\n**修正建議**：在函數呼叫 `multiply_numbers` 時，應加上缺少的閉括號以完成參數封閉，並確保 `print` 語句與上一行對齊。\n\n**修正範例**：\n```python\ndef multiply_numbers(a, b):\n  product = a * b\n  return product\n\nresult = multiply_numbers(3, 4)\nprint(result)\n```\n這樣的修正將修正語法錯誤並正確地輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "if x > 10:\nprint('x 大於 10')\n else:\n  print('x 小於或等於 10')",
+        "output": "這段程式碼有兩個語法錯誤：`print('x 大於 10')` 行前缺少縮排，以及 `else` 前多了一個空格。\n\n**錯誤描述**：在 Python 中，條件判斷語句中的程式碼塊需要正確的縮排。首先，條件判斷的 `if` 和 `else` 語句後的程式碼塊需要有一致的縮排。在這個範例中，`print('x 大於 10')` 應該要有縮排，而 `else:` 前不應該有多餘的空格。\n\n**修正建議**：為了確保語句結構的正確性，應該去掉 `else` 前多餘的空格，並替 `print('x 大於 10')` 添加適當的縮排。\n\n**修正範例**：\n```python\nif x > 10:\n    print('x 大於 10')\nelse:\n    print('x 小於或等於 10')\n```這樣的修正將確保條件判斷語句執行時沒有語法錯誤。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n    print(i)\nprint('Done!')",
+        "output": "這段程式碼有一個語法錯誤：在 `for` 迴圈的結尾缺少冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的語法需要在 `for` 宣告的行尾加上冒號。這告訴 Python 接下來的區塊是 `for` 迴圈的內部代碼。如果缺少冒號，會導致語法錯誤。\n\n**修正建議**：應在 `for i in range(5)` 行的結尾加上冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n    print(i)\nprint('Done!')\n```\n這樣的修正將使得迴圈語法正確，並且可以正確地執行和輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(a, b):\n  result = a * b\n  return result\n\nprint(multiply_numbers(4,))",
+        "output": "這段程式碼有一個語法錯誤：`print(multiply_numbers(4,))` 在呼叫 `multiply_numbers` 函數時，只有提供了一個參數並且多了一個逗號。\n\n**錯誤描述**：在 Python 中，函數的所有必選參數都必須被正確地傳遞。這個範例中 `multiply_numbers` 函數需要兩個參數，但呼叫時只提供了一個參數 `4`，且後面多了一個不必要的逗號，這會導致語法錯誤。\n\n**修正建議**：在呼叫 `multiply_numbers` 函數時，應該提供兩個正確的參數，並且不要多餘的逗號。\n\n**修正範例**：\n```python\nprint(multiply_numbers(4, 5))\n```這樣的修正將正確地傳遞兩個參數給函數，並且正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greet_user(name)\n  print('Hello, ' + name)\n\ngreet_user('Alice')",
+        "output": "這段程式碼有兩個語法錯誤：`def greet_user(name)` 和 `print('Hello, ' + name)` 少了一個冒號和縮進問題。\n\n**錯誤描述**：1. 在 Python 中，函數定義的結尾必須有一個冒號。在這個範例中，`def greet_user(name)` 少了一個冒號。2. 在 Python 中，程式碼塊的開始必須以縮進來表示。在這個範例中，`print` 指令沒有縮進，也會導致語法錯誤。\n\n**修正建議**：1. 為函數定義 `def greet_user(name)` 的結尾加上一個冒號。2. 為 `print` 指令添加適當的縮進。\n\n**修正範例**：\n```python\ndef greet_user(name):\n    print('Hello, ' + name)\n\ngreet_user('Alice')\n```這樣的修正將正確地定義函數並輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 的結尾缺少冒號。\n\n**錯誤描述**：在 Python 中，每個 `for` 迴圈的定義結尾都必須有冒號 `:` 才能表示這是一個迴圈開始。這個冒號在語法中是不可或缺的，用來告訴編譯器這是一個代碼塊。\n\n**修正建議**：在 `for i in range(5)` 的結尾加入冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```\n這樣的修正將正確地定義 `for` 迴圈，並且在每次迭代中輸出 `i` 的值。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "if x = 5:\n  print('x is 5')",
+        "output": "這段程式碼有一個語法錯誤：`if x = 5:` 在條件判斷中使用了賦值運算符 `=` 而不是相等運算符 `==`。\n\n**錯誤描述**：在 Python 中，`=` 是賦值運算符，用於變數賦值；而 `==` 是相等運算符，用於比較兩個值是否相等。這段程式碼試圖在 `if` 條件中使用賦值運算符，這是不正確的語法。\n\n**修正建議**：在`if` 條件判斷式中，應使用相等運算符 `==` 來進行比較。\n\n**修正範例**：\n```python\nx = 5\nif x == 5:\n  print('x is 5')\n```\n這樣的修正將正確地比較 `x` 是否等於 `5`，並在條件為真時輸出 `x is 5`。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)\nif i == 4\n  print('Loop ended')",
+        "output": "這段程式碼有兩個語法錯誤：`for i in range(5)` 和 `if i == 4` 這兩行都缺少冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈和 `if` 條件語句結尾都必須用冒號來標示代碼區塊的開始。在這個範例中，`for i in range(5)` 和 `if i == 4` 缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for` 迴圈和 `if` 條件語句的末尾加上冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\nif i == 4:\n  print('Loop ended')\n```\n這樣的修正將讓代碼正確地運行並完成預期的功能。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(a, b)\n  result = a * b\n  return result\n\nprint(multiply_numbers(3, 4))",
+        "output": "這段程式碼有一個語法錯誤：`def multiply_numbers(a, b)` 缺少冒號。\n\n**錯誤描述**：在 Python 中，定義函數時必須在函數參數列表後加上一個冒號。缺少這個冒號會導致語法錯誤。\n\n**修正建議**：在函數 `multiply_numbers` 的定義部分，應在參數列表的閉括號後面加上冒號。\n\n**修正範例**：\n```python\ndef multiply_numbers(a, b):\n  result = a * b\n  return result\n\nprint(multiply_numbers(3, 4))\n```這樣的修正將使函數定義符合 Python 的語法規則，並正確執行計算。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(a, b)\n  product = a * b\n  return product\n\nprint(multiply_numbers(4, 5))",
+        "output": "這段程式碼有一個語法錯誤：`def multiply_numbers(a, b)` 定義函數時缺少冒號。\n\n**錯誤描述**：在 Python 中，函數定義必須在參數列表後面加上冒號（:）。在這個範例中，`def multiply_numbers(a, b)` 缺少這個冒號，導致語法錯誤。\n\n**修正建議**：在 `def multiply_numbers(a, b)` 的末尾加上冒號。\n\n**修正範例**：\n```python\ndef multiply_numbers(a, b):\n  product = a * b\n  return product\n\nprint(multiply_numbers(4, 5))\n```這樣的修正將正確地定義函數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def find_maximum(nums):\n  max_num = -float('inf')\n  for num in nums:\n    if num > max_num\n      max_num = num\n  return max_num\n\nprint(find_maximum(3, 1, 4, 1, 5, 9]))",
+        "output": "這段程式碼有一個語法錯誤：在 `if num > max_num` 之後缺少冒號。\n\n**錯誤描述**：在 Python 中，`if` 條件語句後必須以冒號結束，否則會導致語法錯誤。在這個範例中，`if num > max_num` 應以冒號結束，以形成完整的條件語句。\n\n**修正建議**：在 `if num > max_num` 後添加冒號，使其正確地結構化條件語句。\n\n**修正範例**：\n```python\ndef find_maximum(nums):\n  max_num = -float('inf')\n  for num in nums:\n    if num > max_num:\n      max_num = num\n  return max_num\n\nprint(find_maximum(3, 1, 4, 1, 5, 9]))\n```\n這樣的修正將正確地執行條件判斷，並回傳列表中的最大值。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n    print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 在這行的結尾缺少冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的定義必須以冒號作為結尾。缺少冒號會導致語法錯誤，使 Python 無法正確解析迴圈的範圍和內容。\n\n**修正建議**：在 `for i in range(5)` 的結尾加上冒號，這樣才能正確定義迴圈的範圍。\n\n**修正範例**：\n```python\nfor i in range(5):\n    print(i)\n```這樣的修正將正確地執行迴圈，並輸出從0到4的數字。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply(a, b):\n  return a * b\n\nresult = multiply(4,)\nprint(result)",
+        "output": "這段程式碼有一個語法錯誤：`multiply(4,)` 在呼叫 `multiply` 函數時缺少第二個參數。\n\n**錯誤描述**：在 Python 中，函數呼叫時如果定義了多個參數，必須傳入相同數量的實際引數。在這個範例中，`multiply(4,)` 只傳入了一個參數，導致語法錯誤。\n\n**修正建議**：在呼叫 `multiply` 函數時，應該新增第二個參數以符合函數定義。\n\n**修正範例**：\n```python\nresult = multiply(4, 5)\nprint(result)\n```\n這樣寫將確保函數正確接收所需的參數並正確運行，輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(0, 10)\n    print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(0, 10)` 行缺少結尾的冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的語法結構需要在條件語句結尾處加上冒號。在這個範例中，`for i in range(0, 10)` 缺少結尾的冒號，會導致語法錯誤。\n\n**修正建議**：在 `for` 迴圈條件語句的結尾處加上冒號。\n\n**修正範例**：\n```python\nfor i in range(0, 10):\n    print(i)\n```\n這樣的修正將使迴圈的語法正確，能夠正常執行，並輸出從 `0` 到 `9` 的數字。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def calculate_area(radius):\n  area = 3.14 * radius ** 2\n  return area\n\nif __name__ == '__main__':\n  print('圓的面積是:', calculate_area(5)",
+        "output": "這段程式碼有一個語法錯誤：`print('圓的面積是:', calculate_area(5)` 缺少閉合括號。\n\n**錯誤描述**：在 Python 中，括號必須成對出現。在這個範例中，`print('圓的面積是:', calculate_area(5)` 缺少右側閉合括號，導致語法錯誤。\n\n**修正建議**：應在 `calculate_area(5)` 後加上一個閉合括號，這樣可以確保 `print` 函數正常運行。\n\n**修正範例**：\n```python\nif __name__ == '__main__':\n  print('圓的面積是:', calculate_area(5))\n```\n這樣的修正將正確地顯示圓的面積。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)\n if i == 3:\n  break",
+        "output": "這段程式碼有兩個語法錯誤：第一，`for i in range(5)` 這行缺少冒號。第二，`if i == 3:` 和 `break` 應該與 `print(i)` 對齊。\n\n**錯誤描述**：在 Python 中，迴圈的語法必須以冒號結尾，同時內嵌的程式碼應該有正確的縮排。在這個範例中，`for i in range(5)` 缺少冒號，而且 `if i == 3:` 和 `break` 的縮排不正確。\n\n**修正建議**：在 `for i in range(5)` 行末加上冒號，同時將 `if` 和 `break` 縮排對齊 `print`。\n\n**修正範例**：\n```python\nfor i in range(5):\n    print(i)\n    if i == 3:\n        break\n```這樣的修正將正確地執行迴圈並在條件符合時中斷。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(a, b):\n  product = a * b\n  return product\n\nresult = multiply_numbers3, 4]\nprint(result)",
+        "output": "這段程式碼有一個語法錯誤：`multiply_numbers3, 4]` 在呼叫 `multiply_numbers` 函數時使用了方括號而非圓括號。\n\n**錯誤描述**：在 Python 中，函數的呼叫需要使用圓括號而不是方括號。方括號一般用於索引列表或字典，在這個範例中，`multiply_numbers3, 4]` 應改為 `multiply_numbers(3, 4)`。\n\n**修正建議**：在呼叫 `multiply_numbers` 函數時，應使用圓括號來包含參數。\n\n**修正範例**：\n```python\nresult = multiply_numbers(3, 4)\nprint(result)\n```\n這樣的修正將正確地呼叫函數並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def concatenate_strings(str1, str2):\n  result = str1 + str2\n  return result\n\nprint(concatenate_strings('Hello' ' World'))",
+        "output": "這段程式碼有一個語法錯誤：`print(concatenate_strings('Hello' ' World'))` 在呼叫 `concatenate_strings` 函數時缺少參數之間的逗號。\n\n**錯誤描述**：在 Python 中，當給函數傳遞多個參數時，每個參數之間必須用逗號分隔。在這個範例中，`concatenate_strings('Hello' ' World')` 中缺少逗號，因此會導致語法錯誤。\n\n**修正建議**：在呼叫 `concatenate_strings` 函數時，應在 `'Hello'` 和 `' World'` 之間加上逗號。\n\n**修正範例**：\n```python\nprint(concatenate_strings('Hello', ' World'))\n```這樣的修正將正確地傳遞兩個字串參數給函數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "if x > 10:\nprint('x is greater than 10')",
+        "output": "這段程式碼有一個語法錯誤：`print('x is greater than 10')` 沒有正確縮排到 `if` 條件語句的內部。\n\n**錯誤描述**：在 Python 中，語句塊必須按正確的縮排來表示層次結構。這裡 `print('x is greater than 10')` 應當縮排到 `if x > 10:` 條件語句的內部，不然會引發縮排錯誤。\n\n**修正建議**：應該在 `print('x is greater than 10')` 前面加上適當的縮排（通常為四個空格）。\n\n**修正範例**：\n```python\nif x > 10:\n    print('x is greater than 10')\n```\n這樣的修正將確保 `print` 語句是條件語句的一部分，並正確執行。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def divide_numbers(a, b):\n  result = a / b\n  return result\n\nprint(divide_numbers(10, 0))",
+        "output": "這段程式碼有一個邏輯錯誤：`print(divide_numbers(10, 0))` 會導致分母為零的情況，在 Python 中這會引發 `ZeroDivisionError`。\n\n**錯誤描述**：在數學上，不能用零作為除數，因為這樣會導致無法定義的結果。在 Python 中，嘗試進行除以零的操作會拋出 `ZeroDivisionError` 錯誤。\n\n**修正建議**：應在函數 `divide_numbers` 中加入錯誤檢查機制，避免除數為零的情況。\n\n**修正範例**：\n```python\ndef divide_numbers(a, b):\n  if b == 0:\n    return 'Error: Division by zero is not allowed.'\n  result = a / b\n  return result\n\nprint(divide_numbers(10, 0))\n```\n這樣的修正將檢查除數是否為零，並返回適當的錯誤訊息，而非拋出異常。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print('Number:', i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 缺少結尾的冒號，這會導致語法錯誤。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的語法要求在迴圈條件之後必須有一個冒號。在這個範例中，`for i in range(5)` 缺少了冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 的末尾添加冒號，以符合 Python 語法。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print('Number:', i)\n```\n這樣的修正將正確地執行 `for` 迴圈並輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greet(name):\n  message = 'Hello, ' + name\n  return message\n\ngreet('Alice)",
+        "output": "這段程式碼有一個語法錯誤：`greet('Alice)` 在呼叫 `greet` 函數時，字符串未正確閉合。\n\n**錯誤描述**：在 Python 中，字符串必須有配對的引號來定界。在這個範例中，`greet('Alice)` 中的 `Alice` 缺少結束引號，因此會導致語法錯誤。\n\n**修正建議**：在字符串的開始和結束處都要使用匹配的引號。\n\n**修正範例**：\n```python\ngreet('Alice')\n```這樣的修正將正確地閉合字符串，並使函數調用成功。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply(a, b):\n  result = a * b\n  return result\n\nprint(multiply4, 3])",
+        "output": "這段程式碼有一個語法錯誤：`print(multiply4, 3])` 在呼叫 `multiply` 函數時使用了方括號而非小括號。\n\n**錯誤描述**：在 Python 中，函數的呼叫應該使用小括號，而非方括號。方括號通常用於列表、字典等的索引操作。在這個範例中，`multiply4, 3]` 應改為 `multiply(4, 3)`，否則會引發語法錯誤。\n\n**修正建議**：將 `multiply4, 3]` 改為 `multiply(4, 3)`，以正確地呼叫函數。\n\n**修正範例**：\n```python\nprint(multiply(4, 3))\n```\n這樣的修正將正確地呼叫函數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def is_even(num):\n  if num % 2 == 0\n    return True\n  else:\n    return False",
+        "output": "這段程式碼有一個語法錯誤：`if num % 2 == 0` 這行缺少冒號。\n\n**錯誤描述**：在 Python 中，條件語句（如 if 語句）後面必須加上冒號來標示條件的結束。在這個範例中，`if num % 2 == 0` 後面缺少冒號，這會導致語法錯誤。\n\n**修正建議**：在 `if num % 2 == 0` 的末尾加上冒號。這樣可以正確地結束條件，並進入條件內的邏輯區塊。\n\n**修正範例**：\n```python\ndef is_even(num):\n  if num % 2 == 0:\n    return True\n  else:\n    return False\n```這樣的修正將正確地判斷數字是否為偶數。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "if True:\nprint('Hello, World!')",
+        "output": "這段程式碼有一個語法錯誤：在條件語句 `if True:` 下的執行程式碼 `print('Hello, World!')` 沒有適當地縮排。\n\n**錯誤描述**：在 Python 中，條件語句，循環語句和函數定義的主體部分需要進行縮排。正確的縮排有助於語法分析並提高程式碼的可讀性。在此範例中，由於 `print` 語句未正確縮排，會導致縮排錯誤。\n\n**修正建議**：在 `if True:` 條件下的 `print` 語句應進行適當的縮排，以顯示它是該條件判斷的內部內容。\n\n**修正範例**：\n```python\nif True:\n    print('Hello, World!')\n```\n這樣的修正會適當地縮排條件語句的主體，使其符合 Python 語法。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greet(name)\n  return 'Hello ' + name\n\nprint(greet('Alice'))",
+        "output": "這段程式碼有兩個語法錯誤：一是在定義 `greet` 函數時缺少冒號，二是在 `return` 語句中應使用雙引號或單引號一致。\n\n**錯誤描述**：\n1. 在 Python 中，定義函數時，函數名稱後應加冒號 `:`。此範例中 `def greet(name)` 缺少冒號，因此會導致語法錯誤。\n2. 在 `return` 語句中，字串拼接應保持引號一致，此範例中使用不一致的引號會導致混淆。\n\n**修正建議**：\n1. 在函數定義的 `def greet(name)` 後面加上冒號。\n2. 保持 `return` 語句中的引號一致。\n\n**修正範例**：\n```python\ndef greet(name):\n  return \"Hello \" + name\n\nprint(greet('Alice'))\n```\n這樣的修正將使程式碼正確執行，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 缺少冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的語法規則要求迴圈條件之後必須加上冒號以標示後續區塊是迴圈的內容。在這個範例中，`for i in range(5)` 缺少了冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for` 迴圈的迴圈條件後面加上冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```這樣的修正將正確執行迴圈，使其輸出 `0` 到 `4`。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def calculate_area(radius):\n  area = 3.14 * radius ** 2\n  return area\n\nprint('The area is:' + calculate_area(5))",
+        "output": "這段程式碼有一個語法錯誤：`print('The area is:' + calculate_area(5))` 中，試圖將一個字串與一個數值相加。\n\n**錯誤描述**：在 Python 中，不能直接將字串與數值相加，這會導致類型錯誤。在這個範例中，`calculate_area(5)` 返回一個數值，而不能直接與字串進行相加操作。\n\n**修正建議**：在進行字串和數值的連接時，應先將數值轉換為字串。例如，可以使用 `str()` 函數來進行轉換。\n\n**修正範例**：\n```python\nprint('The area is:' + str(calculate_area(5)))\n```\n這樣的修正將數值轉換成字串，從而正確地拼接並輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greeting(name)\n  print('Hello, ' + name)\n\ngreeting('Alice')",
+        "output": "這段程式碼有以下語法錯誤：`def greeting(name)` 在函數定義時缺少冒號。\n\n**錯誤描述**：在 Python 中，函數定義必須在參數列表後加上一個冒號，以指示該函數的主體開始。在這個範例中，`def greeting(name)` 缺少結尾的冒號，會導致語法錯誤。\n\n**修正建議**：在函數定義的參數列表後加上冒號。\n\n**修正範例**：\n```python\ndef greeting(name):\n  print('Hello, ' + name)\n\ngreeting('Alice')\n```\n這樣的修正將正確地定義函數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n    print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 這行缺少結束語句的冒號。\n\n**錯誤描述**：在 Python 中，for 迴圈的結束語句需要使用冒號 (`:`) 來標示。在這個範例中，`for i in range(5)` 缺少了冒號，因此會導致語法錯誤且無法正確執行。\n\n**修正建議**：在 `for i in range(5)` 行的結尾加上一個冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n    print(i)\n```\n這樣的修正將正確地標示出迴圈的開始，並正確執行每次迴圈中的 `print` 語句。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greet(name)\n  print('Hello, ' + name)\n\ngreet('Alice')",
+        "output": "這段程式碼有一個語法錯誤：`def greet(name)` 的定義缺少冒號。\n\n**錯誤描述**：在 Python 中，函數定義的結尾必須使用冒號來表示即將開始函數的主體。在這個範例中，`def greet(name)` 缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：應在 `def greet(name)` 的結尾加上冒號。\n\n**修正範例**：\n```python\ndef greet(name):\n  print('Hello, ' + name)\n\ngreet('Alice')\n```這樣的修正將正確地定義函數，並正確執行。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(a, b):\n  product = a * b\n  return product\n\nresult = multiply_numbers(3, 4)\nresult = result + 2 print(result)",
+        "output": "這段程式碼有兩個語法錯誤：一個是 `result + 2 print(result)`，緊接著的兩個語句沒有正確分開；另一個是缺少必要的縮排。\n\n**錯誤描述**：在 Python 中，每一行程式碼都應單獨成行，並且適當地使用縮排來提高可讀性。在這個例子中，`result + 2 print(result)` 缺少分號或換行，同時語法錯誤。這會導致語法錯誤。\n\n**修正建議**：應該將 `result + 2` 和 `print(result)` 分開成兩行。\n\n**修正範例**：\n```python\nresult = multiply_numbers(3, 4)\nresult = result + 2\nprint(result)\n```\n這樣的修正將會使程式碼在計算結果後正確地輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def calculate_area(radius):\n  area = 3.14 * radius ** 2\n  return area\n\nprint(calculate_area(7)",
+        "output": "這段程式碼有一個語法錯誤：`print(calculate_area(7)` 缺少右括號。\n\n**錯誤描述**：在 Python 中，函數的呼叫必須包含完整的括號對。在這個範例中，`print(calculate_area(7)` 缺少一個右括號，這會導致語法錯誤。\n\n**修正建議**：在呼叫 `calculate_area` 函數時，應在數字 `7` 後面加上右括號。\n\n**修正範例**：\n```python\nprint(calculate_area(7))\n```\n這樣的修正將確保括號是完整配對的，並正確地呼叫函數以輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5):\nprint(i)\nif i == 3:\nbreak",
+        "output": "這段程式碼有多處語法錯誤：縮排不正確，以及缺少必要的冒號。\n\n**錯誤描述**：在 Python 中，程式碼塊的縮排必須一致，並且在 `for` 迴圈和 `if` 條件語句後面應該有相應的冒號。在這個範例中，`print(i)`、`if i == 3:` 和 `break` 的縮排不一致，會導致語法錯誤。\n\n**修正建議**：應將 `print(i)` 和 `if i == 3:` 以及 `break` 語句的縮排調整一致，同時確保 `if` 後面有冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n    print(i)\n    if i == 3:\n        break\n```\n這樣的修正將確保迴圈和條件語句的縮排正確，並正確執行程式碼。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greet(name):\n  greeting = 'Hello, ' + name\n  return greeting\n\nprint(greet'Alice'])",
+        "output": "這段程式碼有一個語法錯誤：`print(greet'Alice'])` 在呼叫 `greet` 函數時使用了錯誤的括號類型，應該使用小括號而不是中括號。\n\n**錯誤描述**：在 Python 中，函數呼叫應使用小括號 `()`，而不是中括號 `]`。中括號通常用於列表或字典的索引操作。由於這裡是呼叫函數，需要改用小括號。\n\n**修正建議**：在呼叫 `greet` 函數時，應使用小括號包住參數。\n\n**修正範例**：\n```python\nprint(greet('Alice'))\n```\n這樣的修正將正確地呼叫函數並傳遞參數給它，從而正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(10)\n  print(i)\n    print('Done with iteration')",
+        "output": "這段程式碼有幾個語法錯誤：`for i in range(10)` 缺少冒號，並且縮排不正確。\n\n**錯誤描述**：在 Python 中，`for` 迴圈語句後面必須跟隨一個冒號。此外，所有在迴圈內部的程式碼需有一致的縮排。在這個範例中，`print(i)` 和 `print('Done with iteration')` 的縮排不一致，導致語法錯誤。\n\n**修正建議**：在 `for i in range(10)` 後面加上冒號，並且確保 `print(i)` 和 `print('Done with iteration')` 同樣縮排。\n\n**修正範例**：\n```python\nfor i in range(10):\n    print(i)\n    print('Done with iteration')\n```\n這樣的修正將產生正確的縮排，並正確執行迴圈邏輯。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply(a, b):\n  result = a * b\n  return result\n\nprint(multiply(3 4))",
+        "output": "這段程式碼有一個語法錯誤：`print(multiply(3 4))` 在呼叫 `multiply` 函數時缺少參數之間的逗號。\n\n**錯誤描述**：在 Python 中，函數的參數之間必須用逗號分隔。在這個範例中，`multiply(3 4)` 缺少逗號，因此會導致語法錯誤。\n\n**修正建議**：在呼叫 `multiply` 函數時，應在 `3` 和 `4` 之間加上逗號。\n\n**修正範例**：\n```python\nprint(multiply(3, 4))\n```這樣的修正將正確地傳遞參數給函數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "if x > 0:\nprint('x is positive')\n else:\n print('x is non-positive')",
+        "output": "這段程式碼有一個語法錯誤：在條件判斷 `if` 和 `else` 語句中，縮排不正確。\n\n**錯誤描述**：在 Python 中，縮排對於程式結構至關重要。所有屬於同一個區塊的程式碼必須有相同的縮排級別。在這個例子中，`print('x is positive')` 和 `else:` 並沒有正確縮排。\n\n**修正建議**：應確保所有屬於 `if` 和 `else` 區塊的程式碼具有一致的縮排，通常使用四個空格或一個Tab。\n\n**修正範例**：\n```python\nif x > 0:\n    print('x is positive')\nelse:\n    print('x is non-positive')\n```這樣的修正將確保程式碼結構和邏輯正確，避免因縮排錯誤導致的語法問題。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greet(name):\n  return 'Hello, ' + name\n\nprint(greet('Alice', 'Bob'))",
+        "output": "這段程式碼有一個語法錯誤：`print(greet('Alice', 'Bob'))` 中，函數 `greet` 只接受一個參數，但呼叫時卻傳入了兩個參數。\n\n**錯誤描述**：在 Python 中，函數定義中的參數數量必須與函數呼叫中的參數數量匹配。在這個範例中，`greet` 函數只接受一個參數 `name`，但是在呼叫時傳入了兩個參數 `'Alice'` 和 `'Bob'`，因此會導致語法錯誤。\n\n**修正建議**：應該確保在呼叫 `greet` 函數時，只傳入一個參數。\n\n**修正範例**：\n```python\nprint(greet('Alice'))\n```\n這樣的修正將正確地傳遞單一參數給函數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(a, b):\n  product = a * b\n  return product\n\nresult = multiply_numbers(3, 4)\nprint(result)\n\nif result > 10\n  print('Result is greater than 10')",
+        "output": "這段程式碼有一個語法錯誤：`if result > 10` 行的結尾缺少冒號。\n\n**錯誤描述**：在 Python 中，`if` 語句的條件判斷之後必須有冒號。由於這裡缺少冒號，會導致語法錯誤。\n\n**修正建議**：在 `if result > 10` 行的結尾應加上冒號，以正確結束條件語句。\n\n**修正範例**：\n```python\nif result > 10:\n  print('Result is greater than 10')\n```這樣的修正將正確地結束條件語句，並正確執行後續的程式碼。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greet(name)\n  print('Hello, ' + name)\n\ngreet('John')",
+        "output": "這段程式碼有一個語法錯誤：`def greet(name)` 在定義 `greet` 函數時缺少冒號。\n\n**錯誤描述**：在 Python 中，定義函數時需要在參數列表後面加上冒號。這個範例中，`def greet(name)` 缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在定義 `greet` 函數時，應在參數 `name` 的後面加上冒號。\n\n**修正範例**：\n```python\ndef greet(name):\n  print('Hello, ' + name)\n\ngreet('John')\n```這樣的修正將使 `greet` 函數得到正確的定義並能正常運作。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(a, b):\n  result = a * b\n  return result\n\nresult = multiply_numbers(3, 4\nprint(result)",
+        "output": "這段程式碼有兩個語法錯誤：一是在`multiply_numbers`函數調用中缺少右括號，另一是在`print`語句之前缺少一個縮排。\n\n**錯誤描述**：\n1. 在 Python 中，函數調用必須用括號包裹參數列表。在這個範例中，`multiply_numbers(3, 4` 缺少右括號，導致語法錯誤。\n2. 在 `print` 函數前面需要適當的縮排，以確保程式碼的結構和邏輯正確。\n\n**修正建議**：\n1. 在 `multiply_numbers(3, 4` 之後加上右括號以完成函數調用。\n2. 將 `print` 語句適當縮排。\n\n**修正範例**：\n```python\ndef multiply_numbers(a, b):\n  result = a * b\n  return result\n\nresult = multiply_numbers(3, 4)\nprint(result)\n```\n這樣的修正將確保函數正確調用並且 `print` 語句輸出計算結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5):\n  print(i))\n\nif True\n  print('Correct!')",
+        "output": "這段程式碼有兩個語法錯誤：第一個是 `print(i))` 多了一個閉括號，第二個是 `if True` 語句後缺少冒號。\n\n**錯誤描述**：\n1. 在 Python 中，多餘的閉括號會導致語法錯誤。在 `print(i))` 中出現了多餘的閉括號。\n2. `if` 條件語句後應該以冒號結束。在 `if True` 這句缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：\n1. 移除 `print(i))` 中多餘的閉括號。\n2. 在 `if True` 後加上冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n\nif True:\n  print('Correct!')\n```\n這樣的修正將避免語法錯誤，並正確執行程式。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply(a, b:\n  result = a * b\n  return result\n\nprint(multiply(3, 4))",
+        "output": "這段程式碼有一個語法錯誤：`def multiply(a, b:` 這行的括號未閉合，缺少閉合的括號。\n\n**錯誤描述**：在 Python 中，定義函數時，參數列表的括號必須成對出現。在這個範例中，`def multiply(a, b:` 的括號未閉合，因此會導致語法錯誤。\n\n**修正建議**：在函數定義中的參數列表結尾處應補上閉合的括號。\n\n**修正範例**：\n```python\ndef multiply(a, b):\n  result = a * b\n  return result\n\nprint(multiply(3, 4))\n```這樣的修正將確保函數定義的語法正確，並正確執行乘法運算。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 行末尾缺少冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的語法要求在宣告 `range` 或其他可迭代物件後，需要在行的末尾加上冒號，以表示接下來是迴圈的主體內容。在這個範例中，行末尾缺少冒號會導致語法錯誤。\n\n**修正建議**：在 `for` 迴圈宣告的行末尾加上冒號，使得語法正確。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```\n這樣的修正將正確地建立 `for` 迴圈，並迭代印出 0 到 4 的數字。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greet(name):\n  message = 'Hello, ' + name + '!'\n  print(message)\n\ngreet('Alice)",
+        "output": "這段程式碼有一個語法錯誤：`greet('Alice)` 在呼叫 `greet` 函數時，缺少結尾的引號。\n\n**錯誤描述**：在 Python 中，字符串必須使用成對的引號來包裹。在這個範例中，`'Alice` 是不完整的字符串，因為它缺少右側的單引號，這會導致語法錯誤。\n\n**修正建議**：在呼叫 `greet` 函數時，應確保字符串使用完整的引號。\n\n**修正範例**：\n```python\ngreet('Alice')\n```這樣的修正將正確地傳遞字符串參數給函數，並正確地打印出訊息。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n    print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 後面缺少冒號。\n\n**錯誤描述**：在 Python 中，for 迴圈的定義結尾必須以冒號結束，以告知 Python 門控結構的開始。在這個範例中，`for i in range(5)` 缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 的結尾添加冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n    print(i)\n```\n這樣的修正將正確地定義迴圈結構，並使程式能夠正確地執行。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply(a, b):\n  product =  a * b\n  return product\n\nresult = multiply(6,)\nprint(result)",
+        "output": "這段程式碼有一個語法錯誤：`multiply(6,)` 在呼叫 `multiply` 函數時只提供了一個參數，但函數定義需要兩個參數。\n\n**錯誤描述**：在 Python 中，當函數定義需要多個參數時，所有必需的參數都必須提供。這個範例中，`multiply` 函數需要兩個參數，但只有一個參數 `6` 被提供，因此會導致語法錯誤。\n\n**修正建議**：在呼叫 `multiply` 函數時，應提供兩個參數。\n\n**修正範例**：\n```python\nresult = multiply(6, 2)\nprint(result)\n```\n這樣的修正將正確地傳遞所有必要的參數給函數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(10)\n    print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(10)` 缺少冒號（:）。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的語法要求在 `range(10)` 之後需要加上冒號。這個錯誤會導致語法解析失敗，程式無法執行。\n\n**修正建議**：在 `for` 迴圈的結尾加上冒號。\n\n**修正範例**：\n```python\nfor i in range(10):\n    print(i)\n```這樣將正確地執行迴圈並輸出 0 到 9。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 的結尾缺少冒號（:）。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的聲明必須以冒號結尾。在這個範例中，`for i in range(5)` 缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 的結尾加上冒號，以符合 Python 語法規則。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```這樣的修正將正確地進行迴圈，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def divide_numbers(a, b):\n  result = a / b\n  return result\n\nprint(divide_numbers(10 0))",
+        "output": "這段程式碼有兩個語法錯誤：第一，`print(divide_numbers(10 0))` 在呼叫 `divide_numbers` 函數時缺少參數之間的逗號；第二，被除數為零會導致運算錯誤。\n\n**錯誤描述**：\n1. 在 Python 中，函數的參數之間必須用逗號分隔。在這個範例中，`divide_numbers(10 0)` 缺少逗號，因此會導致語法錯誤。\n2. 除以零是一個無效的數學運算，會導致程式運行時拋出 `ZeroDivisionError`。\n\n**修正建議**：\n1. 在呼叫 `divide_numbers` 函數時，應在 `10` 和 `0` 之間加上逗號。\n2. 增加檢查機制以避免除以零的情況。\n\n**修正範例**：\n```python\ndef divide_numbers(a, b):\n  if b == 0:\n    return \"Division by zero is undefined\"\n  result = a / b\n  return result\n\nprint(divide_numbers(10, 0))\n```這樣的修正將確保參數之間有逗號，並且避免了除以零的錯誤。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(a, b):\n  return a * b\n\nresult = multiply_numbers(3, 4)\nprint('The result is:' result)",
+        "output": "這段程式碼有一個語法錯誤：`print('The result is:' result)` 在 `print` 函數中缺少連結文字和變數的符號。\n\n**錯誤描述**：在 Python 中，當需要將文字與變數值一起打印時，需要使用逗號分隔元素，或使用字串格式化。在這個範例中，少了將字串與變數連接的逗號，因此會導致語法錯誤。\n\n**修正建議**：可以在字串和變數 `result` 之間加上逗號，或者使用字串格式化方法。\n\n**修正範例**：\n```python\n# 方法一：使用逗號\nprint('The result is:', result)\n\n# 方法二：使用字串格式化\nprint(f'The result is: {result}')\n```\n這些修正方法將正確地將字串與變數連結起來，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5):\n  if i < 3\n    print(i)",
+        "output": "這段程式碼有一個語法錯誤：在 `if i < 3` 行的結尾缺少冒號。\n\n**錯誤描述**：在 Python 中，條件語句必須在條件後加上冒號以表明接下來的縮排內容是條件為真時要執行的代碼。在這個範例中，`if i < 3` 未加冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `if i < 3` 的末尾加上冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n  if i < 3:\n    print(i)\n```\n這樣的修正將正確地運行條件語句，並正確打印小於 3 的數字。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greet(name)\n  print('Hello, ' + name)\n\ngreet('Alice')",
+        "output": "這段程式碼有一個語法錯誤：`def greet(name)` 沒有在函數定義的結尾加上冒號。\n\n**錯誤描述**：在 Python 中，函數定義必須以冒號結尾。少了這個冒號，Python 將無法解析這個函數定義，從而導致語法錯誤。\n\n**修正建議**：在定義函數 `greet` 時，應在 `name` 之後加上冒號。\n\n**修正範例**：\n```python\ndef greet(name):\n  print('Hello, ' + name)\n\ngreet('Alice')\n```\n這樣的修正將正確地定義函數並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(a, b):\n  result = a * b\n  return result\n\nprint(multiply_numbers4, 5])",
+        "output": "這段程式碼有一個語法錯誤：`print(multiply_numbers4, 5])` 在呼叫 `multiply_numbers` 函數時使用了方括號而非圓括號。\n\n**錯誤描述**：在 Python 中，函數呼叫必須使用圓括號而非方括號。方括號主要用於列表和字典的索引。\n\n**修正建議**：在呼叫 `multiply_numbers` 函數時，應使用圓括號來傳遞參數。\n\n**修正範例**：\n```python\nprint(multiply_numbers(4, 5))\n```\n這樣的修正將正確地傳遞參數給函數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(a, b):\n  result = a * b\n  return result\n\nprint(multiply_numbers(6, 7)",
+        "output": "這段程式碼有一個語法錯誤：`print(multiply_numbers(6, 7)` 在呼叫 `multiply_numbers` 函數時，結尾的括號遺漏了。\n\n**錯誤描述**：在 Python 中，函數呼叫必須有完成的括號配對。在這個範例中，`multiply_numbers(6, 7)` 的右括號缺失，導致語法錯誤。\n\n**修正建議**：應在 `print(multiply_numbers(6, 7)` 的結尾加上一個右括號，使括號配對完整。\n\n**修正範例**：\n```python\nprint(multiply_numbers(6, 7))\n```\n這樣的修正將正確地呼叫函數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n    print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 缺少冒號(`:`)。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的語法要求在條件結束後加上冒號，這樣可以讓 Python 知道後面會跟隨一個程式區塊。在這個範例中，`for i in range(5)` 缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 的末尾加上冒號，使其變成 `for i in range(5):`。\n\n**修正範例**：\n```python\nfor i in range(5):\n    print(i)\n```\n這樣的修正將會讓程式正確地執行，並輸出範圍內的數字。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply(a, b):\nresult = a * b\nreturn result\n\nprint(multiply(3, 4))",
+        "output": "這段程式碼有兩個語法錯誤：縮排和變量名稱。\n\n**錯誤描述**：\n1. 在 Python 中，函數內部的程式碼需要進行縮排，以表示它們屬於函數的一部分。在這個範例中，`result = a * b` 和 `return result` 缺少縮排。\n2. 定義函數時使用的變量名稱 `a` 和 `b`，然而在輸出函數結果時錯誤地使用了 `x` 和 `y`。\n\n**修正建議**：\n1. 在 `result = a * b` 和 `return result` 這兩行程式碼前添加適當的縮排。\n2. 在呼叫 `multiply` 函數時應使用正確的變量名稱 `a` 和 `b`。\n\n**修正範例**：\n```python\ndef multiply(a, b):\n    result = a * b\n    return result\n\nprint(multiply(3, 4))\n```這樣的修正將確保函數內部程式碼具有正確的結構，並且正確地傳遞參數給函數。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 缺少冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的語法應該包含冒號來表示迴圈主體。缺少冒號會導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 之後加上冒號來正確表示迴圈結構。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```\n這樣的修正將讓程式碼正確執行，依序輸出從 0 到 4 的數字。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(10)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(10)` 這行缺少冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的語法需要在條件語句的末尾添加一個冒號。在這個範例中，`for i in range(10)` 後面沒有冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for i in range(10)` 的末尾添加冒號。\n\n**修正範例**：\n```python\nfor i in range(10):\n  print(i)\n```這樣的修正將正確地使用 for 迴圈，並在每次迴圈中輸出變數 `i` 的值。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5):\n  print(i)\n    print('Done')",
+        "output": "這段程式碼有一個語法錯誤：`print('Done')` 的縮排不正確。\n\n**錯誤描述**：在 Python 中，程式碼的縮排非常重要。`print('Done')` 應該與 `for` 迴圈內的其他程式碼具有相同的縮排層級，但現在卻多了一個縮排層級，這會造成語法錯誤。\n\n**修正建議**：將 `print('Done')` 的縮排改成和 `print(i)` 一樣，使它們在同一縮排層級下。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\nprint('Done')\n```\n這樣的修正將確保 `print('Done')` 不會被錯誤地包含在 `for` 迴圈內，並正確地在迴圈結束後執行。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def calculate_area(radius):\narea = 3.14 * radius ** 2\nreturn area\n\nprint(calculate_area(5))",
+        "output": "這段程式碼有一個語法錯誤：在函數 `calculate_area` 的程式碼塊內，縮排不正確。\n\n**錯誤描述**：在 Python 中，程式碼塊必須有正確的縮排，否則會導致語法錯誤。在這個範例中，`area = 3.14 * radius ** 2` 和 `return area` 這兩行程式碼應當包含在函數 `calculate_area` 內，但縮排不正確，因而導致錯誤。\n\n**修正建議**：應將 `area = 3.14 * radius ** 2` 和 `return area` 這兩行程式碼適當縮排，使之成為 `calculate_area` 函數的程式碼塊。\n\n**修正範例**：\n```python\ndef calculate_area(radius):\n    area = 3.14 * radius ** 2\n    return area\n\nprint(calculate_area(5))\n```這樣的修正將正確地定義函數，並讓程式碼能夠正常執行。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greet(name)\n  print('Hello, ' + name + '!')\n\ngreet('Alice')",
+        "output": "這段程式碼有兩個語法錯誤：首先，`def greet(name)` 的定義缺少冒號；其次，`print` 的縮進不正確。\n\n**錯誤描述**：在 Python 中，函數定義的結尾必須加上冒號，而且函數內部的程式碼塊必須縮進對齊。在這個範例中，`def greet(name)` 沒有冒號，以及 `print('Hello, ' + name + '!')` 的縮進也需要調整。\n\n**修正建議**：在 `def greet(name)` 後面加上冒號，並且在 `print('Hello, ' + name + '!')` 前增加合適的縮進。\n\n**修正範例**：\n```python\ndef greet(name):\n    print('Hello, ' + name + '!')\n\ngreet('Alice')\n```這樣的修正將使函數定義及程式碼縮進正確，並能正確執行。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(x, y):\n  result = x * y\n  return result\n\nprint(multiply_numbers(6,))",
+        "output": "這段程式碼有一個語法錯誤：`print(multiply_numbers(6,))` 在呼叫 `multiply_numbers` 函數時，傳入的參數數量不正確。\n\n**錯誤描述**：在 Python 中，函數 calls 必須提供正確數量的參數。`multiply_numbers` 函數定義需要兩個參數 `x` 和 `y`，但在這個範例中只傳入了一個參數 `6`，因此會導致語法錯誤。\n\n**修正建議**：在呼叫 `multiply_numbers` 函數時，應確保傳遞兩個參數。\n\n**修正範例**：\n```python\nprint(multiply_numbers(6, 3))\n```這樣的修正將正確地傳遞兩個參數給函數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def divide_numbers(a, b):\n    return a / b\n\nresult = divide_numbers(10 2)\nprint(result)",
+        "output": "這段程式碼有一個語法錯誤：`divide_numbers(10 2)` 在呼叫 `divide_numbers` 函數時缺少參數之間的逗號。\n\n**錯誤描述**：在 Python 中，函數的參數之間必須用逗號分隔。在這個範例中，`divide_numbers(10 2)` 缺少逗號，因此會導致語法錯誤。\n\n**修正建議**：在呼叫 `divide_numbers` 函數時，應在 `10` 和 `2` 之間加上逗號。\n\n**修正範例**：\n```python\nresult = divide_numbers(10, 2)\nprint(result)\n```\n這樣的修正將正確地傳遞參數給函數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 這一行缺少冒號。\n\n**錯誤描述**：在 Python 中，for 迴圈的語句結尾必須有冒號，這樣才能指示迴圈的開始。缺少冒號會導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 這行的結尾添加冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```\n這樣的修正將正確地構建 for 迴圈，並按預期打印從 0 到 4 的數字。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def divide_numbers(a, b):\n  result = a / b\n  return result\n\nprint(divide_numbers(10 0))",
+        "output": "這段程式碼有兩個語法錯誤：`print(divide_numbers(10 0))` 在呼叫 `divide_numbers` 函數時缺少參數之間的逗號，並且除數為零會導致運行時錯誤。\n\n**錯誤描述**：第一個錯誤是在 Python 中，函數的參數之間必須用逗號分隔。在這個範例中，`divide_numbers(10 0)` 缺少逗號，因此會導致語法錯誤。第二個錯誤是試圖執行 `10 / 0` 會引發 ZeroDivisionError，因為除數不能為零。\n\n**修正建議**：在呼叫 `divide_numbers` 函數時，應在 `10` 和 `0` 之間加上逗號，並在函數內加上對除數為零的檢查。\n\n**修正範例**：\n```python\ndef divide_numbers(a, b):\n  if b == 0:\n    return 'Error: 除數不能為零'\n  result = a / b\n  return result\n\nprint(divide_numbers(10, 2))  # 輸出應為 5.0\nprint(divide_numbers(10, 0))  # 輸出應為 'Error: 除數不能為零'\n```這樣的修正將解決參數分隔問題並避免除數為零的錯誤，提高程式的健壯性。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "if (x > 10):\n print('x is greater than 10')\n else:\n print('x is less or equal to 10')",
+        "output": "這段程式碼有一個語法錯誤：在 `else:` 行之前的縮排不正確，導致語法錯誤。\n\n**錯誤描述**：在 Python 中，控制結構 (如 if-else 語句) 內的縮排必須一致。在這個範例中，`else:` 語句應與對應的 `if` 語句在同一縮排層級上，否則程式碼將無法正確執行。\n\n**修正建議**：調整 `else:` 語句的縮排，使其與對應的 `if` 語句保持相同的縮排層級。確保 `else:` 的內容亦與 `if` 的內容具有一致的縮排。\n\n**修正範例**：\n```python\nif (x > 10):\n  print('x is greater than 10')\nelse:\n  print('x is less or equal to 10')\n```這樣的修正將使控制結構的縮排一致，語法正確，程式碼能夠正確執行。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(10)\n  print(i)\nif i % 2 == 0:\n  print(f'{i} 是偶數')",
+        "output": "這段程式碼有多處語法錯誤：第一，在 `for` 循環語句結尾缺少冒號；第二，`for` 和 `if` 語句下的縮排不正確。\n\n**錯誤描述**：在 Python 中，控制結構（如 `for` 循環和 `if` 條件）後面必須加上冒號，並且其內部的執行語句應有正確的縮排。在這個範例中，`for i in range(10)` 缺少冒號，導致語法錯誤，同時後續的 `print` 語句需要適當縮排以符合 Python 語法。\n\n**修正建議**：在 `for` 循環和 `if` 條件後應加上冒號，並確保所有內部語句的縮排正確。\n\n**修正範例**：\n```python\nfor i in range(10):\n  print(i)\n  if i % 2 == 0:\n    print(f'{i} 是偶數')\n```這樣的修正將確保語法正確，並正確執行循環和條件語句。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "if x > 10:\nprint('x is more than 10')\nelse:\nprint('x is 10 or less')",
+        "output": "這段程式碼有幾個語法錯誤：首先，條件判斷語句的內部分支應該進行縮排，而程式碼中並沒有進行縮排。\n\n**錯誤描述**：在 Python 中，條件判斷語句（如 if 和 else）之後的程式碼塊必須要有縮排。缺少縮排會導致 IndentationError。\n\n**修正建議**：在條件判斷語句的內部分支增加適當的縮排，通常為四個空格或一個tab。\n\n**修正範例**：\n```python\nif x > 10:\n    print('x is more than 10')\nelse:\n    print('x is 10 or less')\n```\n這樣的修正將正確地執行條件判斷語句，並輸出正確的結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(a, b):\nresult = a * b\n  return result\n\nprint(multiply_numbers(4, 3))",
+        "output": "這段程式碼有一個語法錯誤：`result = a * b` 這一行的縮排不正確。\n\n**錯誤描述**：在 Python 中，程式碼塊的縮排必須一致。`result = a * b` 這一行的縮排不符合所在的程式碼塊標準，應該與 `return result` 同一縮排層級。\n\n**修正建議**：修正 `result = a * b` 這一行的縮排，使之與 `return result` 一致。\n\n**修正範例**：\n```python\ndef multiply_numbers(a, b):\n  result = a * b\n  return result\n\nprint(multiply_numbers(4, 3))\n```\n這樣的修正將確保程式碼縮排正確，並正常執行函數。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def calculate_area(radius):\n  area = 3.14 * radius ** 2\n  return area\n\nprint(calculate_area5])",
+        "output": "這段程式碼有一個語法錯誤：`print(calculate_area5])` 的用法錯誤，函數呼叫應使用小括號而非中括號。\n\n**錯誤描述**：在 Python 中，函數呼叫應該使用小括號來傳遞參數。但是在這個範例中，`calculate_area5]` 使用了中括號，這將導致語法錯誤，因為中括號在 Python 中通常用來存取列表或字典的元素。\n\n**修正建議**：應該將中括號改成小括號來正確呼叫 `calculate_area` 函數。\n\n**修正範例**：\n```python\nprint(calculate_area(5))\n```\n這樣的修正將正確地傳遞參數給函數，並正確計算輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "if x = 10:\n  print('x is 10')",
+        "output": "這段程式碼有一個語法錯誤：`if x = 10:` 使用了賦值運算符 `=` 而非比較運算符 `==`。\n\n**錯誤描述**：在 Python 中，`=` 用於賦值，而 `==` 則用於比較。在 `if` 條件中應該使用 `==` 來檢查值是否相等。在這個範例中，使用 `=` 會導致語法錯誤。\n\n**修正建議**：在 `if` 條件中，應該使用 `==` 來比較 `x` 是否等於 `10`。\n\n**修正範例**：\n```python\nif x == 10:\n  print('x is 10')\n```\n這樣的修正將成功地比較 `x` 和 `10` 的值，並在條件成立時正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "if 5 > 3\n   print('5 is greater than 3')",
+        "output": "這段程式碼有一個語法錯誤：`if 5 > 3` 條件語句後面缺少冒號。\n\n**錯誤描述**：在 Python 中，條件語句需在條件判斷之後加上冒號來表示這是一個條件區塊的開始。如果沒有這個冒號，Python 會無法解析這段程式碼，從而導致語法錯誤。\n\n**修正建議**：在條件語句 `if 5 > 3` 的末尾加上冒號。\n\n**修正範例**：\n```python\nif 5 > 3:\n   print('5 is greater than 3')\n```這樣的修正將正確地讓 Python 處理條件判斷，並輸出正確結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 缺少了冒號 `:`。\n\n**錯誤描述**：在 Python 中，for 迴圈的語法需要在條件之後加上冒號，否則會導致語法錯誤。在這個範例中，`for i in range(5)` 缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 後面加入冒號 `:`。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```\n這樣的修正將使迴圈正常執行，並輸出正確結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def divide_numbers(a, b):\n    result = a / b\n    return result\n\nprint(divide_numbers(10, 0))",
+        "output": "這段程式碼有一個在使用上邏輯錯誤而非純語法錯誤：`print(divide_numbers(10, 0))` 在呼叫 `divide_numbers` 函數時，在分母位置傳遞了 `0` 會導致 `ZeroDivisionError` 異常。\n\n**錯誤描述**：在 Python 中，除以零是不允許的，會引發 `ZeroDivisionError` 異常。這樣的錯誤會使程式中斷執行並提示錯誤訊息。\n\n**修正建議**：應在除法運算前增加檢查分母是否為零的邏輯，並在發現分母為零時進行適當處理，防止程序崩潰。\n\n**修正範例**：\n```python\ndef divide_numbers(a, b):\n    if b == 0:\n        return '錯誤: 分母不能為零'\n    result = a / b\n    return result\n\nprint(divide_numbers(10, 0))\n```\n這樣的修正將避免除以零的情況，並提供一個清楚的錯誤訊息。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "if x = 10:\n  print('x is 10')",
+        "output": "這段程式碼有一個語法錯誤：`if x = 10:` 中的賦值運算符 `=` 被錯誤地用於條件判斷。\n\n**錯誤描述**：在 Python 中，用於條件判斷的比較運算符應該是 `==`，而不是賦值運算符 `=`。賦值運算符 `=` 用於將值賦給變量，不適用於判斷條件。\n\n**修正建議**：在條件判斷中，應使用比較運算符 `==` 來判斷變量的值。\n\n**修正範例**：\n```python\nif x == 10:\n  print('x is 10')\n```這樣的修正將正確地判斷變量 `x` 是否等於 10，並且不會產生語法錯誤。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n    print(i)\nprint(Done)",
+        "output": "這段程式碼有兩個語法錯誤：第一，for迴圈結尾缺少冒號；第二，print函數內的字串缺少引用號。\n\n**錯誤描述**：在 Python 中，for迴圈的語法要求在條件語句結尾加冒號。而print函數若要輸出字串，字串必須用引號包裹。這裡的for迴圈`for i in range(5)`缺少冒號，而`print(Done)`中的Done應該使用引號。\n\n**修正建議**：在for迴圈結尾加上冒號，並且在print函數內的字串加上引號。\n\n**修正範例**：\n```python\nfor i in range(5):\n    print(i)\nprint('Done')\n```這樣的修正將讓程式正確地執行for迴圈並輸出正確的結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n    print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 缺少冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的結尾必須用冒號來表示迴圈的開始。缺少這個冒號會導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 的結尾加上冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n    print(i)\n```\n這樣的修正將正確地建立一個 `for` 迴圈並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(10)\n  print(i)\nif i == 5\n  print('Reached 5!')",
+        "output": "這段程式碼有兩個語法錯誤：`for` 和 `if` 語句後面缺少冒號。\n\n**錯誤描述**：在 Python 中，`for` 和 `if` 語句後面都必須有冒號來表示代碼塊的開始。並且，代碼塊內容需要縮排。\n\n**修正建議**：在 `for` 和 `if` 語句的末尾加上冒號，並確保對應代碼塊有正確的縮排。\n\n**修正範例**：\n```python\nfor i in range(10):\n  print(i)\n  if i == 5:\n    print('Reached 5!')\n```\n這樣的修正將正確地結構化程式碼，使其能夠正常執行並輸出相應結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(a, b):\n  result = a * b\n  return result\n\nresult = multiply_numbers(3 4)\nprint(result)",
+        "output": "這段程式碼有一個語法錯誤：`multiply_numbers(3 4)` 在呼叫 `multiply_numbers` 函數時缺少參數之間的逗號。\n\n**錯誤描述**：在 Python 中，函數的參數之間必須用逗號分隔。在這個範例中，`multiply_numbers(3 4)` 缺少逗號，因此會導致語法錯誤。\n\n**修正建議**：在呼叫 `multiply_numbers` 函數時，應在 `3` 和 `4` 之間加上逗號。\n\n**修正範例**：\n```python\nresult = multiply_numbers(3, 4)\nprint(result)\n```\n這樣的修正將正確地傳遞參數給函數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n    print(i)",
+        "output": "這段程式碼有一個語法錯誤：在 `for` 迴圈的宣告行後缺少冒號。\n\n**錯誤描述**：在 Python 中，許多語句（如 `for` 迴圈、`if` 條件判斷等）在結尾需要冒號來指示後續代碼塊的開始。在這個範例中，`for i in range(5)` 缺少冒號 `:` ，因此會導致語法錯誤。\n\n**修正建議**：在 `for` 迴圈的宣告行後補充上冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n    print(i)\n```\n這樣的修正將正確地跑 `for` 迴圈，並輸出 `0` 到 `4` 的數字。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 在結尾缺少冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的語法需要在條件結束後加上冒號，以表示塊開始。在這個範例中，`for i in range(5)` 缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 的結尾加上冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```這樣的修正將正確地表示迴圈的開始，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def calculate_area(radius):\n  pi = 3.14\n  area = pi * radius^2\n  return area\n\nprint(calculate_area(5))",
+        "output": "這段程式碼有一個語法錯誤：`area = pi * radius^2` 中使用了錯誤的運算符 `^`。\n\n**錯誤描述**：在 Python 中，`^` 運算符用於位元運算，並非指數運算。在這裡應使用 `**` 運算符來表示二次方。\n\n**修正建議**：將 `^` 替換為 `**`，以進行正確的指數運算。\n\n**修正範例**：\n```python\ndef calculate_area(radius):\n  pi = 3.14\n  area = pi * radius ** 2\n  return area\n\nprint(calculate_area(5))\n```\n這樣的修正將正確計算半徑的平方，並返回正確的面積。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "if score = 10:\n    print('Perfect score!')",
+        "output": "這段程式碼有一個語法錯誤：`if score = 10:` 使用了賦值運算符 `=` 來進行比較。\n\n**錯誤描述**：在 Python 中，條件判斷應該使用等於運算符 `==` 來進行比較，而不是賦值運算符 `=`。使用賦值運算符會導致語法錯誤，因為這並不是合法的條件語句。\n\n**修正建議**：將 `if score = 10:` 中的 `=` 替換為 `==`。\n\n**修正範例**：\n```python\nif score == 10:\n    print('Perfect score!')\n```\n這樣的修正將正確地進行條件判斷，並在條件為真時正確顯示訊息。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(a, b):\n  result = a * b\n  return result\n\nprint(multiply_numbers(4,))",
+        "output": "這段程式碼有一個語法錯誤：`print(multiply_numbers(4,))` 在呼叫 `multiply_numbers` 函數時缺少第二個參數。\n\n**錯誤描述**：在 Python 中，函數呼叫時需要提供完整的參數。在這個範例中，`multiply_numbers` 函數需要兩個參數，但只提供了一個參數 `4`，會導致運行時錯誤。\n\n**修正建議**：在呼叫 `multiply_numbers` 函數時，應添加第二個必需的參數。\n\n**修正範例**：\n```python\nprint(multiply_numbers(4, 2))\n```這樣的修正將提供完整的參數給函數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 缺少冒號。\n\n**錯誤描述**：在 Python 中，迴圈語句的結尾需要一個冒號以表示區塊的開始。在這個範例中，`for i in range(5)` 缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 的結尾處加上一個冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```這樣的修正將正確地定義迴圈區塊，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：在 `for` 迴圈的行末缺少冒號 `:`。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的語法需要在條件表達式的結束處加上冒號 `:`。在這個範例中，`for i in range(5)` 缺少了冒號，導致語法錯誤。\n\n**修正建議**：在 `for` 迴圈的條件部分結束時應加上冒號 `:`。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```\n這樣的修正將正確地敘述迴圈結構，並能正確地執行迴圈。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "if x > 10\n    print('x is greater than 10')",
+        "output": "這段程式碼有一個語法錯誤：`if x > 10` 後面缺少冒號。\n\n**錯誤描述**：在 Python 中，條件語句的語法必須在條件後面加上冒號。例如，在 `if`, `elif`, 和 `else` 等語句中均需要這樣的語法結構。在這個範例中，`if x > 10` 沒有加上冒號，導致語法錯誤。\n\n**修正建議**：在 `if x > 10` 的尾部加上冒號，表示這是一個條件判斷語句。\n\n**修正範例**：\n```python\nif x > 10:\n    print('x is greater than 10')\n```這樣的修正將正確地執行條件判斷，並在符合條件時打印結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greet(name)\n  print('Hello, ' + name)\n\ngreet('Alice')",
+        "output": "這段程式碼有一個語法錯誤：`def greet(name)` 缺少結束括號的冒號。\n\n**錯誤描述**：在 Python 中，定義函數時需要在參數後面加上冒號來表示函數體的起始。`def greet(name)` 缺少這個冒號，會導致語法錯誤。\n\n**修正建議**：在定義 `greet` 函數時，應在 `name` 之後加上冒號。\n\n**修正範例**：\n```python\ndef greet(name):\n  print('Hello, ' + name)\n\ngreet('Alice')\n```\n這樣的修正將正確地定義函數，使其正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(a, b):\n  result = a * b\n  return result\n\nprint(multiply_numbers(4,))",
+        "output": "這段程式碼有一個語法錯誤：`print(multiply_numbers(4,))` 在呼叫 `multiply_numbers` 函數時，缺少第二個參數。\n\n**錯誤描述**：在 Python 中，函數的所有必需參數都必須提供值。在這個範例中，`multiply_numbers` 函數需要兩個必需參數 (`a` 和 `b`)，但在呼叫 `multiply_numbers(4,)` 時僅提供了一個參數，這會導致語法錯誤。\n\n**修正建議**：在呼叫 `multiply_numbers` 函數時，應提供兩個參數。\n\n**修正範例**：\n```python\nprint(multiply_numbers(4, 2))\n```這樣的修正將正確地傳遞參數給函數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 缺少結束的冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的語法要求迴圈頭部以冒號結束。而在這個範例中，`for i in range(5)` 缺少結束的冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 的結尾加上冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```\n這樣的修正將正確地建立迴圈，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "if (x > 10):\nprint('x is greater than 10')\nelse:\nprint('x is 10 or less')",
+        "output": "這段程式碼有兩個語法錯誤：第一是在 `if` 和 `else` 子句中的縮排；第二是在 `if` 條件中的額外括號。\n\n**錯誤描述1**：在 Python 中，控制結構（如 `if`、`else`）內的程式碼必須縮排，以顯示其隸屬關係。在這個範例中，`print('x is greater than 10')` 和 `print('x is 10 or less')` 並沒有縮排。\n\n**錯誤描述2**：在 Python 中，`if` 條件不需要括號。在這個範例中，`if (x > 10)` 的括號是多餘的。\n\n**修正建議1**：調整 `print` 語句的縮排，使它們位於控制結構之內。\n\n**修正建議2**：移除 `if` 條件中的多餘括號。\n\n**修正範例**：\n```python\nif x > 10:\n    print('x is greater than 10')\nelse:\n    print('x is 10 or less')\n```\n這樣的修正將使程式碼符合 Python 語法規則，並正確執行控制流。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greeting(name):\n  message = 'Hello, ' + name\n  return message\n\nprint(greet('John'))",
+        "output": "這段程式碼有一個語法錯誤：`print(greet('John'))` 裡呼叫的 `greet` 函數名稱錯誤，應為 `greeting`。\n\n**錯誤描述**：在這段程式碼中，定義了 `greeting` 函數，但在 `print` 語句中卻嘗試呼叫一個不存在的 `greet` 函數。這會導致程式執行時出現名稱錯誤 (NameError)。\n\n**修正建議**：將 `print` 語句中的 `greet` 修改為正確的 `greeting` 函數名稱。\n\n**修正範例**：\n```python\nprint(greeting('John'))\n```這樣的修正將正確地呼叫 `greeting` 函數並將輸出正確的訊息。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(10)\n    print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(10)` 行結束後缺少冒號 (:)。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的語法要求在條件部分結束後加上冒號。如果缺少冒號，Python 會無法辨識這段迴圈語句，導致語法錯誤。\n\n**修正建議**：在 `for` 迴圈的條件部分結束後，應加上冒號以符合語法規範。\n\n**修正範例**：\n```python\nfor i in range(10):\n    print(i)\n```\n這樣的修正將使 `for` 迴圈正確工作，並正確地打印從 0 到 9 的數字。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(x, y):\nresult = x * y\n  return result\n\nprint(multiply_numbers(4, 5))",
+        "output": "這段程式碼有一個語法錯誤：`result = x * y` 這行的縮排錯誤。\n\n**錯誤描述**：在 Python 中，函數體內的所有語句都必須有一致的縮排。`result = x * y` 這行沒有正確縮排，因此會導致語法錯誤。\n\n**修正建議**：將 `result = x * y` 這行正確縮排到與 `return result` 一致的級別。\n\n**修正範例**：\n```python\ndef multiply_numbers(x, y):\n  result = x * y\n  return result\n\nprint(multiply_numbers(4, 5))\n```這樣的修正將確保函數內部的縮排一致，避免語法錯誤。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 行末缺少冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的語法要求在迴圈條件後加上冒號，以表示程式塊從下一行開始。`for i in range(5)` 缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 行末加上冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```\n這樣的修正將正確地標記迴圈開始，並正確執行內部的程式碼。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n    print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 缺少結尾的冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的定義行必須以冒號結尾。在這個範例中，`for i in range(5)` 缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for` 迴圈的定義行結尾加上冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n    print(i)\n```\n這樣的修正將使 `for` 迴圈正確運行並輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def calculate_area(radius):\n  area = 3.14 * radius ** 2\n  return area\n\nresult = calculate_area(5)\nprint('The area is: ' result)",
+        "output": "這段程式碼有一個語法錯誤：`print('The area is: ' result)` 中缺少逗號來分隔字符串和變量。\n\n**錯誤描述**：在 Python 中，必須使用逗號來分隔 print 函數中的字符串和變量。在這個範例中，`'The area is: ' result` 應該用逗號分隔，以正確傳遞多個引數給 print 函數。\n\n**修正建議**：應在 `print` 函數中的字符串和變量之間加上逗號。\n\n**修正範例**：\n```python\nprint('The area is: ', result)\n```這樣的修正將正確地分隔字符串和變量，並輸出正確的結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greet(name):\n    message = 'Hello, ' + name + '!'\n    print(messge)\n\ngreet('Alice')",
+        "output": "這段程式碼有一個語法錯誤：`print(messge)` 中變數 `messge` 拼寫錯誤，應該是 `message`。\n\n**錯誤描述**：在 Python 中，變數名稱是區分大小寫且必須一致的。在這個範例中，`print(messge)` 中的 `messge` 是一個不存在的變數，因此會導致名稱錯誤。\n\n**修正建議**：將 `print(messge)` 修正為 `print(message)` 以確保變數名稱正確使用。\n\n**修正範例**：\n```python\ndef greet(name):\n    message = 'Hello, ' + name + '!'\n    print(message)\n\ngreet('Alice')\n```這樣的修正將避免名稱錯誤並正確輸出訊息。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(x, y):\n  product = x * y\n  return product\n\nprint(multiply_numbers(4, 7)",
+        "output": "這段程式碼有一個語法錯誤：`print(multiply_numbers(4, 7)` 在呼叫 `print` 函數時缺少右括號。\n\n**錯誤描述**：在 Python 中，每個開括號 `(` 都必須有一個對應的閉括號 `)`。在這個範例中，`print(multiply_numbers(4, 7)` 缺少閉括號，因此會導致語法錯誤。\n\n**修正建議**：在呼叫 `print` 函數時，應在 `multiply_numbers(4, 7)` 之後加上右括號。\n\n**修正範例**：\n```python\nprint(multiply_numbers(4, 7))\n```這樣的修正將正確地關閉函數呼叫，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n    print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 缺少冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的定義必須以冒號結尾。 缺少冒號會導致語法錯誤，使程式無法正確執行。\n\n**修正建議**：在 `for i in range(5)` 結尾加上冒號，以正確定義迴圈。\n\n**修正範例**：\n```python\nfor i in range(5):\n    print(i)\n```這樣的修正將正確定義迴圈並正確執行 print 函數。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "items = 'apple', 'banana', 'cherry']\nfor item in items\n  print(item)",
+        "output": "這段程式碼有一個語法錯誤：`for item in items` 後缺少冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的語法後必須跟著冒號。在這個範例中，`for item in items` 缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for item in items` 語句後應加上冒號，使其完整。\n\n**修正範例**：\n```python\nitems = 'apple', 'banana', 'cherry']\nfor item in items:\n  print(item)\n```這樣的修正將使迴圈正確地迭代列表並打印每個項目。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(x, y):\n  result = x * y\n  return result\n\nprint(multiply_numbers(4, 5])",
+        "output": "這段程式碼有一個語法錯誤：`print(multiply_numbers(4, 5])` 中的右括號應在呼叫 `multiply_numbers` 函數時補上。\n\n**錯誤描述**：在 Python 中，每個函數呼叫都需要包含匹配的括號。在這個範例中，`multiply_numbers(4, 5])` 缺少右括號，因此會導致語法錯誤。\n\n**修正建議**：在呼叫 `multiply_numbers` 函數時，應在 `5` 後面加一個右括號。\n\n**修正範例**：\n```python\nprint(multiply_numbers(4, 5))\n```這樣的修正將正確地傳遞參數給函數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greet(name):\n  message = 'Hello, ' + name + '!' \n  print(message)\n\ngreet('John', 'Doe')",
+        "output": "這段程式碼有一個語法錯誤：`greet('John', 'Doe')` 在呼叫 `greet` 函數時，傳入了兩個參數，但該函數只接受一個參數。\n\n**錯誤描述**：在 Python 中，函數的參數數量必須與定義時的參數數量一致。在這個範例中，`greet` 函數定義時只接受一個參數，但在呼叫時傳入了兩個參數，這會導致語法錯誤。\n\n**修正建議**：應該根據需求修改函數定義或呼叫函數時的參數數量。如果只需要一個參數，可以在呼叫時只傳一個參數；如果需要兩個參數，則需修改函數定義。\n\n**修正範例一**（只需一個參數）：\n```python\ngreet('John')\n```\n這樣的修正將傳遞正確的參數數量給函數。\n\n**修正範例二**（需要兩個參數）：\n```python\ndef greet(first_name, last_name):\n  message = 'Hello, ' + first_name + ' ' + last_name + '!' \n  print(message)\n\ngreet('John', 'Doe')\n```\n這樣的修正將改變函數定義，使其接受兩個參數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 缺少冒號。\n\n**錯誤描述**：在 Python 中，for 迴圈必須以冒號結尾。在這個範例中，`for i in range(5)` 省略了結尾的冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 的末尾加上冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```\n這樣的修正將成功地執行迴圈，並正確地印出 0 到 4。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def calculate_area(radius):\n  area = 3.14 * radius * radius\n  return area\n\narea_of_circle = calculate_area(5\nprint(area_of_circle)",
+        "output": "這段程式碼有兩個語法錯誤：一是在呼叫 `calculate_area` 函數時的缺少閉合括號，二是 `print` 語句缺少括號。\n\n**錯誤描述**：\n1. 在 `area_of_circle = calculate_area(5` 這一行，缺少閉合括號，導致語法錯誤。\n2. 在 `print` 語句中缺少括號，在 Python 3 中 `print` 是一個函數，必須要用括號括起來。\n\n**修正建議**：\n1. 在呼叫 `calculate_area` 函數時，應在 `5` 之後加上閉合括號。\n2. 在 `print` 語句中加上括號，來正確地呼叫 `print` 函數。\n\n**修正範例**：\n```python\narea_of_circle = calculate_area(5)\nprint(area_of_circle)\n```\n這樣的修正將正確地計算圓面積並將結果輸出。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(x, y):\n  return x * y\n\nresult = multiply_numbers(4, 5\nprint(result)",
+        "output": "這段程式碼有一個語法錯誤：`multiply_numbers(4, 5\nprint(result)` 在呼叫 `multiply_numbers` 函數後缺少閉合的括號。\n\n**錯誤描述**：在 Python 中，函數呼叫的括號必須成對出現。在這個範例中，`multiply_numbers(4, 5` 缺少閉合的括號，導致語法錯誤。\n\n**修正建議**：在呼叫 `multiply_numbers` 函數時，應在參數 `5` 之後加上閉合的括號，這樣才能正確執行函數呼叫。\n\n**修正範例**：\n```python\nresult = multiply_numbers(4, 5)\nprint(result)\n```這樣的修正將讓程式碼正確執行並輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greet(name)\n  return 'Hello, ' + name\n\nprint(greet('Alice'))",
+        "output": "這段程式碼有一個語法錯誤：`def greet(name)` 在定義函數時缺少冒號。\n\n**錯誤描述**：在 Python 中，定義函數的語法需要在函數名稱及參數列表後面加上冒號。在這個範例中，`def greet(name)` 缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在定義 `greet` 函數時，應在 `name` 後面加上冒號。\n\n**修正範例**：\n```python\ndef greet(name):\n  return 'Hello, ' + name\n\nprint(greet('Alice'))\n```這樣的修正將正確地定義函數，並正確地呼叫函數進行輸出。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5):\nprint(i)\n  if i % 2 == 0:\n  print('偶數')",
+        "output": "這段程式碼有多個語法錯誤：縮排不正確和條件內部的縮排錯誤。\n\n**錯誤描述**：在 Python 中，縮排非常重要，它表示程式碼的層次結構。在這個範例中，`print(i)` 行的縮排不正確，它應該和 `for` 的縮排對齊。另外，`if` 條件內部的 `print('偶數')` 行的縮排也不正確，應縮排到 `if` 的內部。\n\n**修正建議**：確保 `print(i)` 行和 `for` 縮排對齊，以及 `if` 條件內的 `print('偶數')` 行應縮排到 `if` 的內部。\n\n**修正範例**：\n```python\nfor i in range(5):\n    print(i)\n    if i % 2 == 0:\n        print('偶數')\n```\n這樣的修正將正確地表示程式碼的結構，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "if x > 10\n    print('x is greater than 10')",
+        "output": "這段程式碼有一個語法錯誤：`if x > 10` 條件判斷式之後缺少冒號。\n\n**錯誤描述**：在 Python 中，條件判斷式之後必須加上冒號來標示條件結束，接著提供需要執行的代碼塊。在這個範例中，`if x > 10` 缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在條件判斷式 `if x > 10` 之後應加上冒號，以標示條件結束並正確執行代碼塊。\n\n**修正範例**：\n```python\nif x > 10:\n    print('x is greater than 10')\n```這樣的修正將正確地執行條件判斷並輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 這行缺少了冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈結尾應該有一個冒號，以表示這是一個循環的開始。在這個範例中，因為缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 的最後加上冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```這樣的修正將正確地表示迴圈結束，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 缺少了結尾的冒號。\n\n**錯誤描述**：在 Python 中，for 迴圈結構必須以冒號 (:) 結尾，這表示即將進入迴圈的主體。在這個範例中，缺少 `:` 會導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 的結尾加上冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```\n這樣的修正將正確地建立迴圈結構，並正常輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greet(name):\n    message = f'Hello, {name}!\n    return message\n\nprint(greet('Alice'))",
+        "output": "這段程式碼有兩個語法錯誤：`f'Hello, {name}!\n` 和 `print(greet('Alice'))`。\n\n**錯誤描述一**：在 Python 中，使用 f-string 時，字符串 (string) 必須完整閉合（也就是開頭和結尾都要有單引號或雙引號）。這裡的 `f'Hello, {name}!\n` 缺少結尾的單引號。\n\n**錯誤描述二**：在呼叫 `greet` 函數時，函數參數 `Alice` 使用的引號錯誤，應該使用雙引號或者在外部使用雙引號而非單引號嵌套單引號。\n\n**修正建議**：\n1. 在 `f'Hello, {name}!` 後添加閉合的單引號。\n2. 將 `print(greet('Alice'))` 修正為 `print(greet(\"Alice\"))` 或 `print(greet('Alice'))` 以避免引號錯誤。\n\n**修正範例**：\n```python\ndef greet(name):\n    message = f'Hello, {name}!'\n    return message\n\nprint(greet(\"Alice\"))\n```這樣的修正將使得程式碼正常運行，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greeting(name)\n  return 'Hello ' + name\n\nprint(greeting('World'))",
+        "output": "這段程式碼有一個語法錯誤：`def greeting(name)` 行少了一個冒號，應該在 `name` 後面加上冒號。\n\n**錯誤描述**：在 Python 中，定義函數時函數名稱和參數列表後必須有一個冒號，以表示下一行是該函數的執行區域。在這個範例中，`def greeting(name)` 缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在定義函數 `greeting` 時，應在 `name` 後面加上冒號。\n\n**修正範例**：\n```python\ndef greeting(name):\n  return 'Hello ' + name\n\nprint(greeting('World'))\n```這樣的修正將正確地定義函數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 應在結尾加上冒號 (:)。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的結尾必須有一個冒號來標示程式區塊的開始。在這個範例中，缺少這個冒號會導致語法錯誤。\n\n**修正建議**：應在 `for i in range(5)` 的結尾加上冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```\n這樣的修正將正確地標示迴圈區塊，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def calculate_area(radius):\n  pi = 3.14\n  area = pi * radius ** 2\n  return area\n\nprint(calculate_area(7,))",
+        "output": "這段程式碼有一個語法錯誤：`print(calculate_area(7,))` 在呼叫 `calculate_area` 函數時多了一個不必要的逗號。\n\n**錯誤描述**：在 Python 中，函數的參數之間不應該包含多餘的逗號。在這個範例中，`calculate_area(7,)` 中的逗號會導致語法錯誤。\n\n**修正建議**：在呼叫 `calculate_area` 函數時，應去掉多餘的逗號，讓參數只有一個數值即可。\n\n**修正範例**：\n```python\nprint(calculate_area(7))\n```這樣的修正將正確地傳遞參數給函數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greet(name):\n  message = 'Hello, ' + name\n  return message\n\nprint(greet('Alice')",
+        "output": "這段程式碼有一個語法錯誤：`print(greet('Alice')` 缺少括號閉合。\n\n**錯誤描述**：在 Python 中，函數呼叫結束時需要有相應的閉合括號。在這個範例中，`print(greet('Alice')` 缺少最外層的閉號括號，因此會導致語法錯誤。\n\n**修正建議**：在呼叫 `print(greet('Alice')` 函數時，應在最終添加一個右括號以閉合。\n\n**修正範例**：\n```python\nprint(greet('Alice'))\n```這樣的修正將正確地輸出問候訊息。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(a, b):\n  result = a * b\n  return result\n\nprint(multiply_numbers(5, ))",
+        "output": "這段程式碼有一個語法錯誤：`print(multiply_numbers(5, ))` 在呼叫 `multiply_numbers` 函數時只提供了一個參數，但函數需要兩個參數。\n\n**錯誤描述**：在 Python 中，當定義了一個需要兩個參數的函數時，必須提供兩個參數。在這個範例中，`multiply_numbers(5, )` 只提供了一個參數，因此會導致語法錯誤。\n\n**修正建議**：在呼叫 `multiply_numbers` 函數時，應填滿必需的兩個參數。\n\n**修正範例**：\n```python\nprint(multiply_numbers(5, 2))\n```這樣的修正將正確地傳遞參數給函數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 在結尾缺少冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的結構需要在結尾添加冒號以表示語法上的完整。在這個範例中，`for i in range(5)` 缺少結尾的冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 語句的結尾應加上冒號，表示後面的程式區塊是在這個 `for` 迴圈中運行。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```這樣的修正將使迴圈運行正確並輸出 0 到 4 的數字。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def calculate_area(radius):\n    area = 3.14 * radius ** 2\n    return area\n\nresult = calculate_area(5])",
+        "output": "這段程式碼有一個語法錯誤：`calculate_area(5])` 在呼叫 `calculate_area` 函數時，傳遞了一個列表而不是一個數字。\n\n**錯誤描述**：在 Python 中，傳遞給函數的參數應該與函數預期的類型相匹配。在這個範例中，`calculate_area` 函數期望接收一個數字作為參數，但是調用時傳遞了一個列表 `5]`，這將導致計算中的類型錯誤。\n\n**修正建議**：在呼叫 `calculate_area` 函數時，應直接傳遞數字 `5`，而不是列表。\n\n**修正範例**：\n```python\nresult = calculate_area(5)\n```\n這樣的修正將正確地傳遞參數給函數，並正確計算區域。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply(a, b):\n  result = a * b\n  return result\n\nprint(multiply(3; 4))",
+        "output": "這段程式碼有一個語法錯誤：`print(multiply(3; 4))` 在呼叫 `multiply` 函數時，使用了錯誤的分隔符號 `;`。\n\n**錯誤描述**：在 Python 中，函數的參數之間必須用逗號分隔。這個範例中，`multiply(3; 4)` 使用分號 `;` 來分隔參數，這會導致語法錯誤。\n\n**修正建議**：在呼叫 `multiply` 函數時，應在 `3` 和 `4` 之間使用逗號。\n\n**修正範例**：\n```python\nprint(multiply(3, 4))\n```這樣的修正將正確地傳遞參數給函數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 缺少了冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的語法必須在 `range(5)` 之後加上冒號 `:`，以指示迴圈的範圍和主體。在這個範例中，缺少這個冒號會導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 的末尾加上冒號 `:`。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```\n這樣的修正將正確地定義迴圈範圍，並能正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(10)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(10)` 缺少冒號。\n\n**錯誤描述**：在 Python 中，for 迴圈的 header 應該以冒號結尾，而這段程式碼缺少了冒號，導致語法錯誤。\n\n**修正建議**：在 `for i in range(10)` 的結尾處加上冒號。\n\n**修正範例**：\n```python\nfor i in range(10):\n  print(i)\n```這樣的修正將使迴圈正確執行，並按順序打印數字。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greet(name):\n  print('Hello, ' + name)\n\nif name == 'Alice':\n  greet('Alice')",
+        "output": "這段程式碼有一個語法錯誤：`if name == 'Alice':` 在這個條件判斷之前，變數 `name` 尚未定義。\n\n**錯誤描述**：在 Python 中，使用一個未定義的變數會導致名稱錯誤。在這個範例中，`name` 尚未被定義或賦值，因此 `if name == 'Alice':` 條件判斷會導致錯誤。\n\n**修正建議**：在進行條件判斷前，應先定義並賦值變數 `name`。\n\n**修正範例**：\n```python\nname = 'Alice'\nif name == 'Alice':\n  greet(name)\n```\n這樣的修正將確保變數 `name` 有效定義並賦值，使條件判斷可以正常執行並呼叫 `greet` 函數。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def main():\n  print('Hello, World!')\n\nif __name__ = '__main__':\n  main()",
+        "output": "這段程式碼有一個語法錯誤：`if __name__ = '__main__':` 在條件判斷中使用了賦值運算符 `=`，而非相等運算符 `==`。\n\n**錯誤描述**：在 Python 中，條件判斷應使用相等運算符 `==` 來檢查兩個值是否相等。在這個範例中，`__name__ = '__main__'` 使用了賦值運算符，這在條件判斷中是不正確的，會導致語法錯誤。\n\n**修正建議**：應將賦值運算符 `=` 更改為相等運算符 `==`，以正確進行條件判斷。\n\n**修正範例**：\n```python\ndef main():\n  print('Hello, World!')\n\nif __name__ == '__main__':\n  main()\n```這樣的修正將正確地進行條件判斷，並執行 `main` 函數。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greet(name):\n  message = 'Hello ' + name\n  print(message\n\ngreet('Alice')",
+        "output": "這段程式碼有一個語法錯誤：`print(message` 在 `print` 函數的參數末尾缺少右括號。\n\n**錯誤描述**：在 Python 中，函數呼叫中的所有參數都必須由適當的括號閉合。在這個範例中，`print(message` 缺少右括號，這會導致語法錯誤。\n\n**修正建議**：在 `print` 函數呼叫中應補上缺失的右括號，以確保括號成對出現。\n\n**修正範例**：\n```python\ndef greet(name):\n  message = 'Hello ' + name\n  print(message)\n\ngreet('Alice')\n```\n這樣的修正將確保語法正確，並正確輸出訊息。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "my_list = 1, 2, 3, 4, 5\nfor item in my_list:\n    print(item)",
+        "output": "這段程式碼有一個語法錯誤：在 `my_list` 的初始化中缺少右方的方括號，並且 `for` 循環應該縮排對齊。\n\n**錯誤描述**：在 Python 中，列表的初始化必須使用方括號來包裹元素。在這個範例中，`my_list = 1, 2, 3, 4, 5` 缺少了右方的方括號，這會導致語法錯誤。此外，`for` 循環應該與其他程式碼的縮排對齊，以便Python了解這是連續的代碼塊。\n\n**修正建議**：在 `my_list` 的初始化中，應在最後加上右方的方括號，並將 `for` 循環的縮排糾正。\n\n**修正範例**：\n```python\nmy_list = 1, 2, 3, 4, 5]\nfor item in my_list:\n    print(item)\n```\n這樣的修正將正確地初始化列表並正確地執行 `for` 循環。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def divide_numbers(a, b):\n  result = a / b\n  return result\n\nprint(divide_numbers(10, 0))",
+        "output": "這段程式碼有一個邏輯錯誤：`print(divide_numbers(10, 0))` 會導致除以零的錯誤。\n\n**錯誤描述**：在 Python 中，除以零是一個運行時錯誤。`divide_numbers(10, 0)` 中的參數 `b` 為 `0`，這會在執行時引發 `ZeroDivisionError`。\n\n**修正建議**：在進行除法運算之前，應先檢查除數是否為零，並在必要時提供適當的處理方式，例如回傳錯誤消息。\n\n**修正範例**：\n```python\ndef divide_numbers(a, b):\n  if b == 0:\n    return '錯誤：除數不能為零'\n  result = a / b\n  return result\n\nprint(divide_numbers(10, 0))\n```\n這樣的修正將避免除以零的錯誤，並提供一個明確的錯誤消息。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(a, b):\n  product = a * b\n  return product\n\nresult = multiply_numbers(4, 3)\nprint('The result is: ' + result)",
+        "output": "這段程式碼有一個語法錯誤：`print('The result is: ' + result)` 在 Python 中，字串和整數之間不能直接用加號拼接。\n\n**錯誤描述**：在 Python 中，要將字串和整數拼接，必須先將整數轉換為字串型態。如果直接用加號拼接不同型態的數據，會引發語法錯誤。\n\n**修正建議**：將 `result` 轉換為字串型態，再進行拼接操作。\n\n**修正範例**：\n```python\nprint('The result is: ' + str(result))\n```這樣的修正將正確地將整數轉換為字串，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greet(name):\n  greeting = 'Hello, ' + name + '!' \n  return greeting\n\nprint(greet('Alice))",
+        "output": "這段程式碼有一個語法錯誤：在呼叫 `greet` 函數時，字串 'Alice' 缺少關閉的單引號。\n\n**錯誤描述**：在 Python 中，字串必須由成對的單引號或雙引號包圍。在這個範例中，`print(greet('Alice))` 缺少關閉的單引號，導致語法錯誤。\n\n**修正建議**：請在字串 'Alice' 的末尾加上缺少的單引號。\n\n**修正範例**：\n```python\nprint(greet('Alice'))\n```這樣的修正將正確地傳遞字串參數給函數，並正常輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in rang(10):\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in rang(10)` 中的 `rang` 應該是 `range`。\n\n**錯誤描述**：在 Python 中，`range` 是一個內建函數，用於生成一系列數字，通常用於迭代。在這個範例中，`rang` 是拼寫錯誤，會導致 NameError，表示變數未定義。\n\n**修正建議**：將 `rang` 更正為 `range`，使其能正確地生成數字範圍。\n\n**修正範例**：\n```python\nfor i in range(10):\n  print(i)\n```\n這樣的修正將正確地迭代並打印從0到9的數字。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def subtract_numbers(a, b):\n  result = a - b\n  return result\n\nprint(subtract_numbers(8, 4))\nprint(subtract_numbers 10, 2)",
+        "output": "這段程式碼有一個語法錯誤：`print(subtract_numbers 10, 2)` 在呼叫 `subtract_numbers` 函數時缺少括號。\n\n**錯誤描述**：在 Python 中，呼叫函數時必須將所有參數放在括號內。在這個範例中，`subtract_numbers 10, 2` 的語法是不正確的，因為缺少了將參數括起來的括號。\n\n**修正建議**：在呼叫 `subtract_numbers` 函數時，應包含所有的參數在括號內。\n\n**修正範例**：\n```python\nprint(subtract_numbers(10, 2))\n```這樣的修正將正確地傳遞參數給函數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 缺少冒號。Python 中的 `for` 迴圈語法要求在 `range(5)` 之後必須有冒號(`:`)。\n\n**錯誤描述**：在 Python 中，`for` 迴圈需要在條件結束後加上冒號，這樣才會正確識別後續縮排代碼為迴圈的一部分。在這個範例中，`for i in range(5)` 缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `range(5)` 之後加上冒號，這樣才能正確地使用 `for` 迴圈。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```這樣的修正將正確地執行迴圈，並打印出 0 到 4 的數字。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "if x = 10:\n  print('x is 10')",
+        "output": "這段程式碼有一個語法錯誤：`if x = 10:` 中使用了一個單等號 (=)，而不是雙等號 (==) 來進行比較。\n\n**錯誤描述**：在 Python 中，單等號 (=) 用於賦值，雙等號 (==) 用於比較。在這個範例中，應該使用雙等號來比較變數 `x` 是否等於 10。\n\n**修正建議**：將 `if x = 10:` 修改為 `if x == 10:` 來正確地進行比較。\n\n**修正範例**：\n```python\nif x == 10:\n  print('x is 10')\n```\n這樣的修正將正確地比較變數 `x` 與 10，並正確執行符合條件的程式碼區塊。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n    print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 缺少了結尾的冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的宣告必須以冒號結尾，告知後面的縮排程式碼屬於 `for` 迴圈的區域。在這個範例中，`for i in range(5)` 缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for` 迴圈的宣告末尾添加冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n    print(i)\n```這樣的修正將正確地執行 `for` 迴圈，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(a, b)\n  result = a * b\n  return result\n\nprint(multiply_numbers(3, 4))",
+        "output": "這段程式碼有一個語法錯誤：`def multiply_numbers(a, b)` 在定義函數時缺少冒號。\n\n**錯誤描述**：在 Python 中，函數定義必須以冒號結尾。在這個範例中，`def multiply_numbers(a, b)` 缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `multiply_numbers` 函數定義處，應在括號後加上冒號。\n\n**修正範例**：\n```python\ndef multiply_numbers(a, b):\n  result = a * b\n  return result\n\nprint(multiply_numbers(3, 4))\n```這樣的修正將正確地定義函數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(x, y):\n  result = x * y\n  return result\n\nprint(multiply_numbers(3 7))",
+        "output": "這段程式碼有一個語法錯誤：`print(multiply_numbers(3 7))` 在呼叫 `multiply_numbers` 函數時缺少參數之間的逗號。\n\n**錯誤描述**：在 Python 中，函數的參數之間必須用逗號分隔。在這個範例中，`multiply_numbers(3 7)` 缺少逗號，因此會導致語法錯誤。\n\n**修正建議**：在呼叫 `multiply_numbers` 函數時，應在 `3` 和 `7` 之間加上逗號。\n\n**修正範例**：\n```python\nprint(multiply_numbers(3, 7))\n```這樣的修正將正確地傳遞參數給函數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5):\n  print(i\n  print('Loop complete.')",
+        "output": "這段程式碼有多個語法錯誤：\n\n1. `print(i` 這一行的括號沒有閉合。\n\n2. `print('Loop complete.')` 應在循環結束後打印，目前錯誤地排版在循環內。\n\n**錯誤描述**：\n- 在 Python 中，所有的函數調用必須有正確閉合的括號。缺少閉合括號會導致語法錯誤。\n- 正確縮排能確保程式碼邏輯正確。`print('Loop complete.')` 不應該在循環內執行，而應在循環結束後執行。\n\n**修正建議**：\n- 確保所有的括號都正確閉合。\n- 調整 `print('Loop complete.')` 的縮排，使其在循環外執行。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\nprint('Loop complete.')\n```\n這樣的修正將正確執行迴圈內的打印操作，並在迴圈結束後打印 `Loop complete.`."
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(10)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(10)` 缺少冒號，並且 `print(i)` 行需要縮排。\n\n**錯誤描述**：在 Python 中，for 迴圈的語法必須在條件部分的結尾加上一個冒號 `:`。此外，for 迴圈內的程式碼塊需要進行縮排，否則會導致語法錯誤。\n\n**修正建議**：應在 `for i in range(10)` 的末尾加上冒號 `:` 並將 `print(i)` 行正確縮排，使其成為迴圈的一部分。\n\n**修正範例**：\n```python\nfor i in range(10):\n  print(i)\n```這樣的修正將正確地形成 for 迴圈語句，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(x, y):\n product = x * y\n return product\n\nresult = multiply_numbers(4,)\nprint(result)",
+        "output": "這段程式碼有一個語法錯誤：`result = multiply_numbers(4,)` 在呼叫 `multiply_numbers` 函數時參數不完整。\n\n**錯誤描述**：在 Python 中，函數的所有位置參數都必須提供數值。在這個範例中，`multiply_numbers(4,)` 只提供了一個參數，因此會導致語法錯誤。\n\n**修正建議**：在呼叫 `multiply_numbers` 函數時，應提供兩個必要的參數。\n\n**修正範例**：\n```python\nresult = multiply_numbers(4, 2)\n```\n這樣的修正將正確地傳遞兩個參數給函數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greet_user(name):\n    print(f\"Hello, {name}!\")\n\nif name == \"Albert\":\n    greet_user(Albert)",
+        "output": "這段程式碼有兩個語法錯誤：`if name == \"Albert\":` 中的 `name` 未定義以及呼叫 `greet_user(Albert)` 時， `Albert` 未加上引號。\n\n**錯誤描述**：首先，在 `if name == \"Albert\":` 這行代碼中，`name` 變數在該代碼塊中未定義，會導致 NameError。其次，在呼叫 `greet_user(Albert)` 時，`Albert` 未被引用，這會導致 NameError。\n\n**修正建議**：您需要在 `if` 語句之前定義 `name` 變數，並在呼叫 `greet_user` 函數時，將 `Albert` 放在引號內。\n\n**修正範例**：\n```python\ndef greet_user(name):\n    print(f\"Hello, {name}!\")\n\nname = \"Albert\"\nif name == \"Albert\":\n    greet_user(\"Albert\")\n```這樣的修正將正確地檢查條件並呼叫函數，正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(a, b):\n  result = a * b\n  return result\n\nprint(multiply_numbers(4, 5))",
+        "output": "這段程式碼有一個語法錯誤：`def multiply_numbers(a, b)` 中缺少冒號 `:`。\n\n**錯誤描述**：在 Python 中，定義函數時必須在函數名稱和參數之後加上冒號。在這個範例中，`def multiply_numbers(a, b)` 缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `def multiply_numbers(a, b)` 行的結尾加上冒號。\n\n**修正範例**：\n```python\ndef multiply_numbers(a, b):\n  result = a * b\n  return result\n\nprint(multiply_numbers(4, 5))\n```\n這樣的修正後，函數可以正確執行並輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greet(name)\n  return 'Hello, ' + name\n\ngreeting = greet('John')\nprint(greeting)",
+        "output": "這段程式碼有一個語法錯誤：`def greet(name)` 在定義函數時缺少末尾的冒號。\n\n**錯誤描述**：在 Python 中，函數的定義語法需要在參數括號之後加上冒號，以標示函數體的開始。在這個範例中，`def greet(name)` 缺少這個冒號，因此會導致語法錯誤。\n\n**修正建議**：在函數 `greet` 的定義行的結尾處加上冒號。\n\n**修正範例**：\n```python\ndef greet(name):\n  return 'Hello, ' + name\n\ngreeting = greet('John')\nprint(greeting)\n```\n這樣的修正將正確地定義函數，並使其能夠正常運行。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n    print(i)\n  if i == 3:\n      break",
+        "output": "這段程式碼有幾個語法錯誤：首先，for 迴圈的定義缺少冒號；其次，if 條件在縮排上不對應於 for 迴圈。\n\n**錯誤描述**：在 Python 中，for 迴圈的結尾需要一個冒號來表示迴圈的開始。此外，if 條件和迴圈中的其他程式碼應該有正確的縮排，以表示程式碼的階層結構。\n\n**修正建議**：在 for 迴圈的定義結尾加上冒號，並確保 if 條件和 for 迴圈的縮排一致。\n\n**修正範例**：\n```python\nfor i in range(5):\n    print(i)\n    if i == 3:\n        break\n```\n這樣的修正將讓程式碼正確地執行 for 迴圈，並在 i 等於 3 時跳出迴圈。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply(a, b):\n  result = a * b\n  retrun result\n\nproduct = multiply(4, 5)\nprint(product)",
+        "output": "這段程式碼有一個語法錯誤：`retrun result` 應該是 `return result`。\n\n**錯誤描述**：在 Python 中，`return` 是關鍵字用來返回函數的值。然而，這裡拼寫錯誤成 `retrun`，這將導致語法錯誤。\n\n**修正建議**：將 `retrun` 更改為 `return` 以正確地返回結果。\n\n**修正範例**：\n```python\ndef multiply(a, b):\n  result = a * b\n  return result\n\nproduct = multiply(4, 5)\nprint(product)\n```這樣的修正將正確地執行乘法運算並返回結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)\nif i == 4:\n  print('Loop finished!')",
+        "output": "這段程式碼有兩個語法錯誤：`for` 迴圈的語法和 `if` 條件判斷的縮排。\n\n**錯誤描述**：\n1. 在 Python 中，`for` 迴圈的語法需要在 `range(5)` 後面加上冒號。在這個範例中，缺少了這個冒號，會導致語法錯誤。\n2. Python 的縮排風格是非常嚴格的。`if` 條件判斷應該位於與 `for` 同一層次的縮排，而不是與 `print(i)` 同一層次。\n\n**修正建議**：\n1. 在 `range(5)` 的後面加上冒號。\n2. 將 `if` 條件判斷調整到與 `for` 迴圈同一層次的縮排。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\nif i == 4:\n  print('Loop finished!')\n```\n這樣的修正將避免語法錯誤，使程式碼能夠正確執行。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(a, b):\n  result = a * b\n  return result\n\nprint(multiply_numbers 5, 10)",
+        "output": "這段程式碼有一個語法錯誤：`print(multiply_numbers 5, 10)` 在呼叫 `multiply_numbers` 函數時缺少適當的函數調用小括號。\n\n**錯誤描述**：在 Python 中，函數必須用小括號來包圍其參數，以便進行正確的調用。在這個範例中，`multiply_numbers 5, 10` 錯誤地缺少小括號，因此會導致語法錯誤。\n\n**修正建議**：在呼叫 `multiply_numbers` 函數時，應在函數名稱後添加小括號來包圍參數，並且確保參數之間用逗號分隔。\n\n**修正範例**：\n```python\nprint(multiply_numbers(5, 10))\n```\n這樣的修正將正確地傳遞參數給函數，並得到正確的結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 行末缺少冒號。\n\n**錯誤描述**：在 Python 中，for 迴圈的語法要求在條件結束後加上冒號。在這個範例中，`for i in range(5)` 缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 的末尾加上冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```這樣的修正將正確地創建一個 for 迴圈，並輸出 0 到 4 的數字。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n    print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 在 for 迴圈的定義結尾缺少冒號。\n\n**錯誤描述**：在 Python 中，for 迴圈的定義需以冒號結尾，用來表示即將進入迴圈主體。在這個範例中，`for i in range(5)` 缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在 for 迴圈的定義結尾加上冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n    print(i)\n```\n這樣的修正將正確地構建 for 迴圈，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 缺少冒號。\n\n**錯誤描述**：在 Python 中，`for` 循環語句的末尾必須用冒號來表示循環塊的開始。在這個範例中，`for i in range(5)` 缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 的末尾加上冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```這樣的修正將正確地表示循環塊，且能正確執行並輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def calculate_area(radius):\n  pi = 3.14\n  area = pi * radius ** 2\n  return area\n\nprint(calculate_area(5))\nif calculate_area(5) > 50:\n  print('大於50'\nelse:\n  print('小於或等於50')",
+        "output": "這段程式碼有兩個語法錯誤：第一個在 `print('大於50'` 這一行缺少右括號，第二個在 `else:` 之後的縮進格式錯誤。\n\n**錯誤描述**：\n1. 在 Python 中，`print` 函數的呼叫需要左右括號成對出現。這段程式碼的 `print('大於50'` 缺少右括號。\n2. `else:` 之後的 `print` 語句需要有縮進，否則會導致語法錯誤。\n\n**修正建議**：\n1. 在 `print('大於50'` 之後加上右括號，使括號成對。\n2. 在 `else:` 之後的 `print('小於或等於50')` 語句前增加一個縮進。\n\n**修正範例**：\n```python\nprint(calculate_area(5))\nif calculate_area(5) > 50:\n  print('大於50')\nelse:\n  print('小於或等於50')\n```\n這樣的修正將正確地呼叫 `print` 函數並正確地設定條件語句，避免語法錯誤。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(a, b):\n  result = a * b\n  returns result\n\nprint(multiply_numbers(3, 4))",
+        "output": "這段程式碼有一個語法錯誤：`returns result` 應該是 `return result`。\n\n**錯誤描述**：`returns` 是不正確的關鍵字。在 Python 中，用於從函數返回值的正確關鍵字是 `return`。使用 `returns` 會導致語法錯誤。\n\n**修正建議**：將 `returns result` 修改為 `return result`。\n\n**修正範例**：\n```python\ndef multiply_numbers(a, b):\n  result = a * b\n  return result\n\nprint(multiply_numbers(3, 4))\n```這樣的修正將使函數正確返回計算結果，並使程式碼正常執行。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(3:\n  print('Hello, World!')",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(3:` 在 `range` 函數中的括號沒有正確閉合。\n\n**錯誤描述**：在 Python 中，當我們使用 `range` 函數時，括號必須成對出現並且正確閉合。在這個範例中，`range(3:` 缺少結束括號 `)`，因此會導致語法錯誤。\n\n**修正建議**：應該在 `3` 之後加上結束括號，以正確閉合 `range` 函數的參數。\n\n**修正範例**：\n```python\nfor i in range(3):\n  print('Hello, World!')\n```這樣的修正將正確地執行迴圈，並輸出三次 'Hello, World!'。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 這行的末尾缺少冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈語句的結尾應該有一個冒號，以標示循環的起始。這個範例中缺少了這個必要的冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 的末尾添加一個冒號，以正確標示循環的範圍。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```\n這樣的修正將正確地標示循環，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def calculate_area(radius):\n  pi = 3.14\n  area = pi * radius * raduis\n  return area\n\nprint(calculate_area(5))",
+        "output": "這段程式碼有一個語法錯誤：`area = pi * radius * raduis` 在這行中，變數 `radius` 拼寫錯誤為 `raduis`。\n\n**錯誤描述**：在 Python 中，變數名的拼寫必須正確一致。在這個範例中，`radius` 在計算面積時拼寫錯誤，因此會導致變數未定義錯誤。\n\n**修正建議**：將錯誤的拼寫 `raduis` 修改為正確的 `radius`，使變數名一致。\n\n**修正範例**：\n```python\ndef calculate_area(radius):\n  pi = 3.14\n  area = pi * radius * radius\n  return area\n\nprint(calculate_area(5))\n```\n這樣的修正將正確地計算圓的面積，並輸出正確結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def find_max(nums):\n  max_num = nums0]\n  for num in nums:\n    if num > max_num\n      max_num = num\n  return max_num\n\nprint(find_max(3, 1, 4, 1, 5, 9]))",
+        "output": "這段程式碼有一個語法錯誤：`if num > max_num` 缺少冒號。\n\n**錯誤描述**：在 Python 中，條件語句後面必須接冒號。在這個範例中，`if num > max_num` 缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在條件語句 `if num > max_num` 的最後應加上冒號。\n\n**修正範例**：\n```python\ndef find_max(nums):\n  max_num = nums0]\n  for num in nums:\n    if num > max_num:\n      max_num = num\n  return max_num\n\nprint(find_max(3, 1, 4, 1, 5, 9]))\n```\n這樣的修正將使條件語句正確執行，並正確找出輸入列表中的最大值。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def divide_numbers(a, b):\n  result = a / b\n  return result\n\nprint(divide_numbers(10, 0)",
+        "output": "這段程式碼有一個語法錯誤：`print(divide_numbers(10, 0))` 的括號不匹配，缺少結尾的右括號。\n\n**錯誤描述**：在 Python 中，括號必須成對出現。在這個範例中，`print(divide_numbers(10, 0)` 缺少閉合的右括號，因此會導致語法錯誤。此外，這段程式碼還有邏輯上的問題：除以零會導致 `ZeroDivisionError`。\n\n**修正建議**：在呼叫 `divide_numbers` 函數時，應補上缺失的右括號。另外，為了避免除以零錯誤，應該添加檢查以確保參數 `b` 不為零。\n\n**修正範例**：\n```python\ndef divide_numbers(a, b):\n  if b == 0:\n    return 'Error: Division by zero.'\n  result = a / b\n  return result\n\nprint(divide_numbers(10, 0))\n```\n這樣的修正將確保括號的正確匹配並避免除以零的錯誤。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5):\n  print(i\n)",
+        "output": "這段程式碼有一個語法錯誤：`print(i\n)` 的括號位置錯誤，右括號應該在新行前關閉。\n\n**錯誤描述**：在 Python 中，函數呼叫的括號必須正確配對。在這個範例中，`print(i\n)` 中的右括號被放在新行，這是語法錯誤。\n\n**修正建議**：在 `print` 函數中，應將右括號放在同一行的末尾，與左括號形成一對。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```這樣的修正將正確地迭代範圍並打印每個數字。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 行末尾缺少冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的結尾必須有一個冒號 `:`，以指示接下來的區塊是迴圈的主體。在這個範例中，`for i in range(5)` 行缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 行的末尾加上冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```\n這樣的修正將正確地使 Python 解析器識別迴圈結構，並正確地執行打印操作。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n print(i)\n if i == 3\n  print('Found 3')",
+        "output": "這段程式碼有兩個語法錯誤：第一，`for i in range(5)` 在 `range` 後缺少冒號；第二，`if i == 3` 在判斷條件後也缺少冒號。\n\n**錯誤描述**：在 Python 中，循環和條件語句後必須有冒號。缺少冒號會導致語法錯誤，因為 Python 無法解析語句的結構。\n\n**修正建議**：在 `for` 循環和 `if` 條件後各加上一個冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n print(i)\n if i == 3:\n  print('Found 3')\n```\n這樣的修正將正確地結構 `for` 和 `if` 語句，使程式能正確執行。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greet(name):\n  message = 'Hello, ' + name + '!'\n  return message\n\nprint(greet('Alice'))\nprint(greet('Bob')\nprint(greet('Charlie'))",
+        "output": "這段程式碼有一個語法錯誤：`print(greet('Bob')` 缺少右括號以關閉函數呼叫。\n\n**錯誤描述**：在 Python 中，函數呼叫需要正確配對的括號。在這個範例中，`print(greet('Bob')` 缺少右括號，這導致語法錯誤。\n\n**修正建議**：在呼叫 `greet` 函數時，應在最後加上右括號，以確保括號成對並關閉函數呼叫。\n\n**修正範例**：\n```python\nprint(greet('Bob'))\n```\n這樣的修正將正確地閉合括號，並讓程式能夠正確執行。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n    print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 缺少冒號 `:`。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的語法格式需要在條件表達式的結尾加上冒號，這樣才符合語法規則。少了冒號會導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 的結尾加上冒號，形成 `for i in range(5):`。\n\n**修正範例**：\n```python\nfor i in range(5):\n    print(i)\n```\n這樣的修正將使程式正確地執行，並輸出0到4的數字。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(10)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(10)` 缺少結束的冒號。\n\n**錯誤描述**：在 Python 中，for 迴圈的語句必須以冒號結束。缺少這個冒號將導致語法錯誤，使得程式無法正確執行。\n\n**修正建議**：在 `for` 迴圈結束的地方加上冒號。\n\n**修正範例**：\n```python\nfor i in range(10):\n  print(i)\n```\n這樣的修正將正確地迴圈並輸出從 0 到 9 的數字。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "if x is 10:\n  print('x is ten')",
+        "output": "這段程式碼有一個語法錯誤：`if x is 10:` 使用了 `is` 比較運算符來比較值。\n\n**錯誤描述**：在 Python 中，`is` 運算符用於比較物件的身份（即兩個變數是否指向同一個物件），而不是比較數值或基本數據類型。此處應使用 `==` 運算符來進行值比較。\n\n**修正建議**：在判斷 `x` 是否等於 `10` 時，應使用 `==` 運算符來比較值。\n\n**修正範例**：\n```python\nif x == 10:\n  print('x is ten')\n```這樣的修正將正確地比較變數 `x` 的值，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 缺少結尾的冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的語法要求在 `for` 和 `in` 子句之後，必須加上冒號以指示即將開始代碼塊。在這個範例中，`for i in range(5)` 缺少結尾的冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 的末尾加上一個冒號，以符合語法要求。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```\n這樣的修正將正確地進行迴圈操作，並逐行列印數字。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply(a, b):\n  product = a * b\n  return product\n\nresult = multiply(3, 4)\nprint(The result is: result)",
+        "output": "這段程式碼有一個語法錯誤：`print(The result is: result)` 中的變數 `result` 在字串中未正確引入。\n\n**錯誤描述**：在 Python 中，若要在字串中嵌入變數，應使用 f-string 或其他字串格式化方法。本範例中，`print(The result is: result)` 中的 `result` 被當作字串的一部分，而不是變數，因此會導致語法錯誤或產生意外結果。\n\n**修正建議**：應該使用 f-string 格式，將變數正確嵌入字串中，這樣才能正確輸出結果。\n\n**修正範例**：\n```python\nresult = multiply(3, 4)\nprint(f'The result is: {result}')\n```\n這樣的修正將正確地將變數嵌入字串中，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greet(name)\n  print('Hello ' + name)\n\nprint(greet('Alice'))",
+        "output": "這段程式碼有一個語法錯誤：`def greet(name)` 後面缺少冒號，這會導致程式碼無法正確執行。\n\n**錯誤描述**：在 Python 中，定義函數時，函數頭必須以冒號結尾。缺少冒號會導致語法錯誤。\n\n**修正建議**：在 `def greet(name)` 的結尾處加上冒號，使其成為 `def greet(name):`。\n\n**修正範例**：\n```python\ndef greet(name):\n  print('Hello ' + name)\n\nprint(greet('Alice'))\n```\n這樣的修正將使函數定義正確並正常運行，輸出正確的結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n    print(i)\nprint('Finished')",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 在 for 迴圈結束後缺少冒號。\n\n**錯誤描述**：在 Python 中，for 迴圈的結尾需要使用冒號來表示開始新的塊級縮排。這裡的 `for i in range(5)` 缺少了冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 的結尾添加冒號。\n\n**修正範例**：\n```python\nfor i in range(5):\n    print(i)\nprint('Finished')\n```這樣的修正將允許程式正確地執行 for 迴圈並輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 缺少冒號 (`:`)。\n\n**錯誤描述**：在 Python 中，`for` 迴圈語句結尾必須有一個冒號，以標示接下來是一個程式塊。在這個範例中，`for i in range(5)` 缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 語句的結尾加上冒號 (`:`)。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```\n這樣的修正將正確地標示迴圈的範圍並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def calculate_area(radius)\n  area = 3.14 * radius ** 2\n  return area\n\nprint(calculate_area(5))",
+        "output": "這段程式碼有一個語法錯誤：在定義 `calculate_area` 函數時，缺少結尾的冒號。\n\n**錯誤描述**：在 Python 中，函數定義必須以冒號結尾。在這個範例中，`def calculate_area(radius)` 缺少了結尾的冒號，因此會導致語法錯誤。\n\n**修正建議**：在定義 `calculate_area` 函數的結尾加上冒號。\n\n**修正範例**：\n```python\ndef calculate_area(radius):\n  area = 3.14 * radius ** 2\n  return area\n\nprint(calculate_area(5))\n```這樣的修正將使函數正確定義，並確保程式能正確執行。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(a, b):\n  result = a * b\n  return result\n\nprint(multiply_numbers(3, 4,))",
+        "output": "這段程式碼有一個語法錯誤：`print(multiply_numbers(3, 4,))` 中函數呼叫時多了一個不必要的逗號。\n\n**錯誤描述**：在 Python 中，多餘的逗號會導致語法錯誤或不預期的行為。在這個範例中，`multiply_numbers(3, 4,)` 多出結尾的逗號，雖然在某些情況下 Python 會忽略這種逗號，但在函數參數列表中通常是不允許的。\n\n**修正建議**：在呼叫 `multiply_numbers` 函數時，應去除多餘的逗號。\n\n**修正範例**：\n```python\nprint(multiply_numbers(3, 4))\n```這樣的修正將正確地傳遞參數給函數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(a, b):\n  result = a * b\n  return result\n\nprint(multiply_numbers(5,))",
+        "output": "這段程式碼有一個語法錯誤：`print(multiply_numbers(5,))` 在呼叫 `multiply_numbers` 函數時只提供了一個參數。\n\n**錯誤描述**：在 Python 中，函數定義 `multiply_numbers` 接受兩個參數 `a` 和 `b`。在這個範例中，呼叫 `multiply_numbers` 時只提供了一個參數 `5`，因此會導致語法錯誤，因為缺少了第二個必須的參數。\n\n**修正建議**：在呼叫 `multiply_numbers` 函數時，應提供兩個參數。\n\n**修正範例**：\n```python\nprint(multiply_numbers(5, 2))\n```\n這樣的修正將正確地傳遞參數給函數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(10):\nprint(i)\n    if i % 2 == 0:\n  print('even')",
+        "output": "這段程式碼有多個語法錯誤：縮排不一致以及語法錯誤出現於第四行。\n\n**錯誤描述**：在 Python 中，程式的縮排必須保持一致。`print(i)` 並未正確縮排。此外，在 `if` 條件中的 `print('even')` 行，縮排也不正確。\n\n**修正建議**：確保所有代碼行縮排一致，用四個空格或一個 TAB 鍵來縮排。將 `print(i)` 和 `print('even')` 行正確縮排。\n\n**修正範例**：\n```python\nfor i in range(10):\n    print(i)\n    if i % 2 == 0:\n        print('even')\n```\n這樣的修正將確保程式碼按預期運行，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 未正確地使用冒號結束。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的語法需要在`for`語句的行尾加上冒號。冒號用來表示這一行結束後有隨後的代碼塊。\n\n**修正建議**：在 `for i in range(5)` 之後加上冒號 `:`，以正確地標示出代碼塊的開始。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```\n這樣的修正將正確地宣告迴圈語句，使 Python 解釋器可以正確地運行代碼。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greet(name)\n  print('Hello, ' + name + '!')\n\ngreet('Alice)",
+        "output": "這段程式碼有多個語法錯誤：函數定義缺少冒號和函數呼叫時字串未閉合。\n\n**錯誤描述**：\n\n1. `def greet(name)` 在定義函數時，應在函數名和參數列表後添加冒號`:`。缺少冒號會導致語法錯誤。\n2. 在 `greet('Alice)` 函數呼叫時，字串 `Alice` 缺少閉合的單引號。\n\n**修正建議**：\n\n1. 在函數定義末尾添加冒號`:`。\n2. 確保每個字串閉合。\n\n**修正範例**：\n```python\ndef greet(name):\n  print('Hello, ' + name + '!')\n\ngreet('Alice')\n```\n這樣的修正將使函數正確定義並能正確地呼叫，輸出預期的問候語。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply(a, b):\n  return a * b\n\nresult = multiply(4,)\nprint(result)",
+        "output": "這段程式碼有一個語法錯誤：`multiply(4,)` 在呼叫 `multiply` 函數時，傳遞了一個多餘的逗號，這導致了一個語法錯誤。\n\n**錯誤描述**：在 Python 中，函數的參數應該是一個完整且正確的列表。在這個範例中，`multiply(4,)` 只提供了一個參數，並多了一個逗號，這讓 Python 認為還有一個缺失的參數，因此會導致語法錯誤。\n\n**修正建議**：在呼叫 `multiply` 函數時，應移除多餘的逗號，並確保提供正確數量的參數。\n\n**修正範例**：\n```python\nresult = multiply(4, 2)\nprint(result)\n```\n這樣的修正將正確地傳遞參數給函數，並正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "if x == 10:\nprint('x 是 10')\nelse:\n    print('x 不是 10')",
+        "output": "這段程式碼有一個語法錯誤：`print('x 是 10')` 行與 `if` 語句行的縮排不一致，會導致縮排錯誤。\n\n**錯誤描述**：在 Python 中，程式碼塊的縮排非常重要。所有屬於同一個程式碼塊的語句必須具有相同的縮排級別。在這個範例中，`print('x 是 10')` 應該與 `if` 行保持一致的縮排。\n\n**修正建議**：將 `print('x 是 10')` 的縮排級別調整，使其與 `if x == 10:` 一致。\n\n**修正範例**：\n```python\nif x == 10:\n    print('x 是 10')\nelse:\n    print('x 不是 10')\n```\n這樣的修正將正確地執行 `if` 語句判斷，並根據 `x` 的值正確輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def divide_numbers(a, b):\n  result = a / b\n return result\n\nprint(divide_numbers(10, 2))",
+        "output": "這段程式碼有一個語法錯誤：在 `return result` 行的縮排不正確。\n\n**錯誤描述**：在 Python 中，程式區塊的縮排非常重要。在這段程式碼中，`return result` 應該與 `result = a / b` 行保持同樣的縮排層次。由於縮排不一致，會引發語法錯誤。\n\n**修正建議**：將 `return result` 行適當地縮排，使其與前一行對齊。\n\n**修正範例**：\n```python\ndef divide_numbers(a, b):\n  result = a / b\n  return result\n\nprint(divide_numbers(10, 2))\n```\n這樣的修正將確保程式碼具正確的縮排，並正確返回結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 後面缺少冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的語法需要在條件表達式後面增加冒號來結束這一行，表示接下來是迴圈的內容。在這個範例中，`for i in range(5)` 後面缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for i in range(5)` 的結尾加上冒號以符合正確的語法。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```\n這樣的修正將使迴圈能正常執行，並列印從 0 到 4 的數字。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：`for i in range(5)` 缺少結尾的冒號 (`:`)。\n\n**錯誤描述**：在 Python 中，for 迴圈的語法需要在 `for` 陳述句的結尾加上冒號。在這個範例中，`for i in range(5)` 缺少冒號，會導致語法錯誤。\n\n**修正建議**：在 `for` 陳述句的結尾處加上冒號來正確地表示迴圈的開始。\n\n**修正範例**：\n```python\nfor i in range(5):\n  print(i)\n```這樣的修正將正確地執行迴圈並輸出 0 到 4 之間的數字。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(10)\n  print(i)",
+        "output": "這段程式碼有一個語法錯誤：在 `for i in range(10)` 這行的結尾缺少冒號。\n\n**錯誤描述**：在 Python 中，`for` 迴圈的語法必須以冒號結尾，用來表示程式區塊的開始。在這個範例中，`for i in range(10)` 缺少冒號，因此會導致語法錯誤。\n\n**修正建議**：在 `for i in range(10)` 這行的結尾加上冒號。\n\n**修正範例**：\n```python\nfor i in range(10):\n  print(i)\n```這樣的修正將正確地建立一個迴圈，並按照預期輸出結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "for i in range(5)\nprint(i)",
+        "output": "這段程式碼有兩個語法錯誤：第一個錯誤是在 `for` 迴圈宣告後缺少冒號，第二個錯誤是在 `print(i)` 語句之前缺少適當的縮排。\n\n**錯誤描述**：在 Python 中， `for` 迴圈的結尾必須有冒號（`:`），且 `for` 迴圈內的代碼需要適當縮排。在這個範例中，`for i in range(5)` 缺少結尾的冒號，另外 `print(i)` 沒有正確縮排，也會導致語法錯誤。\n\n**修正建議**：在 `for` 迴圈宣告後添加冒號，並將 `print(i)` 行稍微縮排以表示它是 `for` 迴圈的一部分。\n\n**修正範例**：\n```python\nfor i in range(5):\n    print(i)\n```\n這樣的修正將正確地執行 `for` 迴圈並輸出從 0 到 4 的數字。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(a, b)\n  result = a * b\n  return result\n\nprint(multiply_numbers(4, 2))",
+        "output": "這段程式碼有一個語法錯誤：在定義 `multiply_numbers` 函數的時候，缺少冒號 `:`。\n\n**錯誤描述**：在 Python 中，函數定義需要在參數列表的結尾加上冒號。這在 `multiply_numbers` 函數缺失，會導致語法錯誤。\n\n**修正建議**：應在 `def multiply_numbers(a, b)` 的結尾加上冒號。\n\n**修正範例**：\n```python\ndef multiply_numbers(a, b):\n  result = a * b\n  return result\n\nprint(multiply_numbers(4, 2))\n```\n這樣的修正將使函數定義正確，並能正確計算並返回結果。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def greet(name):\n  message = 'Hello, ' + name + '!'\n  print(message)\n\ngreet('Alice)",
+        "output": "這段程式碼有一個語法錯誤：`greet('Alice)` 呼叫 `greet` 函數時缺少閉合的單引號。\n\n**錯誤描述**：在 Python 中，字符串必須用引號包起來，可以是單引號或雙引號。在這個範例中，`greet('Alice)` 中的字符串沒有閉合引號，因此會導致語法錯誤。\n\n**修正建議**：在呼叫 `greet` 函數時，應確保字符串的引號完整對稱。\n\n**修正範例**：\n```python\ngreet('Alice')\n```這樣的修正將正確地傳遞字符串參數給函數，並正確顯示問候訊息。"
+    },
+    {
+        "instruction": "請幫我找出這段程式碼的語法錯誤，並給予修正建議。",
+        "input": "def multiply_numbers(a, b):\n  product = a * b\n  return product\n\nprint(multiply_numbers(3 4))",
+        "output": "這段程式碼有一個語法錯誤：`print(multiply_numbers(3 4))` 在呼叫 `multiply_numbers` 函數時缺少參數之間的逗號。\n\n**錯誤描述**：在 Python 中，函數的參數之間必須用逗號分隔。在這個範例中，`multiply_numbers(3 4)` 缺少逗號，因此會導致語法錯誤。\n\n**修正建議**：在呼叫 `multiply_numbers` 函數時，應在 `3` 和 `4` 之間加上逗號。\n\n**修正範例**：\n```python\nprint(multiply_numbers(3, 4))\n```這樣的修正將正確地傳遞參數給函數，並正確輸出結果。"
+    }
+]

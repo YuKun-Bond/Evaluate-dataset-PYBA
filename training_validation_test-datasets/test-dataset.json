@@ -1,0 +1,72 @@
+[
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈(有效迴圈的定義為其中的程式運行有必要性，如：While Ture:/n    break．則為無效迴圈)",
+        "input": "while True:\n  break\n\nfor i in range(10):\n  for j in range(5):\n    print(i * j)",
+        "output": "這段程式碼內有一個while迴圈被無效使用，兩個for迴圈被有效使用"
+    },
+    {
+        "instruction": "我的程式碼內有幾個有效迴圈",
+        "input": "x = 0\nwhile x < 5:\n  for i in range(10):\n    for j in range(i):\n      if j % 2 == 0:\n        print(x, i, j)\n      else:\n        while j > 0:\n          j -= 1\n          print(j)\n  x += 1",
+        "output": "這段程式碼內有兩個for迴圈被有效使用，兩個while迴圈被有效使用"
+    },
+
+
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "def add(a, b):\n    return a + b\n\nresult = add(10, 20\nprint(output)",
+        "output": "函數呼叫時缺少閉括號"
+    },
+    {
+        "instruction": "這段程式碼有什麼問題嗎",
+        "input": "x = 10\ny = 20\nif x == 10 and y == 20:\nprint(\"x is 10 and y is 20\")",
+        "output": "if 語句內的程式碼缺少縮排"
+    },
+
+
+    {
+        "instruction": "這段程式碼有什麼邏輯錯誤嗎",
+        "input": "def binary_search(arr, target):\n    left, right = 0, len(arr)\n    while left < right:\n        mid = (left + right) // 2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            left = mid + 1\n        else:\n            right = mid - 1\n    return -1\n\nprint(binary_search([1, 2, 3, 4, 5], 3))",
+        "output": "right 應該初始化為 len(arr) - 1。另外，在更新 right 時，應該設置為 mid 而不是 mid - 1。這些修正可以避免漏掉搜尋範圍內的元素。"
+    },
+    {
+        "instruction": "這段程式碼有什麼邏輯錯誤嗎",
+        "input": "def sum_of_squares(n):\n    return sum([i * i for i in range(n)])\n\nprint(sum_of_squares(5))",
+        "output": "範圍應該是 range(n + 1) 才能包括 n 自身的平方"
+    },
+
+
+    {
+        "instruction": "這段程式碼嘗試複製一個嵌套列表，請幫我看看這段程式碼的問題",
+        "input": "nested_list1 = [[1, 2], [3, 4], [5, 6]]\nnested_list2 = []\nfor sublist in nested_list1:\n    nested_list2.append(sublist.copy())",
+        "output": "這段程式碼可以通過以下方式優化：\n\n1. 使用列表切片：nested_list2 = [sublist[:] for sublist in nested_list1]。這樣可以簡化代碼，同樣達到複製嵌套列表的效果。\n\n2. 使用內建函數 list()：nested_list2 = [list(sublist) for sublist in nested_list1]。這也是一種簡潔的方法來複製嵌套列表。"
+    },
+    {
+        "instruction": "這段程式碼試圖將一個字典的鍵和值交換，請幫我看看這段程式碼的問題",
+        "input": "dictx = {'a': 1, 'b': 2, 'c': 3}\ninverted_dict = {}\nfor key in dictx:\n    inverted_dict[dictx[key]] = key\nprint(inverted_dict)",
+        "output": "這段程式碼可以通過以下方式優化：\n\n1. 使用字典生成式：inverted_dict = {v: k for k, v in dictx.items()}。這樣可以更高效地交換字典的鍵和值。"
+    },
+
+
+    {
+        "instruction": "請判斷這段程式碼是什麼排序算法的實現。",
+        "input": "def bubble_sort(arr):\n    n = len(arr)\n    for i in range(n - 1):\n        for j in range(0, n - i - 1):\n            if arr[j] > arr[j + 1]:\n                arr[j], arr[j + 1] = arr[j + 1], arr[j]",
+        "output": "這段程式碼實現的是氣泡排序（Bubble Sort）算法。\n\n具體來說，這段程式碼的作用是：\n\n函式 bubble_sort(arr) 接受一個列表 arr 作為輸入，並對其進行排序。首先取得列表的長度 n。外層 for 迴圈的變量 i 從0到 n-1，每次迭代中，會縮小內層迴圈的範圍。內層 for 迴圈的變量 j 從0到 n-i-1，在這個範圍內進行元素的兩兩比較。如果 arr[j] 大於 arr[j+1]，則交換這兩個元素的位置。這樣，每一輪迴圈都會把最大的元素“冒泡”到列表的末端。重複這個過程直到整個列表有序。"
+    },
+    {
+        "instruction": "請判斷這段程式碼是什麼圖算法的實現。",
+        "input": "def prim(graph, src):\n    mst = set()\n    edges = [(cost, src, v) for v, cost in graph[src].items()]\n    heapq.heapify(edges)\n    while edges:\n        cost, u, v = heapq.heappop(edges)\n        if v not in mst:\n            mst.add(v)\n            for nxt, cst in graph[v].items():\n                if nxt not in mst:\n                    heapq.heappush(edges, (cst, v, nxt))\n    return mst",
+        "output": "這段程式碼實現的是普林姆（Prim）的最小生成樹算法。\n\n具體來說，這段程式碼的作用是：\n\n函式 prim(graph, src) 接受一個圖 graph 和一個起點 src 作為輸入，並生成從 src 開始的最小生成樹。首先初始化一個空集合 mst 用來存儲生成樹的節點，並將起點 src 的所有邊加入優先隊列 edges 中。然後重複以下步驟：從優先隊列中取出權重最小的邊 (cost, u, v)，如果 v 不在生成樹中，則將 v 加入生成樹，並將 v 的所有相鄰邊加入優先隊列。這樣，重複這個過程直到優先隊列為空。最終返回生成的最小生成樹 mst。"
+    },
+
+
+    {
+        "instruction": "請完成一個可以判斷字串是否為回文的Python程式碼。",
+        "input": "",
+        "output": "def is_palindrome_string(s):\n    return s == s[::-1]\n\n這段程式碼定義了一個函式 is_palindrome_string(s)，用於檢查一個字串是否為回文。\n\n具體來說，函式將輸入的字串反轉，檢查反轉後的字串是否與原字串相同。如果相同，返回 True，表示字串是回文；否則，返回 False。"
+    },
+    {
+        "instruction": "請完成一個可以檢驗身分證號是否正確的Python程式碼。身分證字號有底下這樣的規則，因此對於任意輸入的身分證字號可以有一些基本的判斷原則，請您來判斷一個身分證字號是否是正常的號碼(不代表確有此號、此人)。\n\n(1) 英文代號以下表轉換成數字\n\n      A=10 台北市     J=18 新竹縣     S=26 高雄縣\n      B=11 台中市     K=19 苗栗縣     T=27 屏東縣\n      C=12 基隆市     L=20 台中縣     U=28 花蓮縣\n      D=13 台南市     M=21 南投縣     V=29 台東縣\n      E=14 高雄市     N=22 彰化縣     W=32 金門縣\n      F=15 台北縣     O=35 新竹市     X=30 澎湖縣\n      G=16 宜蘭縣     P=23 雲林縣     Y=31 陽明山\n      H=17 桃園縣     Q=24 嘉義縣     Z=33 連江縣\n      I=34 嘉義市     R=25 台南縣\n\n  (2) 英文轉成的數字, 個位數乘９再加上十位數的數字\n\n  (3) 各數字從右到左依次乘１、２、３、４．．．．８\n\n  (4) 求出(2),(3) 及最後一碼的和\n\n  (5) (4)除10 若整除，則為 real，否則為 fake\n\n 例： T112663836\n\n2 + 7*9 + 1*8 + 1*7 + 2*6 + 6*5 + 6*4 + 3*3 + 8*2 + 3*1 + 6 = 180\n\n除以 10 整除，因此為 real",
+        "input": "",
+        "output": "def sum_list(lst):\n    total = 0\n    for item in lst:\n        total += item\n    return total\n\n這段程式碼定義了一個函式 sum_list(lst)，用於計算列表中所有元素的總和。\n\n具體來說，函式內首先初始化了一個變量 total 為0。接著，使用一個for迴圈，遍歷列表中的每個元素，並將其值累加到 total 中。最終，函式返回 total，即列表中所有元素的總和。"
+    }
+]

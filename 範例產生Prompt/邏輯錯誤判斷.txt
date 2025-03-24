@@ -1,0 +1,18 @@
+邏輯錯誤判斷範例
+
+邏輯錯誤不易察覺且可能無程式報錯，但會導致程式結果不如預期，故希望LLM可以根據題目找出邏輯錯誤。
+
+這是我的評分標準 請盡量完成
+準確性 正確察覺邏輯錯誤
+詳細性 詳細描述邏輯錯誤原因
+正向建議 提供具體的修正建議，且有修正範例
+
+範例:
+{
+  "instruction": "請幫我找出這段程式碼的邏輯錯誤，並給予修正建議。",
+  "input": "def find_max(numbers):\n    max_num = 0\n    for num in numbers:\n        if num > max_num:\n            max_num = num\n    return max_num\n\nprint(find_max([-3, -1, -7, -5]))",
+  "output": "這段程式碼存在一個邏輯錯誤：`find_max` 函數無法正確處理全為負數的數列。\n\n**錯誤描述**：`max_num` 初始化為 `0`，這意味著在處理全為負數的數列時，`max_num` 將保持為 `0`，因為所有負數都不會大於 `0`。因此，函數返回的最大值將永遠是 `0`，這在處理負數時是不正確的行為。\n\n**修正建議**：應將 `max_num` 初始化為 `numbers` 中的第一個元素，而非 `0`，這樣可以確保函數適用於任何數列，包括全為負數的情況。\n\n**修正範例**：\n```python\ndef find_max(numbers):\n    if not numbers:  # 檢查數列是否為空\n        return None\n    max_num = numbers[0]  # 將 max_num 初始化為數列的第一個元素\n    for num in numbers:\n        if num > max_num:\n            max_num = num\n    return max_num\n\nprint(find_max([-3, -1, -7, -5]))\n```\n這樣的修正將使函數能夠正確地返回全為負數數列中的最大值（例如：`-1`）。"
+}
+
+請你扮演一個Python專業出題者
+給我一個滿足上面格式與標準的範例
